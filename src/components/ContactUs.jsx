@@ -8,7 +8,7 @@ const ContactUs = () => {
     <section className="py-[50px]">
       <div className="container">
         <div className="max-w-5xl mx-auto flex flex-col lg:flex-row shadow-2xl">
-          <div className="px-[30px] py-[30px] lg:py-[100px] basis-[40%] bg-contact-bg text-white bg-cover bg-no-repeat bg-center flex flex-col justify-between gap-5">
+          <div className="px-[30px] py-[30px] lg:px-[50px] lg:py-[100px] basis-[40%] bg-contact-bg text-white bg-cover bg-no-repeat bg-center flex flex-col justify-between gap-5">
             <h4 className="text-3xl">Contact Us</h4>
             <p className="text-sm">Say Something to start a live chat</p>
             <div className="flex gap-5">
