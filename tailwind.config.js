@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     colors: {
       primary: "#F90945",
+      secondary: "#004785",
     },
     container: {
       center: true,
@@ -24,6 +25,7 @@ module.exports = {
         "hero-bg": "url('/hero-bg.png')",
         "banner-bg": "url('/Background-image-1.jpg')",
         "contact-bg": "url('/Background image 2.jpg')",
+        "our-success-bg": "url('/our-success-bg.jpg')",
       },
     },
   },
