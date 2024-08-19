@@ -1,17 +1,19 @@
-import Banner from '@/components/Banner';
-import BenefitsSection from '@/components/BenefitsSection';
-import ContactUs from '@/components/ContactUs';
-import Partner from '@/components/Partner';
-import RolesSection from '@/components/RolesSection';
+import CompanyPoints from "@/components/homeComponents/CompanyPoints";
+import ContractStaffing from "@/components/homeComponents/ContractStaffing";
+import Hero from "@/components/homeComponents/Hero";
+import PermanentRecruitment from "@/components/homeComponents/PermanentRecruitment";
+import WorkforcePlanning from "@/components/homeComponents/WorkforcePlanning";
+import WorkSteps from "@/components/homeComponents/WorkSteps";
 
 const Home = () => {
   return (
     <main>
-      <Banner />
-      <Partner />
-      <RolesSection />
-      <BenefitsSection />
-      <ContactUs />
+      <Hero />
+      <CompanyPoints />
+      <PermanentRecruitment />
+      <ContractStaffing />
+      <WorkforcePlanning />
+      <WorkSteps />
     </main>
   );
 };

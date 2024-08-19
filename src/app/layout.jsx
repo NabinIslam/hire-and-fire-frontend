@@ -1,19 +1,22 @@
-import { Inter } from 'next/font/google';
-import './globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Montserrat } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const montserrat = Montserrat({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
-  title: 'Hire&Fire',
-  description: 'Your Partner in international Construction Recruitment',
+  title: "Hire&Fire",
+  description: "Your Partner in international Construction Recruitment",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Header />
         {children}
         <Footer />
