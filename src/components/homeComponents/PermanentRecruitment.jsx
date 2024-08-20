@@ -2,11 +2,11 @@ import Button from "../ui/Button";
 
 const PermanentRecruitment = () => {
   return (
-    <section className="py-[50px]">
+    <section className="pb-[50px] pt-[100px]">
       <div className="container flex items-center justify-between gap-24">
         <div className="space-y-5 basis-1/2">
-          <h2 className="text-5xl font-bold">Permanent Recruitment</h2>
-          <p className="text-sm">
+          <h2 className="text-5xl font-semibold">Permanent Recruitment</h2>
+          <p className="text-sm font-medium">
             Permanent recruitment involves the process of hiring employees for
             long-term positions within an organization. It includes sourcing
             candidates, conducting interviews, and selecting the best fit based
@@ -25,9 +25,9 @@ const PermanentRecruitment = () => {
       </div>
       <div className="container mt-[50px] grid grid-cols-1 lg:grid-cols-3 gap-5">
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
           <svg
-            className="mx-auto"
+            className="mx-auto group-hover:stroke-white"
             width="50"
             height="50"
             viewBox="0 0 50 50"
@@ -39,16 +39,16 @@ const PermanentRecruitment = () => {
               fill="#004785"
             />
           </svg>
-          <h5 className="text-xl">Retention-Focused Hiring</h5>
+          <h5 className="text-xl font-medium">Retention-Focused Hiring</h5>
           <p className="text-sm">
             We select candidates with the potential for long-term commitment and
             growth.
           </p>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
           <svg
-            className="mx-auto"
+            className="mx-auto group-hover:stroke-white"
             width="50"
             height="50"
             viewBox="0 0 50 50"
@@ -61,16 +61,18 @@ const PermanentRecruitment = () => {
             />
           </svg>
 
-          <h5 className="text-xl">Seamless Transition Management</h5>
+          <h5 className="text-xl font-medium">
+            Seamless Transition Management
+          </h5>
           <p className="text-sm">
             We ensure smooth transitions for new hires to become productive
             quickly.
           </p>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-5 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-5 text-center shadow-lg rounded-lg">
           <svg
-            className="mx-auto"
+            className="mx-auto group-hover:stroke-white"
             width="50"
             height="44"
             viewBox="0 0 50 44"
@@ -78,14 +80,14 @@ const PermanentRecruitment = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M13.5853 28.4529C13.6645 25.4782 14.9019 22.6519 17.034 20.5759C19.166 18.4999 22.0243 17.3383 25 17.3383C27.9758 17.3383 30.8341 18.4999 32.9661 20.5759C35.0982 22.6519 36.3356 25.4782 36.4148 28.4529C28.8997 26.7551 21.1004 26.7551 13.5853 28.4529ZM20.1038 11.1591C20.1038 10.1907 20.3909 9.24403 20.9289 8.43883C21.4668 7.63363 22.2315 7.00604 23.1262 6.63543C24.0208 6.26482 25.0053 6.16783 25.9551 6.35673C26.9049 6.54562 27.7773 7.01193 28.4621 7.69666C29.1468 8.3814 29.6132 9.25382 29.8021 10.2036C29.991 11.1534 29.8941 12.1378 29.5235 13.0325C29.1529 13.9272 28.5254 14.6919 27.7202 15.2299C26.915 15.7679 25.9684 16.0551 25 16.0551C23.7019 16.0538 22.4573 15.5375 21.5393 14.6196C20.6213 13.7018 20.105 12.4572 20.1036 11.1591H20.1038ZM25 0.521851C15.9875 0.521851 8.65537 7.85505 8.65537 16.8676C8.64037 20.6639 9.96113 24.3445 12.3864 27.2651C12.6914 24.7238 13.7549 22.3333 15.4385 20.4053C17.1221 18.4774 19.3475 17.1014 21.8246 16.4569C20.6651 15.7623 19.7654 14.7066 19.2633 13.4516C18.7613 12.1967 18.6845 10.8118 19.0449 9.50905C19.4053 8.20634 20.1829 7.05772 21.2585 6.23924C22.3342 5.42075 23.6485 4.97755 25.0001 4.97755C26.3518 4.97755 27.6661 5.42075 28.7418 6.23924C29.8174 7.05772 30.595 8.20634 30.9554 9.50905C31.3158 10.8118 31.239 12.1967 30.737 13.4516C30.2349 14.7066 29.3352 15.7623 28.1757 16.4569C30.6527 17.1015 32.8781 18.4775 34.5616 20.4054C36.2451 22.3333 37.3087 24.7238 37.6136 27.2651C40.039 24.3445 41.3598 20.6639 41.3447 16.8676C41.3447 7.85505 34.0125 0.521851 25 0.521851ZM2.62334 43.4781L4.29404 39.554C4.32753 39.4753 4.34494 39.3906 4.34525 39.3051C4.34557 39.2195 4.32879 39.1348 4.29589 39.0558C4.26299 38.9769 4.21464 38.9053 4.15369 38.8452C4.09273 38.7852 4.02039 38.738 3.94092 38.7063L0 37.1402C2.0651 36.364 4.20386 35.8 6.3832 35.457C6.53806 36.5009 6.77379 37.5312 7.08828 38.5386C7.11555 38.6271 7.16179 38.7085 7.22377 38.7772C7.28576 38.8459 7.362 38.9002 7.44717 38.9364V38.9374L11.6436 40.7418C8.47925 41.0169 5.40711 41.949 2.62334 43.4784V43.4781ZM14.0979 40.4007V37.5656C12.6349 37.8255 11.1621 38.1373 9.67979 38.5011L14.0979 40.4007ZM8.13877 37.5664C13.882 36.0575 19.4408 35.3026 25 35.3026C30.5592 35.3026 36.118 36.0575 41.8612 37.5668C42.4071 35.6032 42.6331 33.5646 42.5304 31.5292C30.8956 27.4693 19.1043 27.4693 7.46963 31.5292C7.36711 33.5645 7.59305 35.603 8.13877 37.5664ZM40.3198 38.5008L35.9017 40.4003V37.5656C37.3651 37.8255 38.8378 38.1373 40.3198 38.5011V38.5008ZM46.0592 38.7058C45.9797 38.7375 45.9073 38.7847 45.8464 38.8447C45.7854 38.9047 45.737 38.9763 45.7041 39.0553C45.6712 39.1343 45.6545 39.219 45.6548 39.3046C45.6551 39.3901 45.6725 39.4748 45.7061 39.5535L47.3766 43.4776C44.593 41.9484 41.5213 41.0161 38.3574 40.7402L42.5531 38.9368L42.5522 38.9348C42.6373 38.8987 42.7136 38.8445 42.7757 38.776C42.8378 38.7075 42.8843 38.6263 42.9119 38.5381C43.2263 37.5306 43.462 36.5003 43.617 35.4564C45.7963 35.7997 47.935 36.3638 50 37.1402L46.0592 38.7058Z"
               fill="#004785"
             />
           </svg>
 
-          <h5 className="text-xl">Employer Branding Enhancement</h5>
+          <h5 className="text-xl font-medium">Employer Branding Enhancement</h5>
           <p className="text-sm">
             We strengthen your company's appeal to high-quality candidates.{" "}
           </p>

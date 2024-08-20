@@ -9,12 +9,12 @@ import Button from "../ui/Button";
 
 const TeamSection = () => {
   return (
-    <section className="py-[50px] space-y-8">
-      <div className="container space-y-4">
+    <section className="py-[50px] space-y-10">
+      <div className="container space-y-6">
         <h2 className="text-center text-5xl font-semibold">
           Team of recruitment expert
         </h2>
-        <p className="text-center text-sm">
+        <p className="text-center text-sm font-medium">
           A team of recruitment experts specializes in sourcing, assessing, and
           hiring top talent to <br /> meet organizational needs efficiently and
           effectively.

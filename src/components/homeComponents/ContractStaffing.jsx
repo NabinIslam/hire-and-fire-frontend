@@ -8,8 +8,8 @@ const ContractStaffing = () => {
           <img src="/contract-staffing.png" alt="" />
         </div>
         <div className="space-y-5 basis-1/2">
-          <h2 className="text-5xl font-bold">Contract Staffing</h2>
-          <p className="text-sm">
+          <h2 className="text-5xl font-semibold">Contract Staffing</h2>
+          <p className="text-sm font-medium">
             Contract staffing involves hiring workers for specific projects or
             periods, often through agencies, to meet short-term needs without
             permanent employment commitments. Employers benefit from flexibility
@@ -26,9 +26,9 @@ const ContractStaffing = () => {
       </div>
       <div className="container mt-[50px] grid grid-cols-1 lg:grid-cols-3 gap-5">
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
           <svg
-            className="mx-auto"
+            className="mx-auto group-hover:stroke-white"
             width="48"
             height="48"
             viewBox="0 0 48 48"
@@ -41,16 +41,16 @@ const ContractStaffing = () => {
             />
           </svg>
 
-          <h5 className="text-xl">Retention-Focused Hiring</h5>
+          <h5 className="text-xl font-medium">Retention-Focused Hiring</h5>
           <p className="text-sm">
             We select candidates with the potential for long-term commitment and
             growth.
           </p>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
           <svg
-            className="mx-auto"
+            className="mx-auto group-hover:stroke-white"
             width="36"
             height="50"
             viewBox="0 0 36 50"
@@ -63,16 +63,18 @@ const ContractStaffing = () => {
             />
           </svg>
 
-          <h5 className="text-xl">Seamless Transition Management</h5>
+          <h5 className="text-xl font-medium">
+            Seamless Transition Management
+          </h5>
           <p className="text-sm">
             We ensure smooth transitions for new hires to become productive
             quickly.
           </p>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-5 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
           <svg
-            className="mx-auto"
+            className="mx-auto group-hover:stroke-white"
             width="42"
             height="46"
             viewBox="0 0 42 46"
@@ -97,7 +99,7 @@ const ContractStaffing = () => {
             />
           </svg>
 
-          <h5 className="text-xl">Employer Branding Enhancement</h5>
+          <h5 className="text-xl font-medium">Employer Branding Enhancement</h5>
           <p className="text-sm">
             We strengthen your company's appeal to high-quality candidates.{" "}
           </p>

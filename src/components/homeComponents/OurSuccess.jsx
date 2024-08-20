@@ -7,8 +7,8 @@ const OurSuccess = () => {
           We believe that great companies are built by great people
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-x">
-          <div className="px-10 space-y-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x-0  lg:divide-x lg:divide-y-0 gap-5">
+          <div className="p-4 space-y-5">
             <h5 className="text-xl text-center">
               25,000+ <br /> Workers Placed
             </h5>
@@ -18,7 +18,7 @@ const OurSuccess = () => {
               talent.
             </p>
           </div>
-          <div className="px-10 space-y-5">
+          <div className="p-4 space-y-5">
             <h5 className="text-xl text-center">
               Expertise Across <br />
               the Globe
@@ -28,7 +28,7 @@ const OurSuccess = () => {
               processes. Our knowledge helps us place workers efficiently.
             </p>
           </div>
-          <div className="px-10 space-y-5">
+          <div className="p-4 space-y-5">
             <h5 className="text-xl text-center">
               Ethical <br /> Recruitment
             </h5>
@@ -38,7 +38,7 @@ const OurSuccess = () => {
               organizations.
             </p>
           </div>
-          <div className="px-10 space-y-5">
+          <div className="p-4 space-y-5">
             <h5 className="text-xl text-center">
               Your Trusted <br />
               Partner
