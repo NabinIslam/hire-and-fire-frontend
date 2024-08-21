@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import Button from './ui/Button';
-import { IoMdArrowDropright } from 'react-icons/io';
-import { FaPhone, FaEnvelope } from 'react-icons/fa6';
-import { FaMapMarkerAlt, FaTwitter } from 'react-icons/fa';
-import { FaFacebook, FaInstagram, FaTwitch } from 'react-icons/fa';
+import Link from "next/link";
+import Button from "./ui/Button";
+import { IoMdArrowDropright } from "react-icons/io";
+import { FaPhone, FaEnvelope } from "react-icons/fa6";
+import { FaMapMarkerAlt, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitch } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -23,7 +23,10 @@ const Footer = () => {
               needs. Please note that it operates on an employer basis and does
               not provide jobs directly to workers.
             </p>
-            <Button className="bg-[#F90945]">Contact Us</Button>
+
+            <button className="bg-primary hover:bg-transparent hover:bg-white text-white hover:text-primary border-2 border-secondary hover:border-primary text-sm px-4 py-3 rounded-md duration-200">
+              Contact Us
+            </button>
           </div>
           <div className="space-y-5">
             <span className="text-xl border-b-[1px] pb-1">Quick Links</span>
@@ -100,15 +103,17 @@ const Footer = () => {
                 type="text"
                 placeholder="Your Email Here"
               />
-              <Button className="bg-[#F90945]">Subscribe</Button>
+              <button className="bg-primary hover:bg-transparent hover:bg-white text-white hover:text-primary border-2 border-primary hover:border-primary text-sm px-4 py-3 rounded-md duration-200">
+                Contact Us
+              </button>
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm">
-                <FaPhone className="bg-[#F90945] p-2 text-3xl rounded-full" />{' '}
+                <FaPhone className="bg-[#F90945] p-2 text-3xl rounded-full" />{" "}
                 +40 123 456 789
               </div>
               <div className="flex items-center gap-2 text-sm">
-                <FaEnvelope className="bg-[#F90945] p-2 text-3xl rounded-full" />{' '}
+                <FaEnvelope className="bg-[#F90945] p-2 text-3xl rounded-full" />{" "}
                 Contact@hireandfire.agency
               </div>
               <div className="flex items-start gap-2 text-sm">

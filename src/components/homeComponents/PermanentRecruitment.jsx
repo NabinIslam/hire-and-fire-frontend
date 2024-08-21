@@ -3,9 +3,9 @@ import Button from "../ui/Button";
 const PermanentRecruitment = () => {
   return (
     <section className="pb-[50px] pt-[100px]">
-      <div className="container flex items-center justify-between gap-24">
-        <div className="space-y-5 basis-1/2">
-          <h2 className="text-5xl font-semibold">Permanent Recruitment</h2>
+      <div className="container flex flex-col lg:flex-row items-center justify-between gap-24">
+        <div className="space-y-5 basis-1/2 text-center lg:text-left">
+          <h2 className="text-4xl lg:text-5xl font-semibold">Permanent Recruitment</h2>
           <p className="text-sm font-medium">
             Permanent recruitment involves the process of hiring employees for
             long-term positions within an organization. It includes sourcing
@@ -20,7 +20,7 @@ const PermanentRecruitment = () => {
           <Button>See more</Button>
         </div>
         <div className="basis-1/2">
-          <img src="/permanent-recruitment.png" alt="" />
+          <img className="text-center" src="/permanent-recruitment.png" alt="" />
         </div>
       </div>
       <div className="container mt-[50px] grid grid-cols-1 lg:grid-cols-3 gap-5">

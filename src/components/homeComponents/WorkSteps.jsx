@@ -1,18 +1,20 @@
+import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
+
 const WorkSteps = () => {
   return (
     <section className="py-[50px]">
       <h6 className="text-center text-primary font-medium text-2xl">
         Work Steps
       </h6>
-      <h1 className="text-center text-5xl font-semibold mt-[20px]">
+      <h2 className="text-center text-4xl lg:text-5xl font-semibold mt-[20px]">
         How It Works?
-      </h1>
-      <div className="container flex items-center gap-5 mt-[60px]">
+      </h2>
+      <div className="container flex flex-col xl:flex-row items-center justify-between gap-5 mt-[60px]">
         {/* step card start*/}
 
-        <div className="relative shadow-lg max-w-[350px]">
+        <div className="relative group shadow-lg w-[350px] min-h-[270px]">
           <div className="m-5 space-y-4">
-            <div className="size-[80px] mx-auto bg-primary flex justify-center items-center rounded-full">
+            <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
               <svg
                 width="40"
                 height="40"
@@ -34,12 +36,12 @@ const WorkSteps = () => {
               Tell Us <br /> Your Need
             </h5>
             <p className="text-sm text-center font-medium">
-              "Share your specific requirements and job descriptions."
+              Share your specific requirements and job descriptions.
             </p>
           </div>
 
           {/* badge */}
-          <div className="absolute size-[80px] border-t-[80px] border-t-primary border-r-transparent border-r-[80px] top-0 left-0"></div>
+          <div className="absolute size-[80px] border-t-[80px] border-t-primary group-hover:border-t-secondary duration-200 border-r-transparent border-r-[80px] top-0 left-0"></div>
           <span className="absolute text-white top-[10px] left-[15px] text-xl z-50">
             01
           </span>
@@ -47,24 +49,16 @@ const WorkSteps = () => {
 
         {/* step card end*/}
 
-        <svg
-          width="51"
-          height="16"
-          viewBox="0 0 51 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
-            fill="black"
-          />
-        </svg>
+        <HiArrowLongDown className="text-4xl lg:hidden" />
+        <HiArrowLongRight className="text-4xl hidden lg:inline" />
+
+        
 
         {/* step card start*/}
 
-        <div className="relative shadow-lg max-w-[350px]">
+        <div className="relative group shadow-lg w-[350px] min-h-[270px]">
           <div className="m-5 space-y-4">
-            <div className="size-[80px] mx-auto bg-primary flex justify-center items-center rounded-full">
+            <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
               <svg
                 width="40"
                 height="40"
@@ -87,19 +81,23 @@ const WorkSteps = () => {
               Candidates
             </h5>
             <p className="text-sm text-center font-medium">
-              "Review profiles of candidates that match your needs."
+              Review profiles of candidates that match your needs.
             </p>
           </div>
           {/* badge */}
-          <div className="absolute size-[80px] border-t-[80px] border-t-primary border-r-transparent border-r-[80px] top-0 left-0"></div>
+          <div className="absolute size-[80px] border-t-[80px] border-t-primary group-hover:border-t-secondary duration-200 border-r-transparent border-r-[80px] top-0 left-0"></div>
           <span className="absolute text-white top-[10px] left-[15px] text-xl z-50">
-            01
+            02
           </span>
         </div>
 
         {/* step card end*/}
 
+        <HiArrowLongDown className="text-4xl lg:hidden" />
+        <HiArrowLongRight className="text-4xl hidden lg:inline" />
+
         <svg
+          className="hidden"
           width="51"
           height="16"
           viewBox="0 0 51 16"
@@ -114,9 +112,9 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="relative shadow-lg max-w-[350px]">
+        <div className="relative group shadow-lg w-[350px] h-[270px]">
           <div className="m-5 space-y-4">
-            <div className="size-[80px] mx-auto bg-primary flex justify-center items-center rounded-full">
+            <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
               <svg
                 width="40"
                 height="40"
@@ -139,19 +137,23 @@ const WorkSteps = () => {
               Candidates
             </h5>
             <p className="text-sm text-center font-medium">
-              "Conduct interviews with shortlisted candidates."
+              Conduct interviews with shortlisted candidates.
             </p>
           </div>
           {/* badge */}
-          <div className="absolute size-[80px] border-t-[80px] border-t-primary border-r-transparent border-r-[80px] top-0 left-0"></div>
+          <div className="absolute size-[80px] border-t-[80px] border-t-primary group-hover:border-t-secondary duration-200 border-r-transparent border-r-[80px] top-0 left-0"></div>
           <span className="absolute text-white top-[10px] left-[15px] text-xl z-50">
-            01
+            03
           </span>
         </div>
 
         {/* step card end*/}
 
+        <HiArrowLongDown className="text-4xl lg:hidden" />
+        <HiArrowLongRight className="text-4xl hidden lg:inline" />
+
         <svg
+          className="hidden"
           width="51"
           height="16"
           viewBox="0 0 51 16"
@@ -166,9 +168,9 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="relative shadow-lg max-w-[350px]">
+        <div className="relative group shadow-lg w-[350px] min-h-[270px]">
           <div className="m-5 space-y-4">
-            <div className="size-[80px] mx-auto bg-primary flex justify-center items-center rounded-full">
+            <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
               <svg
                 width="40"
                 height="40"
@@ -190,14 +192,14 @@ const WorkSteps = () => {
               Select and We Complete <br /> Visa Procedures
             </h5>
             <p className="text-sm text-center font-medium">
-              "Choose your candidates, and we handle the rest, including visa
-              processing."
+              Choose your candidates, and we handle the rest, including visa
+              processing.
             </p>
           </div>
           {/* badge */}
-          <div className="absolute size-[80px] border-t-[80px] border-t-primary border-r-transparent border-r-[80px] top-0 left-0"></div>
+          <div className="absolute size-[80px] border-t-[80px] border-t-primary group-hover:border-t-secondary duration-200 border-r-transparent border-r-[80px] top-0 left-0"></div>
           <span className="absolute text-white top-[10px] left-[15px] text-xl z-50">
-            01
+            04
           </span>
         </div>
 

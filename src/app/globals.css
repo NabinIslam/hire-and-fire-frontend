@@ -2,4 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-slide > div {
+  margin: 0 10px;
+}
 
+.slick-slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev_arrow {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.next_arrow {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

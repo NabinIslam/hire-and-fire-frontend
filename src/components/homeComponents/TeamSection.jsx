@@ -11,7 +11,7 @@ const TeamSection = () => {
   return (
     <section className="py-[50px] space-y-10">
       <div className="container space-y-6">
-        <h2 className="text-center text-5xl font-semibold">
+        <h2 className="text-center text-4xl lg:text-5xl font-semibold">
           Team of recruitment expert
         </h2>
         <p className="text-center text-sm font-medium">
@@ -21,7 +21,7 @@ const TeamSection = () => {
         </p>
       </div>
 
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {/* team card */}
         <div className="shadow-xl rounded-lg">
           <div className="relative">

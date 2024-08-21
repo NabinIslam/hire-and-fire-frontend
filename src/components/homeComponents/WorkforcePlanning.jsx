@@ -3,9 +3,9 @@ import Button from "../ui/Button";
 const WorkforcePlanning = () => {
   return (
     <section className="py-[50px]">
-      <div className="container flex items-center justify-between gap-24">
-        <div className="space-y-5 basis-1/2">
-          <h2 className="text-5xl font-semibold">Workforce Planning</h2>
+      <div className="container flex flex-col lg:flex-row items-center justify-between gap-24">
+        <div className="space-y-5 basis-1/2 text-center lg:text-left">
+          <h2 className="text-4xl lg:text-5xl font-semibold">Workforce Planning</h2>
           <p className="text-sm font-medium">
             Workforce planning involves strategically forecasting and managing
             an organization's current and future workforce needs. It includes

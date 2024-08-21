@@ -3,12 +3,12 @@ import Button from "../ui/Button";
 const ContractStaffing = () => {
   return (
     <section className="py-[50px]">
-      <div className="container flex items-center justify-between gap-24">
-        <div className="basis-1/2">
+      <div className="container flex flex-col-reverse lg:flex-row items-center justify-between gap-24">
+        <div className="basis-1/2 text-center">
           <img src="/contract-staffing.png" alt="" />
         </div>
-        <div className="space-y-5 basis-1/2">
-          <h2 className="text-5xl font-semibold">Contract Staffing</h2>
+        <div className="space-y-5 basis-1/2 text-center lg:text-left">
+          <h2 className="text-4xl lg:text-5xl font-semibold">Contract Staffing</h2>
           <p className="text-sm font-medium">
             Contract staffing involves hiring workers for specific projects or
             periods, often through agencies, to meet short-term needs without
