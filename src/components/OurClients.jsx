@@ -3,9 +3,6 @@
 import dynamic from "next/dynamic";
 import flexjobsLogo from "@/assets/images/clients/flexjobs-logo.png";
 import glassdoorLogo from "@/assets/images/clients/glassdoor-logo.png";
-import indeedLogo from "@/assets/images/clients/indeed-logo.png";
-import linkedinLogo from "@/assets/images/clients/linkedin-logo.png";
-import upworkLogo from "@/assets/images/clients/Upwork-logo.png";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
