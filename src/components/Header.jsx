@@ -1,21 +1,24 @@
-'use client';
+"use client";
 
-import { MegaMenu, Navbar } from 'flowbite-react';
-import Button from './ui/Button';
-import ReactFlagsSelect from 'react-flags-select';
-import { useState } from 'react';
+import { MegaMenu, Navbar } from "flowbite-react";
+import Button from "./ui/Button";
+import ReactFlagsSelect from "react-flags-select";
+import { useState } from "react";
+import Image from "next/image";
+import Logo from "@/assets/images/logo.png";
+import Link from "next/link";
 
 const Header = () => {
-  const [selected, setSelected] = useState('US');
+  const [selected, setSelected] = useState("US");
 
   return (
-    <header>
+    <header className="sticky top-0 bg-white z-[10000] shadow">
       <nav>
         <MegaMenu>
           <div className="container flex flex-wrap items-center justify-between md:space-x-8">
-            <Navbar.Brand href="/">
-              <img alt="" src="/Logo.png" className="mr-3 h-6 sm:h-9" />
-            </Navbar.Brand>
+            <Link href="/">
+              <Image src={Logo} width={72} height={59} alt="" />
+            </Link>
             <div className="order-2 hidden items-center md:flex gap-2">
               <Button>Contact Us</Button>
               <ReactFlagsSelect
@@ -23,12 +26,12 @@ const Header = () => {
                 showSelectedLabel={false}
                 showOptionLabel={false}
                 selected={selected}
-                onSelect={code => setSelected(code)}
+                onSelect={(code) => setSelected(code)}
               />
             </div>
             <Navbar.Toggle />
             <Navbar.Collapse>
-              <Navbar.Link href="#">About Us</Navbar.Link>
+              <Link href="/about-us">About Us</Link>
               <Navbar.Link>
                 <MegaMenu.Dropdown toggle={<>Employers</>}>
                   <ul className="grid grid-cols-1">

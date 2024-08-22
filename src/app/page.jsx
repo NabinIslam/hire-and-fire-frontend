@@ -1,13 +1,13 @@
-import CompanyPoints from "@/components/homeComponents/CompanyPoints";
-import ContractStaffing from "@/components/homeComponents/ContractStaffing";
-import Hero from "@/components/homeComponents/Hero";
-import OurClients from "@/components/homeComponents/OurClients";
-import OurSuccess from "@/components/homeComponents/OurSuccess";
-import PermanentRecruitment from "@/components/homeComponents/PermanentRecruitment";
-import RecentNewsesNBlogs from "@/components/homeComponents/RecentNewsesNBlogs";
-import TeamSection from "@/components/homeComponents/TeamSection";
-import WorkforcePlanning from "@/components/homeComponents/WorkforcePlanning";
-import WorkSteps from "@/components/homeComponents/WorkSteps";
+import CompanyPoints from "@/components/home-components/CompanyPoints";
+import ContractStaffing from "@/components/home-components/ContractStaffing";
+import Hero from "@/components/home-components/Hero";
+import OurClients from "@/components/OurClients";
+import OurSuccess from "@/components/home-components/OurSuccess";
+import PermanentRecruitment from "@/components/home-components/PermanentRecruitment";
+import RecentNewsesNBlogs from "@/components/home-components/RecentNewsesNBlogs";
+import TeamSection from "@/components/home-components/TeamSection";
+import WorkforcePlanning from "@/components/home-components/WorkforcePlanning";
+import WorkSteps from "@/components/home-components/WorkSteps";
 
 const Home = () => {
   return (

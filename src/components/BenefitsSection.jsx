@@ -1,7 +1,7 @@
-import { GiGearHammer } from 'react-icons/gi';
-import { IoBarChartSharp } from 'react-icons/io5';
-import { IoDocumentText } from 'react-icons/io5';
-import { FaUsersGear } from 'react-icons/fa6';
+import { GiGearHammer } from "react-icons/gi";
+import { IoBarChartSharp } from "react-icons/io5";
+import { IoDocumentText } from "react-icons/io5";
+import { FaUsersGear } from "react-icons/fa6";
 
 const BenefitsSection = () => {
   return (

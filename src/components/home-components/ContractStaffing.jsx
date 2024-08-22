@@ -8,7 +8,9 @@ const ContractStaffing = () => {
           <img src="/contract-staffing.png" alt="" />
         </div>
         <div className="space-y-5 basis-1/2 text-center lg:text-left">
-          <h2 className="text-4xl lg:text-5xl font-semibold">Contract Staffing</h2>
+          <h2 className="text-4xl lg:text-5xl font-semibold">
+            Contract Staffing
+          </h2>
           <p className="text-sm font-medium">
             Contract staffing involves hiring workers for specific projects or
             periods, often through agencies, to meet short-term needs without
