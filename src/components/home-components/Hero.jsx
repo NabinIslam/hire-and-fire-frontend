@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "../ui/Button";
-import HomeHeroImg from "@/assets/images/home-hero-img.png";
+import HomeHeroImg from "../../../public/images/home-hero-img.png";
 
 const Hero = () => {
   return (
@@ -14,7 +14,13 @@ const Hero = () => {
           <Button>Find Talent</Button>
         </div>
         <div>
-          <Image src={HomeHeroImg} alt="Home Hero Image" />
+          <Image
+            className="w-full h-auto"
+            src="/images/home-hero-img.png"
+            alt="Home Hero Image"
+            height={472}
+            width={616}
+          />
         </div>
       </div>
     </section>
