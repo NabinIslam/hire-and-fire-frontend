@@ -5,7 +5,6 @@ import { FaPhone, FaEnvelope } from "react-icons/fa6";
 import { FaMapMarkerAlt, FaTwitter } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitch } from "react-icons/fa";
 import Image from "next/image";
-import logo from "@/assets/images/logo.png";
 
 const Footer = () => {
   return (

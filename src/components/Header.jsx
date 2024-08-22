@@ -5,7 +5,6 @@ import Button from "./ui/Button";
 import ReactFlagsSelect from "react-flags-select";
 import { useState } from "react";
 import Image from "next/image";
-import Logo from "@/assets/images/logo.png";
 import Link from "next/link";
 
 const Header = () => {
