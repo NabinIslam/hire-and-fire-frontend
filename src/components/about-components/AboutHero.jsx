@@ -1,8 +1,5 @@
 import Button from "../ui/Button";
-import visa from "@/assets/images/visa-icon.png";
-import moneyback from "@/assets/images/moneyback-icon.png";
 import Image from "next/image";
-import aboutHeroImg from "@/assets/images/about-hero-img.png";
 
 const AboutHero = () => {
   return (

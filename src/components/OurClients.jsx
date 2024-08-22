@@ -52,47 +52,58 @@ const OurClients = () => {
       <h2 className="text-center text-5xl font-semibold">Our clients</h2>
       <div className="container">
         <Slider {...settings}>
-          <div className="relative shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
+          <div className="shadow-md rounded-lg w-[296px] h-[134px] border p-5">
             <Image
-              className="object-contain w-full h-auto"
-              src={flexjobsLogo}
-              fill
+              className="w-full h-auto"
+              src="/images/clients/flexjobs-logo.png"
               alt="Flexjobs Logo"
+              width={200}
+              height={86}
             />
           </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
+          <div className="shadow-md rounded-lg w-[296px] h-[134px] border p-5">
             <Image
-              className="object-contain"
-              src={glassdoorLogo}
+              className="w-full h-auto"
+              src="/images/clients/glassdoor-logo.png"
               alt="Flexjobs Logo"
+              width={200}
+              height={86}
             />
           </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
+          <div className="shadow-md rounded-lg w-[296px] h-[134px] border p-5">
             <Image
-              className="object-contain"
-              src={flexjobsLogo}
+              className="w-full h-auto"
+              src="/images/clients/glassdoor-logo.png"
               alt="Flexjobs Logo"
+              width={200}
+              height={86}
             />
           </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
+          <div className="shadow-md rounded-lg w-[296px] h-[134px] border p-5">
             <Image
-              className="object-contain"
-              src={flexjobsLogo}
+              className="w-full h-auto"
+              src="/images/clients/glassdoor-logo.png"
               alt="Flexjobs Logo"
+              width={200}
+              height={86}
             />
           </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
+          <div className="shadow-md rounded-lg w-[296px] h-[134px] border p-5">
             <Image
-              className="object-contain"
-              src={flexjobsLogo}
+              className="w-full h-auto"
+              src="/images/clients/glassdoor-logo.png"
               alt="Flexjobs Logo"
+              width={200}
+              height={86}
             />
           </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
+          <div className="shadow-md rounded-lg w-[296px] h-[134px] border p-5">
             <Image
-              className="object-contain"
-              src={flexjobsLogo}
+              className="w-full h-auto"
+              src="/images/clients/glassdoor-logo.png"
               alt="Flexjobs Logo"
+              width={200}
+              height={86}
             />
           </div>
         </Slider>
