@@ -9,7 +9,7 @@ import TitleDescSection from "@/components/TitleDescSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
 
-const page = () => {
+const AboutUs = () => {
   return (
     <main>
       <PageBanner title="About Us" />
@@ -51,4 +51,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutUs;

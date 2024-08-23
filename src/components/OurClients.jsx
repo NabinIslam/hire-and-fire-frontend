@@ -55,48 +55,50 @@ const OurClients = () => {
       <h2 className="text-center text-5xl font-semibold">Our clients</h2>
       <div className="container">
         <Slider {...settings}>
-          <div className="relative shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
-            <Image
-              className="object-contain w-full h-auto"
+          <div className="relative shadow-md rounded-lg w-[296px] h-[134px] border p-5 flex justify-center items-center">
+            {/* <Image
+              className="mx-auto object-cover w-full h-auto"
               src={flexjobsLogo}
-              fill
               alt="Flexjobs Logo"
-            />
+              fill
+            /> */}
+            <img className="mx-auto" src="/images/clients/linkedin-logo.png" alt="" />
           </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
-            <Image
-              className="object-contain"
+          <div className="relative shadow-md rounded-lg w-[296px] h-[134px] border p-5 flex justify-center items-center">
+            {/* <Image
+              className="mx-auto object-cover w-full h-auto"
               src={glassdoorLogo}
               alt="Flexjobs Logo"
-            />
+              fill
+            /> */}
+            <img className="mx-auto" src="/images/clients/linkedin-logo.png" alt="" />
           </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
-            <Image
-              className="object-contain"
-              src={flexjobsLogo}
+          <div className="relative shadow-md rounded-lg w-[296px] h-[134px] border p-5 flex justify-center items-center">
+            {/* <Image
+              className="mx-auto object-cover w-full h-auto"
+              src={indeedLogo}
               alt="Flexjobs Logo"
-            />
+              fill
+            /> */}
+            <img className="mx-auto" src="/images/clients/linkedin-logo.png" alt="" />
           </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
-            <Image
-              className="object-contain"
-              src={flexjobsLogo}
+          <div className="relative shadow-md rounded-lg w-[296px] h-[134px] border p-5 flex justify-center items-center">
+            {/* <Image
+              className="mx-auto object-cover w-full h-auto"
+              src={linkedinLogo}
               alt="Flexjobs Logo"
-            />
+              fill
+            /> */}
+            <img className="mx-auto" src="/images/clients/linkedin-logo.png" alt="" />
           </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
-            <Image
-              className="object-contain"
-              src={flexjobsLogo}
+          <div className="relative shadow-md rounded-lg w-[296px] h-[134px] border p-5 flex justify-center items-center">
+            {/* <Image
+              className="mx-auto object-cover w-full h-auto"
+              src={upworkLogo}
               alt="Flexjobs Logo"
-            />
-          </div>
-          <div className="shadow-md rounded-lg w-[296px] h-[134px] flex items-center justify-center border p-5">
-            <Image
-              className="object-contain"
-              src={flexjobsLogo}
-              alt="Flexjobs Logo"
-            />
+              fill
+            /> */}
+            <img className="mx-auto" src="/images/clients/linkedin-logo.png" alt="" />
           </div>
         </Slider>
       </div>

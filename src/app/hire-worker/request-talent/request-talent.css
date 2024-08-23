@@ -1,0 +1,79 @@
+/* RangeSlider.css */
+.range-slider {
+  -webkit-appearance: none; /* Removes default styling */
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #ff0000 0%,
+    #ff0000 calc(var(--value) * 1%),
+    #e5e7eb calc(var(--value) * 1%),
+    #e5e7eb 100%
+  );
+  outline: none;
+  border-radius: 9999px; /* Full-rounded corners */
+  cursor: pointer;
+}
+
+/* Webkit Browsers */
+.range-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  background: transparent; /* Use linear gradient from main class */
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #4caf50; /* Green thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffffff; /* Optional border */
+  margin-top: -9px; /* Center thumb */
+}
+
+/* Firefox */
+.range-slider::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  background: transparent; /* Use linear gradient from main class */
+}
+
+.range-slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background-color: #4caf50; /* Green thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffffff; /* Optional border */
+}
+
+/* Edge and IE */
+.range-slider::-ms-track {
+  width: 100%;
+  height: 2px;
+  background: transparent; /* Use linear gradient from main class */
+  border-color: transparent;
+  color: transparent;
+}
+
+.range-slider::-ms-fill-lower {
+  background: #ff0000; /* Red for the filled portion */
+}
+
+.range-slider::-ms-fill-upper {
+  background: #e5e7eb; /* Gray for the unfilled portion */
+}
+
+.range-slider::-ms-thumb {
+  height: 20px;
+  width: 20px;
+  background-color: #4caf50; /* Green thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffffff; /* Optional border */
+  margin-top: 0; /* Center thumb */
+}

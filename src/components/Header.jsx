@@ -20,7 +20,9 @@ const Header = () => {
               <Image src={Logo} width={72} height={59} alt="" />
             </Link>
             <div className="order-2 hidden items-center md:flex gap-2">
-              <Button>Contact Us</Button>
+              <Link href="/contact-us">
+                <Button>Contact Us</Button>
+              </Link>
               <ReactFlagsSelect
                 className="mb-[-5px]"
                 showSelectedLabel={false}

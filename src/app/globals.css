@@ -29,3 +29,15 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+@layer utilities {
+  .range-thumb::-webkit-slider-thumb {
+    @apply bg-blue-500 rounded-full w-4 h-4; /* Customize as needed */
+  }
+  .range-thumb::-moz-range-thumb {
+    @apply bg-blue-500 rounded-full w-4 h-4; /* Customize as needed */
+  }
+  .range-thumb::-ms-thumb {
+    @apply bg-blue-500 rounded-full w-4 h-4; /* Customize as needed */
+  }
+}
