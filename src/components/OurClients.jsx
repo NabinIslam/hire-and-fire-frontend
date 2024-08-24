@@ -62,7 +62,7 @@ const OurClients = () => {
             <Image
               className="object-contain px-12"
               src="/images/clients/Upwork-logo.png"
-              alt="Flexjobs Logo"
+              alt="Upwork Logo"
               fill
             />
           </div>
@@ -70,7 +70,7 @@ const OurClients = () => {
             <Image
               className="object-contain px-12"
               src="/images/clients/linkedin-logo.png"
-              alt="Flexjobs Logo"
+              alt="Linkedin Logo"
               fill
             />
           </div>
@@ -78,15 +78,15 @@ const OurClients = () => {
             <Image
               className="object-contain px-12"
               src="/images/clients/glassdoor-logo.png"
-              alt="Flexjobs Logo"
+              alt="Glassdoor Logo"
               fill
             />
           </div>
           <div className="relative min-h-[134px] shadow-lg rounded-lg border">
             <Image
               className="object-contain px-12"
-              src="/images/clients/indeed-logo.png"
-              alt="Flexjobs Logo"
+              src="/images/clients/Indeed-logo.png"
+              alt="Indeed Logo"
               fill
             />
           </div>

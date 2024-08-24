@@ -91,7 +91,13 @@ const Header = () => {
               </Navbar.Link>
               <Navbar.Link>
                 <MegaMenu.Dropdown
-                  toggle={<p className="font-semibold">Find Worker</p>}
+                  toggle={
+                    <p
+                      className={`${pathname === "about-us" ? "text-primary" : ""} hover:text-primary font-semibold`}
+                    >
+                      Find Worker
+                    </p>
+                  }
                 >
                   <ul className="grid grid-cols-1">
                     <div className="space-y-4 p-4">
@@ -139,7 +145,13 @@ const Header = () => {
               </Link>
               <Navbar.Link>
                 <MegaMenu.Dropdown
-                  toggle={<p className="font-semibold">Resources</p>}
+                  toggle={
+                    <p
+                      className={`${pathname === "about-us" ? "text-primary" : ""} hover:text-primary font-semibold`}
+                    >
+                      Resources
+                    </p>
+                  }
                 >
                   <ul className="grid grid-cols-1">
                     <div className="space-y-4 p-4">
