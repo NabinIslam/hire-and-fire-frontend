@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#004785] py-[50px] text-white">
+    <footer className="bg-[#004785] pt-[50px] pb-[25px] text-white">
       <div className="container space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
           <div className="space-y-4">
@@ -103,13 +103,13 @@ const Footer = () => {
           <div className="space-y-5">
             <span className="text-xl">Get In Touch</span>
             <p>Subscribe Our Newsletter to Get Latest Update & News</p>
-            <div className="flex bg-white rounded-md items-center justify-between">
+            <div className="h-12 flex bg-white rounded-md items-center justify-between">
               <input
-                className="h-full w-full basis-full px-3 border-none focus:ring-0 text-slate-500"
+                className="basis-full px-3 border-none focus:ring-0 text-sm text-slate-500"
                 type="text"
                 placeholder="Your Email Here"
               />
-              <button className="bg-primary hover:bg-transparent hover:bg-white text-white hover:text-primary border-2 border-primary hover:border-primary text-sm px-4 py-3 rounded-md duration-200">
+              <button className="basis-auto w-[150px] px-2 bg-primary hover:bg-transparent hover:bg-white text-white hover:text-primary border-2 border-primary hover:border-primary text-sm h-full rounded-md duration-200">
                 Contact Us
               </button>
             </div>
@@ -132,9 +132,11 @@ const Footer = () => {
         </div>
         <hr />
         <div className="flex flex-wrap flex-col gap-6 xl:flex-row items-center justify-between text-sm text-center md:text-left">
-          <div>© Copyright 2024 “Hire & Fire” All Rights Reserved.</div>
-          <div>
-            <ul className="flex gap-8">
+          <div className="basis-full lg:basis-1/3">
+            © Copyright 2024 “Hire & Fire” All Rights Reserved.
+          </div>
+          <div className="basis-full lg:basis-1/3">
+            <ul className="flex items-center justify-center gap-8">
               <li>
                 <Link href="#">Privacy Policy</Link>
               </li>
@@ -146,13 +148,15 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col xl:flex-row items-center gap-3 xl:gap-10">
-            Follow Us
-            <span className="flex items-center gap-3">
-              <FaFacebook className="bg-white text-[#f90945] p-1 rounded-full text-2xl" />
-              <FaInstagram className="bg-white text-[#f90945] p-1 rounded-full text-2xl" />
-              <FaTwitter className="bg-white text-[#f90945] p-1 rounded-full text-2xl" />
-            </span>
+          <div className="basis-full lg:basis-1/3 ">
+            <div className="flex flex-col xl:flex-row items-center gap-3 xl:gap-10">
+              Follow Us
+              <span className="flex items-center gap-3">
+                <FaFacebook className="bg-white text-[#f90945] p-1 rounded-full text-2xl" />
+                <FaInstagram className="bg-white text-[#f90945] p-1 rounded-full text-2xl" />
+                <FaTwitter className="bg-white text-[#f90945] p-1 rounded-full text-2xl" />
+              </span>
+            </div>
           </div>
         </div>
       </div>

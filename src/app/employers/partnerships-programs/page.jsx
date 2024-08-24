@@ -7,7 +7,7 @@ const PartnershipsPrograms = () => {
   return (
     <main>
       <PageBanner title="Partnerships Programs" />
-      <section className="pt-[100px] pb-[50px]">
+      <section className="pt-[100px]">
         <div className="container flex flex-col lg:flex-row items-center justify-between md:gap-[50px] lg:gap-[100px]">
           <div className="basis-full lg:basis-1/2 text-center lg:text-left">
             <h6 className="text-primary text-2xl font-medium">

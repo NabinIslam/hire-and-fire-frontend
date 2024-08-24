@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutHero = () => {
   return (
-    <section className="py-[50px] text-black">
+    <section className="pt-[100px] pb-[50px] text-black">
       <div className="container flex flex-col lg:flex-row items-center justify-between gap-16">
         <div className="text-center lg:text-left basis-full lg:basis-1/2 space-y-6">
           <h6 className="text-primary text-2xl font-medium">About Us</h6>

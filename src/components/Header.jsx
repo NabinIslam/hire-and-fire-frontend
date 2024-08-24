@@ -6,9 +6,11 @@ import ReactFlagsSelect from "react-flags-select";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [selected, setSelected] = useState("US");
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 bg-white z-[10000] shadow">
@@ -16,7 +18,7 @@ const Header = () => {
         <MegaMenu>
           <div className="container flex flex-wrap items-center justify-between md:space-x-8">
             <Link href="/">
-              <Image src="/images/Logo.png" width={62} height={49} alt="" />
+              <Image src="/images/Logo.png" width={52} height={39} alt="" />
             </Link>
             <div className="order-2 hidden items-center md:flex gap-2">
               <Link href="/contact-us">
@@ -32,123 +34,146 @@ const Header = () => {
             </div>
             <Navbar.Toggle />
             <Navbar.Collapse>
-              <Link href="/about-us">About Us</Link>
+              <Link
+                className={`${pathname === "/about-us" ? "text-primary" : ""} hover:text-primary font-semibold`}
+                href="/about-us"
+              >
+                About Us
+              </Link>
               <Navbar.Link>
-                <MegaMenu.Dropdown toggle={<>Employers</>}>
+                <MegaMenu.Dropdown
+                  toggle={
+                    <p
+                      href="#"
+                      className={`${pathname === "about-us" ? "text-primary" : ""} hover:text-primary font-semibold`}
+                    >
+                      Employers
+                    </p>
+                  }
+                >
                   <ul className="grid grid-cols-1">
                     <div className="space-y-4 p-4">
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Employer 1
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Employer 2
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Employer 3
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Employer 4
-                        </a>
+                        </Link>
                       </li>
                     </div>
                   </ul>
                 </MegaMenu.Dropdown>
               </Navbar.Link>
               <Navbar.Link>
-                <MegaMenu.Dropdown toggle={<>Find Worker</>}>
+                <MegaMenu.Dropdown
+                  toggle={<p className="font-semibold">Find Worker</p>}
+                >
                   <ul className="grid grid-cols-1">
                     <div className="space-y-4 p-4">
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Worker 1
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Worker 2
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Worker 3
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Worker 4
-                        </a>
+                        </Link>
                       </li>
                     </div>
                   </ul>
                 </MegaMenu.Dropdown>
               </Navbar.Link>
-              <Navbar.Link href="#">Industry</Navbar.Link>
+              <Link
+                className={`${pathname === "/industry" ? "text-primary" : ""} hover:text-primary font-semibold`}
+                href="/industry"
+              >
+                Industry
+              </Link>
               <Navbar.Link>
-                <MegaMenu.Dropdown toggle={<>Resources</>}>
+                <MegaMenu.Dropdown
+                  toggle={<p className="font-semibold">Resources</p>}
+                >
                   <ul className="grid grid-cols-1">
                     <div className="space-y-4 p-4">
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Resource 1
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Resource 2
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Resource 3
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
-                          className="hover:text-primary-600 dark:hover:text-primary-500"
+                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
                           Resource 4
-                        </a>
+                        </Link>
                       </li>
                     </div>
                   </ul>
