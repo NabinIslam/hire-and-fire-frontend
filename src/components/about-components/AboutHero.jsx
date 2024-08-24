@@ -1,8 +1,5 @@
 import Button from "../ui/Button";
-import visa from "@/assets/images/visa-icon.png";
-import moneyback from "@/assets/images/moneyback-icon.png";
 import Image from "next/image";
-import aboutHeroImg from "@/assets/images/about-hero-img.png";
 
 const AboutHero = () => {
   return (
@@ -25,14 +22,19 @@ const AboutHero = () => {
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center lg:justify-start gap-10 mb-6">
             <div className="flex items-center gap-5">
-              <Image src={visa} height={40} width={40} alt="Visa Icon" />
+              <Image
+                src="/images/visa-icon.png"
+                height={40}
+                width={40}
+                alt="Visa Icon"
+              />
               <p className="text-sm font-medium">
                 95% VISA SUCCESS <br /> RATE IN EUROPE
               </p>
             </div>
             <div className="flex items-center gap-5">
               <Image
-                src={moneyback}
+                src="/images/moneyback-icon.png"
                 height={40}
                 width={40}
                 alt="Moneyback Icon"
@@ -45,7 +47,12 @@ const AboutHero = () => {
           <Button>Request Talent</Button>
         </div>
         <div className="basis-full lg:basis-1/2">
-          <Image src={aboutHeroImg} alt="" />
+          <Image
+            src="/images/about-hero-img.png"
+            alt="About Hire and Fire"
+            width={824}
+            height={624}
+          />
         </div>
       </div>
     </section>

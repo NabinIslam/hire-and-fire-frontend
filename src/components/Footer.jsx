@@ -5,7 +5,6 @@ import { FaPhone, FaEnvelope } from "react-icons/fa6";
 import { FaMapMarkerAlt, FaTwitter } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitch } from "react-icons/fa";
 import Image from "next/image";
-import logo from "@/assets/images/logo.png";
 
 const Footer = () => {
   return (
@@ -13,7 +12,12 @@ const Footer = () => {
       <div className="container space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
           <div className="space-y-4">
-            <Image src={logo} alt="" />
+            <Image
+              src="/images/Logo.png"
+              width={62}
+              height={49}
+              alt="Hire And Fire Logo"
+            />
             <p className="text-sm">
               Hire & Fire is a cutting-edge job website designed to connect
               employers with top-tier talent across various industries.
