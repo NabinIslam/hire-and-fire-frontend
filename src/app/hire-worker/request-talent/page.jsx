@@ -1,7 +1,13 @@
 "use client";
+import dynamic from "next/dynamic";
 import PageBanner from "@/components/PageBanner";
 import { useState } from "react";
 import "./request-talent.css";
+import "react-range-slider-input/dist/style.css";
+
+const RangeSlider = dynamic(() => import("react-range-slider-input"), {
+  ssr: false,
+});
 
 const RequestTalent = () => {
   const [value, setValue] = useState(50);
@@ -149,7 +155,13 @@ const RequestTalent = () => {
                 </label>
               </div>
               <div className="relative">
-                <input
+                <RangeSlider min={1} />
+
+                <div className="flex justify-between items-center text-sm">
+                  <span>1</span>
+                  <span>50</span>
+                </div>
+                {/* <input
                   className="range-thumb w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                   type="range"
                   min="0"
@@ -159,7 +171,7 @@ const RequestTalent = () => {
                   style={{
                     background: `linear-gradient(to right, #F90945 ${value}%, #d1d5db ${value}%)`,
                   }}
-                />
+                /> */}
                 {/* <input
                   className="range-slider w-full h-1 bg-primary rounded-lg appearance-none cursor-pointer"
                   type="range"
@@ -168,17 +180,12 @@ const RequestTalent = () => {
                   value={value}
                   onChange={handleChange}
                 /> */}
-                <div
+                {/* <div
                   className="absolute top-[-35px] text-white text-sm px-3 py-1 rounded-full pointer-events-none transform -translate-x-1/2"
                   style={{ left: `${value}%` }}
                 >
                   {value}
-                </div>
-
-                <div className="flex justify-between items-center text-sm">
-                  <span>1</span>
-                  <span>50</span>
-                </div>
+                </div> */}
               </div>
             </div>
             {/* field  */}

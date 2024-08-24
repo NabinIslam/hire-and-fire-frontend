@@ -30,6 +30,16 @@
   transform: translateY(-50%);
 }
 
+@media (min-width: 1024px) {
+  .prev_arrow {
+    left: 20px;
+  }
+
+  .next_arrow {
+    right: 20px;
+  }
+}
+
 @layer utilities {
   .range-thumb::-webkit-slider-thumb {
     @apply bg-blue-500 rounded-full w-4 h-4; /* Customize as needed */
