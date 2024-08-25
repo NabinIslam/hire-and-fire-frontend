@@ -11,7 +11,7 @@ const Accordion = ({ title, answer }) => {
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between items-center w-full px-6 py-1"
       >
-        <div className="font-medium text-xl text-left basis-full">{title}</div>
+        <div className="font-medium text-lg text-left basis-full">{title}</div>
         <div className="basis-[30px] flex items-center justify-end">
           {accordionOpen ? (
             <FaMinus className="text-xl" />

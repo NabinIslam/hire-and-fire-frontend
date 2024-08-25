@@ -23,61 +23,85 @@ const FAQ = () => {
 
             <div className="space-y-4">
               <Accordion
-                title={"How does Hire & Fire work? How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
               />
               <Accordion
-                title={"How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
               />
               <Accordion
-                title={"How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
               />
               <Accordion
-                title={"How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
               />
               <Accordion
-                title={"How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
               />
               <Accordion
-                title={"How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
               />
               <Accordion
-                title={"How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
               />
               <Accordion
-                title={"How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
               />
               <Accordion
-                title={"How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
               />
               <Accordion
-                title={"How does Hire & Fire work?"}
+                title={"What is Hire & Fire?"}
+                answer={
+                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
+                }
+              />
+              <Accordion
+                title={"What is Hire & Fire?"}
+                answer={
+                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
+                }
+              />
+              <Accordion
+                title={"What is Hire & Fire?"}
+                answer={
+                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
+                }
+              />
+              <Accordion
+                title={"What is Hire & Fire?"}
+                answer={
+                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
+                }
+              />
+              <Accordion
+                title={"What is Hire & Fire?"}
                 answer={
                   "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
                 }
