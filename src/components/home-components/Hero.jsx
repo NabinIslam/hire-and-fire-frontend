@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "../ui/Button";
 import HomeHeroImg from "../../../public/images/home-hero-img.png";
+import BgButton from "../ui/BgButton";
 
 const Hero = () => {
   return (
@@ -11,7 +12,8 @@ const Hero = () => {
             Connecting Employers <br /> with Top Global Talent
           </h1>
           <p className="mb-5 mt-3">Bringing skilled workers to your business</p>
-          <Button>Find Talent</Button>
+
+          <BgButton>Find Talent</BgButton>
         </div>
         <div>
           <Image

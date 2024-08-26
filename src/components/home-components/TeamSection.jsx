@@ -7,21 +7,27 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import Button from "../ui/Button";
 import Link from "next/link";
+import TitleDescSection from "../TitleDescSection";
 
 const TeamSection = () => {
   return (
-    <section className="py-[50px] space-y-10">
-      <div className="container space-y-6">
-        <h2 className="text-center text-4xl lg:text-5xl font-semibold">
-          Team of recruitment expert
-        </h2>
-        <p className="text-center text-sm font-medium">
-          A team of recruitment experts specializes in sourcing, assessing, and
-          hiring top talent to <br /> meet organizational needs efficiently and
-          effectively.
-        </p>
-      </div>
+    // <section className="py-[50px] space-y-10">
+    //   <div className="container space-y-6">
+    //     <h2 className="text-center text-4xl lg:text-5xl font-semibold">
+    //       Team of recruitment expert
+    //     </h2>
+    //     <p className="text-center text-sm font-medium">
+    //       A team of recruitment experts specializes in sourcing, assessing, and
+    //       hiring top talent to <br /> meet organizational needs efficiently and
+    //       effectively.
+    //     </p>
+    //   </div>
 
+    // </section>
+    <TitleDescSection
+      title="Team of recruitment expert"
+      description=" A team of recruitment experts specializes in sourcing, assessing, and hiring top talent to <br /> meet organizational needs efficiently and effectively."
+    >
       <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {/* team card */}
         <div className="group shadow-xl rounded-lg">
@@ -129,10 +135,12 @@ const TeamSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        <Button>View All Team</Button>
+      <div className="flex justify-center mt-10">
+        <Link href="/about-us">
+          <Button>View All Team</Button>
+        </Link>
       </div>
-    </section>
+    </TitleDescSection>
   );
 };
 

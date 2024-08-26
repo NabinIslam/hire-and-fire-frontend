@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./ui/Button";
+import BgButton from "./ui/BgButton";
 
 const WhyChooseUs = () => {
   return (
@@ -14,14 +15,19 @@ const WhyChooseUs = () => {
             interface, compliance assurance, and dedicated support for both
             employers
           </p>
-          <Button>Contact Us</Button>
+          <BgButton>Contact Us</BgButton>
         </div>
         {/* column */}
 
         <div className="basis-full lg:basis-2/3 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-x-20">
           <div className="flex gap-2">
             <div className="basis-8">
-              <Image className="mt-1" src="/images/check-icon.png" height={24} width={24} />
+              <Image
+                className="mt-1"
+                src="/images/check-icon.png"
+                height={24}
+                width={24}
+              />
             </div>
             <div className="basis-full space-y-3">
               <h6 className="font-medium text-2xl">Global Network</h6>
@@ -34,7 +40,12 @@ const WhyChooseUs = () => {
 
           <div className="flex gap-2">
             <div className="basis-8">
-              <Image className="mt-1" src="/images/check-icon.png" height={24} width={24} />
+              <Image
+                className="mt-1"
+                src="/images/check-icon.png"
+                height={24}
+                width={24}
+              />
             </div>
             <div className="basis-full space-y-3">
               <h6 className="font-medium text-2xl">Industry Expertise</h6>
@@ -47,7 +58,12 @@ const WhyChooseUs = () => {
 
           <div className="flex gap-2">
             <div className="basis-8">
-              <Image className="mt-1" src="/images/check-icon.png" height={24} width={24} />
+              <Image
+                className="mt-1"
+                src="/images/check-icon.png"
+                height={24}
+                width={24}
+              />
             </div>
             <div className="basis-full space-y-3">
               <h6 className="font-medium text-2xl">Commitment</h6>
@@ -59,7 +75,12 @@ const WhyChooseUs = () => {
 
           <div className="flex gap-2">
             <div className="basis-8">
-              <Image className="mt-1" src="/images/check-icon.png" height={24} width={24} />
+              <Image
+                className="mt-1"
+                src="/images/check-icon.png"
+                height={24}
+                width={24}
+              />
             </div>
             <div className="basis-full space-y-3">
               <h6 className="font-medium text-2xl">Efficiency</h6>

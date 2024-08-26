@@ -1,6 +1,6 @@
-const TitleDescSection = ({ title, description, children }) => {
+const TitleDescSection = ({ title, description, children, className }) => {
   return (
-    <section className="py-[50px] space-y-8">
+    <section className={`py-[50px] space-y-8 ${children}`}>
       <div className="container space-y-4">
         <h2 className="text-center text-4xl lg:text-5xl font-semibold">
           {title}
