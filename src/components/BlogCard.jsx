@@ -62,7 +62,7 @@ const BlogCard = () => {
       </p>
       <Link
         className="text-primary text-sm font-medium flex items-center"
-        href="#"
+        href={`/resources/blog/article-slug`}
       >
         Read more
         <IoMdArrowDropright className="text-xl" />

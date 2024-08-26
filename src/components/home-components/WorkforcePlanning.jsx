@@ -5,7 +5,9 @@ const WorkforcePlanning = () => {
     <section className="py-[50px]">
       <div className="container flex flex-col lg:flex-row items-center justify-between gap-24">
         <div className="space-y-5 basis-1/2 text-center lg:text-left">
-          <h2 className="text-4xl lg:text-5xl font-semibold">Workforce Planning</h2>
+          <h2 className="text-4xl lg:text-5xl font-semibold">
+            Workforce Planning
+          </h2>
           <p className="text-sm font-medium">
             Workforce planning involves strategically forecasting and managing
             an organization's current and future workforce needs. It includes
@@ -26,7 +28,7 @@ const WorkforcePlanning = () => {
       </div>
       <div className="container mt-[50px] grid grid-cols-1 lg:grid-cols-3 gap-5">
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="50"
@@ -61,7 +63,7 @@ const WorkforcePlanning = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="50"
@@ -82,7 +84,7 @@ const WorkforcePlanning = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="50"

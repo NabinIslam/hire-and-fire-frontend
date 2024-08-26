@@ -28,7 +28,7 @@ const ContractStaffing = () => {
       </div>
       <div className="container mt-[50px] grid grid-cols-1 lg:grid-cols-3 gap-5">
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="48"
@@ -50,7 +50,7 @@ const ContractStaffing = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="36"
@@ -74,7 +74,7 @@ const ContractStaffing = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="42"

@@ -5,7 +5,9 @@ const PermanentRecruitment = () => {
     <section className="pb-[50px] pt-[100px]">
       <div className="container flex flex-col lg:flex-row items-center justify-between gap-24">
         <div className="space-y-5 basis-1/2 text-center lg:text-left">
-          <h2 className="text-4xl lg:text-5xl font-semibold">Permanent Recruitment</h2>
+          <h2 className="text-4xl lg:text-5xl font-semibold">
+            Permanent Recruitment
+          </h2>
           <p className="text-sm font-medium">
             Permanent recruitment involves the process of hiring employees for
             long-term positions within an organization. It includes sourcing
@@ -20,12 +22,16 @@ const PermanentRecruitment = () => {
           <Button>See more</Button>
         </div>
         <div className="basis-1/2">
-          <img className="text-center" src="/permanent-recruitment.png" alt="" />
+          <img
+            className="text-center"
+            src="/permanent-recruitment.png"
+            alt=""
+          />
         </div>
       </div>
       <div className="container mt-[50px] grid grid-cols-1 lg:grid-cols-3 gap-5">
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="50"
@@ -46,7 +52,7 @@ const PermanentRecruitment = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="50"
@@ -70,7 +76,7 @@ const PermanentRecruitment = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-5 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="50"
