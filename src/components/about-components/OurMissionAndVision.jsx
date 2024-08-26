@@ -7,7 +7,7 @@ const OurMissionAndVision = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-6xl mx-auto">
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:group-hover:stroke-white"
             width={50}
@@ -31,7 +31,7 @@ const OurMissionAndVision = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg">
+        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
           <svg
             className="mx-auto group-hover:group-hover:stroke-white"
             width={50}
