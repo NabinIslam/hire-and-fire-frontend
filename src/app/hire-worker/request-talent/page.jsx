@@ -3,8 +3,7 @@
 import PageBanner from "@/components/PageBanner";
 import { useState } from "react";
 import "./request-talent.css";
-import "rsuite/dist/rsuite-no-reset.min.css";
-import { Slider } from "rsuite";
+import { Slider } from "rsuite/Slider";
 
 const RequestTalent = () => {
   const [value, setValue] = useState([20, 80]);
