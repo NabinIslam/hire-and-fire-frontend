@@ -19,8 +19,6 @@ const Breadcrumbs = () => {
           {capitalizeAndRemoveHyphens(part)}
         </React.Fragment>
       ))}
-      {/* Home <MdKeyboardDoubleArrowRight />
-      About Us */}
     </div>
   );
 };

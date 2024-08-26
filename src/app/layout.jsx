@@ -1,4 +1,5 @@
 import { Montserrat } from "next/font/google";
+import "rsuite/dist/rsuite-no-reset.min.css";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -18,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} min-h-screen flex flex-col`}>
         <Header />
         <RsuiteProvider>{children}</RsuiteProvider>
         <Footer />

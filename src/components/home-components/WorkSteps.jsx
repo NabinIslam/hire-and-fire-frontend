@@ -12,7 +12,7 @@ const WorkSteps = () => {
       <div className="container flex flex-col xl:flex-row items-center justify-between gap-5 mt-[60px]">
         {/* step card start*/}
 
-        <div className="relative group shadow-lg w-[350px] min-h-[270px]">
+        <div className="relative group shadow-lg w-[350px] min-h-[270px] hover:scale-105 duration-200">
           <div className="m-5 space-y-4">
             <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
               <svg
@@ -54,7 +54,7 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="relative group shadow-lg w-[350px] min-h-[270px]">
+        <div className="relative group shadow-lg w-[350px] min-h-[270px] hover:scale-105 duration-200">
           <div className="m-5 space-y-4">
             <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
               <svg
@@ -114,7 +114,7 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="relative group shadow-lg w-[350px] h-[270px]">
+        <div className="relative group shadow-lg w-[350px] h-[270px] hover:scale-105 duration-200">
           <div className="m-5 space-y-4">
             <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
               <svg
@@ -174,7 +174,7 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="relative group shadow-lg w-[350px] min-h-[270px]">
+        <div className="relative group shadow-lg w-[350px] min-h-[270px] hover:scale-105 duration-200">
           <div className="m-5 space-y-4">
             <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
               <svg

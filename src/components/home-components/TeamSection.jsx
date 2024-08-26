@@ -27,17 +27,20 @@ const TeamSection = () => {
         <div className="group shadow-xl rounded-lg">
           <div className="relative">
             <Image className="" src={team1} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
-              <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <Link href="#">
-                  <FaLinkedinIn className="text-secondary group-hover:text-primary" />
-                </Link>
-              </div>
-              <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <Link href="#">
-                  <FaEnvelope className="text-secondary group-hover:text-primary" />
-                </Link>
-              </div>
+            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 h-[50px] flex items-center justify-center gap-6 rounded-lg">
+              <Link
+                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                href="#"
+              >
+                <FaLinkedinIn className="text-secondary group-hover:text-primary" />
+              </Link>
+
+              <Link
+                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                href="#"
+              >
+                <FaEnvelope className="text-secondary group-hover:text-primary" />
+              </Link>
             </div>
           </div>
           <div className="py-4">
@@ -50,17 +53,20 @@ const TeamSection = () => {
         <div className="group shadow-xl rounded-lg">
           <div className="relative">
             <Image className="" src={team2} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
-              <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <Link href="#">
-                  <FaLinkedinIn className="text-secondary group-hover:text-primary" />
-                </Link>
-              </div>
-              <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <Link href="#">
-                  <FaEnvelope className="text-secondary group-hover:text-primary" />
-                </Link>
-              </div>
+            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 h-[50px] flex items-center justify-center gap-6 rounded-lg">
+              <Link
+                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                href="#"
+              >
+                <FaLinkedinIn className="text-secondary group-hover:text-primary" />
+              </Link>
+
+              <Link
+                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                href="#"
+              >
+                <FaEnvelope className="text-secondary group-hover:text-primary" />
+              </Link>
             </div>
           </div>
           <div className="py-4">
@@ -74,17 +80,20 @@ const TeamSection = () => {
         <div className="group shadow-xl rounded-lg">
           <div className="relative">
             <Image className="" src={team3} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
-              <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <Link href="#">
-                  <FaLinkedinIn className="text-secondary group-hover:text-primary" />
-                </Link>
-              </div>
-              <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <Link href="#">
-                  <FaEnvelope className="text-secondary group-hover:text-primary" />
-                </Link>
-              </div>
+            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 h-[50px] flex items-center justify-center gap-6 rounded-lg">
+              <Link
+                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                href="#"
+              >
+                <FaLinkedinIn className="text-secondary group-hover:text-primary" />
+              </Link>
+
+              <Link
+                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                href="#"
+              >
+                <FaEnvelope className="text-secondary group-hover:text-primary" />
+              </Link>
             </div>
           </div>
           <div className="py-4">
@@ -98,17 +107,20 @@ const TeamSection = () => {
         <div className="group shadow-xl rounded-lg">
           <div className="relative">
             <Image className="" src={team4} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
-              <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <Link href="#">
-                  <FaLinkedinIn className="text-secondary group-hover:text-primary" />
-                </Link>
-              </div>
-              <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <Link href="#">
-                  <FaEnvelope className="text-secondary group-hover:text-primary" />
-                </Link>
-              </div>
+            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 h-[50px] flex items-center justify-center gap-6 rounded-lg">
+              <Link
+                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                href="#"
+              >
+                <FaLinkedinIn className="text-secondary group-hover:text-primary" />
+              </Link>
+
+              <Link
+                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                href="#"
+              >
+                <FaEnvelope className="text-secondary group-hover:text-primary" />
+              </Link>
             </div>
           </div>
           <div className="py-4">

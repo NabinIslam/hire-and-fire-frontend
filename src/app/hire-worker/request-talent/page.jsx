@@ -1,9 +1,8 @@
-"use client";
+'use client'
 
 import PageBanner from "@/components/PageBanner";
 import { useState } from "react";
-import "./request-talent.css";
-import { Slider } from "rsuite/Slider";
+import { Slider } from "rsuite";
 
 const RequestTalent = () => {
   const [value, setValue] = useState([20, 80]);
