@@ -6,6 +6,7 @@ import Image from "next/image";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 const TeamSection = () => {
   return (
@@ -23,15 +24,19 @@ const TeamSection = () => {
 
       <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {/* team card */}
-        <div className="shadow-xl rounded-lg">
+        <div className="group shadow-xl rounded-lg">
           <div className="relative">
             <Image className="" src={team1} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
+            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
               <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <FaLinkedinIn className="text-secondary" />
+                <Link href="#">
+                  <FaLinkedinIn className="text-secondary group-hover:text-primary" />
+                </Link>
               </div>
               <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <FaEnvelope className="text-secondary" />
+                <Link href="#">
+                  <FaEnvelope className="text-secondary group-hover:text-primary" />
+                </Link>
               </div>
             </div>
           </div>
@@ -42,15 +47,19 @@ const TeamSection = () => {
         </div>
 
         {/* team card */}
-        <div className="shadow-xl rounded-lg">
+        <div className="group shadow-xl rounded-lg">
           <div className="relative">
             <Image className="" src={team2} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
+            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
               <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <FaLinkedinIn className="text-secondary" />
+                <Link href="#">
+                  <FaLinkedinIn className="text-secondary group-hover:text-primary" />
+                </Link>
               </div>
               <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <FaEnvelope className="text-secondary" />
+                <Link href="#">
+                  <FaEnvelope className="text-secondary group-hover:text-primary" />
+                </Link>
               </div>
             </div>
           </div>
@@ -62,15 +71,19 @@ const TeamSection = () => {
 
         {/* team card */}
 
-        <div className="shadow-xl rounded-lg">
+        <div className="group shadow-xl rounded-lg">
           <div className="relative">
             <Image className="" src={team3} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
+            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
               <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <FaLinkedinIn className="text-secondary" />
+                <Link href="#">
+                  <FaLinkedinIn className="text-secondary group-hover:text-primary" />
+                </Link>
               </div>
               <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <FaEnvelope className="text-secondary" />
+                <Link href="#">
+                  <FaEnvelope className="text-secondary group-hover:text-primary" />
+                </Link>
               </div>
             </div>
           </div>
@@ -82,15 +95,19 @@ const TeamSection = () => {
 
         {/* team card */}
 
-        <div className="shadow-xl rounded-lg">
+        <div className="group shadow-xl rounded-lg">
           <div className="relative">
             <Image className="" src={team4} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
+            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 p-[10px] flex justify-center gap-6 rounded-l-lg rounded-b-lg">
               <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <FaLinkedinIn className="text-secondary" />
+                <Link href="#">
+                  <FaLinkedinIn className="text-secondary group-hover:text-primary" />
+                </Link>
               </div>
               <div className="bg-white size-[30px] flex justify-center items-center rounded-full">
-                <FaEnvelope className="text-secondary" />
+                <Link href="#">
+                  <FaEnvelope className="text-secondary group-hover:text-primary" />
+                </Link>
               </div>
             </div>
           </div>

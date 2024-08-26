@@ -13,11 +13,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
           <div className="space-y-4">
             <Image
-              src="/images/Logo.png"
-              width={62}
-              height={49}
-              alt="Hire And Fire Logo"
+              src="/images/Hire-Fire.png"
+              alt="Hire And Fire"
+              height={71}
+              width={90}
             />
+
             <p className="text-sm">
               Hire & Fire is a cutting-edge job website designed to connect
               employers with top-tier talent across various industries.
@@ -105,7 +106,7 @@ const Footer = () => {
             <p>Subscribe Our Newsletter to Get Latest Update & News</p>
             <div className="h-12 flex bg-white rounded-md items-center justify-between">
               <input
-                className="basis-full px-3 border-none focus:ring-0 text-sm text-slate-500"
+                className="basis-full px-3 border-none focus:ring-0 text-sm placeholder:text-slate-500 text-slate-500"
                 type="text"
                 placeholder="Your Email Here"
               />

@@ -9,7 +9,7 @@ const OurSuccess = () => {
           We believe that great companies are built by great people
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x-0  lg:divide-x lg:divide-y-0 gap-5 lg:gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x-0 lg:divide-x lg:divide-y-0 gap-5 lg:gap-0">
           <div className="p-4 space-y-5">
             <h5 className="text-xl text-center">
               25,000+ <br /> Workers Placed
