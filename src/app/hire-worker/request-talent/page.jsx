@@ -1,9 +1,10 @@
 "use client";
-import dynamic from "next/dynamic";
+
 import PageBanner from "@/components/PageBanner";
 import { useState } from "react";
 import "./request-talent.css";
-import { Slider, RangeSlider } from "rsuite";
+import "rsuite/dist/rsuite-no-reset.min.css";
+import { Slider } from "rsuite";
 
 const RequestTalent = () => {
   const [value, setValue] = useState([20, 80]);
