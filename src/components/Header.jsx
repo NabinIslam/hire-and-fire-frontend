@@ -17,7 +17,7 @@ const Header = () => {
       <nav>
         <MegaMenu>
           <div className="container flex flex-wrap items-center justify-between md:space-x-8">
-            <Link href="/">
+            <Link className="hover:scale-105 duration-200" href="/">
               <Image src="/images/Logo.png" width={52} height={39} alt="" />
             </Link>
             <div className="order-2 hidden items-center md:flex gap-2">

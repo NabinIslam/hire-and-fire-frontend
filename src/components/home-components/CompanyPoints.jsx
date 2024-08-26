@@ -3,7 +3,7 @@ const CompanyPoints = () => {
     <section className="mt-[-90px]">
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200">
+        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200 hover:scale-105">
           <div className="mx-auto bg-primary group-hover:bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center">
             <svg
               className="stroke-white group-hover:stroke-primary stroke-2"
@@ -29,7 +29,7 @@ const CompanyPoints = () => {
           </div>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200">
+        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200 hover:scale-105">
           <div className="mx-auto bg-primary group-hover:bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center">
             <svg
               className="stroke-white group-hover:stroke-primary stroke-2"
@@ -55,7 +55,7 @@ const CompanyPoints = () => {
           </div>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200">
+        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200 hover:scale-105">
           <div className="mx-auto bg-primary group-hover:bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center">
             <svg
               className="stroke-white group-hover:stroke-primary stroke-2"
@@ -81,7 +81,7 @@ const CompanyPoints = () => {
           </div>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200">
+        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200 hover:scale-105">
           <div className="mx-auto bg-primary group-hover:bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center">
             <svg
               className="stroke-white group-hover:stroke-primary stroke-2"
