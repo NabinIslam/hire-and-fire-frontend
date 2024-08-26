@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "rsuite/dist/rsuite-no-reset.min.css";
-import { CustomProvider } from "rsuite";
+import RsuiteProvider from "@/providers/RsuiteProvider";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={montserrat.className}>
         <Header />
-        <CustomProvider>{children}</CustomProvider>
+        <RsuiteProvider>{children}</RsuiteProvider>
         <Footer />
       </body>
     </html>

@@ -11,6 +11,7 @@ const RequestTalent = () => {
   const handleChange = (e) => {
     setValue(e.target.value);
   };
+
   return (
     <main>
       <PageBanner title="Request Talent" />
