@@ -55,34 +55,26 @@ const Header = () => {
                     <div className="space-y-4 p-4">
                       <li>
                         <Link
-                          href="#"
+                          href="/employers/employment-service"
                           className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
-                          Employer 1
+                          Employment Service
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/employers/additional-support"
                           className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
-                          Employer 2
+                          Additional Support
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/employers/partnerships-programs"
                           className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
-                          Employer 3
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
-                        >
-                          Employer 4
+                          Partnerships Programs
                         </Link>
                       </li>
                     </div>
@@ -95,7 +87,7 @@ const Header = () => {
                     <p
                       className={`${pathname === "about-us" ? "text-primary" : ""} hover:text-primary font-semibold`}
                     >
-                      Find Worker
+                      Hire Worker
                     </p>
                   }
                 >
@@ -103,34 +95,18 @@ const Header = () => {
                     <div className="space-y-4 p-4">
                       <li>
                         <Link
-                          href="#"
+                          href="/hire-worker/our-process"
                           className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
-                          Worker 1
+                          Our Process
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/hire-worker/request-talent"
                           className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
-                          Worker 2
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
-                        >
-                          Worker 3
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
-                        >
-                          Worker 4
+                          Request Talent
                         </Link>
                       </li>
                     </div>
@@ -145,6 +121,7 @@ const Header = () => {
               </Link>
               <Navbar.Link>
                 <MegaMenu.Dropdown
+                
                   toggle={
                     <p
                       className={`${pathname === "about-us" ? "text-primary" : ""} hover:text-primary font-semibold`}
@@ -157,34 +134,18 @@ const Header = () => {
                     <div className="space-y-4 p-4">
                       <li>
                         <Link
-                          href="#"
+                          href="/resources/faq"
                           className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
-                          Resource 1
+                          FAQ
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/resources/blog"
                           className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
                         >
-                          Resource 2
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
-                        >
-                          Resource 3
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
-                        >
-                          Resource 4
+                          Blog
                         </Link>
                       </li>
                     </div>

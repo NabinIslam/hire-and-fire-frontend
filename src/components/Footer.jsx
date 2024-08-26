@@ -131,7 +131,7 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="flex flex-wrap flex-col gap-6 xl:flex-row items-center justify-between text-sm text-center md:text-left">
+        <div className="flex flex-col gap-6 xl:flex-row items-center justify-between text-sm text-center md:text-left">
           <div className="basis-full lg:basis-1/3">
             © Copyright 2024 “Hire & Fire” All Rights Reserved.
           </div>
@@ -148,13 +148,19 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="basis-full lg:basis-1/3 ">
-            <div className="flex flex-col xl:flex-row items-center gap-3 xl:gap-10">
+          <div className="basis-full lg:basis-1/3">
+            <div className="flex flex-col xl:flex-row items-center justify-end gap-3 xl:gap-10 font-medium">
               Follow Us
               <span className="flex items-center gap-3">
-                <FaFacebook className="bg-white text-[#f90945] p-1 rounded-full text-2xl" />
-                <FaInstagram className="bg-white text-[#f90945] p-1 rounded-full text-2xl" />
-                <FaTwitter className="bg-white text-[#f90945] p-1 rounded-full text-2xl" />
+                <Link href="#">
+                  <FaFacebook className="bg-white hover:bg-primary text-[#f90945] hover:text-white duration-200 p-1 rounded-full text-2xl" />
+                </Link>
+                <Link href="#">
+                  <FaInstagram className="bg-white hover:bg-primary text-[#f90945] hover:text-white duration-200 p-1 rounded-full text-2xl" />
+                </Link>
+                <Link href="#">
+                  <FaTwitter className="bg-white hover:bg-primary text-[#f90945] hover:text-white duration-200 p-1 rounded-full text-2xl" />
+                </Link>
               </span>
             </div>
           </div>
