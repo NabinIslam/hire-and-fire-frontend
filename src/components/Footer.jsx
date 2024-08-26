@@ -139,13 +139,19 @@ const Footer = () => {
           <div className="basis-full lg:basis-1/3">
             <ul className="flex items-center justify-center gap-8">
               <li>
-                <Link href="#">Privacy Policy</Link>
+                <Link className="hover:underline duration-200" href="#">
+                  Privacy Policy
+                </Link>
               </li>
               <li>
-                <Link href="#">Terms & Conditions</Link>
+                <Link className="hover:underline duration-200" href="#">
+                  Terms & Conditions
+                </Link>
               </li>
               <li>
-                <Link href="#">Cookie Policy</Link>
+                <Link className="hover:underline duration-200" href="#">
+                  Cookie Policy
+                </Link>
               </li>
             </ul>
           </div>
