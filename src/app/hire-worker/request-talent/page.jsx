@@ -3,14 +3,10 @@ import dynamic from "next/dynamic";
 import PageBanner from "@/components/PageBanner";
 import { useState } from "react";
 import "./request-talent.css";
-import "react-range-slider-input/dist/style.css";
-
-const RangeSlider = dynamic(() => import("react-range-slider-input"), {
-  ssr: false,
-});
+import { Slider, RangeSlider } from "rsuite";
 
 const RequestTalent = () => {
-  const [value, setValue] = useState(50);
+  const [value, setValue] = useState([20, 80]);
 
   const handleChange = (e) => {
     setValue(e.target.value);
@@ -155,12 +151,23 @@ const RequestTalent = () => {
                 </label>
               </div>
               <div className="relative">
-                <RangeSlider min={1} />
-
                 <div className="flex justify-between items-center text-sm">
                   <span>1</span>
                   <span>50</span>
                 </div>
+
+                <Slider
+                  barClassName="bg-white"
+                  progress
+                  defaultValue={25}
+                  min={1}
+                  max={50}
+                  onChange={(value) => {
+                    console.log(value);
+                  }}
+                />
+                <hr />
+
                 {/* <input
                   className="range-thumb w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                   type="range"

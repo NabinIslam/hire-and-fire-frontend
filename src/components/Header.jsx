@@ -56,7 +56,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/employers/employment-service"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
+                          className={`${pathname === "/employers/employment-service" ? "text-primary" : ""} hover:text-primary font-semibold`}
                         >
                           Employment Service
                         </Link>
@@ -64,7 +64,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/employers/additional-support"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
+                          className={`${pathname === "/employers/additional-support" ? "text-primary" : ""} hover:text-primary font-semibold`}
                         >
                           Additional Support
                         </Link>
@@ -72,7 +72,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/employers/partnerships-programs"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
+                          className={`${pathname === "/employers/partnerships-programs" ? "text-primary" : ""} hover:text-primary font-semibold`}
                         >
                           Partnerships Programs
                         </Link>
@@ -96,7 +96,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/hire-worker/our-process"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
+                          className={`${pathname === "/hire-worker/our-process" ? "text-primary" : ""} hover:text-primary font-semibold`}
                         >
                           Our Process
                         </Link>
@@ -104,7 +104,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/hire-worker/request-talent"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
+                          className={`${pathname === "/hire-worker/request-talent" ? "text-primary" : ""} hover:text-primary font-semibold`}
                         >
                           Request Talent
                         </Link>
@@ -121,7 +121,6 @@ const Header = () => {
               </Link>
               <Navbar.Link>
                 <MegaMenu.Dropdown
-                
                   toggle={
                     <p
                       className={`${pathname === "about-us" ? "text-primary" : ""} hover:text-primary font-semibold`}
@@ -135,7 +134,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/resources/faq"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
+                          className={`${pathname === "/resources/faq" ? "text-primary" : ""} hover:text-primary font-semibold`}
                         >
                           FAQ
                         </Link>
@@ -143,7 +142,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/resources/blog"
-                          className="hover:text-primary dark:hover:text-primary-500 font-medium text-sm"
+                          className={`${pathname === "/resources/blog" ? "text-primary" : ""} hover:text-primary font-semibold`}
                         >
                           Blog
                         </Link>
