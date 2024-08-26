@@ -5,7 +5,7 @@ import Image from "next/image";
 const OurProcess = () => {
   return (
     <main>
-      <PageBanner title="Hire Worker" />
+      <PageBanner title="Our Process" />
       <TitleDescSection
         title="Our Process"
         description="We ensure top-quality results through a streamlined approach involving clear communication, expert execution, and continuous improvement, guaranteeing efficiency and satisfaction at every step of the project."
