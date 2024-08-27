@@ -5,10 +5,10 @@ import BgButton from "../ui/BgButton";
 
 const Hero = () => {
   return (
-    <section className="pt-[50px] pb-[140px] bg-hero-bg bg-cover bg-no-repeat text-white">
-      <div className="container flex flex-col lg:flex-row items-center justify-between gap-16">
+    <section className="bg-hero-bg bg-cover bg-no-repeat pb-[140px] pt-[50px] text-white">
+      <div className="container flex flex-col items-center justify-between gap-16 lg:flex-row">
         <div className="text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-[56px] md:leading-[60px] lg:leading-[60px] font-semibold">
+          <h1 className="text-4xl font-semibold md:text-5xl md:leading-[60px] lg:text-[56px] lg:leading-[60px]">
             Connecting Employers <br /> with Top Global Talent
           </h1>
           <p className="mb-5 mt-3">Bringing skilled workers to your business</p>
@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         <div>
           <Image
-            className="w-full h-auto"
+            className="h-auto w-full"
             src="/images/home-hero-img.png"
             alt="Home Hero Image"
             height={472}

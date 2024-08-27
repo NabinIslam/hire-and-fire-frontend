@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import PageBanner from "@/components/PageBanner";
 import { useState } from "react";
@@ -14,12 +14,12 @@ const RequestTalent = () => {
   return (
     <main>
       <PageBanner title="Request Talent" />
-      <section className="py-[100px] px-4">
-        <div className="container rounded-2xl bg-secondary py-6 lg:py-[100px] lg:px-[150px] text-white shadow-xl space-y-5">
-          <h2 className="font-semibold text-3xl lg:text-5xl text-center">
+      <section className="px-4 py-[100px]">
+        <div className="container space-y-5 rounded-2xl bg-secondary py-6 text-white shadow-xl lg:px-[150px] lg:py-[100px]">
+          <h2 className="text-center text-3xl font-semibold lg:text-5xl">
             Find Skilled Workers for your business
           </h2>
-          <p className="text-sm text-center">
+          <p className="text-center text-sm">
             Fill out this form and Contact us and find out how to most
             efficiently involve foreign workers in your business.
           </p>
@@ -33,7 +33,7 @@ const RequestTalent = () => {
               </div>
               <div>
                 <input
-                  className="w-full bg-transparent border-[2px] border-gray-300 rounded-md"
+                  className="w-full rounded-md border-[2px] border-gray-300 bg-transparent"
                   type="text"
                   id="companyName"
                   name="companyName"
@@ -50,7 +50,7 @@ const RequestTalent = () => {
               </div>
               <div>
                 <input
-                  className="w-full bg-transparent border-[2px] border-gray-300 rounded-md"
+                  className="w-full rounded-md border-[2px] border-gray-300 bg-transparent"
                   type="text"
                   id="nameAndSurname"
                   name="nameAndSurname"
@@ -67,7 +67,7 @@ const RequestTalent = () => {
               </div>
               <div>
                 <input
-                  className="w-full bg-transparent border-[2px] border-gray-300 rounded-md"
+                  className="w-full rounded-md border-[2px] border-gray-300 bg-transparent"
                   type="text"
                   id="companyTaxId"
                   name="companyTaxId"
@@ -84,7 +84,7 @@ const RequestTalent = () => {
               </div>
               <div>
                 <input
-                  className="w-full bg-transparent border-[2px] border-gray-300 rounded-md"
+                  className="w-full rounded-md border-[2px] border-gray-300 bg-transparent"
                   type="email"
                   id="email"
                   name="email"
@@ -101,7 +101,7 @@ const RequestTalent = () => {
               </div>
               <div>
                 <input
-                  className="w-full bg-transparent border-[2px] border-gray-300 rounded-md"
+                  className="w-full rounded-md border-[2px] border-gray-300 bg-transparent"
                   type="tel"
                   id="phoneNumber"
                   name="phoneNumber"
@@ -118,7 +118,7 @@ const RequestTalent = () => {
               </div>
               <div>
                 <input
-                  className="w-full bg-transparent border-[2px] border-gray-300 rounded-md"
+                  className="w-full rounded-md border-[2px] border-gray-300 bg-transparent"
                   type="tel"
                   id="foreignWorkersNumber"
                   name="foreignWorkersNumber"
@@ -135,7 +135,7 @@ const RequestTalent = () => {
               </div>
               <div>
                 <input
-                  className="w-full bg-transparent border-[2px] border-gray-300 rounded-md"
+                  className="w-full rounded-md border-[2px] border-gray-300 bg-transparent"
                   type="text"
                   id="positionForeignWorker"
                   name="positionForeignWorker"
@@ -151,7 +151,7 @@ const RequestTalent = () => {
                 </label>
               </div>
               <div className="relative">
-                <div className="flex justify-between items-center text-sm">
+                <div className="flex items-center justify-between text-sm">
                   <span>1</span>
                   <span>50</span>
                 </div>
@@ -204,7 +204,7 @@ const RequestTalent = () => {
               </div>
               <div>
                 <input
-                  className="w-full bg-transparent border-[2px] border-gray-300 rounded-md"
+                  className="w-full rounded-md border-[2px] border-gray-300 bg-transparent"
                   type="text"
                   id="locationOfWork"
                   name="locationOfWork"
@@ -221,7 +221,7 @@ const RequestTalent = () => {
               </div>
               <div>
                 <textarea
-                  className="w-full bg-transparent border-[2px] border-gray-300 rounded-md"
+                  className="w-full rounded-md border-[2px] border-gray-300 bg-transparent"
                   type="text"
                   id="comments"
                   name="comments"
@@ -231,7 +231,7 @@ const RequestTalent = () => {
               </div>
             </div>
 
-            <ul className="list-disc text-sm space-y-3 px-4">
+            <ul className="list-disc space-y-3 px-4 text-sm">
               <li>
                 By submitting this form you are agreeing with our terms and
                 polices
@@ -247,7 +247,7 @@ const RequestTalent = () => {
               <input type="checkbox" id="accept" name="accept" />
               <label for="accept">I accept</label>
             </div>
-            <button className="bg-primary hover:bg-transparent hover:bg-white text-white hover:text-primary border-2 border-primary hover:border-primary text-sm px-4 py-3 rounded-md duration-200">
+            <button className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:bg-white hover:text-primary">
               Send
             </button>
           </form>

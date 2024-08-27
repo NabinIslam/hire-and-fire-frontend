@@ -8,16 +8,16 @@ const EmploymentService = () => {
   return (
     <main>
       <PageBanner title="Employment Service" />
-      <section className="pt-[100px] pb-[50px]">
+      <section className="pb-[50px] pt-[100px]">
         <div className="container">
-          <h6 className="text-primary text-center lg:text-left text-2xl font-medium">
+          <h6 className="text-center text-2xl font-medium text-primary lg:text-left">
             Direct Employment
           </h6>
-          <h2 className="text-4xl text-center lg:text-left md:text-5xl lg:text-[40px] font-semibold mt-4">
+          <h2 className="mt-4 text-center text-4xl font-semibold md:text-5xl lg:text-left lg:text-[40px]">
             Mediation in Employment
           </h2>
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="flex gap-3 shadow-lg p-5 rounded-lg border-b-8 border-b-secondary border">
+          <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
+            <div className="flex gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg">
               <div className="basis-[50px]">
                 <Image
                   src="/images/mediation-icons/1.png"
@@ -26,7 +26,7 @@ const EmploymentService = () => {
                   width={50}
                 />
               </div>
-              <div className="space-y-4 basis-full">
+              <div className="basis-full space-y-4">
                 <h5 className="text-2xl font-medium">
                   Recruitment & Administration
                 </h5>
@@ -40,14 +40,14 @@ const EmploymentService = () => {
                   organization.
                 </p>
                 <Link
-                  className="text-secondary text-sm flex items-center font-medium"
+                  className="flex items-center text-sm font-medium text-secondary"
                   href="#"
                 >
                   Find Talent <IoMdArrowDropright className="text-xl" />
                 </Link>
               </div>
             </div>
-            <div className="flex gap-3 shadow-lg p-5 rounded-lg border-b-8 border-b-secondary border">
+            <div className="flex gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg">
               <div className="basis-[50px]">
                 <Image
                   src="/images/mediation-icons/1.png"
@@ -56,7 +56,7 @@ const EmploymentService = () => {
                   width={50}
                 />
               </div>
-              <div className="space-y-4 basis-full">
+              <div className="basis-full space-y-4">
                 <h5 className="text-2xl font-medium">
                   Global advertising of vacancies{" "}
                 </h5>
@@ -69,14 +69,14 @@ const EmploymentService = () => {
                   effective global talent acquisition.
                 </p>
                 <Link
-                  className="text-secondary text-sm flex items-center font-medium"
+                  className="flex items-center text-sm font-medium text-secondary"
                   href="#"
                 >
                   Find Talent <IoMdArrowDropright className="text-xl" />
                 </Link>
               </div>
             </div>
-            <div className="flex gap-3 shadow-lg p-5 rounded-lg border-b-8 border-b-secondary border">
+            <div className="flex gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg">
               <div className="basis-[50px]">
                 <Image
                   src="/images/mediation-icons/1.png"
@@ -85,7 +85,7 @@ const EmploymentService = () => {
                   width={50}
                 />
               </div>
-              <div className="space-y-4 basis-full">
+              <div className="basis-full space-y-4">
                 <h5 className="text-2xl font-medium">
                   Guidance for work permits and visas
                 </h5>
@@ -99,14 +99,14 @@ const EmploymentService = () => {
                   employment transitions.
                 </p>
                 <Link
-                  className="text-secondary text-sm flex items-center font-medium"
+                  className="flex items-center text-sm font-medium text-secondary"
                   href="#"
                 >
                   Find Talent <IoMdArrowDropright className="text-xl" />
                 </Link>
               </div>
             </div>
-            <div className="flex gap-3 shadow-lg p-5 rounded-lg border-b-8 border-b-secondary border">
+            <div className="flex gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg">
               <div className="basis-[50px]">
                 <Image
                   src="/images/mediation-icons/1.png"
@@ -115,7 +115,7 @@ const EmploymentService = () => {
                   width={50}
                 />
               </div>
-              <div className="space-y-4 basis-full">
+              <div className="basis-full space-y-4">
                 <h5 className="text-2xl font-medium">
                   Integration support for workers
                 </h5>
@@ -128,7 +128,7 @@ const EmploymentService = () => {
                   enhancing employee satisfaction and productivity.
                 </p>
                 <Link
-                  className="text-secondary text-sm flex items-center font-medium"
+                  className="flex items-center text-sm font-medium text-secondary"
                   href="#"
                 >
                   Find Talent <IoMdArrowDropright className="text-xl" />
@@ -141,14 +141,14 @@ const EmploymentService = () => {
 
       <section className="py-[50px]">
         <div className="container text-center">
-          <h6 className="text-primary text-2xl font-medium">
+          <h6 className="text-2xl font-medium text-primary">
             Temporary in Employment
           </h6>
-          <h2 className="text-4xl md:text-5xl lg:text-[40px] font-semibold mt-4 mb-10">
+          <h2 className="mb-10 mt-4 text-4xl font-semibold md:text-5xl lg:text-[40px]">
             Assignment of workers
           </h2>
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="basis-full lg:basis-1/3 px-8 py-5 shadow-lg rounded-3xl border-t-[24px] border-secondary space-y-4">
+          <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
+            <div className="basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg lg:basis-1/3">
               <Image
                 className="mx-auto"
                 src="/images/assignment-workers-icons/1.png"
@@ -169,8 +169,8 @@ const EmploymentService = () => {
                 profitability.
               </p>
             </div>
-            <div className="basis-full lg:basis-1/3 space-y-8">
-              <div className="px-8 py-5 shadow-lg rounded-3xl border-t-[24px] border-secondary space-y-4">
+            <div className="basis-full space-y-8 lg:basis-1/3">
+              <div className="space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg">
                 <Image
                   className="mx-auto"
                   src="/images/assignment-workers-icons/2.png"
@@ -188,7 +188,7 @@ const EmploymentService = () => {
                   saving time and resources for both employers and candidates.
                 </p>
               </div>
-              <div className="px-8 py-5 shadow-lg rounded-3xl border-t-[24px] border-secondary space-y-4">
+              <div className="space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg">
                 <Image
                   className="mx-auto"
                   src="/images/assignment-workers-icons/3.png"
@@ -209,7 +209,7 @@ const EmploymentService = () => {
                 </p>
               </div>
             </div>
-            <div className="basis-full lg:basis-1/3 px-8 py-5 shadow-lg rounded-3xl border-t-[24px] border-secondary space-y-4">
+            <div className="basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg lg:basis-1/3">
               <Image
                 className="mx-auto"
                 src="/images/assignment-workers-icons/4.png"
@@ -231,13 +231,13 @@ const EmploymentService = () => {
         </div>
       </section>
 
-      <section className="pt-[50px] pb-[100px]">
-        <div className="container flex flex-col lg:flex-row items-center justify-between md:gap-[50px] lg:gap-[100px]">
-          <div className="basis-full lg:basis-1/2 text-center lg:text-left">
-            <h2 className="text-4xl lg:text-5xl font-semibold">
+      <section className="pb-[100px] pt-[50px]">
+        <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
+          <div className="basis-full text-center lg:basis-1/2 lg:text-left">
+            <h2 className="text-4xl font-semibold lg:text-5xl">
               Work Permit & Visa Support
             </h2>
-            <p className="text-sm font-medium my-5">
+            <p className="my-5 text-sm font-medium">
               Our Work Permit & Visa Support services are designed to simplify
               and expedite your international employment journey. We provide
               comprehensive assistance with obtaining work permits and visas,
@@ -253,7 +253,7 @@ const EmploymentService = () => {
             </p>
             <Button>Find Talent</Button>
           </div>
-          <div className="basis-full lg:basis-1/2 relative w-full min-h-[400px]">
+          <div className="relative min-h-[400px] w-full basis-full lg:basis-1/2">
             <Image
               className="object-contain"
               src="/images/work-permit-visa-support.png"

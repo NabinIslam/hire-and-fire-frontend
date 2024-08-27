@@ -8,15 +8,15 @@ const PartnershipsPrograms = () => {
     <main>
       <PageBanner title="Partnerships Programs" />
       <section className="pt-[100px]">
-        <div className="container flex flex-col lg:flex-row items-center justify-between md:gap-[50px] lg:gap-[100px]">
-          <div className="basis-full lg:basis-1/2 text-center lg:text-left">
-            <h6 className="text-primary text-2xl font-medium">
+        <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
+          <div className="basis-full text-center lg:basis-1/2 lg:text-left">
+            <h6 className="text-2xl font-medium text-primary">
               Partnerships Programs
             </h6>
-            <h2 className="text-4xl lg:text-5xl font-semibold mt-5">
+            <h2 className="mt-5 text-4xl font-semibold lg:text-5xl">
               Collaborate with Us for business purpose
             </h2>
-            <p className="text-sm font-medium my-5">
+            <p className="my-5 text-sm font-medium">
               Partnership programs are collaborations between entities,
               fostering mutual benefits such as shared resources, expanded
               market reach, and combined expertise. These initiatives can
@@ -28,7 +28,7 @@ const PartnershipsPrograms = () => {
             </p>
             <Button>Contact Us</Button>
           </div>
-          <div className="basis-full lg:basis-1/2 relative w-full min-h-[400px]">
+          <div className="relative min-h-[400px] w-full basis-full lg:basis-1/2">
             <Image
               className="object-contain"
               src="/images/collaborate.png"

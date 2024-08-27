@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} min-h-screen flex flex-col`}>
+      <body className={`${montserrat.className} flex min-h-screen flex-col`}>
         <Header />
         <RsuiteProvider>{children}</RsuiteProvider>
         <Footer />

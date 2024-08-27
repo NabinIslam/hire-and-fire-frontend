@@ -8,9 +8,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#004785] pt-[50px] pb-[25px] text-white mt-auto">
+    <footer className="mt-auto bg-[#004785] pb-[25px] pt-[50px] text-white">
       <div className="container space-y-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <div className="space-y-4">
             <Image
               src="/images/Hire-Fire.png"
@@ -31,12 +31,12 @@ const Footer = () => {
               not provide jobs directly to workers.
             </p>
 
-            <button className="bg-primary hover:bg-transparent hover:bg-white text-white hover:text-primary border-2 border-secondary hover:border-primary text-sm px-4 py-3 rounded-md duration-200">
+            <button className="rounded-md border-2 border-secondary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:bg-white hover:text-primary">
               Contact Us
             </button>
           </div>
           <div className="space-y-5">
-            <span className="text-xl border-b-[1px] pb-1">Quick Links</span>
+            <span className="border-b-[1px] pb-1 text-xl">Quick Links</span>
             <ul className="flex flex-col justify-between gap-6">
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
@@ -69,7 +69,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-5">
-            <span className="text-xl border-b-[1px] pb-1">Our Services</span>
+            <span className="border-b-[1px] pb-1 text-xl">Our Services</span>
             <ul className="flex flex-col justify-between gap-6">
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
@@ -104,27 +104,27 @@ const Footer = () => {
           <div className="space-y-5">
             <span className="text-xl">Get In Touch</span>
             <p>Subscribe Our Newsletter to Get Latest Update & News</p>
-            <div className="h-12 flex bg-white rounded-md items-center justify-between">
+            <div className="flex h-12 items-center justify-between rounded-md bg-white">
               <input
-                className="basis-full px-3 border-none focus:ring-0 text-sm placeholder:text-slate-500 text-slate-500"
+                className="placeholder:text-slate-500 text-slate-500 basis-full border-none px-3 text-sm focus:ring-0"
                 type="text"
                 placeholder="Your Email Here"
               />
-              <button className="basis-auto w-[150px] px-2 bg-primary hover:bg-transparent hover:bg-white text-white hover:text-primary border-2 border-primary hover:border-primary text-sm h-full rounded-md duration-200">
+              <button className="h-full w-[150px] basis-auto rounded-md border-2 border-primary bg-primary px-2 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:bg-white hover:text-primary">
                 Contact Us
               </button>
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm">
-                <FaPhone className="bg-[#F90945] p-2 text-3xl rounded-full" />{" "}
+                <FaPhone className="rounded-full bg-[#F90945] p-2 text-3xl" />{" "}
                 +40 123 456 789
               </div>
               <div className="flex items-center gap-2 text-sm">
-                <FaEnvelope className="bg-[#F90945] p-2 text-3xl rounded-full" />{" "}
+                <FaEnvelope className="rounded-full bg-[#F90945] p-2 text-3xl" />{" "}
                 Contact@hireandfire.agency
               </div>
               <div className="flex items-start gap-2 text-sm">
-                <FaMapMarkerAlt className="bg-[#F90945] p-2 text-3xl rounded-full" />
+                <FaMapMarkerAlt className="rounded-full bg-[#F90945] p-2 text-3xl" />
                 Strada ING. Zablovschi, Nr. 10,
                 <br /> Biroul 1, Sectorul 1, Bucuresti, Romania.
               </div>
@@ -132,41 +132,41 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="flex flex-col gap-6 xl:flex-row items-center justify-between text-sm text-center md:text-left">
+        <div className="flex flex-col items-center justify-between gap-6 text-center text-sm md:text-left xl:flex-row">
           <div className="basis-full lg:basis-1/3">
             © Copyright 2024 “Hire & Fire” All Rights Reserved.
           </div>
           <div className="basis-full lg:basis-1/3">
             <ul className="flex items-center justify-center gap-8">
               <li>
-                <Link className="hover:underline duration-200" href="#">
+                <Link className="duration-200 hover:underline" href="#">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link className="hover:underline duration-200" href="#">
+                <Link className="duration-200 hover:underline" href="#">
                   Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link className="hover:underline duration-200" href="#">
+                <Link className="duration-200 hover:underline" href="#">
                   Cookie Policy
                 </Link>
               </li>
             </ul>
           </div>
           <div className="basis-full lg:basis-1/3">
-            <div className="flex flex-col xl:flex-row items-center justify-end gap-3 xl:gap-10 font-medium">
+            <div className="flex flex-col items-center justify-end gap-3 font-medium xl:flex-row xl:gap-10">
               Follow Us
               <span className="flex items-center gap-3">
                 <Link href="#">
-                  <FaFacebook className="bg-white hover:bg-primary text-[#f90945] hover:text-white duration-200 p-1 rounded-full text-2xl" />
+                  <FaFacebook className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
                 <Link href="#">
-                  <FaInstagram className="bg-white hover:bg-primary text-[#f90945] hover:text-white duration-200 p-1 rounded-full text-2xl" />
+                  <FaInstagram className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
                 <Link href="#">
-                  <FaTwitter className="bg-white hover:bg-primary text-[#f90945] hover:text-white duration-200 p-1 rounded-full text-2xl" />
+                  <FaTwitter className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
               </span>
             </div>

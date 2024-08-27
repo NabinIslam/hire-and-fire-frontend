@@ -3,18 +3,18 @@ import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
 const WorkSteps = () => {
   return (
     <section className="py-[50px]">
-      <h6 className="text-center text-primary font-medium text-2xl">
+      <h6 className="text-center text-2xl font-medium text-primary">
         Work Steps
       </h6>
-      <h2 className="text-center text-4xl lg:text-5xl font-semibold mt-[20px]">
+      <h2 className="mt-[20px] text-center text-4xl font-semibold lg:text-5xl">
         How It Works?
       </h2>
-      <div className="container flex flex-col xl:flex-row items-center justify-between gap-5 mt-[60px]">
+      <div className="container mt-[60px] flex flex-col items-center justify-between gap-5 xl:flex-row">
         {/* step card start*/}
 
-        <div className="relative group shadow-lg w-[350px] min-h-[270px] hover:scale-105 duration-200">
+        <div className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
-            <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
+            <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
                 width="40"
                 height="40"
@@ -32,17 +32,17 @@ const WorkSteps = () => {
                 />
               </svg>
             </div>
-            <h5 className="text-xl text-center font-medium">
+            <h5 className="text-center text-xl font-medium">
               Tell Us <br /> Your Need
             </h5>
-            <p className="text-sm text-center font-medium">
+            <p className="text-center text-sm font-medium">
               Share your specific requirements and job descriptions.
             </p>
           </div>
 
           {/* badge */}
-          <div className="absolute size-[80px] border-t-[80px] border-t-primary group-hover:border-t-secondary duration-200 border-r-transparent border-r-[80px] top-0 left-0"></div>
-          <span className="absolute text-white top-[10px] left-[15px] text-xl z-50">
+          <div className="absolute left-0 top-0 size-[80px] border-r-[80px] border-t-[80px] border-r-transparent border-t-primary duration-200 group-hover:border-t-secondary"></div>
+          <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             01
           </span>
         </div>
@@ -50,13 +50,13 @@ const WorkSteps = () => {
         {/* step card end*/}
 
         <HiArrowLongDown className="text-4xl lg:hidden" />
-        <HiArrowLongRight className="text-4xl hidden lg:inline" />
+        <HiArrowLongRight className="hidden text-4xl lg:inline" />
 
         {/* step card start*/}
 
-        <div className="relative group shadow-lg w-[350px] min-h-[270px] hover:scale-105 duration-200">
+        <div className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
-            <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
+            <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
                 width="34"
                 height="40"
@@ -78,17 +78,17 @@ const WorkSteps = () => {
                 />
               </svg>
             </div>
-            <h5 className="text-xl text-center font-medium">
+            <h5 className="text-center text-xl font-medium">
               View Matched <br />
               Candidates
             </h5>
-            <p className="text-sm text-center font-medium">
+            <p className="text-center text-sm font-medium">
               Review profiles of candidates that match your needs.
             </p>
           </div>
           {/* badge */}
-          <div className="absolute size-[80px] border-t-[80px] border-t-primary group-hover:border-t-secondary duration-200 border-r-transparent border-r-[80px] top-0 left-0"></div>
-          <span className="absolute text-white top-[10px] left-[15px] text-xl z-50">
+          <div className="absolute left-0 top-0 size-[80px] border-r-[80px] border-t-[80px] border-r-transparent border-t-primary duration-200 group-hover:border-t-secondary"></div>
+          <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             02
           </span>
         </div>
@@ -96,7 +96,7 @@ const WorkSteps = () => {
         {/* step card end*/}
 
         <HiArrowLongDown className="text-4xl lg:hidden" />
-        <HiArrowLongRight className="text-4xl hidden lg:inline" />
+        <HiArrowLongRight className="hidden text-4xl lg:inline" />
 
         <svg
           className="hidden"
@@ -114,9 +114,9 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="relative group shadow-lg w-[350px] h-[270px] hover:scale-105 duration-200">
+        <div className="group relative h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
-            <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
+            <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
                 width="40"
                 height="40"
@@ -138,17 +138,17 @@ const WorkSteps = () => {
                 />
               </svg>
             </div>
-            <h5 className="text-xl text-center font-medium">
+            <h5 className="text-center text-xl font-medium">
               Interview Selected <br />
               Candidates
             </h5>
-            <p className="text-sm text-center font-medium">
+            <p className="text-center text-sm font-medium">
               Conduct interviews with shortlisted candidates.
             </p>
           </div>
           {/* badge */}
-          <div className="absolute size-[80px] border-t-[80px] border-t-primary group-hover:border-t-secondary duration-200 border-r-transparent border-r-[80px] top-0 left-0"></div>
-          <span className="absolute text-white top-[10px] left-[15px] text-xl z-50">
+          <div className="absolute left-0 top-0 size-[80px] border-r-[80px] border-t-[80px] border-r-transparent border-t-primary duration-200 group-hover:border-t-secondary"></div>
+          <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             03
           </span>
         </div>
@@ -156,7 +156,7 @@ const WorkSteps = () => {
         {/* step card end*/}
 
         <HiArrowLongDown className="text-4xl lg:hidden" />
-        <HiArrowLongRight className="text-4xl hidden lg:inline" />
+        <HiArrowLongRight className="hidden text-4xl lg:inline" />
 
         <svg
           className="hidden"
@@ -174,9 +174,9 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="relative group shadow-lg w-[350px] min-h-[270px] hover:scale-105 duration-200">
+        <div className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
-            <div className="size-[80px] mx-auto bg-primary group-hover:bg-secondary duration-200 flex justify-center items-center rounded-full">
+            <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
                 width="40"
                 height="40"
@@ -190,17 +190,17 @@ const WorkSteps = () => {
                 />
               </svg>
             </div>
-            <h5 className="text-xl text-center font-medium">
+            <h5 className="text-center text-xl font-medium">
               Select and We Complete <br /> Visa Procedures
             </h5>
-            <p className="text-sm text-center font-medium">
+            <p className="text-center text-sm font-medium">
               Choose your candidates, and we handle the rest, including visa
               processing.
             </p>
           </div>
           {/* badge */}
-          <div className="absolute size-[80px] border-t-[80px] border-t-primary group-hover:border-t-secondary duration-200 border-r-transparent border-r-[80px] top-0 left-0"></div>
-          <span className="absolute text-white top-[10px] left-[15px] text-xl z-50">
+          <div className="absolute left-0 top-0 size-[80px] border-r-[80px] border-t-[80px] border-r-transparent border-t-primary duration-200 group-hover:border-t-secondary"></div>
+          <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             04
           </span>
         </div>

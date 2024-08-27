@@ -1,14 +1,14 @@
-import { IoMdArrowDropright } from 'react-icons/io';
+import { IoMdArrowDropright } from "react-icons/io";
 
 const RoleCard = ({ role }) => {
   const { title, description, image } = role;
 
   return (
-    <div className="shadow-xl p-4 rounded-lg text-center space-y-3">
+    <div className="space-y-3 rounded-lg p-4 text-center shadow-xl">
       <img className="rounded-lg" src={image} alt="" />
       <h3 className="text-2xl">{title}</h3>
       <p className="text-sm">{description}</p>
-      <button className="text-pink-600 text-sm flex items-center mx-auto">
+      <button className="mx-auto flex items-center text-sm text-pink-600">
         <span>Contact Us</span> <IoMdArrowDropright className="text-lg" />
       </button>
     </div>

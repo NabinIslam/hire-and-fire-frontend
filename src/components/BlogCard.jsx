@@ -12,8 +12,8 @@ const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const BlogCard = () => {
   return (
-    <div className="group p-4 border shadow-xl rounded-lg">
-      <div className="relative min-h-[200px] flex items-center justify-center mb-3 group-hover:scale-105 duration-200">
+    <div className="group rounded-lg border p-4 shadow-xl">
+      <div className="relative mb-3 flex min-h-[200px] items-center justify-center duration-200 group-hover:scale-105">
         <ReactPlayer
           className=""
           url="https://youtu.be/CpCN9lTFHc4?si=fvrv43jLjq2EBHR9"
@@ -24,7 +24,7 @@ const BlogCard = () => {
           height="100%"
           light={
             <Image
-              className="object-cover rounded-lg"
+              className="rounded-lg object-cover"
               src="/images/blog-video-thumbnail.png"
               alt="Video Thumbnail"
               fill
@@ -54,15 +54,15 @@ const BlogCard = () => {
         </div>
       </div>
 
-      <h5 className="text-xl font-medium mt-3">
+      <h5 className="mt-3 text-xl font-medium">
         Why skilled workers matter for a business?
       </h5>
-      <p className="text-sm font-medium my-3">
+      <p className="my-3 text-sm font-medium">
         Skilled workers enhance business efficiency, innovation, and quality,
         crucial for maintaining competitiveness and driving growth.
       </p>
       <Link
-        className="text-primary text-sm font-medium flex items-center"
+        className="flex items-center text-sm font-medium text-primary"
         href={`/resources/blog/article-slug`}
       >
         Read more

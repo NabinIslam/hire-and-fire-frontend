@@ -11,42 +11,42 @@ const ContactUs = () => {
       <PageBanner title="Contact Us" />
       <section className="py-[50px]">
         <div className="container">
-          <h4 className="text-primary text-[40px] font-bold text-center">
+          <h4 className="text-center text-[40px] font-bold text-primary">
             Contact Us
           </h4>
-          <p className="text-2xl text-center mt-2 mb-8 font-medium">
+          <p className="mb-8 mt-2 text-center text-2xl font-medium">
             Any question or remarks? Just write us a message
           </p>
 
-          <div className="flex flex-wrap justify-center items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             {/* card */}
-            <div className="w-[355px] min-h-[180px] flex flex-col items-center shadow-xl rounded-xl gap-4 p-4 bg-[#FAF8F8]">
-              <div className="bg-primary size-10 text-white flex items-center justify-center rounded-full mx-auto">
+            <div className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl bg-[#FAF8F8] p-4 shadow-xl">
+              <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white">
                 <FaMapMarkerAlt />
               </div>
-              <h6 className="font-medium text-2xl">Office Address</h6>
-              <p className="text-sm font-medium text-center">
+              <h6 className="text-2xl font-medium">Office Address</h6>
+              <p className="text-center text-sm font-medium">
                 Bucureşti Sectorul 1, Strada ING.
                 <br /> ZABLOVSCHI, Nr. 10, BIROUL 1
               </p>
             </div>
             {/* card */}
-            <div className="w-[355px] min-h-[180px] flex flex-col items-center shadow-xl rounded-xl gap-4 p-4 bg-[#FAF8F8]">
-              <div className="bg-primary size-10 text-white flex items-center justify-center rounded-full mx-auto">
+            <div className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl bg-[#FAF8F8] p-4 shadow-xl">
+              <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white">
                 <FaPhoneVolume />
               </div>
-              <h6 className="font-medium text-2xl">Call Us</h6>
-              <p className="text-sm font-medium text-center">
+              <h6 className="text-2xl font-medium">Call Us</h6>
+              <p className="text-center text-sm font-medium">
                 +(40) 7372 28622
               </p>
             </div>
             {/* card */}
-            <div className="w-[355px] min-h-[180px] flex flex-col items-center shadow-xl rounded-xl gap-4 p-4 bg-[#FAF8F8]">
-              <div className="bg-primary size-10 text-white flex items-center justify-center rounded-full mx-auto">
+            <div className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl bg-[#FAF8F8] p-4 shadow-xl">
+              <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white">
                 <FaEnvelope />
               </div>
-              <h6 className="font-medium text-2xl">Email Us</h6>
-              <p className="text-sm font-medium text-center">
+              <h6 className="text-2xl font-medium">Email Us</h6>
+              <p className="text-center text-sm font-medium">
                 career@hireandfire.eu
               </p>
             </div>

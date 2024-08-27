@@ -1,11 +1,11 @@
-import Button from './ui/Button';
+import Button from "./ui/Button";
 
 const Partner = () => {
   return (
     <section className="py-[50px]">
-      <div className="container flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-24">
-        <div className="space-y-5 basis-1/2 text-center lg:text-left">
-          <h2 className="text-2xl md:text-5xl font-bold">
+      <div className="container flex flex-col items-center justify-between gap-10 lg:flex-row lg:gap-24">
+        <div className="basis-1/2 space-y-5 text-center lg:text-left">
+          <h2 className="text-2xl font-bold md:text-5xl">
             Your Partner in international Construction Recruitment
           </h2>
           <p className="text-sm leading-5">

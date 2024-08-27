@@ -6,13 +6,13 @@ const Accordion = ({ title, answer }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="py-2 border-2 rounded-lg">
+    <div className="rounded-lg border-2 py-2">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className="flex justify-between items-center w-full px-6 py-1"
+        className="flex w-full items-center justify-between px-6 py-1"
       >
-        <div className="font-medium text-lg text-left basis-full">{title}</div>
-        <div className="basis-[30px] flex items-center justify-end">
+        <div className="basis-full text-left text-lg font-medium">{title}</div>
+        <div className="flex basis-[30px] items-center justify-end">
           {accordionOpen ? (
             <FaMinus className="text-xl" />
           ) : (
@@ -21,7 +21,7 @@ const Accordion = ({ title, answer }) => {
         </div>
       </button>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
+        className={`text-slate-600 grid overflow-hidden text-sm transition-all duration-300 ease-in-out ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"

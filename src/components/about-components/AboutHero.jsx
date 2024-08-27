@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const AboutHero = () => {
   return (
-    <section className="pt-[100px] pb-[50px] text-black">
-      <div className="container flex flex-col lg:flex-row items-center justify-between gap-16">
-        <div className="text-center lg:text-left basis-full lg:basis-1/2 space-y-6">
-          <h6 className="text-primary text-2xl font-medium">About Us</h6>
-          <h2 className="text-4xl md:text-5xl lg:text-[40px] font-semibold">
+    <section className="pb-[50px] pt-[100px] text-black">
+      <div className="container flex flex-col items-center justify-between gap-16 lg:flex-row">
+        <div className="basis-full space-y-6 text-center lg:basis-1/2 lg:text-left">
+          <h6 className="text-2xl font-medium text-primary">About Us</h6>
+          <h2 className="text-4xl font-semibold md:text-5xl lg:text-[40px]">
             We believe that great companies are built by great people
           </h2>
           <p className="text-sm font-medium">
@@ -20,7 +20,7 @@ const AboutHero = () => {
             diverse range of companies, from large corporations to small and
             medium enterprises.
           </p>
-          <div className="flex flex-col md:flex-row items-center justify-center lg:justify-start gap-10 mb-6">
+          <div className="mb-6 flex flex-col items-center justify-center gap-10 md:flex-row lg:justify-start">
             <div className="flex items-center gap-5">
               <Image
                 src="/images/visa-icon.png"

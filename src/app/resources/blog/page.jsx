@@ -10,7 +10,7 @@ const Blog = () => {
         title="Our Blog & News"
         description="Stay updated with the latest news articles and trending stories."
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 md:gap-5">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
           <BlogCard />
           <BlogCard />
           <BlogCard />

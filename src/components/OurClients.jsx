@@ -46,11 +46,11 @@ const OurClients = () => {
   };
 
   return (
-    <section className="py-[100px] space-y-[40px]">
+    <section className="space-y-[40px] py-[100px]">
       <h2 className="text-center text-5xl font-semibold">Our clients</h2>
       <div className="container">
         <Slider {...settings}>
-          <div className="relative min-h-[134px] shadow-lg rounded-lg border">
+          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
             <Image
               className="object-contain px-12"
               src="/images/clients/flexjobs-logo.png"
@@ -58,7 +58,7 @@ const OurClients = () => {
               alt="Flexjobs Logo"
             />
           </div>
-          <div className="relative min-h-[134px] shadow-lg rounded-lg border">
+          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
             <Image
               className="object-contain px-12"
               src="/images/clients/Upwork-logo.png"
@@ -66,7 +66,7 @@ const OurClients = () => {
               fill
             />
           </div>
-          <div className="relative min-h-[134px] shadow-lg rounded-lg border">
+          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
             <Image
               className="object-contain px-12"
               src="/images/clients/linkedin-logo.png"
@@ -74,7 +74,7 @@ const OurClients = () => {
               fill
             />
           </div>
-          <div className="relative min-h-[134px] shadow-lg rounded-lg border">
+          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
             <Image
               className="object-contain px-12"
               src="/images/clients/glassdoor-logo.png"
@@ -82,7 +82,7 @@ const OurClients = () => {
               fill
             />
           </div>
-          <div className="relative min-h-[134px] shadow-lg rounded-lg border">
+          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
             <Image
               className="object-contain px-12"
               src="/images/clients/Indeed-logo.png"

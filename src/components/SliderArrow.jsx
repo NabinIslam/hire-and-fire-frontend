@@ -1,17 +1,15 @@
 import React from "react";
 
-
-
 export const CustomNextArrow = ({ className, style, onClick }) => (
   <button
     type="button"
     onClick={onClick}
-    className={`absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-black bg-blue-500 hover:bg-blue-700 rounded-full p-2 ${className}`}
+    className={`absolute right-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-blue-500 p-2 text-black hover:bg-blue-700 ${className}`}
     style={{ ...style, display: "block" }}
   >
     {/* Use any icon or text */}
     <svg
-      className="w-6 h-6"
+      className="h-6 w-6"
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"

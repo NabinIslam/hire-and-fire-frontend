@@ -14,7 +14,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="bg-white z-50 py-2">
+    <header className="z-50 bg-white py-2">
       <nav className="container flex items-center justify-between">
         <div className="basis-1/4">
           <Link className="inline" href="/">
@@ -26,19 +26,19 @@ const Header = () => {
             />
           </Link>
         </div>
-        <div className="basis-1/2 ">
-          <ul className="flex justify-center font-medium text-sm">
+        <div className="basis-1/2">
+          <ul className="flex justify-center text-sm font-medium">
             <li className="px-4">
               <Link
-                className="hover:text-primary duration-200"
+                className="duration-200 hover:text-primary"
                 href="/about-us"
               >
                 About Us
               </Link>
             </li>
-            <li className="relative group px-4">
+            <li className="group relative px-4">
               <p
-                className="flex hover:text-primary duration-200 cursor-pointer"
+                className="flex cursor-pointer duration-200 hover:text-primary"
                 href="/employers"
               >
                 Employers <MdKeyboardArrowDown className="text-xl" />
@@ -46,7 +46,7 @@ const Header = () => {
 
               {/* submenus */}
 
-              <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5 w-56 hidden group-hover:block hover:block animate-fadeIn">
+              <ul className="absolute top-5 hidden w-56 animate-fadeIn space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
                     className="flex hover:text-primary"
@@ -76,19 +76,19 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li className="relative group px-4">
+            <li className="group relative px-4">
               <p
-                className="flex hover:text-primary duration-200 cursor-pointer"
+                className="flex cursor-pointer duration-200 hover:text-primary"
                 href="/hire-worker"
               >
                 Hire Worker <MdKeyboardArrowDown className="text-xl" />
               </p>
 
               {/* submenus */}
-              <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5  hidden group-hover:block hover:block w-44 animate-fadeIn">
+              <ul className="absolute top-5 hidden w-44 animate-fadeIn space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
-                    className="flex hover:text-primary duration-200"
+                    className="flex duration-200 hover:text-primary"
                     href="/hire-worker/our-process"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -97,7 +97,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    className="flex hover:text-primary duration-200"
+                    className="flex duration-200 hover:text-primary"
                     href="/hire-worker/request-talent"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -108,25 +108,25 @@ const Header = () => {
             </li>
             <li className="px-4">
               <Link
-                className="hover:text-primary duration-200"
+                className="duration-200 hover:text-primary"
                 href="/industry"
               >
                 Industry
               </Link>
             </li>
-            <li className="relative group px-4">
+            <li className="group relative px-4">
               <p
-                className="flex hover:text-primary duration-200 cursor-pointer"
+                className="flex cursor-pointer duration-200 hover:text-primary"
                 href="/hire-worker"
               >
                 Resources <MdKeyboardArrowDown className="text-xl" />
               </p>
 
               {/* submenus */}
-              <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5 hidden group-hover:block hover:block animate-fadeIn">
+              <ul className="absolute top-5 hidden animate-fadeIn space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
-                    className="flex hover:text-primary duration-200"
+                    className="flex duration-200 hover:text-primary"
                     href="/resources/faq"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -135,7 +135,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    className="flex hover:text-primary duration-200"
+                    className="flex duration-200 hover:text-primary"
                     href="/resources/blog"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -146,7 +146,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="basis-1/4 flex items-center justify-end gap-2">
+        <div className="flex basis-1/4 items-center justify-end gap-2">
           <Link href="/contact-us">
             <Button>Contact Us</Button>
           </Link>

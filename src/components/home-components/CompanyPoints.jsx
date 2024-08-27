@@ -1,12 +1,12 @@
 const CompanyPoints = () => {
   return (
     <section className="mt-[-90px]">
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="container grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200 hover:scale-105">
-          <div className="mx-auto bg-primary group-hover:bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center">
+        <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-primary hover:text-white">
+          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary p-2 group-hover:bg-white">
             <svg
-              className="stroke-white group-hover:stroke-primary stroke-2"
+              className="stroke-white stroke-2 group-hover:stroke-primary"
               width="20"
               height="20"
               viewBox="0 0 26 26"
@@ -29,10 +29,10 @@ const CompanyPoints = () => {
           </div>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200 hover:scale-105">
-          <div className="mx-auto bg-primary group-hover:bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center">
+        <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-primary hover:text-white">
+          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary p-2 group-hover:bg-white">
             <svg
-              className="stroke-white group-hover:stroke-primary stroke-2"
+              className="stroke-white stroke-2 group-hover:stroke-primary"
               width="20"
               height="20"
               viewBox="0 0 26 26"
@@ -55,10 +55,10 @@ const CompanyPoints = () => {
           </div>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200 hover:scale-105">
-          <div className="mx-auto bg-primary group-hover:bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center">
+        <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-primary hover:text-white">
+          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary p-2 group-hover:bg-white">
             <svg
-              className="stroke-white group-hover:stroke-primary stroke-2"
+              className="stroke-white stroke-2 group-hover:stroke-primary"
               width="20"
               height="24"
               viewBox="0 0 27 24"
@@ -81,10 +81,10 @@ const CompanyPoints = () => {
           </div>
         </div>
         {/* card */}
-        <div className="bg-white space-y-4 py-4 px-3 text-center shadow-lg rounded-lg group hover:bg-primary hover:text-white duration-200 hover:scale-105">
-          <div className="mx-auto bg-primary group-hover:bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center">
+        <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-primary hover:text-white">
+          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary p-2 group-hover:bg-white">
             <svg
-              className="stroke-white group-hover:stroke-primary stroke-2"
+              className="stroke-white stroke-2 group-hover:stroke-primary"
               width="18"
               height="18"
               viewBox="0 0 22 24"

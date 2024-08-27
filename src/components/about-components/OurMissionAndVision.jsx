@@ -1,13 +1,13 @@
 const OurMissionAndVision = () => {
   return (
-    <section className="py-[50px] space-y-10">
-      <h2 className="text-center text-4xl lg:text-5xl font-semibold">
+    <section className="space-y-10 py-[50px]">
+      <h2 className="text-center text-4xl font-semibold lg:text-5xl">
         Our Mission & Vision
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-6xl mx-auto">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 md:grid-cols-2">
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
+        <div className="group space-y-4 rounded-lg bg-white px-6 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-secondary hover:text-white">
           <svg
             className="mx-auto group-hover:group-hover:stroke-white"
             width={50}
@@ -31,7 +31,7 @@ const OurMissionAndVision = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
+        <div className="group space-y-4 rounded-lg bg-white px-6 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-secondary hover:text-white">
           <svg
             className="mx-auto group-hover:group-hover:stroke-white"
             width={50}

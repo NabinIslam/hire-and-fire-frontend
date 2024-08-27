@@ -28,21 +28,21 @@ const TeamSection = () => {
       title="Team of recruitment expert"
       description=" A team of recruitment experts specializes in sourcing, assessing, and hiring top talent to <br /> meet organizational needs efficiently and effectively."
     >
-      <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="container grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {/* team card */}
-        <div className="group shadow-xl rounded-lg">
+        <div className="group rounded-lg shadow-xl">
           <div className="relative">
             <Image className="" src={team1} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 h-[50px] flex items-center justify-center gap-6 rounded-lg">
+            <div className="absolute bottom-0 flex h-[50px] w-full items-center justify-center gap-6 rounded-lg bg-secondary duration-200 group-hover:bg-primary">
               <Link
-                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                className="flex size-[30px] items-center justify-center rounded-full bg-white duration-200 group-hover:size-[40px]"
                 href="#"
               >
                 <FaLinkedinIn className="text-secondary group-hover:text-primary" />
               </Link>
 
               <Link
-                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                className="flex size-[30px] items-center justify-center rounded-full bg-white duration-200 group-hover:size-[40px]"
                 href="#"
               >
                 <FaEnvelope className="text-secondary group-hover:text-primary" />
@@ -50,25 +50,25 @@ const TeamSection = () => {
             </div>
           </div>
           <div className="py-4">
-            <h5 className="text-xl text-center font-medium">Johnsen Roy</h5>
+            <h5 className="text-center text-xl font-medium">Johnsen Roy</h5>
             <h6 className="text-center text-sm">Recruitment Manager</h6>
           </div>
         </div>
 
         {/* team card */}
-        <div className="group shadow-xl rounded-lg">
+        <div className="group rounded-lg shadow-xl">
           <div className="relative">
             <Image className="" src={team2} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 h-[50px] flex items-center justify-center gap-6 rounded-lg">
+            <div className="absolute bottom-0 flex h-[50px] w-full items-center justify-center gap-6 rounded-lg bg-secondary duration-200 group-hover:bg-primary">
               <Link
-                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                className="flex size-[30px] items-center justify-center rounded-full bg-white duration-200 group-hover:size-[40px]"
                 href="#"
               >
                 <FaLinkedinIn className="text-secondary group-hover:text-primary" />
               </Link>
 
               <Link
-                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                className="flex size-[30px] items-center justify-center rounded-full bg-white duration-200 group-hover:size-[40px]"
                 href="#"
               >
                 <FaEnvelope className="text-secondary group-hover:text-primary" />
@@ -76,26 +76,26 @@ const TeamSection = () => {
             </div>
           </div>
           <div className="py-4">
-            <h5 className="text-xl text-center font-medium">Marie</h5>
+            <h5 className="text-center text-xl font-medium">Marie</h5>
             <h6 className="text-center text-sm">Recruiter</h6>
           </div>
         </div>
 
         {/* team card */}
 
-        <div className="group shadow-xl rounded-lg">
+        <div className="group rounded-lg shadow-xl">
           <div className="relative">
             <Image className="" src={team3} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 h-[50px] flex items-center justify-center gap-6 rounded-lg">
+            <div className="absolute bottom-0 flex h-[50px] w-full items-center justify-center gap-6 rounded-lg bg-secondary duration-200 group-hover:bg-primary">
               <Link
-                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                className="flex size-[30px] items-center justify-center rounded-full bg-white duration-200 group-hover:size-[40px]"
                 href="#"
               >
                 <FaLinkedinIn className="text-secondary group-hover:text-primary" />
               </Link>
 
               <Link
-                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                className="flex size-[30px] items-center justify-center rounded-full bg-white duration-200 group-hover:size-[40px]"
                 href="#"
               >
                 <FaEnvelope className="text-secondary group-hover:text-primary" />
@@ -103,26 +103,26 @@ const TeamSection = () => {
             </div>
           </div>
           <div className="py-4">
-            <h5 className="text-xl text-center font-medium">Catherine</h5>
+            <h5 className="text-center text-xl font-medium">Catherine</h5>
             <h6 className="text-center text-sm">Recruiter</h6>
           </div>
         </div>
 
         {/* team card */}
 
-        <div className="group shadow-xl rounded-lg">
+        <div className="group rounded-lg shadow-xl">
           <div className="relative">
             <Image className="" src={team4} alt="" />
-            <div className="absolute bottom-0 w-full bg-secondary group-hover:bg-primary duration-200 h-[50px] flex items-center justify-center gap-6 rounded-lg">
+            <div className="absolute bottom-0 flex h-[50px] w-full items-center justify-center gap-6 rounded-lg bg-secondary duration-200 group-hover:bg-primary">
               <Link
-                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                className="flex size-[30px] items-center justify-center rounded-full bg-white duration-200 group-hover:size-[40px]"
                 href="#"
               >
                 <FaLinkedinIn className="text-secondary group-hover:text-primary" />
               </Link>
 
               <Link
-                className="bg-white size-[30px] group-hover:size-[40px] duration-200 flex justify-center items-center rounded-full"
+                className="flex size-[30px] items-center justify-center rounded-full bg-white duration-200 group-hover:size-[40px]"
                 href="#"
               >
                 <FaEnvelope className="text-secondary group-hover:text-primary" />
@@ -130,12 +130,12 @@ const TeamSection = () => {
             </div>
           </div>
           <div className="py-4">
-            <h5 className="text-xl text-center font-medium">Staven Joy</h5>
+            <h5 className="text-center text-xl font-medium">Staven Joy</h5>
             <h6 className="text-center text-sm">Recruitment Coordinator</h6>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-10">
+      <div className="mt-10 flex justify-center">
         <Link href="/about-us">
           <Button>View All Team</Button>
         </Link>

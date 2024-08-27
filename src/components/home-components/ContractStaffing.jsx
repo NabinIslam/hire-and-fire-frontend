@@ -3,12 +3,12 @@ import Button from "../ui/Button";
 const ContractStaffing = () => {
   return (
     <section className="py-[50px]">
-      <div className="container flex flex-col-reverse lg:flex-row items-center justify-between gap-24">
+      <div className="container flex flex-col-reverse items-center justify-between gap-24 lg:flex-row">
         <div className="basis-1/2 text-center">
           <img src="/contract-staffing.png" alt="" />
         </div>
-        <div className="space-y-5 basis-1/2 text-center lg:text-left">
-          <h2 className="text-4xl lg:text-5xl font-semibold">
+        <div className="basis-1/2 space-y-5 text-center lg:text-left">
+          <h2 className="text-4xl font-semibold lg:text-5xl">
             Contract Staffing
           </h2>
           <p className="text-sm font-medium">
@@ -26,9 +26,9 @@ const ContractStaffing = () => {
           <Button>See more</Button>
         </div>
       </div>
-      <div className="container mt-[50px] grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="container mt-[50px] grid grid-cols-1 gap-5 lg:grid-cols-3">
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
+        <div className="group space-y-4 rounded-lg bg-white px-6 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-secondary hover:text-white">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="48"
@@ -50,7 +50,7 @@ const ContractStaffing = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
+        <div className="group space-y-4 rounded-lg bg-white px-6 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-secondary hover:text-white">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="36"
@@ -74,7 +74,7 @@ const ContractStaffing = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
+        <div className="group space-y-4 rounded-lg bg-white px-6 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-secondary hover:text-white">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="42"

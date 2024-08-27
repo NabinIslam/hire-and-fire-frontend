@@ -1,6 +1,6 @@
 const BgButton = ({ children }) => {
   return (
-    <button className="bg-secondary hover:bg-transparent text-white font-medium hover:text-white border-2 border-secondary hover:border-white text-sm px-4 py-3 rounded-md duration-200">
+    <button className="rounded-md border-2 border-secondary bg-secondary px-4 py-3 text-sm font-medium text-white duration-200 hover:border-white hover:bg-transparent hover:text-white">
       {children}
     </button>
   );

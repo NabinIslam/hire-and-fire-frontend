@@ -1,19 +1,19 @@
-import { FaMapMarkerAlt } from 'react-icons/fa';
-import { FaPhoneVolume } from 'react-icons/fa6';
-import { FaRegEnvelope } from 'react-icons/fa6';
-import Button from './ui/Button';
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { FaRegEnvelope } from "react-icons/fa6";
+import Button from "./ui/Button";
 
 const ContactUs = () => {
   return (
     <section className="py-[50px]">
       <div className="container">
-        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row shadow-2xl">
-          <div className="px-[30px] py-[30px] lg:px-[50px] lg:py-[100px] basis-[40%] bg-contact-bg text-white bg-cover bg-no-repeat bg-center flex flex-col justify-between gap-5">
+        <div className="mx-auto flex max-w-5xl flex-col shadow-2xl lg:flex-row">
+          <div className="flex basis-[40%] flex-col justify-between gap-5 bg-contact-bg bg-cover bg-center bg-no-repeat px-[30px] py-[30px] text-white lg:px-[50px] lg:py-[100px]">
             <h4 className="text-3xl">Contact Us</h4>
             <p className="text-sm">Say Something to start a live chat</p>
             <div className="flex gap-5">
               <div className="">
-                <span className="bg-[#004785] size-[50px] p-2 flex items-center justify-center">
+                <span className="flex size-[50px] items-center justify-center bg-[#004785] p-2">
                   <FaMapMarkerAlt className="text-xl" />
                 </span>
               </div>
@@ -27,7 +27,7 @@ const ContactUs = () => {
 
             <div className="flex gap-5">
               <div className="">
-                <span className="bg-[#004785] size-[50px] p-2 flex items-center justify-center">
+                <span className="flex size-[50px] items-center justify-center bg-[#004785] p-2">
                   <FaPhoneVolume className="text-xl" />
                 </span>
               </div>
@@ -39,7 +39,7 @@ const ContactUs = () => {
 
             <div className="flex gap-5">
               <div className="">
-                <span className="bg-[#004785] size-[50px] p-2 flex items-center justify-center">
+                <span className="flex size-[50px] items-center justify-center bg-[#004785] p-2">
                   <FaRegEnvelope className="text-xl" />
                 </span>
               </div>
@@ -54,7 +54,7 @@ const ContactUs = () => {
             <form className="space-y-5" action="">
               <div>
                 <input
-                  className="rounded-lg border-2 border-slate-500 w-full px-5 py-3 text-sm"
+                  className="border-slate-500 w-full rounded-lg border-2 px-5 py-3 text-sm"
                   type="text"
                   name=""
                   placeholder="First name"
@@ -63,7 +63,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <input
-                  className="rounded-lg border-2 border-slate-500 w-full px-5 py-3 text-sm"
+                  className="border-slate-500 w-full rounded-lg border-2 px-5 py-3 text-sm"
                   type="email"
                   name=""
                   placeholder="Email"
@@ -72,7 +72,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <input
-                  className="rounded-lg border-2 border-slate-500 w-full px-5 py-3 text-sm"
+                  className="border-slate-500 w-full rounded-lg border-2 px-5 py-3 text-sm"
                   type="tel"
                   name=""
                   placeholder="Phone Number"
@@ -81,7 +81,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <textarea
-                  className="rounded-lg border-2 border-slate-500 w-full px-5 py-3 text-sm"
+                  className="border-slate-500 w-full rounded-lg border-2 px-5 py-3 text-sm"
                   name=""
                   placeholder="Write Your message"
                   rows={6}

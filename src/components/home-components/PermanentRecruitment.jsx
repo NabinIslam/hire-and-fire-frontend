@@ -4,9 +4,9 @@ import Button from "../ui/Button";
 const PermanentRecruitment = () => {
   return (
     <section className="pb-[50px] pt-[100px]">
-      <div className="container flex flex-col lg:flex-row items-center justify-between gap-24">
-        <div className="space-y-5 basis-1/2 text-center lg:text-left">
-          <h2 className="text-4xl lg:text-5xl font-semibold">
+      <div className="container flex flex-col items-center justify-between md:gap-6 lg:flex-row lg:gap-24">
+        <div className="basis-full space-y-5 text-center lg:basis-1/2 lg:text-left">
+          <h2 className="text-4xl font-semibold lg:text-5xl">
             Permanent Recruitment
           </h2>
           <p className="text-sm font-medium">
@@ -22,27 +22,29 @@ const PermanentRecruitment = () => {
           </p>
           <Button>See more</Button>
         </div>
-        <div className="group basis-1/2 relative min-h-[400px]">
+        <div className="group relative min-h-[400px] w-full basis-full lg:basis-1/2">
           <Image
-            className="object-contain"
+            className="object-contain md:hidden"
+            src="/images/permanent-rec-full.png"
+            alt="Permanent Recruitment"
+            fill
+          />
+          <Image
+            className="hidden object-contain md:block"
             src="/images/permanent-recruitment.png"
             alt="Permanent Recruitment"
             fill
           />
 
-          {/* <img
-            className="absolute -left-20 group-hover:-right-20 group-hover:left-auto h-full w-auto transition-all duration-200"
-            src="/images/permanent-rec.png"
-          /> */}
           <img
-            className="absolute -translate-x-20 group-hover:translate-x-full h-full w-auto transition-transform duration-1000"
+            className="absolute hidden h-full w-auto transition-transform duration-1000 group-hover:translate-x-full md:block lg:-translate-x-20"
             src="/images/permanent-rec.png"
           />
         </div>
       </div>
-      <div className="container mt-[50px] grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="container mt-[50px] grid grid-cols-1 gap-5 lg:grid-cols-3">
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
+        <div className="group space-y-4 rounded-lg bg-white px-6 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-secondary hover:text-white">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="50"
@@ -63,7 +65,7 @@ const PermanentRecruitment = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
+        <div className="group space-y-4 rounded-lg bg-white px-6 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-secondary hover:text-white">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="50"
@@ -87,7 +89,7 @@ const PermanentRecruitment = () => {
           </p>
         </div>
         {/* card */}
-        <div className="group bg-white hover:bg-secondary hover:text-white duration-200 space-y-4 py-4 px-6 text-center shadow-lg rounded-lg hover:scale-105">
+        <div className="group space-y-4 rounded-lg bg-white px-6 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-secondary hover:text-white">
           <svg
             className="mx-auto group-hover:stroke-white"
             width="50"

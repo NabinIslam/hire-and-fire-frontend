@@ -32,9 +32,9 @@ const AboutUs = () => {
         title="Key Skills"
         description="Expertise in job posting, candidate sourcing, resume screening, interviewing, onboarding, training, performance management, conflict resolution, and legal compliance."
       >
-        <div className="relative max-w-[1276px] min-h-[476px] mx-auto">
+        <div className="relative mx-auto min-h-[476px] max-w-[1276px]">
           <Image
-            className="object-contain w-full h-full"
+            className="h-full w-full object-contain"
             src="/images/key-skills-chart.png"
             fill={true}
             alt="Key Skills Chart"

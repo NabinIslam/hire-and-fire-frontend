@@ -11,7 +11,7 @@ const Breadcrumbs = () => {
   const parts = location.split("/");
 
   return (
-    <div className="text-sm flex justify-center items-center gap-3">
+    <div className="flex items-center justify-center gap-3 text-sm">
       Home
       {parts.map((part, index) => (
         <React.Fragment key={index}>
