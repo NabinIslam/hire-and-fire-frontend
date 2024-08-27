@@ -12,9 +12,10 @@ const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const BlogCard = () => {
   return (
-    <div className="p-4 border shadow-xl rounded-lg">
-      <div className="relative min-h-[200px] flex items-center justify-center mb-3">
+    <div className="group p-4 border shadow-xl rounded-lg">
+      <div className="relative min-h-[200px] flex items-center justify-center mb-3 group-hover:scale-105 duration-200">
         <ReactPlayer
+          className=""
           url="https://youtu.be/CpCN9lTFHc4?si=fvrv43jLjq2EBHR9"
           playing
           loop
