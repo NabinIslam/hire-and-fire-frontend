@@ -16,8 +16,8 @@ const Header = () => {
   return (
     <header className="bg-white z-50 py-2">
       <nav className="container flex items-center justify-between">
-        <div className="basis-1/4 ">
-          <Link href="/">
+        <div className="basis-1/4">
+          <Link className="inline" href="/">
             <Image
               src="/images/Logo.png"
               width={52}
@@ -44,7 +44,9 @@ const Header = () => {
                 Employers <MdKeyboardArrowDown className="text-xl" />
               </Link>
 
-              <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5 w-56 hidden group-hover:block hover:block ease-in-out duration-200 z-[1000]">
+              {/* submenus */}
+
+              <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5 w-56 hidden group-hover:block hover:block animate-fadeIn">
                 <li>
                   <Link
                     className="flex hover:text-primary"
@@ -82,7 +84,8 @@ const Header = () => {
                 Hire Worker <MdKeyboardArrowDown className="text-xl" />
               </Link>
 
-              <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5  hidden group-hover:block hover:block w-44 ease-in-out duration-200 z-50">
+              {/* submenus */}
+              <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5  hidden group-hover:block hover:block w-44 animate-fadeIn">
                 <li>
                   <Link
                     className="flex hover:text-primary duration-200"
@@ -119,7 +122,8 @@ const Header = () => {
                 Resources <MdKeyboardArrowDown className="text-xl" />
               </Link>
 
-              <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5 hidden group-hover:block hover:block ease-in-out duration-200">
+              {/* submenus */}
+              <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5 hidden group-hover:block hover:block animate-fadeIn">
                 <li>
                   <Link
                     className="flex hover:text-primary duration-200"
