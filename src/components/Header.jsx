@@ -37,12 +37,12 @@ const Header = () => {
               </Link>
             </li>
             <li className="relative group px-4">
-              <Link
-                className="flex hover:text-primary duration-200"
+              <p
+                className="flex hover:text-primary duration-200 cursor-pointer"
                 href="/employers"
               >
                 Employers <MdKeyboardArrowDown className="text-xl" />
-              </Link>
+              </p>
 
               {/* submenus */}
 
@@ -77,12 +77,12 @@ const Header = () => {
               </ul>
             </li>
             <li className="relative group px-4">
-              <Link
-                className="flex hover:text-primary duration-200"
+              <p
+                className="flex hover:text-primary duration-200 cursor-pointer"
                 href="/hire-worker"
               >
                 Hire Worker <MdKeyboardArrowDown className="text-xl" />
-              </Link>
+              </p>
 
               {/* submenus */}
               <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5  hidden group-hover:block hover:block w-44 animate-fadeIn">
@@ -115,12 +115,12 @@ const Header = () => {
               </Link>
             </li>
             <li className="relative group px-4">
-              <Link
-                className="flex hover:text-primary duration-200"
+              <p
+                className="flex hover:text-primary duration-200 cursor-pointer"
                 href="/hire-worker"
               >
                 Resources <MdKeyboardArrowDown className="text-xl" />
-              </Link>
+              </p>
 
               {/* submenus */}
               <ul className="absolute bg-white p-4 rounded-lg shadow-2xl border space-y-4 top-5 hidden group-hover:block hover:block animate-fadeIn">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "../ui/Button";
 
 const PermanentRecruitment = () => {
@@ -21,11 +22,21 @@ const PermanentRecruitment = () => {
           </p>
           <Button>See more</Button>
         </div>
-        <div className="basis-1/2">
+        <div className="group basis-1/2 relative min-h-[400px]">
+          <Image
+            className="object-contain"
+            src="/images/permanent-recruitment.png"
+            alt="Permanent Recruitment"
+            fill
+          />
+
+          {/* <img
+            className="absolute -left-20 group-hover:-right-20 group-hover:left-auto h-full w-auto transition-all duration-200"
+            src="/images/permanent-rec.png"
+          /> */}
           <img
-            className="text-center"
-            src="/permanent-recruitment.png"
-            alt=""
+            className="absolute -translate-x-20 group-hover:translate-x-full h-full w-auto transition-transform duration-1000"
+            src="/images/permanent-rec.png"
           />
         </div>
       </div>
