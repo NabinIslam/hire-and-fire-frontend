@@ -9,7 +9,10 @@
     "lint": "next lint",
     "format": "npx prettier . --write"
   },
+  "proxy": "http://192.168.11.110:8000/api",
   "dependencies": {
+    "@tanstack/react-query": "^5.52.2",
+    "axios": "^1.7.5",
     "flowbite-react": "^0.10.1",
     "next": "14.2.5",
     "react": "^18",

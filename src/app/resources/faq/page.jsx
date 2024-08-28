@@ -1,5 +1,5 @@
+import FaqContainer from "@/components/FaqContainer";
 import PageBanner from "@/components/PageBanner";
-import Accordion from "@/components/ui/Accordion";
 
 const FAQ = () => {
   return (
@@ -21,92 +21,7 @@ const FAQ = () => {
 
             {/* faq container */}
 
-            <div className="space-y-4">
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-              <Accordion
-                title={"What is Hire & Fire?"}
-                answer={
-                  "Clear answers to common inquiries about job search, application processes, requirements, and company culture for applicants."
-                }
-              />
-            </div>
+            <FaqContainer />
           </div>
         </div>
       </section>

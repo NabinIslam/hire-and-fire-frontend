@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "rsuite/dist/rsuite-no-reset.min.css";
 import RsuiteProvider from "@/providers/RsuiteProvider";
+import TanstackQueryProvider from "@/providers/TanstackQueryProvider";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -20,9 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.className} flex min-h-screen flex-col`}>
-        <Header />
-        <RsuiteProvider>{children}</RsuiteProvider>
-        <Footer />
+        <TanstackQueryProvider>
+          <Header />
+          <RsuiteProvider>{children}</RsuiteProvider>
+          <Footer />
+        </TanstackQueryProvider>
       </body>
     </html>
   );

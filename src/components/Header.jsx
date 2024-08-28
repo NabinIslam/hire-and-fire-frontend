@@ -11,6 +11,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import { Sidebar } from "flowbite-react";
 
 const Header = () => {
   const [selected, setSelected] = useState("US");
@@ -21,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white py-2 shadow">
+    <header className="sticky top-0 z-50 bg-white py-[10px] shadow">
       <nav className="container flex items-center justify-between">
         <div className="basis-1/4">
           <Link href="/">
@@ -133,7 +134,7 @@ const Header = () => {
               <ul className="absolute top-5 hidden animate-fadeIn space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
-                    className={`${pathname === "/resources/faq" ? "text-primary" : ""} flex duration-200 hover:text-primary`}
+                    className={`${pathname === "/resources/faq" ? "text-primary" : ""} duration-20 0 flex hover:text-primary`}
                     href="/resources/faq"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -142,7 +143,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    className={`${pathname === "/resources/blog" ? "text-primary" : ""} flex duration-200 hover:text-primary`}
+                    className={`${pathname === "/resources/blog" ? "text-primary" : ""} duration-20 0 flex hover:text-primary`}
                     href="/resources/blog"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -179,9 +180,9 @@ const Header = () => {
         open={isOpen}
         onClose={toggleDrawer}
         direction="left"
-        className="bla bla bla"
+        className="max-w-96"
       >
-        <div className="flex h-screen flex-col p-4">
+        <div className="flex h-screen flex-col bg-[#F9FAFB] p-4">
           <div>
             <Image
               className="h-[50px] w-auto"
@@ -190,6 +191,73 @@ const Header = () => {
               height={50}
               width={50}
             />
+          </div>
+          <div className="overflow-y-scroll">
+            <Sidebar className="m-0 w-full p-0">
+              <Sidebar.Items className="m-0 p-0">
+                <Sidebar.ItemGroup>
+                  <Link
+                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                    href="/about-us"
+                  >
+                    About us
+                  </Link>
+                  <Sidebar.Collapse
+                    className="px-0 text-sm font-medium"
+                    label="Employers"
+                  >
+                    <Link
+                      className={`${pathname === "/employers/employment-service" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                      href="/employers/employment-service"
+                    >
+                      Employment Service
+                    </Link>
+                    <Link
+                      className={`${pathname === "/employers/additional-support" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                      href="/employers/additional-support"
+                    >
+                      Additional Support
+                    </Link>
+                    <Link
+                      className={`${pathname === "/employers/partnerships-programs" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                      href="/employers/partnerships-programs"
+                    >
+                      Partnerships Programs
+                    </Link>
+                  </Sidebar.Collapse>
+                  <Link
+                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                    href="#"
+                  >
+                    Inbox
+                  </Link>
+                  <Link
+                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                    href="#"
+                  >
+                    Users
+                  </Link>
+                  <Link
+                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                    href="#"
+                  >
+                    Products
+                  </Link>
+                  <Link
+                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                    href="#"
+                  >
+                    Sign In
+                  </Link>
+                  <Link
+                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                    href="#"
+                  >
+                    Sign Up
+                  </Link>
+                </Sidebar.ItemGroup>
+              </Sidebar.Items>
+            </Sidebar>
           </div>
           <div className="mt-auto flex items-center justify-between">
             <Link href="/contact-us">

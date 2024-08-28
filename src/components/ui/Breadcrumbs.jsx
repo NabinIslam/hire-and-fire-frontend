@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { capitalizeAndRemoveHyphens } from "@/Utils/capitalizeAndRemoveHyphens";
+import { capitalizeAndRemoveHyphens } from "@/utils/capitalizeAndRemoveHyphens";
 
 const Breadcrumbs = () => {
   const location = usePathname();
