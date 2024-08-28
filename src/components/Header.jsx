@@ -8,16 +8,23 @@ import Button from "./ui/Button";
 import ReactFlagsSelect from "react-flags-select";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoMdArrowDropright } from "react-icons/io";
+import { FaBars } from "react-icons/fa6";
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
 
 const Header = () => {
   const [selected, setSelected] = useState("US");
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
 
   return (
-    <header className="z-50 bg-white py-2">
+    <header className="sticky top-0 z-50 bg-white py-2 shadow">
       <nav className="container flex items-center justify-between">
         <div className="basis-1/4">
-          <Link className="inline" href="/">
+          <Link href="/">
             <Image
               src="/images/Logo.png"
               width={52}
@@ -26,7 +33,7 @@ const Header = () => {
             />
           </Link>
         </div>
-        <div className="basis-1/2">
+        <div className="hidden basis-1/2 lg:block">
           <ul className="flex justify-center text-sm font-medium">
             <li className="px-4">
               <Link
@@ -146,7 +153,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="flex basis-1/4 items-center justify-end gap-2">
+        <div className="hidden basis-1/4 items-center justify-end gap-2 lg:flex">
           <Link href="/contact-us">
             <Button>Contact Us</Button>
           </Link>
@@ -158,7 +165,46 @@ const Header = () => {
             onSelect={(code) => setSelected(code)}
           />
         </div>
+        <div className="flex basis-1/4 items-center justify-end lg:hidden">
+          <button
+            className="ml-auto rounded-md border-2 p-1"
+            onClick={toggleDrawer}
+          >
+            <FaBars className="text-xl text-secondary duration-200 hover:text-primary" />
+          </button>
+        </div>
       </nav>
+
+      <Drawer
+        open={isOpen}
+        onClose={toggleDrawer}
+        direction="left"
+        className="bla bla bla"
+      >
+        <div className="flex h-screen flex-col p-4">
+          <div>
+            <Image
+              className="h-[50px] w-auto"
+              src="/images/Logo.png"
+              alt="Hire and Fire"
+              height={50}
+              width={50}
+            />
+          </div>
+          <div className="mt-auto flex items-center justify-between">
+            <Link href="/contact-us">
+              <Button>Contact Us</Button>
+            </Link>
+            <ReactFlagsSelect
+              className="mb-[-5px]"
+              showSelectedLabel={false}
+              showOptionLabel={false}
+              selected={selected}
+              onSelect={(code) => setSelected(code)}
+            />
+          </div>
+        </div>
+      </Drawer>
     </header>
   );
 };
