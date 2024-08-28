@@ -9,7 +9,7 @@ const ContactUs = () => {
   return (
     <main>
       <PageBanner title="Contact Us" />
-      <section className="py-[50px]">
+      <section className="py-[100px]">
         <div className="container">
           <h4 className="text-center text-[40px] font-bold text-primary">
             Contact Us
