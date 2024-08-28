@@ -2,7 +2,7 @@ import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
 
 const WorkSteps = () => {
   return (
-    <section className="py-[50px]">
+    <section className="pb-[100px] pt-[50px]">
       <h6 className="text-center text-2xl font-medium text-primary">
         Work Steps
       </h6>

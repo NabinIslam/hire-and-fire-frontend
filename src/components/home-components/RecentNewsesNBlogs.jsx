@@ -8,7 +8,7 @@ import TitleDescSection from "../TitleDescSection";
 const RecentNewsesNBlogs = () => {
   return (
     <TitleDescSection
-      className="pb-[50px] pt-[50px]"
+      className="pb-[100px]"
       title="Our Blog & News"
       description="Stay updated with the latest news articles and trending stories."
     >

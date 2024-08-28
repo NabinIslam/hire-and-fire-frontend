@@ -25,12 +25,12 @@ const PermanentRecruitment = () => {
         </div>
         <div className="group relative min-h-[400px] w-full basis-full lg:basis-1/2">
           <Image
-            className="object-contain md:hidden"
+            className="object-contain"
             src="/images/permanent-rec-full.png"
             alt="Permanent Recruitment"
             fill
           />
-          <Image
+          {/* <Image
             className="hidden object-contain md:block"
             src="/images/permanent-recruitment.png"
             alt="Permanent Recruitment"
@@ -40,7 +40,7 @@ const PermanentRecruitment = () => {
           <img
             className="absolute hidden h-full w-auto transition-transform duration-1000 group-hover:translate-x-full md:block lg:-translate-x-20"
             src="/images/permanent-rec.png"
-          />
+          /> */}
         </div>
       </div>
       <div className="container mt-[50px] grid grid-cols-1 gap-5 lg:grid-cols-3">

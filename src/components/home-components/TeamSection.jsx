@@ -26,7 +26,7 @@ const TeamSection = () => {
     // </section>
     <TitleDescSection
       title="Team of recruitment expert"
-      description=" A team of recruitment experts specializes in sourcing, assessing, and hiring top talent to <br /> meet organizational needs efficiently and effectively."
+      description=" A team of recruitment experts specializes in sourcing, assessing, and hiring top talent to meet organizational needs efficiently and effectively."
     >
       <div className="container grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {/* team card */}
