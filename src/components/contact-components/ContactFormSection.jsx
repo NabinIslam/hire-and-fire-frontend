@@ -27,6 +27,7 @@ const ContactFormSection = () => {
                   className="w-full rounded-lg border-gray-300 py-3 text-sm"
                   type="text"
                   placeholder="Name"
+                  required
                 />
               </div>
               <div>
@@ -34,6 +35,7 @@ const ContactFormSection = () => {
                   className="w-full rounded-lg border-gray-300 py-3 text-sm"
                   type="email"
                   placeholder="Email"
+                  required
                 />
               </div>
               <div>
@@ -41,6 +43,7 @@ const ContactFormSection = () => {
                   className="w-full rounded-lg border-gray-300 py-3 text-sm"
                   type="tel"
                   placeholder="Phone Number"
+                  required
                 />
               </div>
               <div>
@@ -50,10 +53,13 @@ const ContactFormSection = () => {
                   id=""
                   placeholder="Write your message"
                   rows={6}
+                  required
                 ></textarea>
               </div>
               <div className="flex items-center justify-center">
-                <Button className="mx-auto">Send Message</Button>
+                <Button type="submit" className="mx-auto">
+                  Send Message
+                </Button>
               </div>
             </form>
           </div>

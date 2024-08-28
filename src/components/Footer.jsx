@@ -111,7 +111,7 @@ const Footer = () => {
                 placeholder="Your Email Here"
               />
               <button className="h-full w-[150px] basis-auto rounded-md border-2 border-primary bg-primary px-2 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:bg-white hover:text-primary">
-                Contact Us
+                Subscribe
               </button>
             </div>
             <div className="space-y-3">
