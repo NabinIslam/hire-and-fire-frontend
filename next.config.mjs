@@ -1,9 +1,14 @@
-import path from "path";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config) => {
-    config.resolve.alias["@"] = path.resolve(__dirname, "src");
-    return config;
+  images: {
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "192.168.11.110",
+        port: "8000",
+        pathname: "/media/industry_photo/2024/08/28/**",
+      },
+    ],
   },
 };
 
