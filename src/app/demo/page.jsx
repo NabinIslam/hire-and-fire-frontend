@@ -1,28 +1,13 @@
-"use client";
-import { useQuery } from "@tanstack/react-query";
-import { useEffect, useState } from "react";
-
-const page = () => {
-  const { data: faqs, isLoading } = useQuery({
-    queryKey: ["faqs"],
-    queryFn: () =>
-      //   fetch(`http://192.168.11.110:8000/api/faqs`).then((res) => res.json()),
-
-      axios.get(`${apiBaseUrl}/faqs`).then(function (response) {
-        // handle success
-        console.log(response);
-      }),
-  });
-
-  console.log(faqs);
-
-  if (isLoading) return <p>Loading...</p>;
-
+const Demo = async () => {
+  let data = await fetch("https://api.vercel.app/blog");
+  let posts = await data.json();
   return (
-    <div>
-      <h1>This is page component</h1>
-    </div>
+    <ul>
+      {posts.map((post) => (
+        <li key={post.id}>{post.title}</li>
+      ))}
+    </ul>
   );
 };
 
-export default page;
+export default Demo;

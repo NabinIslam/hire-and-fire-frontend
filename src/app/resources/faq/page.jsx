@@ -1,7 +1,11 @@
 import FaqContainer from "@/components/FaqContainer";
 import PageBanner from "@/components/PageBanner";
+import { apiBaseUrl } from "@/secrets";
 
-const FAQ = () => {
+const FAQ = async () => {
+  const data = await fetch(`${apiBaseUrl}/faqs`);
+  const faqs = await data.json();
+
   return (
     <main>
       <PageBanner title="FAQ" />
@@ -21,7 +25,7 @@ const FAQ = () => {
 
             {/* faq container */}
 
-            <FaqContainer />
+            <FaqContainer faqs={faqs} />
           </div>
         </div>
       </section>
