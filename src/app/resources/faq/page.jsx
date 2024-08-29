@@ -2,11 +2,14 @@ import FaqContainer from "@/components/FaqContainer";
 import PageBanner from "@/components/PageBanner";
 import { apiBaseUrl } from "@/secrets";
 
+const getAllFaqs = async () => {
+  const res = await fetch(`${apiBaseUrl}/faqs`);
+
+  return res.json();
+};
+
 const FAQ = async () => {
-  const data = await fetch(`${apiBaseUrl}/faqs`, {
-    cache: 'no-cache'
-  });
-  const faqs = await data.json();
+  const faqs = await getAllFaqs();
 
   return (
     <main>
