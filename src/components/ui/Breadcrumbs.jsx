@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+
+import { Fragment } from "react";
 import { usePathname } from "next/navigation";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { capitalizeAndRemoveHyphens } from "@/utils/capitalizeAndRemoveHyphens";
@@ -14,10 +14,10 @@ const Breadcrumbs = () => {
     <div className="flex items-center justify-center gap-3 text-sm">
       Home
       {parts.map((part, index) => (
-        <React.Fragment key={index}>
+        <Fragment key={index}>
           {index > 0 && <MdKeyboardDoubleArrowRight />}
           {capitalizeAndRemoveHyphens(part)}
-        </React.Fragment>
+        </Fragment>
       ))}
     </div>
   );
