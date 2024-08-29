@@ -1,4 +1,4 @@
-export function capitalizeAndRemoveHyphens(str) {
+export default function capitalizeAndRemoveHyphens(str) {
   // Replace hyphens with spaces
   const replacedString = str.replace(/-/g, " ");
 

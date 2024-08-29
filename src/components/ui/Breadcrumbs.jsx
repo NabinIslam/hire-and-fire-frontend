@@ -3,7 +3,7 @@
 import { Fragment } from "react";
 import { usePathname } from "next/navigation";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { capitalizeAndRemoveHyphens } from "@/utils/capitalizeAndRemoveHyphens.js";
+import capitalizeAndRemoveHyphens from "@/utils/capitalizeAndRemoveHyphens";
 
 const Breadcrumbs = () => {
   const location = usePathname();
