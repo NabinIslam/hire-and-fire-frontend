@@ -1,12 +1,10 @@
 import Accordion from "@/components/ui/Accordion";
-import FaqSkeleton from "./skeletons/FaqSkeleton";
+import { faqsData } from "@/data/faqs";
 
-const FaqContainer = ({ faqs }) => {
-  if (!faqs) return <FaqSkeleton />;
-
+const FaqContainer = () => {
   return (
     <div className="space-y-4">
-      {faqs.map((faq) => (
+      {faqsData.map((faq) => (
         <Accordion
           title={faq.question}
           answer={faq.answer}
