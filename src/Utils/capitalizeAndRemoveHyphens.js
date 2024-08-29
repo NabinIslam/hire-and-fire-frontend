@@ -1,4 +1,4 @@
-export function capitalizeAndRemoveHyphens(str) {
+export function CapitalizeAndRemoveHyphens(str) {
   const replacedString = str.replace(/-/g, " ");
 
   const capitalizedString = replacedString
