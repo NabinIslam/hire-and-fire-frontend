@@ -1,4 +1,4 @@
-export function CapitalizeAndRemoveHyphens(str) {
+export const capitalizeAndRemoveHyphens = (str) => {
   const replacedString = str.replace(/-/g, " ");
 
   const capitalizedString = replacedString
@@ -7,4 +7,4 @@ export function CapitalizeAndRemoveHyphens(str) {
     .join(" ");
 
   return capitalizedString;
-}
+};

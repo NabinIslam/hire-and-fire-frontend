@@ -3,7 +3,7 @@
 import { Fragment } from "react";
 import { usePathname } from "next/navigation";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { CapitalizeAndRemoveHyphens } from "@/utils/capitalizeAndRemoveHyphens";
+import { capitalizeAndRemoveHyphens } from "@/utils/capitalizeAndRemoveHyphens";
 
 const Breadcrumbs = () => {
   const location = usePathname();
@@ -16,7 +16,7 @@ const Breadcrumbs = () => {
       {parts.map((part, index) => (
         <Fragment key={index}>
           {index > 0 && <MdKeyboardDoubleArrowRight />}
-          {CapitalizeAndRemoveHyphens(part)}
+          {capitalizeAndRemoveHyphens(part)}
         </Fragment>
       ))}
     </div>
