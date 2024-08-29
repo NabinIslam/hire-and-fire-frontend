@@ -3,9 +3,16 @@ import PageBanner from "@/components/PageBanner";
 import { apiBaseUrl } from "@/secrets";
 
 const getAllFaqs = async () => {
-  const res = await fetch(`${apiBaseUrl}/faqs`);
-
-  return res.json();
+  try {
+    const res = await fetch(`${apiBaseUrl}/faqs`);
+    if (!res.ok) {
+      throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);
+    }
+    return res.json();
+  } catch (error) {
+    console.error("Error fetching FAQs:", error);
+    return []; // Return an empty array or handle it accordingly
+  }
 };
 
 const FAQ = async () => {
