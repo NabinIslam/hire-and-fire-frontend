@@ -32,7 +32,7 @@ const BlogCard = () => {
           }
           playIcon={
             <Image
-              className="absolute"
+              className="absolute shadow-2xl"
               src="/images/video-play-icon.png"
               alt="Video Play Icon"
               height={40}
