@@ -4,7 +4,6 @@ import { IoMdArrowDropright } from "react-icons/io";
 
 const IndustryCard = ({ industry }) => {
   const { name, shortDescription, photo } = industry;
-  console.log(industry);
 
   return (
     <div className="rounded-lg border p-4 text-center shadow-xl">
