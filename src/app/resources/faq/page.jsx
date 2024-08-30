@@ -1,14 +1,9 @@
 import FaqContainer from "@/components/FaqContainer";
 import PageBanner from "@/components/PageBanner";
 
-// const getAllFaqs = async () => {
-//   const res = await fetch(`${apiBaseUrl}/faqs`);
-
-//   return res.json();
-// };
-
-const FAQ = () => {
-  // const faqs = await getAllFaqs();
+const FAQ = async () => {
+  const data = await fetch(`${apiBaseUrl}/faqs`);
+  const faqs = await data.json();
 
   return (
     <main>
@@ -29,7 +24,7 @@ const FAQ = () => {
 
             {/* faq container */}
 
-            <FaqContainer />
+            <FaqContainer faqs={faqs} />
           </div>
         </div>
       </section>

@@ -1,15 +1,9 @@
 import IndustryCard from "@/components/IndustryCard";
 import PageBanner from "@/components/PageBanner";
-import { industries } from "@/data/industries";
 
-// const getAllIndustries = async () => {
-//   const res = await fetch(`${apiBaseUrl}/industries`);
-
-//   return res.json();
-// };
-
-const Industry = () => {
-  // const industries = await getAllIndustries();
+const Industry = async () => {
+  const data = await fetch(`${apiBaseUrl}/industries`);
+  const industries = await data.json();
 
   return (
     <main>

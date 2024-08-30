@@ -1,10 +1,9 @@
 import Accordion from "@/components/ui/Accordion";
-import { faqsData } from "@/data/faqs";
 
-const FaqContainer = () => {
+const FaqContainer = ({ faqs }) => {
   return (
     <div className="space-y-4">
-      {faqsData.map((faq) => (
+      {faqs.map((faq) => (
         <Accordion
           title={faq.question}
           answer={faq.answer}
