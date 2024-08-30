@@ -1,3 +1,4 @@
+import PageBanner from "@/components/PageBanner";
 import IndustrySkeleton from "@/components/skeletons/IndustrySkeleton";
 
 const loading = () => {
