@@ -1,5 +1,6 @@
 import FaqContainer from "@/components/FaqContainer";
 import PageBanner from "@/components/PageBanner";
+import { apiBaseUrl } from "@/secrets";
 
 const FAQ = async () => {
   const data = await fetch(`${apiBaseUrl}/faqs`);

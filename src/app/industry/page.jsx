@@ -1,5 +1,6 @@
 import IndustryCard from "@/components/IndustryCard";
 import PageBanner from "@/components/PageBanner";
+import { apiBaseUrl } from "@/secrets";
 
 const Industry = async () => {
   const data = await fetch(`${apiBaseUrl}/industries`);
