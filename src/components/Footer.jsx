@@ -2,8 +2,13 @@ import Link from "next/link";
 import Button from "./ui/Button";
 import { IoMdArrowDropright } from "react-icons/io";
 import { FaPhone, FaEnvelope } from "react-icons/fa6";
-import { FaMapMarkerAlt, FaTwitter } from "react-icons/fa";
-import { FaFacebook, FaInstagram, FaTwitch } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaTelegramPlane,
+  FaTwitter,
+  FaFacebook,
+  FaInstagram,
+} from "react-icons/fa";
 import Image from "next/image";
 
 const Footer = () => {
@@ -104,16 +109,7 @@ const Footer = () => {
           <div className="space-y-5">
             <span className="text-xl">Get In Touch</span>
             <p>Subscribe Our Newsletter to Get Latest Update & News</p>
-            <div className="flex h-12 items-center justify-between rounded-md bg-white">
-              <input
-                className="placeholder:text-slate-500 text-slate-500 basis-full border-none px-3 text-sm focus:ring-0"
-                type="text"
-                placeholder="Your Email Here"
-              />
-              <button className="h-full w-[150px] basis-auto rounded-md border-2 border-primary bg-primary px-2 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:bg-white hover:text-primary">
-                Subscribe
-              </button>
-            </div>
+
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm">
                 <FaPhone className="rounded-full bg-[#F90945] p-2 text-3xl" />{" "}
@@ -159,14 +155,23 @@ const Footer = () => {
             <div className="flex flex-col items-center justify-end gap-3 font-medium xl:flex-row xl:gap-10">
               Follow Us
               <span className="flex items-center gap-3">
-                <Link href="#">
+                <Link
+                  href="https://www.facebook.com/hireandfire.eu"
+                  target="_blank"
+                >
                   <FaFacebook className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
-                <Link href="#">
+                <Link
+                  href="https://www.instagram.com/hireandfire.eu/"
+                  target="_blank"
+                >
                   <FaInstagram className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
-                <Link href="#">
+                <Link href="https://twitter.com/hireandfireeu" target="_blank">
                   <FaTwitter className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
+                </Link>
+                <Link href="https://telegram.org/" target="_blank">
+                  <FaTelegramPlane className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
               </span>
             </div>
