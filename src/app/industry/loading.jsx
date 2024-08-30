@@ -1,24 +1,90 @@
-import PageBanner from "@/components/PageBanner";
-import IndustrySkeleton from "@/components/skeletons/IndustrySkeleton";
+import Skeleton from "react-loading-skeleton";
 
-const loading = () => {
+const IndustrySkeleton = () => {
   return (
-    <main>
-      <PageBanner title="Industry" />
+    <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {/* card */}
+      <div className="rounded-lg border p-4 text-center shadow-xl">
+        <Skeleton className="h-[240px] w-full" />
 
-      <section className="py-[100px]">
-        <div className="container">
-          <h2 className="mb-5 text-center text-5xl font-semibold">
-            Industry We Serve
-          </h2>
-          <div className="mx-auto h-[5px] w-[200px] rounded-full bg-primary"></div>
+        <Skeleton className="h-[20px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[15px] w-[88px]" />
+      </div>
+      {/* card */}
+      <div className="rounded-lg border p-4 text-center shadow-xl">
+        <Skeleton className="h-[240px] w-full" />
 
-          {/* industries container  */}
-          <IndustrySkeleton />
-        </div>
-      </section>
-    </main>
+        <Skeleton className="h-[20px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[15px] w-[88px]" />
+      </div>
+      {/* card */}
+      <div className="rounded-lg border p-4 text-center shadow-xl">
+        <Skeleton className="h-[240px] w-full" />
+
+        <Skeleton className="h-[20px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[15px] w-[88px]" />
+      </div>
+      {/* card */}
+      <div className="rounded-lg border p-4 text-center shadow-xl">
+        <Skeleton className="h-[240px] w-full" />
+
+        <Skeleton className="h-[20px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[15px] w-[88px]" />
+      </div>
+      {/* card */}
+      <div className="rounded-lg border p-4 text-center shadow-xl">
+        <Skeleton className="h-[240px] w-full" />
+
+        <Skeleton className="h-[20px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[15px] w-[88px]" />
+      </div>
+      {/* card */}
+      <div className="rounded-lg border p-4 text-center shadow-xl">
+        <Skeleton className="h-[240px] w-full" />
+
+        <Skeleton className="h-[20px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[15px] w-[88px]" />
+      </div>
+      {/* card */}
+      <div className="rounded-lg border p-4 text-center shadow-xl">
+        <Skeleton className="h-[240px] w-full" />
+
+        <Skeleton className="h-[20px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[15px] w-[88px]" />
+      </div>
+      {/* card */}
+      <div className="rounded-lg border p-4 text-center shadow-xl">
+        <Skeleton className="h-[240px] w-full" />
+
+        <Skeleton className="h-[20px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[15px] w-[88px]" />
+      </div>
+    </div>
   );
 };
 
-export default loading;
+export default IndustrySkeleton;

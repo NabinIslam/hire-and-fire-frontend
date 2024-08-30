@@ -1,8 +1,8 @@
 import IndustryCard from "@/components/IndustryCard";
 import PageBanner from "@/components/PageBanner";
-import IndustrySkeleton from "@/components/skeletons/IndustrySkeleton";
 import { apiBaseUrl } from "@/secrets";
 import { Suspense } from "react";
+import IndustrySkeleton from "./loading";
 
 const Industry = async () => {
   const data = await fetch(`${apiBaseUrl}/industries`, {
