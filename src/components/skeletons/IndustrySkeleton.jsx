@@ -9,6 +9,8 @@ const IndustrySkeleton = () => {
 
         <Skeleton className="h-[20px]" />
         <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
+        <Skeleton className="h-[10px]" />
         <Skeleton className="h-[15px] w-[88px]" />
       </div>
       {/* card */}
