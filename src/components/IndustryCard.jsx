@@ -20,7 +20,7 @@ const IndustryCard = ({ industry }) => {
       <p className="my-3 text-sm font-medium">{shortDescription}</p>
       <Link className="mt-5" href={`/industry/${name}`}>
         <button className="mx-auto flex items-center text-sm font-medium text-pink-600">
-          <span>Contact Us</span> <IoMdArrowDropright className="text-lg" />
+          <span>Read More</span> <IoMdArrowDropright className="text-lg" />
         </button>
       </Link>
     </div>
