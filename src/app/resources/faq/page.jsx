@@ -2,7 +2,7 @@ import Accordion from "@/components/ui/Accordion";
 import PageBanner from "@/components/PageBanner";
 import { apiBaseUrl } from "@/secrets";
 import { Suspense } from "react";
-import Loading from "./loading";
+import FaqSkeleton from "@/components/skeletons/FaqSkeleton";
 
 const FAQ = async () => {
   const data = await fetch(`${apiBaseUrl}/faqs`, {
@@ -29,7 +29,7 @@ const FAQ = async () => {
 
             {/* faq container */}
 
-            <Suspense fallback={<Loading />}>
+            <Suspense fallback={<FaqSkeleton />}>
               <div className="space-y-4">
                 {faqs.map((faq) => (
                   <Accordion
