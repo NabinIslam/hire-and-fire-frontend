@@ -53,7 +53,7 @@ module.exports = {
         },
       },
       animation: {
-        pulse: "pulse .2s ease-in-out infinite",
+        pulse: "pulse 1s ease-in-out infinite",
       },
     },
   },
