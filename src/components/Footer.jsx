@@ -204,16 +204,23 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm">
                 <FaPhone className="rounded-full bg-[#F90945] p-2 text-3xl" />
-                +40 123 456 789
+                <Link href="tel:+40 123 456 789"> +40 123 456 789</Link>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <FaEnvelope className="rounded-full bg-[#F90945] p-2 text-3xl" />
-                Contact@hireandfire.agency
+                <Link href="mailto:Contact@hireandfire.agency">
+                  Contact@hireandfire.agency
+                </Link>
               </div>
               <div className="flex items-start gap-2 text-sm">
                 <FaMapMarkerAlt className="rounded-full bg-[#F90945] p-2 text-3xl" />
-                Strada ING. Zablovschi, Nr. 10,
-                <br /> Biroul 1, Sectorul 1, Bucuresti, Romania.
+                <Link
+                  href="https://maps.app.goo.gl/qNxPC3VBa4J9Kobm6"
+                  target="_blank"
+                >
+                  Strada ING. Zablovschi, Nr. 10,
+                  <br /> Biroul 1, Sectorul 1, Bucuresti, Romania.
+                </Link>
               </div>
             </div>
           </div>
