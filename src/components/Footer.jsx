@@ -48,64 +48,137 @@ const Footer = () => {
             <ul className="flex flex-col justify-between gap-6">
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Home</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/home"
+                >
+                  Home
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">About Us</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/about-us"
+                >
+                  About Us
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Services</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/services"
+                >
+                  Services
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Industries We Serve</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/industry"
+                >
+                  Industries We Serve
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Blog & News</Link>
+                <Link
+                  className="duration-200 hover:text-primary"
+                  font-medium
+                  href="/resources/blog"
+                >
+                  Blog & News
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">FAQ</Link>
+                <Link
+                  className="duration-200 hover:text-primary"
+                  font-medium
+                  href="/resources/faq"
+                >
+                  FAQ
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Contact Us</Link>
+                <Link
+                  className="duration-200 hover:text-primary"
+                  font-medium
+                  href="/contact-us"
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
           <div className="space-y-5">
             <span className="border-b-[1px] pb-1 text-xl">Our Services</span>
-            <ul className="flex flex-col justify-between gap-6">
+            <ul className="flex flex-col justify-between gap-6 font-medium">
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Permanent Requitment</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/home"
+                >
+                  Permanent Requitment
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Contract Staffing</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/home"
+                >
+                  Contract Staffing
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Housing & Accomodation Support</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/home"
+                >
+                  Housing & Accomodation Support
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Compliance and Legal Support</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/home"
+                >
+                  Compliance and Legal Support
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Workforce Planning</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/home"
+                >
+                  Workforce Planning
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Background Checks</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/home"
+                >
+                  Background Checks
+                </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link href="">Onboarding Support</Link>
+                <Link
+                  className="font-medium duration-200 hover:text-primary"
+                  href="/home"
+                >
+                  Onboarding Support
+                </Link>
               </li>
             </ul>
           </div>

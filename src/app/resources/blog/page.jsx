@@ -9,6 +9,7 @@ const Blog = () => {
       <TitleDescSection
         title="Our Blog & News"
         description="Stay updated with the latest news articles and trending stories."
+        className="py-[50px]"
       >
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
           <BlogCard />
