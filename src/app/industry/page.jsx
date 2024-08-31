@@ -2,7 +2,7 @@ import IndustryCard from "@/components/IndustryCard";
 import PageBanner from "@/components/PageBanner";
 import { apiBaseUrl } from "@/secrets";
 import { Suspense } from "react";
-import Skeleton from "react-loading-skeleton";
+import Loading from "./loading";
 
 const Industry = async () => {
   const data = await fetch(`${apiBaseUrl}/industries`, {
@@ -23,25 +23,13 @@ const Industry = async () => {
 
           {/* industries container  */}
 
-          <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {industries.map((industry) => (
-              <Suspense
-                fallback={
-                  <div className="rounded-lg border p-4 text-center shadow-xl">
-                    <Skeleton className="h-[240px] w-full" />
-
-                    <Skeleton className="h-[20px]" />
-                    <Skeleton className="h-[10px]" />
-                    <Skeleton className="h-[10px]" />
-                    <Skeleton className="h-[10px]" />
-                    <Skeleton className="h-[15px] w-[88px]" />
-                  </div>
-                }
-              >
+          <Suspense fallback={<Loading />}>
+            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {industries.map((industry) => (
                 <IndustryCard industry={industry} key={industry.name} />
-              </Suspense>
-            ))}
-          </div>
+              ))}
+            </div>
+          </Suspense>
         </div>
       </section>
     </main>

@@ -1,6 +1,8 @@
 import FaqContainer from "@/components/FaqContainer";
 import PageBanner from "@/components/PageBanner";
 import { apiBaseUrl } from "@/secrets";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const FAQ = async () => {
   const data = await fetch(`${apiBaseUrl}/faqs`, {
@@ -27,7 +29,9 @@ const FAQ = async () => {
 
             {/* faq container */}
 
-            <FaqContainer faqs={faqs} />
+            <Suspense fallback={<Loading />}>
+              <FaqContainer faqs={faqs} />
+            </Suspense>
           </div>
         </div>
       </section>
