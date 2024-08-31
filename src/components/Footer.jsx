@@ -14,8 +14,8 @@ const Footer = () => {
   return (
     <footer className="mt-auto bg-[#004785] pb-[25px] pt-[50px] text-white">
       <div className="container space-y-6">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-[50px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-6">
+          <div className="basis-full space-y-4 md:basis-1/2 lg:basis-1/4">
             <Image
               src="/images/Hire-Fire.png"
               alt="Hire And Fire"
@@ -43,7 +43,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="space-y-5">
+          <div className="basis-full space-y-5 md:basis-1/2 lg:basis-1/4 xl:pl-[80px]">
             <span className="border-b-[1px] pb-1 text-xl">Quick Links</span>
             <ul className="flex flex-col justify-between gap-6">
               <li className="flex items-center">
@@ -114,7 +114,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="space-y-5">
+          <div className="basis-full space-y-5 md:basis-1/2 lg:basis-1/4">
             <span className="border-b-[1px] pb-1 text-xl">Our Services</span>
             <ul className="flex flex-col justify-between gap-6 font-medium">
               <li className="flex items-center">
@@ -182,20 +182,20 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="space-y-5">
+          <div className="basis-full space-y-5 md:basis-1/2 lg:basis-1/4">
             <span className="text-xl">Get In Touch</span>
             <p>Subscribe Our Newsletter to Get Latest Update & News</p>
 
-            <form className="flex rounded-md bg-white">
+            <form className="flex w-full rounded-md bg-white">
               <input
-                className="basis-full rounded-md border-none bg-white text-sm text-black focus:ring-0"
+                className="rounded-md border-none bg-white text-sm text-black focus:ring-0"
                 type="email"
                 placeholder="Your Email Here"
                 required
               />
               <button
                 type="submit"
-                className="basis-auto rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:text-primary"
+                className="ml-auto basis-auto rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:text-primary"
               >
                 Subscribe
               </button>
@@ -225,6 +225,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <hr />
         <div className="flex flex-col items-center justify-between gap-6 text-center text-sm md:text-left xl:flex-row">
           <div className="basis-full lg:basis-1/3">
@@ -281,3 +282,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
