@@ -42,6 +42,19 @@ module.exports = {
         "our-success-bg": "url('/our-success-bg.jpg')",
         "why-choose-us-bg": "url('/images/why-choose-us-bg.png')",
       },
+      keyframes: {
+        pulse: {
+          "25%": {
+            transform: "scale(0.9)",
+          },
+          "75%": {
+            transform: "scale(1.1)",
+          },
+        },
+      },
+      animation: {
+        pulse: "pulse .2s ease-in-out infinite",
+      },
     },
   },
   plugins: [flowbite.plugin()],
