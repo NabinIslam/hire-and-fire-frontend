@@ -192,7 +192,7 @@ const Header = () => {
               width={50}
             />
           </div>
-          <div className="overflow-y-scroll">
+          <div>
             <Sidebar className="m-0 w-full p-0">
               <Sidebar.Items className="m-0 p-0">
                 <Sidebar.ItemGroup>
@@ -225,36 +225,46 @@ const Header = () => {
                       Partnerships Programs
                     </Link>
                   </Sidebar.Collapse>
-                  <Link
-                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
-                    href="#"
+                  <Sidebar.Collapse
+                    className="px-0 text-sm font-medium"
+                    label="Hire Worker"
                   >
-                    Inbox
-                  </Link>
+                    <Link
+                      className={`${pathname === "/hire-worker/our-process" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                      href="/hire-worker/our-process"
+                    >
+                      Our Process
+                    </Link>
+                    <Link
+                      className={`${pathname === "/hire-worker/request-talent" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                      href="/hire-worker/request-talent"
+                    >
+                      Additional Support
+                    </Link>
+                  </Sidebar.Collapse>
                   <Link
-                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
-                    href="#"
+                    className={`${pathname === "/industry" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                    href="/industry"
                   >
-                    Users
+                    Industry
                   </Link>
-                  <Link
-                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
-                    href="#"
+                  <Sidebar.Collapse
+                    className="px-0 text-sm font-medium"
+                    label="Resources"
                   >
-                    Products
-                  </Link>
-                  <Link
-                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
-                    href="#"
-                  >
-                    Sign In
-                  </Link>
-                  <Link
-                    className={`${pathname === "/about-us" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
-                    href="#"
-                  >
-                    Sign Up
-                  </Link>
+                    <Link
+                      className={`${pathname === "/resources/faq" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                      href="/resources/faq"
+                    >
+                      FAQ
+                    </Link>
+                    <Link
+                      className={`${pathname === "/resources/blog" ? "bg-[#F3F4F6]" : ""} block rounded-lg px-4 py-[10px] text-sm font-medium hover:bg-[#F3F4F6]`}
+                      href="/resources/blog"
+                    >
+                      Blog
+                    </Link>
+                  </Sidebar.Collapse>
                 </Sidebar.ItemGroup>
               </Sidebar.Items>
             </Sidebar>
