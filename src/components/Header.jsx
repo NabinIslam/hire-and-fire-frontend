@@ -25,7 +25,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white py-[10px] shadow">
       <nav className="container flex items-center justify-between">
         <div className="basis-1/4">
-          <Link href="/">
+          <Link className="inline w-auto" href="/">
             <Image
               src="/images/Logo.png"
               width={52}
@@ -38,7 +38,7 @@ const Header = () => {
           <ul className="flex justify-center text-sm font-medium">
             <li className="px-4">
               <Link
-                className={` ${pathname === "/about-us" ? "text-primary" : ""} duration-200 hover:text-primary`}
+                className={`${pathname === "/about-us" ? "text-primary" : ""} duration-200 hover:text-primary`}
                 href="/about-us"
               >
                 About Us

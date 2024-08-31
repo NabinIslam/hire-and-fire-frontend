@@ -148,7 +148,7 @@ const EmploymentService = () => {
             Assignment of workers
           </h2>
           <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
-            <div className="basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg lg:basis-1/3">
+            <div className="min-h-[380px] basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg lg:basis-1/3">
               <Image
                 className="mx-auto"
                 src="/images/assignment-workers-icons/1.png"
@@ -170,7 +170,7 @@ const EmploymentService = () => {
               </p>
             </div>
             <div className="basis-full space-y-8 lg:basis-1/3">
-              <div className="space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg">
+              <div className="min-h-[380px] space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg">
                 <Image
                   className="mx-auto"
                   src="/images/assignment-workers-icons/2.png"
@@ -188,7 +188,7 @@ const EmploymentService = () => {
                   saving time and resources for both employers and candidates.
                 </p>
               </div>
-              <div className="space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg">
+              <div className="min-h-[380px] space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg">
                 <Image
                   className="mx-auto"
                   src="/images/assignment-workers-icons/3.png"
@@ -209,7 +209,7 @@ const EmploymentService = () => {
                 </p>
               </div>
             </div>
-            <div className="basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg lg:basis-1/3">
+            <div className="min-h-[380px] basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg lg:basis-1/3">
               <Image
                 className="mx-auto"
                 src="/images/assignment-workers-icons/4.png"
