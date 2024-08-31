@@ -6,7 +6,7 @@ const IndustryCard = ({ industry }) => {
   const { name, shortDescription, photo, slug } = industry;
 
   return (
-    <div className="rounded-lg border p-4 text-center shadow-xl">
+    <div className="rounded-lg flex flex-col border p-4 text-center shadow-xl">
       <div className="relative h-[240px] w-full">
         <Image
           className="rounded-lg object-cover"
@@ -17,7 +17,7 @@ const IndustryCard = ({ industry }) => {
       </div>
       <h3 className="mt-3 text-2xl font-medium">{name}</h3>
       <p className="my-3 text-sm font-medium">{shortDescription}</p>
-      <Link className="mt-5" href={`/industry/${slug}`}>
+      <Link className="mt-auto" href={`/industry/${slug}`}>
         <button className="mx-auto flex items-center text-sm font-medium text-pink-600">
           <span>Read More</span> <IoMdArrowDropright className="text-lg" />
         </button>
