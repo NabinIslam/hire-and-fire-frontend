@@ -1,4 +1,4 @@
-import FaqContainer from "@/components/FaqContainer";
+import Accordion from "@/components/ui/Accordion";
 import PageBanner from "@/components/PageBanner";
 import { apiBaseUrl } from "@/secrets";
 import { Suspense } from "react";
@@ -30,7 +30,15 @@ const FAQ = async () => {
             {/* faq container */}
 
             <Suspense fallback={<Loading />}>
-              <FaqContainer faqs={faqs} />
+              <div className="space-y-4">
+                {faqs.map((faq) => (
+                  <Accordion
+                    title={faq.question}
+                    answer={faq.answer}
+                    key={faq.question}
+                  />
+                ))}
+              </div>
             </Suspense>
           </div>
         </div>
