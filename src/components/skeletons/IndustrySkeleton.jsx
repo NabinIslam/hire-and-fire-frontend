@@ -7,7 +7,7 @@ const IndustrySkeleton = () => {
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
 
-        <Skeleton className="h-[20px]" />
+        <Skeleton className="mt-4 h-[20px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
@@ -17,7 +17,7 @@ const IndustrySkeleton = () => {
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
 
-        <Skeleton className="h-[20px]" />
+        <Skeleton className="mt-4 h-[20px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
@@ -27,7 +27,7 @@ const IndustrySkeleton = () => {
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
 
-        <Skeleton className="h-[20px]" />
+        <Skeleton className="mt-4 h-[20px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
@@ -37,7 +37,7 @@ const IndustrySkeleton = () => {
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
 
-        <Skeleton className="h-[20px]" />
+        <Skeleton className="mt-4 h-[20px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
@@ -47,7 +47,7 @@ const IndustrySkeleton = () => {
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
 
-        <Skeleton className="h-[20px]" />
+        <Skeleton className="mt-4 h-[20px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
@@ -57,7 +57,7 @@ const IndustrySkeleton = () => {
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
 
-        <Skeleton className="h-[20px]" />
+        <Skeleton className="mt-4 h-[20px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
@@ -67,7 +67,7 @@ const IndustrySkeleton = () => {
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
 
-        <Skeleton className="h-[20px]" />
+        <Skeleton className="mt-4 h-[20px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
@@ -77,7 +77,7 @@ const IndustrySkeleton = () => {
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
 
-        <Skeleton className="h-[20px]" />
+        <Skeleton className="mt-4 h-[20px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[10px]" />
