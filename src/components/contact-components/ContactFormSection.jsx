@@ -7,7 +7,7 @@ const ContactFormSection = () => {
         <div className="flex min-h-[600px] flex-col justify-between bg-[#FBFBFB] shadow-lg lg:flex-row">
           <div className="relative min-h-[500px] w-full basis-full md:h-auto lg:basis-1/2">
             <iframe
-              className="absolute left-0 top-0 h-full w-full"
+              className="absolute left-0 top-0 h-full w-full focus:border-0 focus:ring-0"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d711.9127450971082!2d26.072229846739514!3d44.46082750811414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2021ea90a1293%3A0xa8abd61622410077!2sStrada%20Inginer%20Zablovschi%2010%2C%20Bucure%C8%99ti%20077190%2C%20Romania!5e0!3m2!1sen!2sbd!4v1724827903741!5m2!1sen!2sbd"
               width="100%"
               height="100%"
@@ -24,7 +24,7 @@ const ContactFormSection = () => {
             <form className="space-y-5" action="">
               <div>
                 <input
-                  className="w-full rounded-lg border-gray-300 py-3 text-sm"
+                  className="w-full rounded-lg border-gray-300 py-3 text-sm focus:border-secondary focus:ring-0"
                   type="text"
                   placeholder="Name"
                   required
@@ -32,7 +32,7 @@ const ContactFormSection = () => {
               </div>
               <div>
                 <input
-                  className="w-full rounded-lg border-gray-300 py-3 text-sm"
+                  className="w-full rounded-lg border-gray-300 py-3 text-sm focus:border-secondary focus:ring-0"
                   type="email"
                   placeholder="Email"
                   required
@@ -40,7 +40,7 @@ const ContactFormSection = () => {
               </div>
               <div>
                 <input
-                  className="w-full rounded-lg border-gray-300 py-3 text-sm"
+                  className="w-full rounded-lg border-gray-300 py-3 text-sm focus:border-secondary focus:ring-0"
                   type="tel"
                   placeholder="Phone Number"
                   required
@@ -48,7 +48,7 @@ const ContactFormSection = () => {
               </div>
               <div>
                 <textarea
-                  className="w-full rounded-lg border-gray-300 py-3 text-sm"
+                  className="w-full rounded-lg border-gray-300 py-3 text-sm focus:border-secondary focus:ring-0"
                   name=""
                   id=""
                   placeholder="Write your message"

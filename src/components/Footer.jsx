@@ -35,9 +35,13 @@ const Footer = () => {
               not provide jobs directly to workers.
             </p>
 
-            <button className="rounded-md border-2 border-secondary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:bg-white hover:text-primary">
-              Contact Us
-            </button>
+            <div>
+              <Link href="/contact-us">
+                <button className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-white hover:bg-transparent">
+                  Contact Us
+                </button>
+              </Link>
+            </div>
           </div>
           <div className="space-y-5">
             <span className="border-b-[1px] pb-1 text-xl">Quick Links</span>
@@ -109,13 +113,28 @@ const Footer = () => {
             <span className="text-xl">Get In Touch</span>
             <p>Subscribe Our Newsletter to Get Latest Update & News</p>
 
+            <form className="flex rounded-md bg-white">
+              <input
+                className="basis-full rounded-md border-none bg-white text-sm text-black focus:ring-0"
+                type="email"
+                placeholder="Your Email Here"
+                required
+              />
+              <button
+                type="submit"
+                className="basis-auto rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:text-primary"
+              >
+                Subscribe
+              </button>
+            </form>
+
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm">
-                <FaPhone className="rounded-full bg-[#F90945] p-2 text-3xl" />{" "}
+                <FaPhone className="rounded-full bg-[#F90945] p-2 text-3xl" />
                 +40 123 456 789
               </div>
               <div className="flex items-center gap-2 text-sm">
-                <FaEnvelope className="rounded-full bg-[#F90945] p-2 text-3xl" />{" "}
+                <FaEnvelope className="rounded-full bg-[#F90945] p-2 text-3xl" />
                 Contact@hireandfire.agency
               </div>
               <div className="flex items-start gap-2 text-sm">

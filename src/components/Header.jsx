@@ -158,13 +158,13 @@ const Header = () => {
           <Link href="/contact-us">
             <Button>Contact Us</Button>
           </Link>
-          <ReactFlagsSelect
+          {/* <ReactFlagsSelect
             className="mb-[-5px]"
             showSelectedLabel={false}
             showOptionLabel={false}
             selected={selected}
             onSelect={(code) => setSelected(code)}
-          />
+          /> */}
         </div>
         <div className="flex basis-1/4 items-center justify-end lg:hidden">
           <button
