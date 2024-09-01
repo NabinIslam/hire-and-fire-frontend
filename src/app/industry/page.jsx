@@ -6,7 +6,7 @@ import IndustrySkeleton from "@/components/skeletons/IndustrySkeleton";
 
 const Industry = async () => {
   const data = await fetch(`${apiBaseUrl}/industries`, {
-    cache: "no-cache",
+    cache: "no-store",
   });
   const industries = await data.json();
 

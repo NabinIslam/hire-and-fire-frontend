@@ -4,7 +4,7 @@ import { apiBaseUrl } from "@/secrets";
 
 const FAQ = async () => {
   const data = await fetch(`${apiBaseUrl}/faqs`, {
-    cache: "no-cache",
+    cache: "no-store",
   });
   const faqs = await data.json();
 
