@@ -6,7 +6,8 @@ import { FaRegEye } from "react-icons/fa";
 import { MdCalendarMonth } from "react-icons/md";
 
 const BlogDetails = ({ params }) => {
-  const { slug } = params;
+  const { blogSlug } = params;
+
   return (
     <main>
       <PageBanner title={"Blog Detail"} />
