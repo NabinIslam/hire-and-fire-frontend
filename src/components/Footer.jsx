@@ -209,7 +209,7 @@ const Footer = () => {
               <div className="flex items-center gap-2 text-sm">
                 <FaEnvelope className="rounded-full bg-[#F90945] p-2 text-3xl" />
                 <Link href="mailto:Contact@hireandfire.agency">
-                  Contact@hireandfire.agency
+                  contact@hireandfire.agency
                 </Link>
               </div>
               <div className="flex items-start gap-2 text-sm">
