@@ -2,9 +2,7 @@ import { apiBaseUrl } from "@/secrets";
 import Accordion from "./ui/Accordion";
 
 const Faqs = async () => {
-  const data = await fetch(`${apiBaseUrl}/faqs`, {
-    cache: "no-store",
-  });
+  const data = await fetch(`${apiBaseUrl}/faqs`);
   const faqs = await data.json();
 
   return (

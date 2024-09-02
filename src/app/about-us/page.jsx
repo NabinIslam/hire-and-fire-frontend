@@ -1,10 +1,10 @@
 import AboutHero from "@/components/about-components/AboutHero";
 import CoreCompetencies from "@/components/about-components/CoreCompetencies";
-import KeySkills from "@/components/about-components/KeySkills";
 import OurMissionAndVision from "@/components/about-components/OurMissionAndVision";
 import OurValues from "@/components/about-components/OurValues";
 import OurClients from "@/components/OurClients";
 import PageBanner from "@/components/PageBanner";
+import Teams from "@/components/Teams";
 import TitleDescSection from "@/components/TitleDescSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
@@ -18,8 +18,9 @@ const AboutUsPage = () => {
         title="Hire & Fire Team of experts"
         description="A team of recruitment experts specializes in sourcing, assessing, and hiring top talent to meet organizational needs efficiently and effectively."
       >
-        <OurMissionAndVision />
+        <Teams />
       </TitleDescSection>
+      <OurMissionAndVision />
       <TitleDescSection
         title="Our Values"
         description="Our values include integrity, innovation, and excellence. We prioritize inclusivity, collaboration, customer-centricity, accountability, and empowerment, ensuring a trustworthy and effective experience."

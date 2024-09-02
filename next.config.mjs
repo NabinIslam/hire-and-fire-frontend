@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "103.17.37.8",
         pathname: "/media/industry_photo/**",
       },
+      {
+        protocol: "http",
+        hostname: "103.17.37.8",
+        pathname: "/media/team_photo/**",
+      },
     ],
   },
 };
