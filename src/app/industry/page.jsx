@@ -1,16 +1,9 @@
-import IndustryCard from "@/components/IndustryCard";
 import PageBanner from "@/components/PageBanner";
-import { apiBaseUrl } from "@/secrets";
 import { Suspense } from "react";
-import Loading from "./loading";
 import IndustrySkeleton from "@/components/skeletons/IndustrySkeleton";
+import Industries from "@/components/Industries";
 
 const IndustryPage = async () => {
-  const data = await fetch(`${apiBaseUrl}/industries`, {
-    cache: "no-store",
-  });
-  const industries = await data.json();
-
   return (
     <main>
       <PageBanner title="Industry" />
@@ -25,11 +18,7 @@ const IndustryPage = async () => {
           {/* industries container  */}
 
           <Suspense fallback={<IndustrySkeleton />}>
-            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {industries.map((industry) => (
-                <IndustryCard industry={industry} key={industry.name} />
-              ))}
-            </div>
+            <Industries />
           </Suspense>
         </div>
       </section>
