@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../ui/Button";
 import Image from "next/image";
 
@@ -44,7 +45,11 @@ const AboutHero = () => {
               </p>
             </div>
           </div>
-          <Button>Request Talent</Button>
+          <div>
+            <Link href="/hire-worker/request-talent">
+              <Button>Request Talent</Button>
+            </Link>
+          </div>
         </div>
         <div className="basis-full lg:basis-1/2">
           <Image

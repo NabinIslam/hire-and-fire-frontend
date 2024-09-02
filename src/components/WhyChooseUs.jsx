@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "./ui/Button";
 import BgButton from "./ui/BgButton";
+import Link from "next/link";
 
 const WhyChooseUs = () => {
   return (
@@ -15,7 +16,11 @@ const WhyChooseUs = () => {
             interface, compliance assurance, and dedicated support for both
             employers
           </p>
-          <BgButton>Contact Us</BgButton>
+          <div>
+            <Link href="/contact-us">
+              <BgButton>Contact Us</BgButton>
+            </Link>
+          </div>
         </div>
         {/* column */}
 

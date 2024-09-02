@@ -246,10 +246,10 @@ const RequestTalentPage = () => {
               </ul>
 
               <div className="space-x-2">
-                <input type="checkbox" id="accept" name="accept" />
+                <input type="checkbox" id="accept" name="accept" required />
                 <label for="accept">I accept</label>
               </div>
-              <button className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:bg-white hover:text-primary">
+              <button className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-white hover:bg-transparent hover:text-white">
                 Send
               </button>
             </form>
