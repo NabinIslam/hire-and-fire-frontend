@@ -7,7 +7,9 @@ const Teams = async () => {
 
   return (
     <div>
-      <h5 className="mb-5 text-3xl font-semibold">The Founders</h5>
+      <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
+        The Founders
+      </h5>
       <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           .filter((element) => element.teamName === "The Founders")
@@ -16,7 +18,9 @@ const Teams = async () => {
           ))}
       </div>
 
-      <h5 className="mb-5 text-3xl font-semibold">Recruitment Specialists</h5>
+      <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
+        Recruitment Specialists
+      </h5>
       <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           .filter((element) => element.teamName === "Recruitment Specialists")
@@ -25,7 +29,9 @@ const Teams = async () => {
           ))}
       </div>
 
-      <h5 className="mb-5 text-3xl font-semibold">Sales & Marketing Team</h5>
+      <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
+        Sales & Marketing Team
+      </h5>
       <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           .filter((element) => element.teamName === "Sales & Marketing Team")
@@ -34,7 +40,9 @@ const Teams = async () => {
           ))}
       </div>
 
-      <h5 className="mb-5 text-3xl font-semibold">Accounting Team</h5>
+      <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
+        Accounting Team
+      </h5>
       <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           .filter((element) => element.teamName === "Accounting Team")
