@@ -1,6 +1,7 @@
 import Faqs from "@/components/Faqs";
 import { Suspense } from "react";
 import FaqSkeleton from "@/components/skeletons/FaqSkeleton";
+import PageBanner from "@/components/PageBanner";
 
 const FAQPage = () => {
   return (
