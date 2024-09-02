@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white py-[10px] shadow">
+    <header className="sticky top-0 z-[1000] bg-white py-[10px] shadow">
       <nav className="container flex items-center justify-between">
         <div className="basis-1/4">
           <Link className="inline w-auto" href="/">
@@ -54,7 +54,7 @@ const Header = () => {
 
               {/* submenus */}
 
-              <ul className="absolute top-5 hidden w-56 animate-fadeIn space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
+              <ul className="animate-fadeIn absolute top-5 hidden w-56 space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
                     className={`${pathname === "/employers/employment-service" ? "text-primary" : ""} flex hover:text-primary`}
@@ -93,7 +93,7 @@ const Header = () => {
               </p>
 
               {/* submenus */}
-              <ul className="absolute top-5 hidden w-44 animate-fadeIn space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
+              <ul className="animate-fadeIn absolute top-5 hidden w-44 space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
                     className={`${pathname === "/hire-worker/our-process" ? "text-primary" : ""} flex hover:text-primary`}
@@ -131,7 +131,7 @@ const Header = () => {
               </p>
 
               {/* submenus */}
-              <ul className="absolute top-5 hidden animate-fadeIn space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
+              <ul className="animate-fadeIn absolute top-5 hidden space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
                     className={`${pathname === "/resources/faq" ? "text-primary" : ""} duration-20 0 flex hover:text-primary`}

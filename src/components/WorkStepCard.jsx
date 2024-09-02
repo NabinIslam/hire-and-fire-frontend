@@ -11,7 +11,7 @@ const WorkStepCard = ({ icon, title, description, stepNumber }) => {
 
       {/* badge */}
       <div className="absolute left-0 top-0 size-[80px] border-r-[80px] border-t-[80px] border-r-transparent border-t-primary duration-200 group-hover:border-t-secondary"></div>
-      <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
+      <span className="absolute left-[15px] top-[10px] text-xl text-white">
         {stepNumber}
       </span>
     </div>
