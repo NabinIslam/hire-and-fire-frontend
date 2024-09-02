@@ -3,9 +3,7 @@ import PageBanner from "@/components/PageBanner";
 import { apiBaseUrl } from "@/secrets";
 
 const FAQ = async () => {
-  const data = await fetch(`${apiBaseUrl}/faqs`, {
-    cache: "no-store",
-  });
+  const data = await fetch(`${apiBaseUrl}/faqs`);
   const faqs = await data.json();
 
   return (
