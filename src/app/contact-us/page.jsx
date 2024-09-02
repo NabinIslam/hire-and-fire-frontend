@@ -6,7 +6,7 @@ import { FaEnvelope } from "react-icons/fa";
 import ContactFormSection from "@/components/contact-components/ContactFormSection";
 import Link from "next/link";
 
-const ContactUs = () => {
+const ContactUsPage = () => {
   return (
     <main>
       <PageBanner title="Contact Us" />
@@ -65,4 +65,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactUsPage;

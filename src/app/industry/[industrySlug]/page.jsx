@@ -14,7 +14,7 @@ import { IoDocumentText } from "react-icons/io5";
 import { FaUsersGear } from "react-icons/fa6";
 import BenefitCard from "@/components/BenefitCard";
 
-const IndustryDetails = ({ params }) => {
+const IndustryDetailsPage = ({ params }) => {
   const { industrySlug } = params;
 
   return (
@@ -119,4 +119,4 @@ const IndustryDetails = ({ params }) => {
   );
 };
 
-export default IndustryDetails;
+export default IndustryDetailsPage;

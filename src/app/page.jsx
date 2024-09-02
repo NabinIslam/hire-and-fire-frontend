@@ -9,7 +9,7 @@ import TeamSection from "@/components/home-components/TeamSection";
 import WorkforcePlanning from "@/components/home-components/WorkforcePlanning";
 import WorkSteps from "@/components/home-components/WorkSteps";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <main>
       <Hero />
@@ -26,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

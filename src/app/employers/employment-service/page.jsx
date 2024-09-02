@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
 
-const EmploymentService = () => {
+const EmploymentServicePage = () => {
   return (
     <main>
       <PageBanner title="Employment Service" />
@@ -267,4 +267,4 @@ const EmploymentService = () => {
   );
 };
 
-export default EmploymentService;
+export default EmploymentServicePage;

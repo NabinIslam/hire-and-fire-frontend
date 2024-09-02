@@ -2,7 +2,7 @@ import PageBanner from "@/components/PageBanner";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
-const AdditionalSupport = () => {
+const AdditionalSupportPage = () => {
   return (
     <main>
       <PageBanner title="Additional Support" />
@@ -185,4 +185,4 @@ const AdditionalSupport = () => {
   );
 };
 
-export default AdditionalSupport;
+export default AdditionalSupportPage;

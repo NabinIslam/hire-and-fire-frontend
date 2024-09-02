@@ -4,7 +4,7 @@ import PageBanner from "@/components/PageBanner";
 import { useState } from "react";
 import { Slider } from "rsuite";
 
-const RequestTalent = () => {
+const RequestTalentPage = () => {
   const [value, setValue] = useState([20, 80]);
 
   const handleChange = (e) => {
@@ -260,4 +260,4 @@ const RequestTalent = () => {
   );
 };
 
-export default RequestTalent;
+export default RequestTalentPage;

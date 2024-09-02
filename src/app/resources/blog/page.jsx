@@ -2,7 +2,7 @@ import BlogCard from "@/components/BlogCard";
 import PageBanner from "@/components/PageBanner";
 import TitleDescSection from "@/components/TitleDescSection";
 
-const Blog = () => {
+const BlogPage = () => {
   return (
     <main>
       <PageBanner title="Blog" />
@@ -34,4 +34,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogPage;

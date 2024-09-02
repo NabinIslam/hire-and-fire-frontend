@@ -3,7 +3,7 @@ import PageBanner from "@/components/PageBanner";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
-const PartnershipsPrograms = () => {
+const PartnershipsProgramsPage = () => {
   return (
     <main>
       <PageBanner title="Partnerships Programs" />
@@ -43,4 +43,4 @@ const PartnershipsPrograms = () => {
   );
 };
 
-export default PartnershipsPrograms;
+export default PartnershipsProgramsPage;

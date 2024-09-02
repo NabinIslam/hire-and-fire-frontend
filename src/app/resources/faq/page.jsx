@@ -2,7 +2,7 @@ import Accordion from "@/components/ui/Accordion";
 import PageBanner from "@/components/PageBanner";
 import { apiBaseUrl } from "@/secrets";
 
-const FAQ = async () => {
+const FAQPage = async () => {
   const data = await fetch(`${apiBaseUrl}/faqs`);
   const faqs = await data.json();
 
@@ -41,4 +41,4 @@ const FAQ = async () => {
   );
 };
 
-export default FAQ;
+export default FAQPage;

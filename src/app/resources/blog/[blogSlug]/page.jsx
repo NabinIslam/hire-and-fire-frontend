@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaRegEye } from "react-icons/fa";
 import { MdCalendarMonth } from "react-icons/md";
 
-const BlogDetails = ({ params }) => {
+const BlogDetailsPage = ({ params }) => {
   const { blogSlug } = params;
 
   return (
@@ -113,4 +113,4 @@ const BlogDetails = ({ params }) => {
   );
 };
 
-export default BlogDetails;
+export default BlogDetailsPage;
