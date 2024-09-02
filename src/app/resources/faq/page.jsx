@@ -1,11 +1,8 @@
-import Accordion from "@/components/ui/Accordion";
-import PageBanner from "@/components/PageBanner";
-import { apiBaseUrl } from "@/secrets";
+import Faqs from "@/components/Faqs";
+import { Suspense } from "react";
+import FaqSkeleton from "@/components/skeletons/FaqSkeleton";
 
-const FAQPage = async () => {
-  const data = await fetch(`${apiBaseUrl}/faqs`);
-  const faqs = await data.json();
-
+const FAQPage = () => {
   return (
     <main>
       <PageBanner title="FAQ" />
@@ -25,15 +22,9 @@ const FAQPage = async () => {
 
             {/* faq container */}
 
-            <div className="space-y-4">
-              {faqs.map((faq) => (
-                <Accordion
-                  title={faq.question}
-                  answer={faq.answer}
-                  key={faq.question}
-                />
-              ))}
-            </div>
+            <Suspense fallback={<FaqSkeleton />}>
+              <Faqs />
+            </Suspense>
           </div>
         </div>
       </section>

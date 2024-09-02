@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import IndustrySkeleton from "@/components/skeletons/IndustrySkeleton";
 import Industries from "@/components/Industries";
 
-const IndustryPage = async () => {
+const IndustryPage = () => {
   return (
     <main>
       <PageBanner title="Industry" />
