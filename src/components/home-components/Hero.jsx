@@ -11,10 +11,10 @@ const Hero = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
-            duration: 0.5,
+            duration: 0.2,
             type: "spring",
-            stiffness: 100,
-            damping: 10,
+            stiffness: 80, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
           }}
           className="basis-full text-center lg:basis-1/2 lg:text-left"
         >
@@ -29,10 +29,10 @@ const Hero = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
-            duration: 0.5,
+            duration: 0.2,
             type: "spring",
-            stiffness: 100,
-            damping: 10,
+            stiffness: 80, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
           }}
           className="relative min-h-[400px] w-full basis-full md:min-h-[472px] lg:basis-1/2"
         >
