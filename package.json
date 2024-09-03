@@ -12,8 +12,10 @@
   "proxy": "http://192.168.11.110:8000/api",
   "dependencies": {
     "@tanstack/react-query": "^5.52.2",
+    "aos": "^2.3.4",
     "axios": "^1.7.5",
     "flowbite-react": "^0.10.1",
+    "framer-motion": "^11.3.31",
     "lqip-modern": "^2.1.0",
     "next": "14.2.5",
     "react": "^18",

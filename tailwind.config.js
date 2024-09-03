@@ -51,9 +51,24 @@ module.exports = {
             transform: "scale(1.1)",
           },
         },
+        floating: {
+          "0%": {
+            shadow: "0 5px 15px 0px rgba(0,0,0,0.6)",
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            shadow: "0 25px 15px 0px rgba(0,0,0,0.2)",
+            transform: "translateY(-20px)",
+          },
+          "100%": {
+            shadow: "0 5px 15px 0px rgba(0,0,0,0.6)",
+            transform: "translateY(0px)",
+          },
+        },
       },
       animation: {
         pulse: "pulse 1s ease-in-out infinite",
+        floating: "floating 3s ease-in-out infinite",
       },
     },
   },
