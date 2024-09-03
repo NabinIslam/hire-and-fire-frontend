@@ -35,12 +35,12 @@ const Hero = () => {
         <motion.div
           ref={ref}
           initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
           transition={{
-            duration: 0.2,
+            duration: 1,
             type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
+            stiffness: 50,
+            damping: 12,
           }}
           className="relative min-h-[400px] w-full basis-full md:min-h-[472px] lg:basis-1/2"
         >
