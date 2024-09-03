@@ -8,14 +8,25 @@ import { MdCalendarMonth } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { formatDate } from "@/Utils/formatDate";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
-const BlogCard = () => {
+const BlogCard = ({ blog }) => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger the animation only once
-    threshold: 0.9, // Trigger when 10% of the component is in view
+    triggerOnce: true,
+    threshold: 0.9,
   });
+
+  const {
+    title,
+    description,
+    short_description,
+    slug,
+    created_at,
+    thumbnail,
+    video,
+  } = blog;
 
   return (
     <motion.div
@@ -28,12 +39,12 @@ const BlogCard = () => {
         stiffness: 50,
         damping: 12,
       }}
-      className="group rounded-lg border p-4 shadow-xl"
+      className="group flex flex-col gap-3 rounded-lg border p-4 shadow-xl"
     >
-      <div className="relative mb-3 flex min-h-[200px] items-center justify-center duration-200 group-hover:scale-105">
+      <div className="relative flex min-h-[200px] items-center justify-center duration-200 group-hover:scale-105">
         <ReactPlayer
           className=""
-          url="https://youtu.be/CpCN9lTFHc4?si=fvrv43jLjq2EBHR9"
+          url={video}
           playing
           loop
           muted
@@ -42,7 +53,7 @@ const BlogCard = () => {
           light={
             <Image
               className="rounded-lg object-cover"
-              src="/images/blog-video-thumbnail.png"
+              src={thumbnail}
               alt="Video Thumbnail"
               fill
             />
@@ -62,7 +73,7 @@ const BlogCard = () => {
         <div className="flex items-center gap-2">
           <MdCalendarMonth />
 
-          <p className="text-sm font-medium">25th June, 2024</p>
+          <p className="text-sm font-medium">{formatDate(created_at)}</p>
         </div>
         <div className="flex items-center gap-2">
           <FaRegEye />
@@ -71,20 +82,17 @@ const BlogCard = () => {
         </div>
       </div>
 
-      <h5 className="mt-3 text-xl font-medium">
-        Why skilled workers matter for a business?
-      </h5>
-      <p className="my-3 text-sm font-medium">
-        Skilled workers enhance business efficiency, innovation, and quality,
-        crucial for maintaining competitiveness and driving growth.
-      </p>
-      <Link
-        className="flex items-center text-sm font-medium text-primary"
-        href={`/resources/blog/article-slug`}
-      >
-        Read more
-        <IoMdArrowDropright className="text-xl" />
-      </Link>
+      <h5 className="text-xl font-medium">{title}</h5>
+      <p className="text-sm font-medium">{short_description}</p>
+      <div className="mt-auto">
+        <Link
+          className="flex items-center text-sm font-medium text-primary"
+          href={`/resources/blog/${slug}`}
+        >
+          Read more
+          <IoMdArrowDropright className="text-xl" />
+        </Link>
+      </div>
     </motion.div>
   );
 };
