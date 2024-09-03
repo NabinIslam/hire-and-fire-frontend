@@ -1,17 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const FadeInLeftWithSlowBounce = ({ children }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.9,
+  });
+
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: 1, x: 0 }}
+      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
       transition={{
-        duration: 1, // Adjusting duration for overall animation speed
+        duration: 1,
         type: "spring",
-        stiffness: 50, // Slowing down the movement
-        damping: 12, // Adjusting damping to control bounce
+        stiffness: 50,
+        damping: 12,
       }}
     >
       {children}
