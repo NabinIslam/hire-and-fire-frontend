@@ -4,6 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
 
+export const metadata = {
+  title: "Hire&Fire | Employment Service",
+};
+
 const EmploymentServicePage = () => {
   return (
     <main>

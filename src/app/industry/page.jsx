@@ -3,6 +3,10 @@ import { Suspense } from "react";
 import IndustrySkeleton from "@/components/skeletons/IndustrySkeleton";
 import Industries from "@/components/Industries";
 
+export const metadata = {
+  title: "Hire&Fire | Industry We Serve",
+};
+
 const IndustryPage = () => {
   return (
     <main>

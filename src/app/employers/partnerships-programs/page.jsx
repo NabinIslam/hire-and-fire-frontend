@@ -3,6 +3,10 @@ import PageBanner from "@/components/PageBanner";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Hire&Fire | Partnerships Programs",
+};
+
 const PartnershipsProgramsPage = () => {
   return (
     <main>

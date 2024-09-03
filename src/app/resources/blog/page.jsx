@@ -2,6 +2,10 @@ import BlogCard from "@/components/BlogCard";
 import PageBanner from "@/components/PageBanner";
 import TitleDescSection from "@/components/TitleDescSection";
 
+export const metadata = {
+  title: "Hire&Fire | Blog & News",
+};
+
 const BlogPage = () => {
   return (
     <main>

@@ -9,6 +9,10 @@ import TitleDescSection from "@/components/TitleDescSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Hire&Fire | About Us",
+};
+
 const AboutUsPage = () => {
   return (
     <main>

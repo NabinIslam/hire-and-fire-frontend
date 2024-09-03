@@ -2,6 +2,10 @@ import PageBanner from "@/components/PageBanner";
 import TitleDescSection from "@/components/TitleDescSection";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Hire&Fire | Our Process",
+};
+
 const OurProcessPage = () => {
   return (
     <main>

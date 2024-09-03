@@ -6,6 +6,10 @@ import { FaEnvelope } from "react-icons/fa";
 import ContactFormSection from "@/components/contact-components/ContactFormSection";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Hire&Fire | Contact Us",
+};
+
 const ContactUsPage = () => {
   return (
     <main>

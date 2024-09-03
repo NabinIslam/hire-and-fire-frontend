@@ -3,6 +3,10 @@ import { Suspense } from "react";
 import FaqSkeleton from "@/components/skeletons/FaqSkeleton";
 import PageBanner from "@/components/PageBanner";
 
+export const metadata = {
+  title: "Hire&Fire | Frequently Asked Questions",
+};
+
 const FAQPage = () => {
   return (
     <main>
