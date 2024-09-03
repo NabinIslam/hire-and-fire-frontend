@@ -1,15 +1,22 @@
 "use client";
+
 import Image from "next/image";
 import BgButton from "../ui/BgButton";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Hero = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger the animation only once
+    threshold: 0.9, // Trigger when 10% of the component is in view
+  });
   return (
     <section className="bg-hero-bg bg-cover bg-no-repeat pb-[140px] pt-[50px] text-white">
       <div className="container flex flex-col items-center justify-between gap-16 lg:flex-row">
         <motion.div
+          ref={ref}
           initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{
             duration: 0.2,
             type: "spring",
@@ -26,6 +33,7 @@ const Hero = () => {
           <BgButton>Find Talent</BgButton>
         </motion.div>
         <motion.div
+          ref={ref}
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
