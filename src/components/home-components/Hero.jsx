@@ -13,7 +13,7 @@ const Hero = () => {
           transition={{
             duration: 0.2,
             type: "spring",
-            stiffness: 80, // Slowing down the movement
+            stiffness: 50, // Slowing down the movement
             damping: 12, // Adjusting damping to control bounce
           }}
           className="basis-full text-center lg:basis-1/2 lg:text-left"
@@ -31,7 +31,7 @@ const Hero = () => {
           transition={{
             duration: 0.2,
             type: "spring",
-            stiffness: 80, // Slowing down the movement
+            stiffness: 50, // Slowing down the movement
             damping: 12, // Adjusting damping to control bounce
           }}
           className="relative min-h-[400px] w-full basis-full md:min-h-[472px] lg:basis-1/2"

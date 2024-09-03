@@ -1,18 +1,35 @@
 "use client";
+
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
-import thumbnail1 from "@/assets/images/Thumbnails/thumbnail1.png";
-import videoPlayIcon from "@/assets/images/video-play-icon.png";
 import { MdCalendarMonth } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const BlogCard = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger the animation only once
+    threshold: 0.9, // Trigger when 10% of the component is in view
+  });
+
   return (
-    <div className="group rounded-lg border p-4 shadow-xl">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{
+        duration: 1,
+        type: "spring",
+        stiffness: 50,
+        damping: 12,
+      }}
+      className="group rounded-lg border p-4 shadow-xl"
+    >
       <div className="relative mb-3 flex min-h-[200px] items-center justify-center duration-200 group-hover:scale-105">
         <ReactPlayer
           className=""
@@ -68,7 +85,7 @@ const BlogCard = () => {
         Read more
         <IoMdArrowDropright className="text-xl" />
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

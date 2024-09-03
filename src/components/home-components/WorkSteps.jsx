@@ -1,6 +1,15 @@
+"use client";
+
 import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const WorkSteps = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger the animation only once
+    threshold: 0.9, // Trigger when 10% of the component is in view
+  });
+
   return (
     <section className="pb-[100px] pt-[50px]">
       <h6 className="text-center text-2xl font-medium text-primary">
@@ -12,7 +21,18 @@ const WorkSteps = () => {
       <div className="container mt-[60px] flex flex-col items-center justify-between gap-5 xl:flex-row">
         {/* step card start*/}
 
-        <div className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
+          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+        >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -40,12 +60,11 @@ const WorkSteps = () => {
             </p>
           </div>
 
-          {/* badge */}
           <div className="absolute left-0 top-0 size-[80px] border-r-[80px] border-t-[80px] border-r-transparent border-t-primary duration-200 group-hover:border-t-secondary"></div>
           <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             01
           </span>
-        </div>
+        </motion.div>
 
         {/* step card end*/}
 
@@ -54,7 +73,18 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 50,
+            damping: 12,
+          }}
+          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+        >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -91,7 +121,7 @@ const WorkSteps = () => {
           <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             02
           </span>
-        </div>
+        </motion.div>
 
         {/* step card end*/}
 
@@ -114,7 +144,18 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="group relative h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 50,
+            damping: 12,
+          }}
+          className="group relative h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+        >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -151,7 +192,7 @@ const WorkSteps = () => {
           <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             03
           </span>
-        </div>
+        </motion.div>
 
         {/* step card end*/}
 
@@ -174,7 +215,18 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <div className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
+          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+        >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -203,7 +255,7 @@ const WorkSteps = () => {
           <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             04
           </span>
-        </div>
+        </motion.div>
 
         {/* step card end*/}
       </div>

@@ -1,12 +1,32 @@
+"use client";
+
 import Image from "next/image";
 import Button from "../ui/Button";
 import SubServiceCard from "../SubServiceCard";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const PermanentRecruitment = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger the animation only once
+    threshold: 0.9, // Trigger when 10% of the component is in view
+  });
+
   return (
     <section className="pb-[50px] pt-[100px]">
       <div className="container flex flex-col items-center justify-between md:gap-6 lg:flex-row lg:gap-24">
-        <div className="basis-full space-y-5 text-center lg:basis-1/2 lg:text-left">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
+          className="basis-full space-y-5 text-center lg:basis-1/2 lg:text-left"
+        >
           <h2 className="text-4xl font-semibold lg:text-5xl">
             Permanent Recruitment
           </h2>
@@ -22,8 +42,20 @@ const PermanentRecruitment = () => {
             employee.
           </p>
           <Button>See more</Button>
-        </div>
-        <div className="group relative min-h-[400px] w-full basis-full lg:basis-1/2">
+        </motion.div>
+
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
+          className="group relative min-h-[400px] w-full basis-full lg:basis-1/2"
+        >
           <Image
             className="object-contain"
             src="/images/permanent-rec-full.png"
@@ -41,11 +73,20 @@ const PermanentRecruitment = () => {
             className="absolute hidden h-full w-auto transition-transform duration-1000 group-hover:translate-x-full md:block lg:-translate-x-20"
             src="/images/permanent-rec.png"
           /> */}
-        </div>
+        </motion.div>
       </div>
       <div className="container mt-[50px] grid grid-cols-1 gap-5 lg:grid-cols-3">
         {/* card */}
         <SubServiceCard
+          ref={ref}
+          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"
@@ -66,6 +107,15 @@ const PermanentRecruitment = () => {
         {/* card */}
 
         <SubServiceCard
+          ref={ref}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 50,
+            damping: 12,
+          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"
@@ -86,6 +136,15 @@ const PermanentRecruitment = () => {
         {/* card */}
 
         <SubServiceCard
+          ref={ref}
+          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"

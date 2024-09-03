@@ -6,10 +6,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArrowPrev from "./ui/ArrowPrev";
 import ArrowNext from "./ui/ArrowNext";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const OurClients = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger the animation only once
+    threshold: 0.9, // Trigger when 10% of the component is in view
+  });
+
   const settings = {
     speed: 500,
     slidesToShow: 5,
@@ -46,7 +53,18 @@ const OurClients = () => {
   };
 
   return (
-    <section className="space-y-[40px] py-[100px]">
+    <motion.section
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{
+        duration: 1,
+        type: "spring",
+        stiffness: 50,
+        damping: 12,
+      }}
+      className="space-y-[40px] py-[100px]"
+    >
       <h2 className="text-center text-5xl font-semibold">Our clients</h2>
       <div className="container">
         <Slider {...settings}>
@@ -92,7 +110,7 @@ const OurClients = () => {
           </div>
         </Slider>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

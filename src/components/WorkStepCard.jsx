@@ -1,6 +1,25 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 const WorkStepCard = ({ icon, title, description, stepNumber }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger the animation only once
+    threshold: 0.9, // Trigger when 10% of the component is in view
+  });
+
   return (
-    <div className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{
+        duration: 1,
+        type: "spring",
+        stiffness: 50,
+        damping: 12,
+      }}
+      className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+    >
       <div className="m-5 space-y-4">
         <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
           {icon}
@@ -14,7 +33,7 @@ const WorkStepCard = ({ icon, title, description, stepNumber }) => {
       <span className="absolute left-[15px] top-[10px] text-xl text-white">
         {stepNumber}
       </span>
-    </div>
+    </motion.div>
   );
 };
 

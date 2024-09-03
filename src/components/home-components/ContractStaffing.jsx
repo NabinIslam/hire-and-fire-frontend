@@ -1,14 +1,44 @@
+"use client";
+
 import SubServiceCard from "../SubServiceCard";
 import Button from "../ui/Button";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ContractStaffing = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.9,
+  });
   return (
     <section className="py-[50px]">
       <div className="container flex flex-col-reverse items-center justify-between gap-24 lg:flex-row">
-        <div className="basis-1/2 text-center">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
+          className="basis-1/2 text-center"
+        >
           <img src="/contract-staffing.png" alt="" />
-        </div>
-        <div className="basis-1/2 space-y-5 text-center lg:text-left">
+        </motion.div>
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
+          className="basis-1/2 space-y-5 text-center lg:text-left"
+        >
           <h2 className="text-4xl font-semibold lg:text-5xl">
             Contract Staffing
           </h2>
@@ -25,12 +55,21 @@ const ContractStaffing = () => {
             demands.
           </p>
           <Button>See more</Button>
-        </div>
+        </motion.div>
       </div>
       <div className="container mt-[50px] grid grid-cols-1 gap-5 lg:grid-cols-3">
         {/* card */}
 
         <SubServiceCard
+          ref={ref}
+          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"
@@ -49,6 +88,15 @@ const ContractStaffing = () => {
 
         {/* card */}
         <SubServiceCard
+          ref={ref}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 50,
+            damping: 12,
+          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"
@@ -67,6 +115,15 @@ const ContractStaffing = () => {
 
         {/* card */}
         <SubServiceCard
+          ref={ref}
+          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
+          transition={{
+            duration: 1, // Adjusting duration for overall animation speed
+            type: "spring",
+            stiffness: 50, // Slowing down the movement
+            damping: 12, // Adjusting damping to control bounce
+          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"
