@@ -1,5 +1,3 @@
-"use client";
-
 import Button from "../ui/Button";
 import BlogCard from "../BlogCard";
 import Link from "next/link";
@@ -12,6 +10,8 @@ const RecentNewsesNBlogs = async () => {
   });
 
   const blogs = await data.json();
+
+  console.log(blogs);
 
   return (
     <TitleDescSection
