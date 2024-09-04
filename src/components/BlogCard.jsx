@@ -44,7 +44,7 @@ const BlogCard = ({ blog }) => {
     >
       {/* <div className="relative flex min-h-[200px] w-full items-center justify-center duration-200 group-hover:scale-105"> */}
       <ReactPlayer
-        className="relative min-h-[200px] w-full rounded-lg"
+        className="relative min-h-[200px] w-full rounded-lg duration-200 group-hover:scale-125"
         url="https://youtu.be/ZEyAs3NWH4A?si=o8pfJ1T-YSg-11ZO"
         playing
         loop

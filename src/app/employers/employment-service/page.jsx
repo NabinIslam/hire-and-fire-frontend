@@ -21,7 +21,7 @@ const EmploymentServicePage = () => {
             Mediation in Employment
           </h2>
           <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
-            <div className="flex gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg">
+            <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
               <div className="basis-[50px]">
                 <Image
                   src="/images/mediation-icons/1.png"
@@ -30,7 +30,7 @@ const EmploymentServicePage = () => {
                   width={50}
                 />
               </div>
-              <div className="basis-full space-y-4">
+              <div className="flex basis-full flex-col items-start gap-4">
                 <h5 className="text-2xl font-medium">
                   Recruitment & Administration
                 </h5>
@@ -44,14 +44,14 @@ const EmploymentServicePage = () => {
                   organization.
                 </p>
                 <Link
-                  className="flex items-center text-sm font-medium text-secondary"
+                  className="mt-auto flex items-center text-sm font-medium text-secondary"
                   href="#"
                 >
                   Find Talent <IoMdArrowDropright className="text-xl" />
                 </Link>
               </div>
             </div>
-            <div className="flex gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg">
+            <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
               <div className="basis-[50px]">
                 <Image
                   src="/images/mediation-icons/1.png"
@@ -60,7 +60,7 @@ const EmploymentServicePage = () => {
                   width={50}
                 />
               </div>
-              <div className="basis-full space-y-4">
+              <div className="flex basis-full flex-col items-start gap-4">
                 <h5 className="text-2xl font-medium">
                   Global advertising of vacancies{" "}
                 </h5>
@@ -73,14 +73,14 @@ const EmploymentServicePage = () => {
                   effective global talent acquisition.
                 </p>
                 <Link
-                  className="flex items-center text-sm font-medium text-secondary"
+                  className="mt-auto flex items-center text-sm font-medium text-secondary"
                   href="#"
                 >
                   Find Talent <IoMdArrowDropright className="text-xl" />
                 </Link>
               </div>
             </div>
-            <div className="flex gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg">
+            <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
               <div className="basis-[50px]">
                 <Image
                   src="/images/mediation-icons/1.png"
@@ -89,7 +89,7 @@ const EmploymentServicePage = () => {
                   width={50}
                 />
               </div>
-              <div className="basis-full space-y-4">
+              <div className="flex basis-full flex-col items-start gap-4">
                 <h5 className="text-2xl font-medium">
                   Guidance for work permits and visas
                 </h5>
@@ -103,14 +103,14 @@ const EmploymentServicePage = () => {
                   employment transitions.
                 </p>
                 <Link
-                  className="flex items-center text-sm font-medium text-secondary"
+                  className="mt-auto flex items-center text-sm font-medium text-secondary"
                   href="#"
                 >
                   Find Talent <IoMdArrowDropright className="text-xl" />
                 </Link>
               </div>
             </div>
-            <div className="flex gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg">
+            <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
               <div className="basis-[50px]">
                 <Image
                   src="/images/mediation-icons/1.png"
@@ -119,7 +119,7 @@ const EmploymentServicePage = () => {
                   width={50}
                 />
               </div>
-              <div className="basis-full space-y-4">
+              <div className="flex basis-full flex-col items-start gap-4">
                 <h5 className="text-2xl font-medium">
                   Integration support for workers
                 </h5>
@@ -132,7 +132,7 @@ const EmploymentServicePage = () => {
                   enhancing employee satisfaction and productivity.
                 </p>
                 <Link
-                  className="flex items-center text-sm font-medium text-secondary"
+                  className="mt-auto flex items-center text-sm font-medium text-secondary"
                   href="#"
                 >
                   Find Talent <IoMdArrowDropright className="text-xl" />

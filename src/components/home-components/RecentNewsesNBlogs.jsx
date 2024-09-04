@@ -16,7 +16,7 @@ const RecentNewsesNBlogs = async () => {
   return (
     <TitleDescSection
       className="pb-[100px]"
-      title="Our Blog & News"
+      title="Our Recent Newses & Blogs"
       description="Stay updated with the latest news articles and trending stories."
     >
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
