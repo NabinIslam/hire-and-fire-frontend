@@ -9,6 +9,7 @@ import { FaRegEye } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { formatDate } from "@/Utils/formatDate";
+import { FaPlayCircle } from "react-icons/fa";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -39,46 +40,43 @@ const BlogCard = ({ blog }) => {
         stiffness: 50,
         damping: 12,
       }}
-      className="group flex flex-col gap-3 rounded-lg border p-4 shadow-xl"
+      className="group flex flex-col items-start gap-3 rounded-lg border p-4 shadow-xl"
     >
-      {/* <div className="relative flex min-h-[200px] items-center justify-center duration-200 group-hover:scale-105">
-        <ReactPlayer
-          className="relative min-h-[200px] w-full"
-          url=""
-          playing
-          loop
-          muted
-          width="100%"
-          height="100%"
-          light={
+      {/* <div className="relative flex min-h-[200px] w-full items-center justify-center duration-200 group-hover:scale-105"> */}
+      <ReactPlayer
+        className="relative min-h-[200px] w-full rounded-lg"
+        url="https://youtu.be/ZEyAs3NWH4A?si=o8pfJ1T-YSg-11ZO"
+        playing
+        loop
+        muted
+        width="100%"
+        height="200px"
+        light={
+          <div className="relative min-h-full w-full">
             <Image
-              src={blog?.thumbnail}
-              height={200}
-              width={200}
-              alt="Video Thumbnail"
-              className="rounded-lg object-cover"
+              className="h-full w-full rounded-lg object-cover"
+              src={blog.thumbnail}
+              alt={blog.title}
+              fill
             />
-          }
-          playIcon={
-            <Image
-              className="absolute shadow-2xl"
-              src="/images/video-play-icon.png"
-              alt="Video Play Icon"
-              height={40}
-              width={40}
-            />
-          }
-        />
-      </div> */}
-      <div className="relative min-h-[200px] w-full">
+          </div>
+        }
+        playIcon={
+          // <div className="flex size-[48px] items-center justify-center rounded-full bg-white">
+          <FaPlayCircle className="absolute rounded-full border border-primary bg-white text-[48px] text-primary" />
+          // </div>
+        }
+      />
+      {/* </div> */}
+      {/* <div className="relative min-h-[200px] w-full">
         <Image
           src={blog?.thumbnail}
           alt={blog?.title}
           fill
           className="h-full w-full rounded-lg"
         />
-      </div>
-      <div className="flex items-center justify-between">
+      </div> */}
+      <div className="flex w-full items-center justify-between">
         <div className="flex items-center gap-2">
           <MdCalendarMonth />
 
@@ -95,7 +93,7 @@ const BlogCard = ({ blog }) => {
       <p className="text-sm font-medium">{blog?.short_description}</p>
       <div className="mt-auto">
         <Link
-          className="flex items-center text-sm font-medium text-primary"
+          className="flex items-center text-sm font-medium text-primary duration-200 hover:text-secondary"
           href={`/resources/blog/${blog?.slug}`}
         >
           Read more

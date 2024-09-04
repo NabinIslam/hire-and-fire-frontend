@@ -24,8 +24,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-[1000] bg-white py-[10px] shadow">
       <nav className="container flex items-center justify-between">
-        <div className="basis-1/4">
-          <Link className="inline w-auto" href="/">
+        <div className="flex basis-1/4 items-center justify-start">
+          <Link href="/">
             <Image
               src="/images/Logo.png"
               width={52}

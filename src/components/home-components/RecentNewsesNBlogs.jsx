@@ -4,8 +4,15 @@ import Button from "../ui/Button";
 import BlogCard from "../BlogCard";
 import Link from "next/link";
 import TitleDescSection from "../TitleDescSection";
+import { apiBaseUrl } from "@/secrets";
 
-const RecentNewsesNBlogs = () => {
+const RecentNewsesNBlogs = async () => {
+  const data = await fetch(`${apiBaseUrl}/blogs`, {
+    cache: "no-store",
+  });
+
+  const blogs = await data.json();
+
   return (
     <TitleDescSection
       className="pb-[100px]"
@@ -15,10 +22,9 @@ const RecentNewsesNBlogs = () => {
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
         {/* blog card */}
 
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        {blogs.slice(0, 4).map((blog) => (
+          <BlogCard key={blog.id} blog={blog} />
+        ))}
       </div>
       <div className="mt-10 flex justify-center">
         <Link href="/resources/blog">

@@ -114,7 +114,7 @@ const BlogDetailsPage = async ({ params }) => {
           </aside>
         </div>
         <TitleDescSection
-          title="Our Similar Blog & News"
+          title="Our Similar Blogs & Newses"
           description="Stay updated with the latest news articles and trending stories."
         >
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
