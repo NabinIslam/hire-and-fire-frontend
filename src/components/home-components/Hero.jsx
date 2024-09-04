@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 const Hero = () => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once
-    threshold: 0.9, // Trigger when 10% of the component is in view
+    threshold: 0.5, // Trigger when 10% of the component is in view
   });
   return (
     <section className="bg-hero-bg bg-cover bg-no-repeat pb-[140px] pt-[50px] text-white">

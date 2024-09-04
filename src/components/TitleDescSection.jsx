@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 const TitleDescSection = ({ title, description, children, className }) => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once
-    threshold: 0.9, // Trigger when 10% of the component is in view
+    threshold: 0.5, // Trigger when 10% of the component is in view
   });
 
   return (

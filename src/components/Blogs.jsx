@@ -10,7 +10,7 @@ const Blogs = async () => {
 
   return (
     <div className="grid grid-cols-1 gap-10 pb-[50px] md:grid-cols-2 md:gap-5 xl:grid-cols-4">
-      {blogs.map((blog) => (
+      {blogs?.map((blog) => (
         <BlogCard key={blog.id} blog={blog} />
       ))}
     </div>

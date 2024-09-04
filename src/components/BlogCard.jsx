@@ -13,20 +13,20 @@ import { formatDate } from "@/Utils/formatDate";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const BlogCard = ({ blog }) => {
+  // const {
+  //   title,
+  //   description,
+  //   short_description,
+  //   slug,
+  //   created_at,
+  //   thumbnail,
+  //   video,
+  // } = blog;
+
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.9,
+    threshold: 0.01,
   });
-
-  const {
-    title,
-    description,
-    short_description,
-    slug,
-    created_at,
-    thumbnail,
-    video,
-  } = blog;
 
   return (
     <motion.div
@@ -41,10 +41,10 @@ const BlogCard = ({ blog }) => {
       }}
       className="group flex flex-col gap-3 rounded-lg border p-4 shadow-xl"
     >
-      <div className="relative flex min-h-[200px] items-center justify-center duration-200 group-hover:scale-105">
+      {/* <div className="relative flex min-h-[200px] items-center justify-center duration-200 group-hover:scale-105">
         <ReactPlayer
-          className=""
-          url={video}
+          className="relative min-h-[200px] w-full"
+          url=""
           playing
           loop
           muted
@@ -52,10 +52,11 @@ const BlogCard = ({ blog }) => {
           height="100%"
           light={
             <Image
-              className="rounded-lg object-cover"
-              src={thumbnail}
+              src={blog?.thumbnail}
+              height={200}
+              width={200}
               alt="Video Thumbnail"
-              fill
+              className="rounded-lg object-cover"
             />
           }
           playIcon={
@@ -68,12 +69,20 @@ const BlogCard = ({ blog }) => {
             />
           }
         />
+      </div> */}
+      <div className="relative min-h-[200px] w-full">
+        <Image
+          src={blog?.thumbnail}
+          alt={blog?.title}
+          fill
+          className="h-full w-full rounded-lg"
+        />
       </div>
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <MdCalendarMonth />
 
-          <p className="text-sm font-medium">{formatDate(created_at)}</p>
+          <p className="text-sm font-medium">{formatDate(blog?.created_at)}</p>
         </div>
         <div className="flex items-center gap-2">
           <FaRegEye />
@@ -82,12 +91,12 @@ const BlogCard = ({ blog }) => {
         </div>
       </div>
 
-      <h5 className="text-xl font-medium">{title}</h5>
-      <p className="text-sm font-medium">{short_description}</p>
+      <h5 className="text-xl font-medium">{blog?.title}</h5>
+      <p className="text-sm font-medium">{blog?.short_description}</p>
       <div className="mt-auto">
         <Link
           className="flex items-center text-sm font-medium text-primary"
-          href={`/resources/blog/${slug}`}
+          href={`/resources/blog/${blog?.slug}`}
         >
           Read more
           <IoMdArrowDropright className="text-xl" />

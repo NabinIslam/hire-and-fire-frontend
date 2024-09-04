@@ -1,25 +1,40 @@
 import BlogCard from "@/components/BlogCard";
 import PageBanner from "@/components/PageBanner";
 import TitleDescSection from "@/components/TitleDescSection";
+import { apiBaseUrl } from "@/secrets";
+import { formatDate } from "@/Utils/formatDate";
 import Image from "next/image";
 import { FaRegEye } from "react-icons/fa";
 import { MdCalendarMonth } from "react-icons/md";
+import parse from "html-react-parser";
+import { Montserrat } from "next/font/google";
 
-const BlogDetailsPage = ({ params }) => {
+const montserrat = Montserrat({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+
+const BlogDetailsPage = async ({ params }) => {
   const { blogSlug } = params;
+
+  const data = await fetch(`${apiBaseUrl}/blogs/${blogSlug}`, {
+    cache: "no-store",
+  });
+
+  const blog = await data.json();
 
   return (
     <main>
-      <PageBanner title={"Blog Detail"} />
+      <PageBanner title={blog.title} />
 
       <section className="py-[100px]">
         <div className="container flex gap-10">
           <main className="basis-full space-y-5 lg:basis-[80%]">
             <div className="relative min-h-[500px] w-full">
               <Image
-                className="h-auto w-full rounded-lg object-cover"
-                src="/images/blog-detail.png"
-                alt="Blog Video"
+                className="h-full w-full rounded-lg object-cover"
+                src={blog.thumbnail}
+                alt={blog.title}
                 fill
               />
             </div>
@@ -28,7 +43,9 @@ const BlogDetailsPage = ({ params }) => {
               <div className="flex items-center gap-2">
                 <MdCalendarMonth />
 
-                <p className="text-sm font-medium">25th June, 2024</p>
+                <p className="text-sm font-medium">
+                  {formatDate(blog.created_at)}
+                </p>
               </div>
               <div className="flex items-center gap-2">
                 <FaRegEye />
@@ -37,10 +54,11 @@ const BlogDetailsPage = ({ params }) => {
               </div>
             </div>
 
-            <h2 className="text-4xl font-semibold">
-              Why skilled workers matter for a business?
-            </h2>
-            <p className="text-sm font-medium">
+            <h2 className="text-4xl font-semibold">{blog.title}</h2>
+            <div className={`${montserrat.className}`}>
+              {parse(blog.description)}
+            </div>
+            {/* <p className="text-sm font-medium">
               Skilled workers are indispensable to businesses due to their
               ability to enhance productivity, innovate, and maintain high
               standards of quality. Their specialized knowledge allows for
@@ -55,7 +73,7 @@ const BlogDetailsPage = ({ params }) => {
               improved operational efficiency, innovative solutions, and
               enhanced customer satisfaction, ultimately positioning themselves
               for sustained growth and success in the global economy.
-            </p>
+            </p> */}
           </main>
 
           <aside className="basis-full space-y-5 lg:basis-[20%]">

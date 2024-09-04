@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 const FadeInUpWithSlowBounce = ({ children }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.9,
+    threshold: 0.5,
   });
 
   return (
