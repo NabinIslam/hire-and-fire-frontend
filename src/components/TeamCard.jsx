@@ -1,12 +1,32 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedinIn, FaEnvelope } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const TeamCard = ({ team }) => {
   const { photo, name, designtion } = team;
 
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger the animation only once
+    threshold: 0.5, // Trigger when 10% of the component is in view
+  });
+
   return (
-    <div className="group rounded-lg shadow-xl">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
+      transition={{
+        duration: 1,
+        type: "spring",
+        stiffness: 50,
+        damping: 12,
+      }}
+      className="group rounded-lg shadow-xl"
+    >
       <div className="relative">
         <div className="relative min-h-[354px] w-full">
           <Image
@@ -36,7 +56,7 @@ const TeamCard = ({ team }) => {
         <h5 className="text-center text-xl font-medium">{name}</h5>
         <h6 className="text-center text-sm">{designtion}</h6>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,6 @@
 import { apiBaseUrl } from "@/secrets";
 import TeamCard from "./TeamCard";
+import FadeInLeftWithSlowBounce from "./animations/FadeInLeftWithSlowBounce";
 
 const Teams = async () => {
   const data = await fetch(`${apiBaseUrl}/teams`);
@@ -7,9 +8,11 @@ const Teams = async () => {
 
   return (
     <div>
-      <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
-        The Founders
-      </h5>
+      <FadeInLeftWithSlowBounce>
+        <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
+          The Founders
+        </h5>
+      </FadeInLeftWithSlowBounce>
       <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           .filter((element) => element.teamName === "The Founders")
@@ -17,10 +20,11 @@ const Teams = async () => {
             <TeamCard key={team.id} team={team} />
           ))}
       </div>
-
-      <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
-        Recruitment Specialists
-      </h5>
+      <FadeInLeftWithSlowBounce>
+        <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
+          Recruitment Specialists
+        </h5>
+      </FadeInLeftWithSlowBounce>
       <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           .filter((element) => element.teamName === "Recruitment Specialists")
@@ -28,10 +32,11 @@ const Teams = async () => {
             <TeamCard key={team.id} team={team} />
           ))}
       </div>
-
-      <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
-        Sales & Marketing Team
-      </h5>
+      <FadeInLeftWithSlowBounce>
+        <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
+          Sales & Marketing Team
+        </h5>
+      </FadeInLeftWithSlowBounce>
       <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           .filter((element) => element.teamName === "Sales & Marketing Team")
@@ -40,9 +45,11 @@ const Teams = async () => {
           ))}
       </div>
 
-      <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
-        Accounting Team
-      </h5>
+      <FadeInLeftWithSlowBounce>
+        <h5 className="mb-5 text-center text-3xl font-semibold lg:text-left">
+          Accounting Team
+        </h5>
+      </FadeInLeftWithSlowBounce>
       <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           .filter((element) => element.teamName === "Accounting Team")

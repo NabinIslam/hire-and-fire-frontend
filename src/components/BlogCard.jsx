@@ -55,8 +55,8 @@ const BlogCard = ({ blog }) => {
           <div className="relative min-h-full w-full">
             <Image
               className="h-full w-full rounded-lg object-cover"
-              src={blog.thumbnail}
-              alt={blog.title}
+              src={blog?.thumbnail}
+              alt={blog?.title}
               fill
             />
           </div>

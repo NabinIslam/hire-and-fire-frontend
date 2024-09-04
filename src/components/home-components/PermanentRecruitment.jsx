@@ -17,13 +17,13 @@ const PermanentRecruitment = () => {
       <div className="container flex flex-col items-center justify-between md:gap-6 lg:flex-row lg:gap-24">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{
-            duration: 1, // Adjusting duration for overall animation speed
+            duration: 1,
             type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
+            stiffness: 50,
+            damping: 12,
           }}
           className="basis-full space-y-5 text-center lg:basis-1/2 lg:text-left"
         >

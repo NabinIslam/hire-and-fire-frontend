@@ -25,7 +25,7 @@ const BlogDetailsPage = async ({ params }) => {
 
   return (
     <main>
-      <PageBanner title={blog.title} />
+      <PageBanner title={blog?.title} />
 
       <section className="py-[100px]">
         <div className="container flex gap-10">
@@ -33,8 +33,8 @@ const BlogDetailsPage = async ({ params }) => {
             <div className="relative min-h-[500px] w-full">
               <Image
                 className="h-full w-full rounded-lg object-cover"
-                src={blog.thumbnail}
-                alt={blog.title}
+                src={blog?.thumbnail}
+                alt={blog?.title}
                 fill
               />
             </div>
@@ -44,7 +44,7 @@ const BlogDetailsPage = async ({ params }) => {
                 <MdCalendarMonth />
 
                 <p className="text-sm font-medium">
-                  {formatDate(blog.created_at)}
+                  {formatDate(blog?.created_at)}
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -54,9 +54,9 @@ const BlogDetailsPage = async ({ params }) => {
               </div>
             </div>
 
-            <h2 className="text-4xl font-semibold">{blog.title}</h2>
+            <h2 className="text-4xl font-semibold">{blog?.title}</h2>
             <div className={`${montserrat.className}`}>
-              {parse(blog.description)}
+              {parse(blog?.description)}
             </div>
             {/* <p className="text-sm font-medium">
               Skilled workers are indispensable to businesses due to their

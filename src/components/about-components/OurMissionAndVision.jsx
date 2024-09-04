@@ -1,17 +1,37 @@
+"use client";
+
+import FadeInUpWithSlowBounce from "../animations/FadeInUpWithSlowBounce";
 import SubServiceCard from "../SubServiceCard";
+import { useInView } from "react-intersection-observer";
 
 const OurMissionAndVision = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   return (
     <section className="py-[50px]">
       <div className="container space-y-10">
-        <h2 className="text-center text-4xl font-semibold lg:text-5xl">
-          Our Mission & Vision
-        </h2>
+        <FadeInUpWithSlowBounce>
+          <h2 className="text-center text-4xl font-semibold lg:text-5xl">
+            Our Mission & Vision
+          </h2>
+        </FadeInUpWithSlowBounce>
 
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 md:grid-cols-2">
           {/* card */}
 
           <SubServiceCard
+            ref={ref}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 50,
+              damping: 12,
+            }}
             icon={
               <svg
                 className="mx-auto fill-secondary group-hover:fill-white"
@@ -35,6 +55,15 @@ const OurMissionAndVision = () => {
           {/* card */}
 
           <SubServiceCard
+            ref={ref}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 50,
+              damping: 12,
+            }}
             icon={
               <svg
                 className="mx-auto fill-secondary group-hover:fill-white"

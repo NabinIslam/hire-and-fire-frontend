@@ -2,6 +2,7 @@ import AboutHero from "@/components/about-components/AboutHero";
 import CoreCompetencies from "@/components/about-components/CoreCompetencies";
 import OurMissionAndVision from "@/components/about-components/OurMissionAndVision";
 import OurValues from "@/components/about-components/OurValues";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import OurClients from "@/components/OurClients";
 import PageBanner from "@/components/PageBanner";
 import Teams from "@/components/Teams";
@@ -37,14 +38,16 @@ const AboutUsPage = () => {
         title="Key Skills"
         description="Expertise in job posting, candidate sourcing, resume screening, interviewing, onboarding, training, performance management, conflict resolution, and legal compliance."
       >
-        <div className="relative mx-auto min-h-[476px] max-w-[1276px]">
-          <Image
-            className="h-full w-full object-contain"
-            src="/images/key-skills-chart.png"
-            fill={true}
-            alt="Key Skills Chart"
-          />
-        </div>
+        <FadeInUpWithSlowBounce>
+          <div className="relative mx-auto min-h-[476px] max-w-[1276px]">
+            <Image
+              className="h-full w-full object-contain"
+              src="/images/key-skills-chart.png"
+              fill={true}
+              alt="Key Skills Chart"
+            />
+          </div>
+        </FadeInUpWithSlowBounce>
       </TitleDescSection>
       <TitleDescSection
         title="Core Competencies"
