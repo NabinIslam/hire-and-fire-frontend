@@ -1,3 +1,6 @@
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import PageBanner from "@/components/PageBanner";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
@@ -14,131 +17,148 @@ const EmploymentServicePage = () => {
       <PageBanner title="Employment Service" />
       <section className="pb-[50px] pt-[100px]">
         <div className="container">
-          <h6 className="text-center text-2xl font-medium text-primary lg:text-left">
-            Direct Employment
-          </h6>
-          <h2 className="mt-4 text-center text-4xl font-semibold md:text-5xl lg:text-left lg:text-[40px]">
-            Mediation in Employment
-          </h2>
+          <FadeInDownWithSlowBounce>
+            <h6 className="text-center text-2xl font-medium text-primary lg:text-left">
+              Direct Employment
+            </h6>
+
+            <h2 className="mt-4 text-center text-4xl font-semibold md:text-5xl lg:text-left lg:text-[40px]">
+              Mediation in Employment
+            </h2>
+          </FadeInDownWithSlowBounce>
           <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
-            <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
-              <div className="basis-[50px]">
-                <Image
-                  src="/images/mediation-icons/1.png"
-                  alt="Recruitment & Administration"
-                  height={50}
-                  width={50}
-                />
+            {/* card  */}
+            <FadeInLeftWithSlowBounce>
+              <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
+                <div className="basis-[50px]">
+                  <Image
+                    src="/images/mediation-icons/1.png"
+                    alt="Recruitment & Administration"
+                    height={50}
+                    width={50}
+                  />
+                </div>
+                <div className="flex basis-full flex-col items-start gap-4">
+                  <h5 className="text-2xl font-medium">
+                    Recruitment & Administration
+                  </h5>
+                  <p className="text-sm font-medium">
+                    Recruitment & Administration involves sourcing, attracting,
+                    and selecting candidates for employment while managing the
+                    organizational processes, policies, and documentation
+                    necessary to support these activities. This function ensures
+                    that the right talent is hired and administrative tasks are
+                    efficiently handled to maintain smooth operations within an
+                    organization.
+                  </p>
+                  <Link
+                    className="mt-auto flex items-center text-sm font-medium text-secondary"
+                    href="#"
+                  >
+                    Find Talent <IoMdArrowDropright className="text-xl" />
+                  </Link>
+                </div>
               </div>
-              <div className="flex basis-full flex-col items-start gap-4">
-                <h5 className="text-2xl font-medium">
-                  Recruitment & Administration
-                </h5>
-                <p className="text-sm font-medium">
-                  Recruitment & Administration involves sourcing, attracting,
-                  and selecting candidates for employment while managing the
-                  organizational processes, policies, and documentation
-                  necessary to support these activities. This function ensures
-                  that the right talent is hired and administrative tasks are
-                  efficiently handled to maintain smooth operations within an
-                  organization.
-                </p>
-                <Link
-                  className="mt-auto flex items-center text-sm font-medium text-secondary"
-                  href="#"
-                >
-                  Find Talent <IoMdArrowDropright className="text-xl" />
-                </Link>
+            </FadeInLeftWithSlowBounce>
+            {/* card  */}
+            <FadeInRightWithSlowBounce>
+              <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
+                <div className="basis-[50px]">
+                  <Image
+                    src="/images/mediation-icons/2.png"
+                    alt="Recruitment & Administration"
+                    height={50}
+                    width={50}
+                  />
+                </div>
+                <div className="flex basis-full flex-col items-start gap-4">
+                  <h5 className="text-2xl font-medium">
+                    Global advertising of vacancies{" "}
+                  </h5>
+                  <p className="text-sm font-medium">
+                    Global Advertising of Vacancies utilizes various
+                    international platforms and media to promote job openings
+                    across different regions. This strategy aims to attract a
+                    diverse pool of candidates by reaching a wide audience,
+                    leveraging online job boards, social media, and
+                    industry-specific channels to ensure effective global talent
+                    acquisition.
+                  </p>
+                  <Link
+                    className="mt-auto flex items-center text-sm font-medium text-secondary"
+                    href="#"
+                  >
+                    Find Talent <IoMdArrowDropright className="text-xl" />
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
-              <div className="basis-[50px]">
-                <Image
-                  src="/images/mediation-icons/1.png"
-                  alt="Recruitment & Administration"
-                  height={50}
-                  width={50}
-                />
+            </FadeInRightWithSlowBounce>
+            {/* card  */}
+            <FadeInLeftWithSlowBounce>
+              <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
+                <div className="basis-[50px]">
+                  <Image
+                    src="/images/mediation-icons/3.png"
+                    alt="Recruitment & Administration"
+                    height={50}
+                    width={50}
+                  />
+                </div>
+                <div className="flex basis-full flex-col items-start gap-4">
+                  <h5 className="text-2xl font-medium">
+                    Guidance for work permits and visas
+                  </h5>
+                  <p className="text-sm font-medium">
+                    Guidance for Work Permits and Visas provides essential
+                    support to employees and employers in navigating the legal
+                    requirements for working in a foreign country. This includes
+                    assistance with application processes, documentation,
+                    compliance with immigration laws, and understanding
+                    different visa types to ensure smooth and lawful
+                    international employment transitions.
+                  </p>
+                  <Link
+                    className="mt-auto flex items-center text-sm font-medium text-secondary"
+                    href="#"
+                  >
+                    Find Talent <IoMdArrowDropright className="text-xl" />
+                  </Link>
+                </div>
               </div>
-              <div className="flex basis-full flex-col items-start gap-4">
-                <h5 className="text-2xl font-medium">
-                  Global advertising of vacancies{" "}
-                </h5>
-                <p className="text-sm font-medium">
-                  Global Advertising of Vacancies utilizes various international
-                  platforms and media to promote job openings across different
-                  regions. This strategy aims to attract a diverse pool of
-                  candidates by reaching a wide audience, leveraging online job
-                  boards, social media, and industry-specific channels to ensure
-                  effective global talent acquisition.
-                </p>
-                <Link
-                  className="mt-auto flex items-center text-sm font-medium text-secondary"
-                  href="#"
-                >
-                  Find Talent <IoMdArrowDropright className="text-xl" />
-                </Link>
+            </FadeInLeftWithSlowBounce>
+            {/* card  */}
+            <FadeInLeftWithSlowBounce>
+              <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
+                <div className="basis-[50px]">
+                  <Image
+                    src="/images/mediation-icons/4.png"
+                    alt="Recruitment & Administration"
+                    height={50}
+                    width={50}
+                  />
+                </div>
+                <div className="flex basis-full flex-col items-start gap-4">
+                  <h5 className="text-2xl font-medium">
+                    Integration support for workers
+                  </h5>
+                  <p className="text-sm font-medium">
+                    Integration Support for Workers helps new employees
+                    acclimate to their workplace and community. This includes
+                    orientation, training, cultural adaptation resources,
+                    mentoring programs, and assistance with housing, language,
+                    and local services. Effective integration support ensures a
+                    smooth transition, enhancing employee satisfaction and
+                    productivity.
+                  </p>
+                  <Link
+                    className="mt-auto flex items-center text-sm font-medium text-secondary"
+                    href="#"
+                  >
+                    Find Talent <IoMdArrowDropright className="text-xl" />
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
-              <div className="basis-[50px]">
-                <Image
-                  src="/images/mediation-icons/1.png"
-                  alt="Recruitment & Administration"
-                  height={50}
-                  width={50}
-                />
-              </div>
-              <div className="flex basis-full flex-col items-start gap-4">
-                <h5 className="text-2xl font-medium">
-                  Guidance for work permits and visas
-                </h5>
-                <p className="text-sm font-medium">
-                  Guidance for Work Permits and Visas provides essential support
-                  to employees and employers in navigating the legal
-                  requirements for working in a foreign country. This includes
-                  assistance with application processes, documentation,
-                  compliance with immigration laws, and understanding different
-                  visa types to ensure smooth and lawful international
-                  employment transitions.
-                </p>
-                <Link
-                  className="mt-auto flex items-center text-sm font-medium text-secondary"
-                  href="#"
-                >
-                  Find Talent <IoMdArrowDropright className="text-xl" />
-                </Link>
-              </div>
-            </div>
-            <div className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
-              <div className="basis-[50px]">
-                <Image
-                  src="/images/mediation-icons/1.png"
-                  alt="Recruitment & Administration"
-                  height={50}
-                  width={50}
-                />
-              </div>
-              <div className="flex basis-full flex-col items-start gap-4">
-                <h5 className="text-2xl font-medium">
-                  Integration support for workers
-                </h5>
-                <p className="text-sm font-medium">
-                  Integration Support for Workers helps new employees acclimate
-                  to their workplace and community. This includes orientation,
-                  training, cultural adaptation resources, mentoring programs,
-                  and assistance with housing, language, and local services.
-                  Effective integration support ensures a smooth transition,
-                  enhancing employee satisfaction and productivity.
-                </p>
-                <Link
-                  className="mt-auto flex items-center text-sm font-medium text-secondary"
-                  href="#"
-                >
-                  Find Talent <IoMdArrowDropright className="text-xl" />
-                </Link>
-              </div>
-            </div>
+            </FadeInLeftWithSlowBounce>
           </div>
         </div>
       </section>

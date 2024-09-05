@@ -1,4 +1,5 @@
 import BlogCard from "@/components/BlogCard";
+import BlogDescription from "@/components/BlogDescription";
 import PageBanner from "@/components/PageBanner";
 import TitleDescSection from "@/components/TitleDescSection";
 import { apiBaseUrl } from "@/secrets";
@@ -6,13 +7,6 @@ import { formatDate } from "@/Utils/formatDate";
 import Image from "next/image";
 import { FaRegEye } from "react-icons/fa";
 import { MdCalendarMonth } from "react-icons/md";
-import parse from "html-react-parser";
-import { Montserrat } from "next/font/google";
-
-const montserrat = Montserrat({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
 
 const BlogDetailsPage = async ({ params }) => {
   const { blogSlug } = params;
@@ -50,14 +44,14 @@ const BlogDetailsPage = async ({ params }) => {
               <div className="flex items-center gap-2">
                 <FaRegEye />
 
-                <p className="text-sm font-medium">580 Views</p>
+                <p className="text-sm font-medium">{blog?.view_count} Views</p>
               </div>
             </div>
 
             <h2 className="text-4xl font-semibold">{blog?.title}</h2>
-            <div className={`${montserrat.className}`}>
-              {parse(blog?.description)}
-            </div>
+
+            <BlogDescription description={blog?.description} />
+
             {/* <p className="text-sm font-medium">
               Skilled workers are indispensable to businesses due to their
               ability to enhance productivity, innovate, and maintain high

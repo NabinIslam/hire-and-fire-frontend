@@ -11,6 +11,8 @@ const SubServiceCard = ({
   animate,
   transition,
 }) => {
+  console.log(ref, initial, animate, transition);
+
   return (
     <motion.div
       ref={ref}
