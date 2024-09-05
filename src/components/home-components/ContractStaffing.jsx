@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 const ContractStaffing = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.2,
   });
   return (
     <section className="py-[50px]">
