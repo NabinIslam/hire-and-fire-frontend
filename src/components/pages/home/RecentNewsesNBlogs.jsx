@@ -1,8 +1,8 @@
 import Button from "../../ui/Button";
-import BlogCard from "../blog/BlogCard";
 import Link from "next/link";
 import TitleDescSection from "../../common/TitleDescSection";
 import { apiBaseUrl } from "@/secrets";
+import BlogCard from "../blog/BlogCard";
 
 const RecentNewsesNBlogs = async () => {
   const data = await fetch(`${apiBaseUrl}/blogs`, {

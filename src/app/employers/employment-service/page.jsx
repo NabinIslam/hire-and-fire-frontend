@@ -2,7 +2,7 @@ import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlow
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import PageBanner from "@/components/common/PageBanner";
 import MediationContainer from "@/components/pages/employment-service/MediationContainer";
-import WorkPermitVisaSupport from "@/components/WorkPermitVisaSupport";
+import WorkPermitVisaSupport from "@/components/pages/employment-service/WorkPermitVisaSupport";
 import Image from "next/image";
 
 export const metadata = {
