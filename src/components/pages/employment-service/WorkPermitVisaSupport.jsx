@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Button from "./ui/Button";
 import Image from "next/image";
+import Button from "@/components/ui/Button";
 
 const WorkPermitVisaSupport = () => {
   const { ref, inView } = useInView({
