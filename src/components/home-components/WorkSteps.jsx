@@ -31,7 +31,7 @@ const WorkSteps = () => {
             stiffness: 50, // Slowing down the movement
             damping: 12, // Adjusting damping to control bounce
           }}
-          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105 border"
         >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
@@ -83,7 +83,7 @@ const WorkSteps = () => {
             stiffness: 50,
             damping: 12,
           }}
-          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105 border"
         >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
@@ -154,7 +154,7 @@ const WorkSteps = () => {
             stiffness: 50,
             damping: 12,
           }}
-          className="group relative h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+          className="group relative h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105 border"
         >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
@@ -225,7 +225,7 @@ const WorkSteps = () => {
             stiffness: 50, // Slowing down the movement
             damping: 12, // Adjusting damping to control bounce
           }}
-          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105 border"
         >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">

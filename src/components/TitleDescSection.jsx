@@ -14,8 +14,8 @@ const TitleDescSection = ({ title, description, children, className }) => {
       <div className="container space-y-4">
         <motion.h2
           ref={ref}
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 1,
             type: "spring",
@@ -29,8 +29,8 @@ const TitleDescSection = ({ title, description, children, className }) => {
         <div className="mx-auto max-w-2xl">
           <motion.p
             ref={ref}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 1,
               type: "spring",
