@@ -40,11 +40,11 @@ const BlogCard = ({ blog }) => {
         stiffness: 50,
         damping: 12,
       }}
-      className="group flex flex-col items-start gap-3 rounded-lg border p-4 shadow-xl"
+      className="flex flex-col items-start gap-3 rounded-lg border p-4 shadow-xl"
     >
       {blog?.video ? (
         <ReactPlayer
-          className="relative min-h-[200px] w-full rounded-lg duration-200 group-hover:scale-125"
+          className="relative min-h-[200px] w-full rounded-lg duration-200 hover:scale-125"
           url="https://youtu.be/ZEyAs3NWH4A?si=o8pfJ1T-YSg-11ZO"
           playing
           loop
