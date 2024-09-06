@@ -1,6 +1,4 @@
-import BenefitsSection from "@/components/BenefitsSection";
 import PageBanner from "@/components/common/PageBanner";
-import Partner from "@/components/Partner";
 import RoleCard from "@/components/RoleCard";
 import TitleDescSection from "@/components/common/TitleDescSection";
 import Button from "@/components/ui/Button";
@@ -12,7 +10,7 @@ import { GiGearHammer } from "react-icons/gi";
 import { IoBarChartSharp } from "react-icons/io5";
 import { IoDocumentText } from "react-icons/io5";
 import { FaUsersGear } from "react-icons/fa6";
-import BenefitCard from "@/components/BenefitCard";
+import BenefitCard from "@/components/pages/industry/BenefitCard";
 
 const IndustryDetailsPage = ({ params }) => {
   const { industrySlug } = params;
@@ -62,6 +60,7 @@ const IndustryDetailsPage = ({ params }) => {
           /> */}
         </div>
       </div>
+
       {/* <Partner /> */}
       <TitleDescSection
         title="Roles we Fill"

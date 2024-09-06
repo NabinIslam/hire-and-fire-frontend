@@ -1,6 +1,6 @@
 import { apiBaseUrl } from "@/secrets";
 import TeamCard from "./TeamCard";
-import FadeInLeftWithSlowBounce from "./animations/FadeInLeftWithSlowBounce";
+import FadeInLeftWithSlowBounce from "../../animations/FadeInLeftWithSlowBounce";
 
 const Teams = async () => {
   const data = await fetch(`${apiBaseUrl}/teams`);

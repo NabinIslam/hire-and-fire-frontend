@@ -1,5 +1,5 @@
 import PageBanner from "@/components/common/PageBanner";
-import RequestTalentForm from "@/components/RequestTalentForm";
+import RequestTalentForm from "@/components/pages/request-talent/RequestTalentForm";
 
 export const metadata = {
   title: "Hire&Fire | Request Talent",

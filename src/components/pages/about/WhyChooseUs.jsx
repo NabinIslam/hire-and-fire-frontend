@@ -1,7 +1,7 @@
 import Image from "next/image";
-import BgButton from "./ui/BgButton";
 import Link from "next/link";
-import FadeInUpWithSlowBounce from "./animations/FadeInUpWithSlowBounce";
+import BgButton from "@/components/ui/BgButton";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 
 const WhyChooseUs = () => {
   return (

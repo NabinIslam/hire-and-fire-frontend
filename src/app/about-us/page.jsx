@@ -4,11 +4,11 @@ import OurMissionAndVision from "@/components/pages/about/OurMissionAndVision";
 import OurValues from "@/components/pages/about/OurValues";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import PageBanner from "@/components/common/PageBanner";
-import Teams from "@/components/Teams";
+import Teams from "@/components/pages/about/Teams";
 import TitleDescSection from "@/components/common/TitleDescSection";
-import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
 import OurClients from "@/components/common/OurClients";
+import WhyChooseUs from "@/components/pages/about/WhyChooseUs";
 
 export const metadata = {
   title: "Hire&Fire | About Us",

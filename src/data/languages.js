@@ -1,0 +1,26 @@
+export const languages = [
+  { value: "Albania", label: "Albania" },
+  { value: "Belarus", label: "Belarus" },
+  { value: "Bosnia", label: "Bosnia" },
+  { value: "Bulgaria", label: "Bulgaria" },
+  { value: "Croatia", label: "Croatia" },
+  { value: "Estonia", label: "Estonia" },
+  { value: "Greece", label: "Greece" },
+  { value: "Hungary", label: "Hungary" },
+  { value: "Latvia", label: "Latvia" },
+  { value: "Lithuania", label: "Lithuania" },
+  { value: "Macedonia", label: "Macedonia" },
+  { value: "Montenegro", label: "Montenegro" },
+  { value: "Malta", label: "Malta" },
+  { value: "Moldova", label: "Moldova" },
+  { value: "Romania", label: "Romania" },
+  { value: "Serbia", label: "Serbia" },
+  {
+    value: "Turkish Republic of Northern Cyprus (TRNC)",
+    label: "Turkish Republic of Northern Cyprus (TRNC)",
+  },
+  {
+    value: "Republic of Cyprus (Greek Cypriot)",
+    label: "Republic of Cyprus (Greek Cypriot)",
+  },
+];

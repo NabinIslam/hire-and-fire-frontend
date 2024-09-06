@@ -10,8 +10,10 @@ import { IoMdArrowDropright } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-import { Sidebar } from "flowbite-react";
+import { Dropdown, Sidebar } from "flowbite-react";
 import Button from "../ui/Button";
+import { languages } from "@/data/languages";
+import Select from "react-dropdown-select";
 
 const Header = () => {
   const [selected, setSelected] = useState("US");
@@ -158,6 +160,26 @@ const Header = () => {
           <Link href="/contact-us">
             <Button>Contact Us</Button>
           </Link>
+
+          <Select
+            className="w-[150px] rounded-full px-4 text-sm"
+            searchable={false}
+            options={languages}
+            onChange={(value) => console.log(value)}
+          />
+
+          {/* <Dropdown className="border" label="Dropdown button">
+            {languages.map((language) => (
+              <Dropdown.Item>{language}</Dropdown.Item>
+            ))}
+          </Dropdown> */}
+
+          {/* <select className="rounded-full border" name="selectCountries" id="">
+            {languages.map((language) => (
+              <option value={language}>{language}</option>
+            ))}
+          </select> */}
+
           {/* <ReactFlagsSelect
             className="mb-[-5px]"
             showSelectedLabel={false}
