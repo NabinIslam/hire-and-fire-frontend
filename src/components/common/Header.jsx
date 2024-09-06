@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Button from "./ui/Button";
 import ReactFlagsSelect from "react-flags-select";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoMdArrowDropright } from "react-icons/io";
@@ -12,6 +11,7 @@ import { FaBars } from "react-icons/fa6";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { Sidebar } from "flowbite-react";
+import Button from "../ui/Button";
 
 const Header = () => {
   const [selected, setSelected] = useState("US");

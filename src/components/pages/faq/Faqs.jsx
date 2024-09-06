@@ -1,5 +1,5 @@
 import { apiBaseUrl } from "@/secrets";
-import Accordion from "../ui/Accordion";
+import Accordion from "../../ui/Accordion";
 
 const Faqs = async () => {
   const data = await fetch(`${apiBaseUrl}/faqs`);

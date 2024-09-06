@@ -1,9 +1,9 @@
-import Step1 from "@/components/our-process/Step1";
-import Step2 from "@/components/our-process/Step2";
-import Step3 from "@/components/our-process/Step3";
-import Step4 from "@/components/our-process/Step4";
-import PageBanner from "@/components/PageBanner";
-import TitleDescSection from "@/components/TitleDescSection";
+import Step1 from "@/components/pages/our-process/Step1";
+import Step2 from "@/components/pages/our-process/Step2";
+import Step3 from "@/components/pages/our-process/Step3";
+import Step4 from "@/components/pages/our-process/Step4";
+import PageBanner from "@/components/common/PageBanner";
+import TitleDescSection from "@/components/common/TitleDescSection";
 import Image from "next/image";
 
 export const metadata = {

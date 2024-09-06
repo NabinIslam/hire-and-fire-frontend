@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import FaqSkeleton from "@/components/skeletons/FaqSkeleton";
-import PageBanner from "@/components/PageBanner";
-import Faqs from "@/components/faq/Faqs";
+import PageBanner from "@/components/common/PageBanner";
+import Faqs from "@/components/pages/faq/Faqs";
 
 export const metadata = {
   title: "Hire&Fire | Frequently Asked Questions",

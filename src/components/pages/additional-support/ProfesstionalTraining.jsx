@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 const ProfessionalTraining = () => {
   const { ref, inView } = useInView({

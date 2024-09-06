@@ -1,8 +1,8 @@
 import BenefitsSection from "@/components/BenefitsSection";
-import PageBanner from "@/components/PageBanner";
+import PageBanner from "@/components/common/PageBanner";
 import Partner from "@/components/Partner";
 import RoleCard from "@/components/RoleCard";
-import TitleDescSection from "@/components/TitleDescSection";
+import TitleDescSection from "@/components/common/TitleDescSection";
 import Button from "@/components/ui/Button";
 import { roles } from "@/data/roleCardData";
 import { capitalizeAndRemoveHyphens } from "@/Utils/capitalizeAndRemoveHyphens";

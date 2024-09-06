@@ -1,9 +1,9 @@
-import PageBanner from "@/components/PageBanner";
+import PageBanner from "@/components/common/PageBanner";
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
-import ContactFormSection from "@/components/contact-components/ContactFormSection";
+import ContactFormSection from "@/components/pages/contact-us/ContactFormSection";
 import Link from "next/link";
 
 export const metadata = {

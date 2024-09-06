@@ -1,7 +1,7 @@
 "use client";
 
-import SubServiceCard from "../SubServiceCard";
-import Button from "../ui/Button";
+import SubServiceCard from "../../SubServiceCard";
+import Button from "../../ui/Button";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

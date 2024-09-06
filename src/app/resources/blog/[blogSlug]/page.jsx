@@ -1,7 +1,7 @@
 import BlogCard from "@/components/BlogCard";
 import BlogDescription from "@/components/BlogDescription";
-import PageBanner from "@/components/PageBanner";
-import TitleDescSection from "@/components/TitleDescSection";
+import PageBanner from "@/components/common/PageBanner";
+import TitleDescSection from "@/components/common/TitleDescSection";
 import { apiBaseUrl } from "@/secrets";
 import { formatDate } from "@/Utils/formatDate";
 import Image from "next/image";

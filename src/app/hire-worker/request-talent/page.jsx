@@ -1,4 +1,4 @@
-import PageBanner from "@/components/PageBanner";
+import PageBanner from "@/components/common/PageBanner";
 import RequestTalentForm from "@/components/RequestTalentForm";
 
 export const metadata = {

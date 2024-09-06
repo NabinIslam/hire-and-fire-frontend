@@ -1,6 +1,6 @@
-import OurClients from "@/components/OurClients";
-import PageBanner from "@/components/PageBanner";
-import PartnershipsPrograms from "@/components/partnership-programs/PartnershipsPrograms";
+import OurClients from "@/components/common/OurClients";
+import PageBanner from "@/components/common/PageBanner";
+import PartnershipsPrograms from "@/components/pages/partnership-programs/PartnershipsPrograms";
 
 export const metadata = {
   title: "Hire&Fire | Partnerships Programs",

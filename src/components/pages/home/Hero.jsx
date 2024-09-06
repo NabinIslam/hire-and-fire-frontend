@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import BgButton from "../ui/BgButton";
+import BgButton from "../../ui/BgButton";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

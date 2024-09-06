@@ -1,7 +1,7 @@
-import Button from "../ui/Button";
-import BlogCard from "../BlogCard";
+import Button from "../../ui/Button";
+import BlogCard from "../blog/BlogCard";
 import Link from "next/link";
-import TitleDescSection from "../TitleDescSection";
+import TitleDescSection from "../../common/TitleDescSection";
 import { apiBaseUrl } from "@/secrets";
 
 const RecentNewsesNBlogs = async () => {
@@ -10,8 +10,6 @@ const RecentNewsesNBlogs = async () => {
   });
 
   const blogs = await data.json();
-
-  console.log(blogs);
 
   return (
     <TitleDescSection

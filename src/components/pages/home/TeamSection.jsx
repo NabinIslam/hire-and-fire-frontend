@@ -7,9 +7,9 @@ import team4 from "@/assets/images/team4.png";
 import Image from "next/image";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 import Link from "next/link";
-import TitleDescSection from "../TitleDescSection";
+import TitleDescSection from "../../common/TitleDescSection";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

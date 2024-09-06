@@ -1,14 +1,14 @@
-import AboutHero from "@/components/about-components/AboutHero";
-import CoreCompetencies from "@/components/about-components/CoreCompetencies";
-import OurMissionAndVision from "@/components/about-components/OurMissionAndVision";
-import OurValues from "@/components/about-components/OurValues";
+import AboutHero from "@/components/pages/about/AboutHero";
+import CoreCompetencies from "@/components/pages/about/CoreCompetencies";
+import OurMissionAndVision from "@/components/pages/about/OurMissionAndVision";
+import OurValues from "@/components/pages/about/OurValues";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
-import OurClients from "@/components/OurClients";
-import PageBanner from "@/components/PageBanner";
+import PageBanner from "@/components/common/PageBanner";
 import Teams from "@/components/Teams";
-import TitleDescSection from "@/components/TitleDescSection";
+import TitleDescSection from "@/components/common/TitleDescSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
+import OurClients from "@/components/common/OurClients";
 
 export const metadata = {
   title: "Hire&Fire | About Us",

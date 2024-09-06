@@ -1,8 +1,6 @@
-import BlogCard from "@/components/BlogCard";
-import Blogs from "@/components/Blogs";
-import PageBanner from "@/components/PageBanner";
-import TitleDescSection from "@/components/TitleDescSection";
-
+import Blogs from "@/components/pages/blog/Blogs";
+import PageBanner from "@/components/common/PageBanner";
+import TitleDescSection from "@/components/common/TitleDescSection";
 export const metadata = {
   title: "Hire&Fire | Blog & News",
 };

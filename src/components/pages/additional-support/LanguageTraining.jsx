@@ -3,16 +3,16 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
-const WorkerAccommodationService = () => {
+const LanguageTraining = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
 
   return (
-    <section className="py-[50px]">
+    <section className="pb-[100px] pt-[50px]">
       <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
         <motion.div
           ref={ref}
@@ -27,19 +27,20 @@ const WorkerAccommodationService = () => {
           className="basis-full text-center lg:basis-1/2 lg:text-left"
         >
           <h6 className="text-2xl font-medium text-primary">
-            Worker Accommodation Service
+            Language Training
           </h6>
           <h2 className="mt-5 text-4xl font-semibold lg:text-5xl">
-            Global Accommodation Services for Workers
+            Essential Language Skills for the Workplace
           </h2>
           <p className="my-5 text-sm font-medium">
-            Providing comprehensive global worker accommodation services,
-            ensuring comfortable and convenient lodging solutions for
-            international employees. Our services cater to diverse industry
-            needs, offering flexible housing options and personalized support to
-            meet workforce demands worldwide. We prioritize safety, comfort, and
-            seamless integration to enhance productivity and employee
-            satisfaction.
+            At Hire and Fire, we offer language training as additional support
+            for workers heading to EU countries. This training focuses on the
+            basics needed for everyday life and work. The sessions cover
+            speaking, listening, and writing skills to help workers feel
+            confident in their new environment. We tailor the training to match
+            the language of the destination, ensuring the most relevant
+            experience. Plus, we offer flexible scheduling to fit the needs of
+            workers, making it easy for them to prepare for their new adventure.
           </p>
           <Button>Contact Us</Button>
         </motion.div>
@@ -57,7 +58,7 @@ const WorkerAccommodationService = () => {
         >
           <Image
             className="object-contain lg:object-right"
-            src="/images/global-accomodation.png"
+            src="/images/language-skill.png"
             alt="Work Permit & Visa Support"
             fill
           />
@@ -67,4 +68,4 @@ const WorkerAccommodationService = () => {
   );
 };
 
-export default WorkerAccommodationService;
+export default LanguageTraining;

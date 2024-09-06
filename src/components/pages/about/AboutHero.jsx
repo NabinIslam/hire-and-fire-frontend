@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";

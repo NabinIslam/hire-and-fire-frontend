@@ -1,7 +1,7 @@
-import FadeInDownWithSlowBounce from "../animations/FadeInDownWithSlowBounce";
-import FadeInLeftWithSlowBounce from "../animations/FadeInLeftWithSlowBounce";
-import FadeInRightWithSlowBounce from "../animations/FadeInRightWithSlowBounce ";
-import FadeInUpWithSlowBounce from "../animations/FadeInUpWithSlowBounce";
+import FadeInDownWithSlowBounce from "../../animations/FadeInDownWithSlowBounce";
+import FadeInLeftWithSlowBounce from "../../animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "../../animations/FadeInRightWithSlowBounce ";
+import FadeInUpWithSlowBounce from "../../animations/FadeInUpWithSlowBounce";
 
 const CompanyPoints = () => {
   return (

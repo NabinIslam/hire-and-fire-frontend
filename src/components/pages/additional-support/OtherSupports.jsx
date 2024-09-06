@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 const OtherSupports = () => {
   const { ref, inView } = useInView({
@@ -11,12 +11,7 @@ const OtherSupports = () => {
     threshold: 0.2,
   });
 
-  return (
-    <>
-    
-      
-    </>
-  );
+  return <></>;
 };
 
 export default OtherSupports;

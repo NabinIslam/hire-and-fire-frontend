@@ -1,14 +1,9 @@
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
-import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
-import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
-import MediationContainer from "@/components/MediationContainer";
-import PageBanner from "@/components/PageBanner";
-import Button from "@/components/ui/Button";
+import PageBanner from "@/components/common/PageBanner";
+import MediationContainer from "@/components/pages/employment-service/MediationContainer";
 import WorkPermitVisaSupport from "@/components/WorkPermitVisaSupport";
 import Image from "next/image";
-import Link from "next/link";
-import { IoMdArrowDropright } from "react-icons/io";
 
 export const metadata = {
   title: "Hire&Fire | Employment Service",

@@ -1,6 +1,4 @@
-"use client";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import Breadcrumbs from "./ui/Breadcrumbs";
+import Breadcrumbs from "../ui/Breadcrumbs";
 
 const PageBanner = ({ title }) => {
   return (

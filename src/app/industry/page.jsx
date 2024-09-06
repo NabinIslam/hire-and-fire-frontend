@@ -1,7 +1,7 @@
-import PageBanner from "@/components/PageBanner";
+import PageBanner from "@/components/common/PageBanner";
 import { Suspense } from "react";
 import IndustrySkeleton from "@/components/skeletons/IndustrySkeleton";
-import Industries from "@/components/Industries";
+import Industries from "@/components/pages/indutry/Industries";
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 
 export const metadata = {

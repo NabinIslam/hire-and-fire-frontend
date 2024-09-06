@@ -4,8 +4,8 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ArrowPrev from "./ui/ArrowPrev";
-import ArrowNext from "./ui/ArrowNext";
+import ArrowPrev from "../ui/ArrowPrev";
+import ArrowNext from "../ui/ArrowNext";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

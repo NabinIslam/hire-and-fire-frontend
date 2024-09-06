@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FadeInUpWithSlowBounce from "../animations/FadeInUpWithSlowBounce";
+import FadeInUpWithSlowBounce from "../../animations/FadeInUpWithSlowBounce";
 
 const OurValues = () => {
   return (
