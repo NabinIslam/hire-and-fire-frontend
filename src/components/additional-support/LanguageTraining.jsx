@@ -57,7 +57,7 @@ const LanguageTraining = () => {
           className="relative min-h-[400px] w-full basis-full lg:basis-1/2"
         >
           <Image
-            className="object-contain"
+            className="object-contain lg:object-right"
             src="/images/language-skill.png"
             alt="Work Permit & Visa Support"
             fill

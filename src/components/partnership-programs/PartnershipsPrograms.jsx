@@ -1,18 +1,18 @@
 "use client";
 
+import Button from "@/components/ui/Button";
 import Image from "next/image";
-import Button from "../ui/Button";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
-const ProfessionalSupport = () => {
+const PartnershipsPrograms = () => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once
     threshold: 0.2, // Trigger when 10% of the component is in view
   });
 
   return (
-    <section className="pb-[50px] pt-[100px]">
+    <section className="pt-[100px]">
       <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
         <motion.div
           ref={ref}
@@ -26,22 +26,21 @@ const ProfessionalSupport = () => {
           }}
           className="basis-full text-center lg:basis-1/2 lg:text-left"
         >
-          <div className="flex h-[46px] w-[264px] items-center justify-center border-2 border-dashed border-primary text-xl font-medium text-primary">
-            Professional Support
-          </div>
+          <h6 className="text-2xl font-medium text-primary">
+            Partnerships Programs
+          </h6>
           <h2 className="mt-5 text-4xl font-semibold lg:text-5xl">
-            We also provide support for Workers{" "}
+            Collaborate with Us for business purpose
           </h2>
           <p className="my-5 text-sm font-medium">
-            "Support for Workers" encompasses comprehensive assistance aimed at
-            enhancing workplace productivity and employee satisfaction. Our
-            services include HR guidance, training programs, and resource
-            allocation to foster a positive work environment. We prioritize
-            employee well-being through health and safety initiatives, career
-            development opportunities, and responsive problem-solving. By
-            offering personalized support and addressing individual needs, we
-            empower workers to thrive professionally and contribute effectively
-            to organizational success.
+            Partnership programs are collaborations between entities, fostering
+            mutual benefits such as shared resources, expanded market reach, and
+            combined expertise. These initiatives can include joint ventures,
+            affiliate marketing agreements, or strategic alliances tailored to
+            leverage strengths and capitalize on market opportunities. By
+            aligning goals and pooling capabilities, partners aim to innovate,
+            enhance competitiveness, and deliver enhanced value to customers
+            across diverse industries.
           </p>
           <Button>Contact Us</Button>
         </motion.div>
@@ -58,8 +57,8 @@ const ProfessionalSupport = () => {
           className="relative min-h-[400px] w-full basis-full lg:basis-1/2"
         >
           <Image
-            className="object-contain lg:object-right"
-            src="/images/additional-support-img.png"
+            className="object-contain"
+            src="/images/collaborate.png"
             alt="Work Permit & Visa Support"
             fill
           />
@@ -69,4 +68,4 @@ const ProfessionalSupport = () => {
   );
 };
 
-export default ProfessionalSupport;
+export default PartnershipsPrograms;

@@ -56,7 +56,7 @@ const ProfessionalTraining = () => {
           className="relative min-h-[400px] w-full basis-full lg:basis-1/2"
         >
           <Image
-            className="object-contain"
+            className="object-contain lg:object-left"
             src="/images/training-program.png"
             alt="Work Permit & Visa Support"
             fill
