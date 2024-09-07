@@ -4,8 +4,11 @@ import Image from "next/image";
 import BgButton from "../../ui/BgButton";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("HomePage");
+
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once
     threshold: 0.2, // Trigger when 10% of the component is in view
@@ -26,11 +29,11 @@ const Hero = () => {
           className="basis-full text-center lg:basis-1/2 lg:text-left"
         >
           <h1 className="text-5xl font-semibold leading-[60px] md:text-5xl md:leading-[60px] lg:text-[56px] lg:leading-[60px]">
-            Connecting Employers <br /> with Top Global Talent
+            {t("hero_title")}
           </h1>
-          <p className="mb-5 mt-3">Bringing skilled workers to your business</p>
+          <p className="mb-5 mt-3">{t("hero_description")}</p>
 
-          <BgButton>Find Talent</BgButton>
+          <BgButton>{t("hero_button")}</BgButton>
         </motion.div>
         <motion.div
           ref={ref}

@@ -29,8 +29,9 @@ const Header = () => {
   };
 
   const handleLanguageChange = (event) => {
-    setSelectedLanguage(event.target.value);
-    // Implement your language change logic here
+    localStorage.setItem("site-language", event.target.value);
+
+    // console.log(event.target.value);
   };
 
   return (
@@ -172,12 +173,19 @@ const Header = () => {
           </Link>
 
           <select
-            value={selectedLanguage}
             onChange={handleLanguageChange}
             className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
           >
             {languages.map((language) => (
-              <option value={language.value}>{language.label}</option>
+              <option
+                selected={
+                  language.code === localStorage.getItem("site-language")
+                }
+                value={language.code}
+                key={language.value}
+              >
+                {language.label}
+              </option>
             ))}
           </select>
 
