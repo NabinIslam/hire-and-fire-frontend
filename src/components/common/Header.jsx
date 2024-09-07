@@ -19,8 +19,18 @@ const Header = () => {
   const [selected, setSelected] = useState("US");
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState({
+    value: "English",
+    label: "English",
+  });
+
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
+  };
+
+  const handleLanguageChange = (event) => {
+    setSelectedLanguage(event.target.value);
+    // Implement your language change logic here
   };
 
   return (
@@ -161,12 +171,22 @@ const Header = () => {
             <Button>Contact Us</Button>
           </Link>
 
-          <Select
+          <select
+            value={selectedLanguage}
+            onChange={handleLanguageChange}
+            className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
+          >
+            {languages.map((language) => (
+              <option value={language.value}>{language.label}</option>
+            ))}
+          </select>
+
+          {/* <Select
             className="w-[150px] rounded-full px-4 text-sm"
             searchable={false}
             options={languages}
             onChange={(value) => console.log(value)}
-          />
+          /> */}
 
           {/* <Dropdown className="border" label="Dropdown button">
             {languages.map((language) => (

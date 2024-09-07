@@ -1,4 +1,6 @@
 export const languages = [
+  { value: "English", label: "English" },
+  { value: "Albania", label: "Albania" },
   { value: "Albania", label: "Albania" },
   { value: "Belarus", label: "Belarus" },
   { value: "Bosnia", label: "Bosnia" },
@@ -16,11 +18,11 @@ export const languages = [
   { value: "Romania", label: "Romania" },
   { value: "Serbia", label: "Serbia" },
   {
-    value: "Turkish Republic of Northern Cyprus (TRNC)",
-    label: "Turkish Republic of Northern Cyprus (TRNC)",
+    value: "(TRNC)",
+    label: "(TRNC)",
   },
   {
-    value: "Republic of Cyprus (Greek Cypriot)",
-    label: "Republic of Cyprus (Greek Cypriot)",
+    value: "(Greek Cypriot)",
+    label: "(Greek Cypriot)",
   },
 ];
