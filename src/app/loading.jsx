@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Loading = () => {
   return (
-    <div className="-mt-[70px] flex min-h-screen items-center justify-center bg-white">
+    <div className="flex min-h-screen items-center justify-center bg-white">
       <Image
         className="animate-pulse"
         src="/images/Logo.png"
