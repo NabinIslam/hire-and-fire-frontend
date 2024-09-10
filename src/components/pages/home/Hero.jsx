@@ -8,7 +8,7 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 const Hero = () => {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("HomePageHero");
 
   const { ref, inView } = useInView({
     triggerOnce: true,

@@ -2,8 +2,8 @@ import { Sidebar } from "flowbite-react";
 import Button from "../ui/Button";
 import Drawer from "react-modern-drawer";
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Link } from "@/i18n/routing";
 
 const MobileDrawer = ({ isOpen, toggleDrawer }) => {
   const pathname = usePathname();
