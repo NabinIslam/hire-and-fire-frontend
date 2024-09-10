@@ -1,50 +1,36 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoMdArrowDropright } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
 import "react-modern-drawer/dist/index.css";
 import Button from "../ui/Button";
 import { languages } from "@/data/languages";
-import { useLocale } from "next-intl";
 import MobileDrawer from "./MobileDrawer";
+import { useLocale } from "next-intl";
+
+import { useTransition } from "react";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { Link } from "@/i18n/routing";
 
 const Header = () => {
   const [isPending, startTransition] = useTransition();
   const localActive = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
 
-  // const handleLanguageChange = (event) => {
-  //   localStorage.setItem("site-language", event.target.value);
+  const onSelectChange = (e) => {
+    const nextLocale = e.target.value;
 
-  //   // console.log(event.target.value);
-  // };
-
-  // const changeLanguage = async (locale) => {
-  //   setSelectedLocale(locale);
-  //   localStorage.setItem("locale", locale);
-
-  //   // Set cookie for locale
-  //   document.cookie = `locale=${locale}; path=/`;
-
-  //   // Optionally, refresh the page or route
-
-  //   // router.refresh(`?locale=${locale}`);
-  //    router.push(pathname, { locale });
-  // };
-  const changeLanguage = async (locale) => {
-    // router.push(`/${locale}`);
-
-    startTransition(() => router.replace(`/${locale}`));
+    startTransition(() => router.replace(`/${nextLocale}`));
   };
 
   return (
@@ -186,8 +172,8 @@ const Header = () => {
           </Link>
 
           <select
-            value={localActive}
-            onChange={(e) => changeLanguage(e.target.value)}
+            defaultValue={localActive}
+            onChange={onSelectChange}
             className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
             disabled={isPending}
           >

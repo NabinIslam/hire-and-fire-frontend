@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
 import FadeInLeftWithSlowBounce from "../../animations/FadeInLeftWithSlowBounce";
+import { Link } from "@/i18n/routing";
 
 const IndustryCard = ({ industry }) => {
   const { name, shortDescription, photo, slug } = industry;

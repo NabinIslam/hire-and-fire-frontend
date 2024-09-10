@@ -4,17 +4,17 @@ import Image from "next/image";
 import BgButton from "../../ui/BgButton";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const t = useTranslations("HomePage");
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger the animation only once
-    threshold: 0.2, // Trigger when 10% of the component is in view
+    triggerOnce: true,
+    threshold: 0.2,
   });
-  
+
   return (
     <section className="bg-hero-bg bg-cover bg-no-repeat pb-[140px] pt-[50px] text-white">
       <div className="container flex flex-col items-center justify-between gap-16 lg:flex-row">
@@ -35,7 +35,7 @@ const Hero = () => {
           </h1>
           <p className="mb-5 mt-3">{t("hero_description")}</p>
 
-          <Link href='/hire-worker/request-talent'>
+          <Link href="/hire-worker/request-talent">
             <BgButton>{t("hero_button")}</BgButton>
           </Link>
         </motion.div>

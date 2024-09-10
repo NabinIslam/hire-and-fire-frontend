@@ -1,8 +1,9 @@
-import { Link, usePathname } from "@/i18n/routing";
 import { Sidebar } from "flowbite-react";
 import Button from "../ui/Button";
 import Drawer from "react-modern-drawer";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const MobileDrawer = ({ isOpen, toggleDrawer }) => {
   const pathname = usePathname();

@@ -5,22 +5,24 @@ import "rsuite/dist/rsuite-no-reset.min.css";
 import RsuiteProvider from "@/providers/RsuiteProvider";
 import TanstackQueryProvider from "@/providers/TanstackQueryProvider";
 import "react-loading-skeleton/dist/skeleton.css";
+import { Montserrat } from "next/font/google";
+
+//language imports
+
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Hire&Fire",
   description: "Your Partner in international Construction Recruitment",
 };
 
-const montserrat = Montserrat({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
 export default async function LocaleLayout({ children, params: { locale } }) {
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
