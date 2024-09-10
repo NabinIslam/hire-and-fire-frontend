@@ -1,5 +1,3 @@
-import { Montserrat } from "next/font/google";
-import "rsuite/dist/rsuite-no-reset.min.css";
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
@@ -7,6 +5,12 @@ import "rsuite/dist/rsuite-no-reset.min.css";
 import RsuiteProvider from "@/providers/RsuiteProvider";
 import TanstackQueryProvider from "@/providers/TanstackQueryProvider";
 import "react-loading-skeleton/dist/skeleton.css";
+import { Montserrat } from "next/font/google";
+
+//language imports
+
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -18,15 +22,21 @@ export const metadata = {
   description: "Your Partner in international Construction Recruitment",
 };
 
-export default function RootLayout({ children }) {
+export default async function LocaleLayout({ children, params: { locale } }) {
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${montserrat.className} flex min-h-screen flex-col`}>
-        <TanstackQueryProvider>
-          <Header />
-          <RsuiteProvider>{children}</RsuiteProvider>
-          <Footer />
-        </TanstackQueryProvider>
+        <NextIntlClientProvider messages={messages}>
+          <TanstackQueryProvider>
+            <RsuiteProvider>
+              <Header />
+              {children}
+              <Footer />
+            </RsuiteProvider>
+          </TanstackQueryProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

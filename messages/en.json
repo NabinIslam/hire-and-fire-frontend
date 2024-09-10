@@ -1,0 +1,21 @@
+{
+  "HomePageHero": {
+    "hero_title": "Connecting Employers with Top Global Talent",
+    "hero_description": "Bringing skilled workers to your business",
+    "hero_button": "Find Talent"
+  },
+
+  "CompanyPoints": {
+    "point_1_title": "Find Skilled Workers",
+    "point_1_description": "Connect with workers who have the skills your business needs.",
+
+    "point_2_title": "Hire Globally",
+    "point_2_description": "Find workers from around the world to bring fresh energy to your team.",
+
+    "point_3_title": "Efficient Worker Placement",
+    "point_3_description": "Streamline placing workers from other countries with our dedicated support.",
+
+    "point_4_title": "No Upfront Costs",
+    "point_4_description": "We handle all responsibilities without any initial expenses for you."
+  }
+}

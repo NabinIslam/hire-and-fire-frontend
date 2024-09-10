@@ -86,7 +86,6 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  font-medium
                   href="/resources/blog"
                 >
                   Blog & News
@@ -96,7 +95,6 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  font-medium
                   href="/resources/faq"
                 >
                   FAQ
@@ -106,7 +104,6 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  font-medium
                   href="/contact-us"
                 >
                   Contact Us

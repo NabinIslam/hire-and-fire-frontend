@@ -4,12 +4,17 @@ import Image from "next/image";
 import BgButton from "../../ui/BgButton";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("HomePageHero");
+
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger the animation only once
-    threshold: 0.2, // Trigger when 10% of the component is in view
+    triggerOnce: true,
+    threshold: 0.2,
   });
+
   return (
     <section className="bg-hero-bg bg-cover bg-no-repeat pb-[140px] pt-[50px] text-white">
       <div className="container flex flex-col items-center justify-between gap-16 lg:flex-row">
@@ -26,11 +31,13 @@ const Hero = () => {
           className="basis-full text-center lg:basis-1/2 lg:text-left"
         >
           <h1 className="text-5xl font-semibold leading-[60px] md:text-5xl md:leading-[60px] lg:text-[56px] lg:leading-[60px]">
-            Connecting Employers <br /> with Top Global Talent
+            {t("hero_title")}
           </h1>
-          <p className="mb-5 mt-3">Bringing skilled workers to your business</p>
+          <p className="mb-5 mt-3">{t("hero_description")}</p>
 
-          <BgButton>Find Talent</BgButton>
+          <Link href="/hire-worker/request-talent">
+            <BgButton>{t("hero_button")}</BgButton>
+          </Link>
         </motion.div>
         <motion.div
           ref={ref}

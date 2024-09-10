@@ -1,0 +1,21 @@
+{
+  "HomePageHero": {
+    "hero_title": "Conectarea angajatorilor cu Top Global Talent",
+    "hero_description": "Aduceți muncitori calificați în afacerea dvs",
+    "hero_button": "Găsiți Talent"
+  },
+
+  "CompanyPoints": {
+    "point_1_title": "Găsește Lucrători Calificați",
+    "point_1_description": "Conectează-te cu lucrători care au abilitățile de care afacerea ta are nevoie.",
+
+    "point_2_title": "Angajează Global",
+    "point_2_description": "Găsește lucrători din întreaga lume pentru a aduce energie proaspătă echipei tale.",
+
+    "point_3_title": "Plasare Eficientă a Lucrătorilor",
+    "point_3_description": "Simplifică plasarea lucrătorilor din alte țări cu sprijinul nostru dedicat.",
+
+    "point_4_title": "Fără Costuri Inițiale",
+    "point_4_description": "Ne ocupăm de toate responsabilitățile fără costuri inițiale pentru tine."
+  }
+}

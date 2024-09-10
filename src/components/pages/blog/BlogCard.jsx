@@ -2,7 +2,6 @@
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
 import { MdCalendarMonth } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
@@ -10,6 +9,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { formatDate } from "@/Utils/formatDate";
 import { FaPlayCircle } from "react-icons/fa";
+import { Link } from "@/i18n/routing";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
