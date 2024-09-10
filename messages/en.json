@@ -17,5 +17,67 @@
 
     "point_4_title": "No Upfront Costs",
     "point_4_description": "We handle all responsibilities without any initial expenses for you."
+  },
+
+  "PermanentRecruitment": {
+    "title": "Permanent Recruitment",
+    "description": "Permanent recruitment involves the process of hiring employees for long-term positions within an organization. It includes sourcing candidates, conducting interviews, and selecting the best fit based on skills and cultural fit. This process aims to secure talented individuals who align with the company's goals and values for sustained productivity and growth. Permanent recruitment strategies often involve various assessments and negotiations to ensure mutual satisfaction and long-term commitment from both the employer and the employee.",
+    "button": "See more",
+
+    "card_1_title": "Retention-Focused Hiring",
+    "card_1_description": "We select candidates with the potential for long-term commitment and growth.",
+
+    "card_2_title": "Seamless Transition Management",
+    "card_2_description": "We ensure smooth transitions for new hires to become productive quickly.",
+
+    "card_3_title": "Employer Branding Enhancement",
+    "card_3_description": "We strengthen your company's appeal to high-quality candidates."
+  },
+
+  "ContractStaffing": {
+    "title": "Contract Staffing",
+    "description": "Contract staffing involves hiring workers for specific projects or periods, often through agencies, to meet short-term needs without permanent employment commitments. Employers benefit from flexibility in scaling their workforce as required, while workers gain experience in diverse roles. Contracts specify terms like duration, tasks, and compensation, offering clarity for both parties. This arrangement allows businesses to manage costs effectively and access specialized skills, while contractors enjoy varied opportunities and potential for long-term engagements based on performance and project demands.",
+    "button": "See more",
+
+    "card_1_title": "Flexible Workforce Solutions",
+    "card_1_description": "We provide adaptable staffing solutions to meet your changing needs.",
+
+    "card_2_title": "Specialized Skill Sets on Demand",
+    "card_2_description": "We provide access to professionals with specific skill sets when needed.",
+
+    "card_3_title": "Short-Term & Project-Based Staffing",
+    "card_3_description": "We offer staffing for short-term projects and temporary roles."
+  },
+
+  "WorkforcePlanning": {
+    "title": "Workforce Planning",
+    "description": "Workforce planning involves strategically forecasting and managing an organization's current and future workforce needs. It includes analyzing workforce trends, identifying skill gaps, and aligning staffing levels with business goals. By anticipating changes in demand and supply of talent, workforce planning helps optimize resource allocation, ensure workforce diversity, and support organizational growth. This proactive approach enables companies to adapt to market fluctuations, enhance productivity, and maintain competitive advantage through effective recruitment, training, and retention strategies.",
+    "button": "See more",
+
+    "card_1_title": "Strategic Workforce Analysis",
+    "card_1_description": "We analyze your workforce to align with strategic goals.",
+
+    "card_2_title": "Future Workforce Trends",
+    "card_2_description": "We provide insights on emerging workforce trends.",
+
+    "card_3_title": "Resource Allocation Optimization",
+    "card_3_description": "We optimize the allocation of human resources to maximize efficiency."
+  },
+
+  "WorkSteps": {
+    "work_title_1": "Work Steps",
+    "work_title_2": "How It Works?",
+
+    "card_1_title": "Tell Us <br /> Your Need",
+    "card_1_description": "Share your specific requirements and job descriptions.",
+
+    "card_2_title": "View Matched <br /> Candidates",
+    "card_2_description": "We provide insights on emerging workforce trends.",
+
+    "card_3_title": "Interview Selected <br /> Candidates",
+    "card_3_description": "We optimize the allocation of human resources to maximize efficiency.",
+
+    "card_4_title": "Select and We Complete <br /> Visa Procedures",
+    "card_4_description": "Choose your candidates, and we handle the rest, including visa processing."
   }
 }

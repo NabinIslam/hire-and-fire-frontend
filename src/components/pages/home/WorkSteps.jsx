@@ -3,8 +3,11 @@
 import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 
 const WorkSteps = () => {
+  const t = useTranslations("WorkSteps");
+
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once
     threshold: 0.2, // Trigger when 10% of the component is in view
@@ -13,10 +16,10 @@ const WorkSteps = () => {
   return (
     <section className="pb-[100px] pt-[50px]">
       <h6 className="text-center text-2xl font-medium text-primary">
-        Work Steps
+        {t("work_title_1")}
       </h6>
       <h2 className="mt-[20px] text-center text-4xl font-semibold lg:text-5xl">
-        How It Works?
+        {t("work_title_2")}
       </h2>
       <div className="container mt-[60px] flex flex-col items-center justify-between gap-5 xl:flex-row">
         {/* step card start*/}
@@ -31,7 +34,7 @@ const WorkSteps = () => {
             stiffness: 50, // Slowing down the movement
             damping: 12, // Adjusting damping to control bounce
           }}
-          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105 border"
+          className="group relative min-h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
         >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
@@ -53,10 +56,12 @@ const WorkSteps = () => {
               </svg>
             </div>
             <h5 className="text-center text-xl font-medium">
-              Tell Us <br /> Your Need
+              {t.rich("card_1_title", {
+                br: () => <br />,
+              })}
             </h5>
             <p className="text-center text-sm font-medium">
-              Share your specific requirements and job descriptions.
+              {t("card_1_description")}
             </p>
           </div>
 
@@ -83,7 +88,7 @@ const WorkSteps = () => {
             stiffness: 50,
             damping: 12,
           }}
-          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105 border"
+          className="group relative min-h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
         >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
@@ -154,7 +159,7 @@ const WorkSteps = () => {
             stiffness: 50,
             damping: 12,
           }}
-          className="group relative h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105 border"
+          className="group relative h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
         >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
@@ -225,7 +230,7 @@ const WorkSteps = () => {
             stiffness: 50, // Slowing down the movement
             damping: 12, // Adjusting damping to control bounce
           }}
-          className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105 border"
+          className="group relative min-h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
         >
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">

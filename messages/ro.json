@@ -17,5 +17,67 @@
 
     "point_4_title": "Fără Costuri Inițiale",
     "point_4_description": "Ne ocupăm de toate responsabilitățile fără costuri inițiale pentru tine."
+  },
+
+  "PermanentRecruitment": {
+    "title": "Recrutare Permanentă",
+    "description": "Recrutarea permanentă implică procesul de angajare a angajaților pentru poziții pe termen lung într-o organizație. Include identificarea candidaților, desfășurarea interviurilor și selectarea celui mai potrivit în funcție de abilități și compatibilitate culturală. Acest proces are ca scop asigurarea unor persoane talentate care se aliniază cu obiectivele și valorile companiei pentru o productivitate și o creștere susținută. Strategiile de recrutare permanentă implică adesea diverse evaluări și negocieri pentru a asigura satisfacția reciprocă și angajamentul pe termen lung atât din partea angajatorului, cât și a angajatului.",
+    "button": "Vezi mai multe",
+
+    "card_1_title": "Angajare cu Focus pe Retenție",
+    "card_1_description": "Selectăm candidați cu potențial pentru angajament și creștere pe termen lung.",
+
+    "card_2_title": "Managementul Tranzițiilor Fără Probleme",
+    "card_2_description": "Asigurăm tranziții fluide pentru noii angajați pentru a deveni productivi rapid.",
+
+    "card_3_title": "Îmbunătățirea Brandului de Angajator",
+    "card_3_description": "Consolidăm atracția companiei tale pentru candidați de înaltă calitate."
+  },
+
+  "ContractStaffing": {
+    "title": "Angajare pe Contract",
+    "description": "Angajarea pe contract implică angajarea lucrătorilor pentru proiecte sau perioade specifice, adesea prin agenții, pentru a satisface nevoile pe termen scurt fără angajamente de muncă permanente. Angajatorii beneficiază de flexibilitate în ajustarea forței de muncă în funcție de necesități, în timp ce lucrătorii câștigă experiență în roluri diverse. Contractele specifică termenii precum durata, sarcinile și compensația, oferind claritate pentru ambele părți. Această aranjare permite afacerilor să gestioneze eficient costurile și să acceseze abilități specializate, în timp ce contractorii beneficiază de oportunități variate și potențial pentru angajamente pe termen lung bazate pe performanță și cerințele proiectului.",
+    "button": "Vezi mai multe",
+
+    "card_1_title": "Soluții Flexibile de Forță de Muncă",
+    "card_1_description": "Oferim soluții de angajare adaptabile pentru a satisface nevoile tale în schimbare.",
+
+    "card_2_title": "Seturi de Abilități Specializate la Cerere",
+    "card_2_description": "Oferim acces la profesioniști cu seturi de abilități specifice atunci când este nevoie.",
+
+    "card_3_title": "Angajare pe Termen Scurt și Bazată pe Proiect",
+    "card_3_description": "Oferim angajare pentru proiecte pe termen scurt și roluri temporare."
+  },
+
+  "WorkforcePlanning": {
+    "title": "Planificarea Forței de Muncă",
+    "description": "Planificarea forței de muncă implică prognozarea și gestionarea strategică a nevoilor curente și viitoare ale forței de muncă a unei organizații. Include analiza tendințelor forței de muncă, identificarea lacunelor de abilități și alinierea nivelurilor de angajare cu obiectivele de afaceri. Prin anticiparea schimbărilor în cererea și oferta de talente, planificarea forței de muncă ajută la optimizarea alocării resurselor, asigurarea diversității forței de muncă și sprijinirea creșterii organizaționale. Această abordare proactivă permite companiilor să se adapteze fluctuațiilor de pe piață, să îmbunătățească productivitatea și să mențină avantajul competitiv prin strategii eficiente de recrutare, formare și retenție.",
+    "button": "Vezi mai multe",
+
+    "card_1_title": "Analiza Strategică a Forței de Muncă",
+    "card_1_description": "Analizăm forța de muncă pentru a o alinia cu obiectivele strategice.",
+
+    "card_2_title": "Tendințe Viitoare ale Forței de Muncă",
+    "card_2_description": "Oferim perspective asupra tendințelor emergente ale forței de muncă.",
+
+    "card_3_title": "Optimizarea Alocării Resurselor",
+    "card_3_description": "Optimim alocarea resurselor umane pentru a maximiza eficiența."
+  },
+
+  "WorkSteps": {
+    "work_title_1": "Pașii Lucrului",
+    "work_title_2": "Cum Funcționează?",
+
+    "card_1_title": "Spune-ne <br /> Nevoile Tale",
+    "card_1_description": "Împărtășește-ne cerințele tale specifice și descrierile locurilor de muncă.",
+
+    "card_2_title": "Vizualizează Candidații <br /> Adecvați",
+    "card_2_description": "Îți oferim perspective asupra tendințelor emergente ale forței de muncă.",
+
+    "card_3_title": "Intervievează Candidații <br /> Selectați",
+    "card_3_description": "Optimizăm alocarea resurselor umane pentru a maximiza eficiența.",
+
+    "card_4_title": "Selectează și Noi Finalizăm <br /> Procedurile de Viză",
+    "card_4_description": "Alege candidații tăi și noi ne ocupăm de restul, inclusiv de procesarea vizei."
   }
 }
