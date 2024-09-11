@@ -1,32 +1,24 @@
+"use client";
+
 import Button from "../../ui/Button";
 import Link from "next/link";
 import TitleDescSection from "../../common/TitleDescSection";
-import { apiBaseUrl } from "@/secrets";
-import BlogCard from "../blog/BlogCard";
+import { useTranslations } from "next-intl";
+import HomeBlogs from "./HomeBlogs";
 
 const RecentNewsesNBlogs = async () => {
-  const data = await fetch(`${apiBaseUrl}/blogs`, {
-    cache: "no-store",
-  });
-
-  const blogs = await data.json();
+  const t = useTranslations("blog");
 
   return (
     <TitleDescSection
       className="pb-[100px]"
-      title="Our Recent Newses & Blogs"
-      description="Stay updated with the latest news articles and trending stories."
+      title={t("title")}
+      description={t("description")}
     >
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
-        {/* blog card */}
-
-        {blogs.slice(0, 4).map((blog) => (
-          <BlogCard key={blog.id} blog={blog} />
-        ))}
-      </div>
+      <HomeBlogs />
       <div className="mt-10 flex justify-center">
         <Link href="/resources/blog">
-          <Button>View All Blogs & Newses</Button>
+          <Button>{t("view_all_button")}</Button>
         </Link>
       </div>
     </TitleDescSection>

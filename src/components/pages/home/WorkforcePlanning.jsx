@@ -152,7 +152,7 @@ const WorkforcePlanning = () => {
       </div>
 
       <div className="flex justify-center pt-[50px]">
-        <Button>See All Services</Button>
+        <Button>{t("see_all_services")}</Button>
       </div>
     </section>
   );

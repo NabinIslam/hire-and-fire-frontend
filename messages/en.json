@@ -1,4 +1,28 @@
 {
+  "Header": {
+    "About_Us": "About Us",
+    "Employers": "Employers",
+    "Employment_Service": "Employment Service",
+    "Additional_Support": "Additional Support",
+    "Partnerships_Programs": "Partnerships Programs",
+    "Hire_Worker": "Hire Worker",
+    "Our_Process": "Our Process",
+    "Request_Talent": "Request Talent",
+    "Industry": "Industry",
+    "Resources": "Resources",
+    "FAQ": "FAQ",
+    "Blog": "Blog",
+    "Contact_Us": "Contact Us"
+  },
+
+  "footer": {
+    "description": "Hire & Fire is a cutting-edge job website designed to connect employers with top-tier talent across various industries. Utilizing advanced matching algorithms, it streamlines the hiring process, ensuring quick and effective placements. Employers benefit from efficient tools for posting jobs, screening candidates, and managing applications. Ideal for businesses aiming for growth, Hire & Fire is your go-to resource for all recruitment needs. Please note that it operates on an employer basis and does not provide jobs directly to workers.",
+
+    "contact_button": "Contact Us",
+
+    "get_in_touch": "Get In Touch"
+  },
+
   "HomePageHero": {
     "hero_title": "Connecting Employers with Top Global Talent",
     "hero_description": "Bringing skilled workers to your business",
@@ -61,23 +85,58 @@
     "card_2_description": "We provide insights on emerging workforce trends.",
 
     "card_3_title": "Resource Allocation Optimization",
-    "card_3_description": "We optimize the allocation of human resources to maximize efficiency."
+    "card_3_description": "We optimize the allocation of human resources to maximize efficiency.",
+
+    "see_all_services": "See All Services"
   },
 
   "WorkSteps": {
     "work_title_1": "Work Steps",
     "work_title_2": "How It Works?",
 
-    "card_1_title": "Tell Us <br /> Your Need",
+    "card_1_title": "Tell Us <br></br> Your Need",
     "card_1_description": "Share your specific requirements and job descriptions.",
 
-    "card_2_title": "View Matched <br /> Candidates",
+    "card_2_title": "View Matched <br></br> Candidates",
     "card_2_description": "We provide insights on emerging workforce trends.",
 
-    "card_3_title": "Interview Selected <br /> Candidates",
+    "card_3_title": "Interview Selected <br></br> Candidates",
     "card_3_description": "We optimize the allocation of human resources to maximize efficiency.",
 
-    "card_4_title": "Select and We Complete <br /> Visa Procedures",
+    "card_4_title": "Select and We Complete <br></br> Visa Procedures",
     "card_4_description": "Choose your candidates, and we handle the rest, including visa processing."
+  },
+
+  "OurSuccess": {
+    "title": "Our Success",
+    "description": "We believe that great companies are built by great people",
+
+    "success_1_title": "25,000+ <br></br> Workers Placed",
+    "success_1_description": "We've helped over 25,000 skilled workers find jobs globally. Our rigorous selection process ensures we provide only the best talent.",
+
+    "success_2_title": "Expertise Across <br></br> the Globe",
+    "success_2_description": "We specialize in navigating complex international recruitment processes. Our knowledge helps us place workers efficiently.",
+
+    "success_3_title": "Ethical <br></br> Recruitment",
+    "success_3_description": "We believe in fair and honest recruitment practices. Our commitment to ethical standards has earned us recognition from top organizations.",
+
+    "success_4_title": "Your Trusted <br></br> Partner",
+    "success_4_description": "We strive to be your reliable partner in finding the right talent. Our goal is to create successful and long-lasting matches in the global workforce."
+  },
+
+  "OurClients": {
+    "title": "Our Clients"
+  },
+
+  "team": {
+    "title": "Team of recruitment expert",
+    "description": "A team of recruitment experts specializes in sourcing, assessing, and hiring top talent to meet organizational needs efficiently and effectively.",
+    "view_all_button": "View All Team"
+  },
+
+  "blog": {
+    "title": "Our Recent Newses & Blogs",
+    "description": "Stay updated with the latest news articles and trending stories.",
+    "view_all_button": "View All Blogs & Newses"
   }
 }

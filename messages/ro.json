@@ -1,4 +1,28 @@
 {
+  "Header": {
+    "About_Us": "Despre Noi",
+    "Employers": "Angajatori",
+    "Employment_Service": "Servicii de Angajare",
+    "Additional_Support": "Suport Adițional",
+    "Partnerships_Programs": "Programe de Parteneriat",
+    "Hire_Worker": "Angajează Lucrător",
+    "Our_Process": "Procesul Nostru",
+    "Request_Talent": "Solicită Talente",
+    "Industry": "Industrie",
+    "Resources": "Resurse",
+    "FAQ": "Întrebări Frecvente",
+    "Blog": "Blog",
+    "Contact_Us": "Contactează-ne"
+  },
+
+  "footer": {
+    "description": "Hire & Fire este un site de locuri de muncă de ultimă generație, conceput pentru a conecta angajatorii cu talente de top din diverse industrii. Folosind algoritmi avansați de potrivire, simplifică procesul de angajare, asigurând plasamente rapide și eficiente. Angajatorii beneficiază de instrumente eficiente pentru postarea locurilor de muncă, filtrarea candidaților și gestionarea aplicațiilor. Ideal pentru afacerile care vizează creșterea, Hire & Fire este resursa ta de încredere pentru toate nevoile de recrutare. Vă rugăm să rețineți că acesta funcționează pe baza angajatorilor și nu oferă locuri de muncă direct lucrătorilor.",
+
+    "contact_button": "Contactează-ne",
+
+    "get_in_touch": "Ia Legătura"
+  },
+
   "HomePageHero": {
     "hero_title": "Conectarea angajatorilor cu Top Global Talent",
     "hero_description": "Aduceți muncitori calificați în afacerea dvs",
@@ -61,23 +85,58 @@
     "card_2_description": "Oferim perspective asupra tendințelor emergente ale forței de muncă.",
 
     "card_3_title": "Optimizarea Alocării Resurselor",
-    "card_3_description": "Optimim alocarea resurselor umane pentru a maximiza eficiența."
+    "card_3_description": "Optimim alocarea resurselor umane pentru a maximiza eficiența.",
+
+    "see_all_services": "Vezi Toate Serviciile"
   },
 
   "WorkSteps": {
     "work_title_1": "Pașii Lucrului",
     "work_title_2": "Cum Funcționează?",
 
-    "card_1_title": "Spune-ne <br /> Nevoile Tale",
+    "card_1_title": "Spune-ne <br></br> Nevoile Tale",
     "card_1_description": "Împărtășește-ne cerințele tale specifice și descrierile locurilor de muncă.",
 
-    "card_2_title": "Vizualizează Candidații <br /> Adecvați",
+    "card_2_title": "Vizualizează Candidații <br></br> Adecvați",
     "card_2_description": "Îți oferim perspective asupra tendințelor emergente ale forței de muncă.",
 
-    "card_3_title": "Intervievează Candidații <br /> Selectați",
+    "card_3_title": "Intervievează Candidații <br></br> Selectați",
     "card_3_description": "Optimizăm alocarea resurselor umane pentru a maximiza eficiența.",
 
-    "card_4_title": "Selectează și Noi Finalizăm <br /> Procedurile de Viză",
+    "card_4_title": "Selectează și Noi Finalizăm <br></br> Procedurile de Viză",
     "card_4_description": "Alege candidații tăi și noi ne ocupăm de restul, inclusiv de procesarea vizei."
+  },
+
+  "OurSuccess": {
+    "title": "Succesul Nostru",
+    "description": "Credem că marile companii sunt construite de oameni extraordinari.",
+
+    "success_1_title": "Peste 25.000 <br></br> Lucrători Plasați",
+    "success_1_description": "Am ajutat peste 25.000 de lucrători calificați să găsească locuri de muncă la nivel global. Procesul nostru riguros de selecție asigură furnizarea doar a celor mai buni talente.",
+
+    "success_2_title": "Expertiză la Nivel <br></br> Global",
+    "success_2_description": "Suntem specializați în navigarea proceselor complexe de recrutare internațională. Cunoștințele noastre ne ajută să plasăm lucrătorii eficient.",
+
+    "success_3_title": "Recrutare <br></br> Etică",
+    "success_3_description": "Credem în practici de recrutare corecte și oneste. Angajamentul nostru față de standardele etice ne-a adus recunoaștere din partea organizațiilor de top.",
+
+    "success_4_title": "Partenerul Tău <br></br> de Încredere",
+    "success_4_description": "Ne străduim să fim partenerul tău de încredere în găsirea talentelor potrivite. Scopul nostru este de a crea potriviri de succes și durabile în forța de muncă globală."
+  },
+
+  "OurClients": {
+    "title": "Clienții Noștri"
+  },
+
+  "team": {
+    "title": "Echipa de experți în recrutare",
+    "description": "O echipă de experți în recrutare specializați în identificarea, evaluarea și angajarea celor mai buni talente pentru a satisface nevoile organizaționale în mod eficient și eficace.",
+    "view_all_button": "Vezi Toată Echipa"
+  },
+
+  "blog": {
+    "title": "Noutățile și Blogurile Noastre Recente",
+    "description": "Rămâi la curent cu cele mai recente articole și povești de actualitate.",
+    "view_all_button": "Vezi Toate Blogurile și Noutățile"
   }
 }

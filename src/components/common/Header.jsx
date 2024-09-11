@@ -9,7 +9,7 @@ import "react-modern-drawer/dist/index.css";
 import Button from "../ui/Button";
 import { languages } from "@/data/languages";
 import MobileDrawer from "./MobileDrawer";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { useTransition } from "react";
 import { usePathname } from "next/navigation";
@@ -17,6 +17,8 @@ import { useRouter } from "next/navigation";
 import { Link } from "@/i18n/routing";
 
 const Header = () => {
+  const t = useTranslations("Header");
+
   const [isPending, startTransition] = useTransition();
   const localActive = useLocale();
   const pathname = usePathname();
@@ -53,15 +55,12 @@ const Header = () => {
                 className={`${pathname === "/about-us" ? "text-primary" : ""} duration-200 hover:text-primary`}
                 href="/about-us"
               >
-                About Us
+                {t("About_Us")}
               </Link>
             </li>
             <li className="group relative px-4">
-              <p
-                className="flex cursor-pointer duration-200 hover:text-primary"
-                href="/employers"
-              >
-                Employers <MdKeyboardArrowDown className="text-xl" />
+              <p className="flex cursor-pointer duration-200 hover:text-primary">
+                {t("Employers")} <MdKeyboardArrowDown className="text-xl" />
               </p>
 
               {/* submenus */}
@@ -73,7 +72,7 @@ const Header = () => {
                     href="/employers/employment-service"
                   >
                     <IoMdArrowDropright className="text-xl" />
-                    Employment Service
+                    {t("Employment_Service")}
                   </Link>
                 </li>
                 <li>
@@ -82,7 +81,7 @@ const Header = () => {
                     href="/employers/additional-support"
                   >
                     <IoMdArrowDropright className="text-xl" />
-                    Additional Support
+                    {t("Additional_Support")}
                   </Link>
                 </li>
                 <li>
@@ -91,17 +90,14 @@ const Header = () => {
                     href="/employers/partnerships-programs"
                   >
                     <IoMdArrowDropright className="text-xl" />
-                    Partnerships Programs
+                    {t("Partnerships_Programs")}
                   </Link>
                 </li>
               </ul>
             </li>
             <li className="group relative px-4">
-              <p
-                className="flex cursor-pointer duration-200 hover:text-primary"
-                href="/hire-worker"
-              >
-                Hire Worker <MdKeyboardArrowDown className="text-xl" />
+              <p className="flex cursor-pointer duration-200 hover:text-primary">
+                {t("Hire_Worker")} <MdKeyboardArrowDown className="text-xl" />
               </p>
 
               {/* submenus */}
@@ -112,7 +108,7 @@ const Header = () => {
                     href="/hire-worker/our-process"
                   >
                     <IoMdArrowDropright className="text-xl" />
-                    Our Process
+                    {t("Our_Process")}
                   </Link>
                 </li>
                 <li>
@@ -121,7 +117,7 @@ const Header = () => {
                     href="/hire-worker/request-talent"
                   >
                     <IoMdArrowDropright className="text-xl" />
-                    Request Talent
+                    {t("Request_Talent")}
                   </Link>
                 </li>
               </ul>
@@ -131,26 +127,23 @@ const Header = () => {
                 className={`${pathname === "/industry" ? "text-primary" : ""} duration-200 hover:text-primary`}
                 href="/industry"
               >
-                Industry
+                {t("Industry")}
               </Link>
             </li>
             <li className="group relative px-4">
-              <p
-                className="flex cursor-pointer duration-200 hover:text-primary"
-                href="/hire-worker"
-              >
-                Resources <MdKeyboardArrowDown className="text-xl" />
+              <p className="flex cursor-pointer duration-200 hover:text-primary">
+                {t("Resources")} <MdKeyboardArrowDown className="text-xl" />
               </p>
 
               {/* submenus */}
-              <ul className="animate-fadeIn absolute top-5 hidden space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
+              <ul className="animate-fadeIn absolute top-5 hidden w-44 space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
                     className={`${pathname === "/resources/faq" ? "text-primary" : ""} duration-20 0 flex hover:text-primary`}
                     href="/resources/faq"
                   >
                     <IoMdArrowDropright className="text-xl" />
-                    FAQ
+                    {t("FAQ")}
                   </Link>
                 </li>
                 <li>
@@ -159,7 +152,7 @@ const Header = () => {
                     href="/resources/blog"
                   >
                     <IoMdArrowDropright className="text-xl" />
-                    Blog
+                    {t("Blog")}
                   </Link>
                 </li>
               </ul>
@@ -168,7 +161,7 @@ const Header = () => {
         </div>
         <div className="hidden basis-1/4 items-center justify-end gap-2 lg:flex">
           <Link href="/contact-us">
-            <Button>Contact Us</Button>
+            <Button>{t("Contact_Us")}</Button>
           </Link>
 
           <select

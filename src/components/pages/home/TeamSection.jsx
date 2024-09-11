@@ -12,18 +12,18 @@ import Link from "next/link";
 import TitleDescSection from "../../common/TitleDescSection";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 
 const TeamSection = () => {
+  const t = useTranslations("team");
+
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once
     threshold: 0.2, // Trigger when 10% of the component is in view
   });
 
   return (
-    <TitleDescSection
-      title="Team of recruitment expert"
-      description=" A team of recruitment experts specializes in sourcing, assessing, and hiring top talent to meet organizational needs efficiently and effectively."
-    >
+    <TitleDescSection title={t("title")} description={t("description")}>
       <div className="container grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {/* team card */}
         <motion.div
@@ -177,7 +177,7 @@ const TeamSection = () => {
       </div>
       <div className="mt-10 flex justify-center">
         <Link href="/about-us">
-          <Button>View All Team</Button>
+          <Button>{t("view_all_button")}</Button>
         </Link>
       </div>
     </TitleDescSection>

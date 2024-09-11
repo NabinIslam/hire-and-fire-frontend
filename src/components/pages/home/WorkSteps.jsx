@@ -9,8 +9,8 @@ const WorkSteps = () => {
   const t = useTranslations("WorkSteps");
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger the animation only once
-    threshold: 0.2, // Trigger when 10% of the component is in view
+    triggerOnce: true,
+    threshold: 0.2,
   });
 
   return (
@@ -26,13 +26,13 @@ const WorkSteps = () => {
 
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{
-            duration: 1, // Adjusting duration for overall animation speed
+            duration: 1,
             type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
+            stiffness: 50,
+            damping: 12,
           }}
           className="group relative min-h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
         >
@@ -114,11 +114,12 @@ const WorkSteps = () => {
               </svg>
             </div>
             <h5 className="text-center text-xl font-medium">
-              View Matched <br />
-              Candidates
+              {t.rich("card_2_title", {
+                br: () => <br />,
+              })}
             </h5>
             <p className="text-center text-sm font-medium">
-              Review profiles of candidates that match your needs.
+              {t("card_2_description")}
             </p>
           </div>
           {/* badge */}
@@ -185,11 +186,12 @@ const WorkSteps = () => {
               </svg>
             </div>
             <h5 className="text-center text-xl font-medium">
-              Interview Selected <br />
-              Candidates
+              {t.rich("card_3_title", {
+                br: () => <br />,
+              })}
             </h5>
             <p className="text-center text-sm font-medium">
-              Conduct interviews with shortlisted candidates.
+              {t("card_3_description")}
             </p>
           </div>
           {/* badge */}
@@ -222,13 +224,13 @@ const WorkSteps = () => {
 
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
           transition={{
-            duration: 1, // Adjusting duration for overall animation speed
+            duration: 1,
             type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
+            stiffness: 50,
+            damping: 12,
           }}
           className="group relative min-h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
         >
@@ -248,11 +250,12 @@ const WorkSteps = () => {
               </svg>
             </div>
             <h5 className="text-center text-xl font-medium">
-              Select and We Complete <br /> Visa Procedures
+              {t.rich("card_4_title", {
+                br: () => <br />,
+              })}
             </h5>
             <p className="text-center text-sm font-medium">
-              Choose your candidates, and we handle the rest, including visa
-              processing.
+              {t("card_4_description")}
             </p>
           </div>
           {/* badge */}

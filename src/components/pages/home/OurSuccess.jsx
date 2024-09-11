@@ -1,12 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 
 const OurSuccess = () => {
+  const t = useTranslations("OurSuccess");
+
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger the animation only once
-    threshold: 0.2, // Trigger when 10% of the component is in view
+    triggerOnce: true,
+    threshold: 0.2,
   });
 
   return (
@@ -24,7 +27,7 @@ const OurSuccess = () => {
           }}
           className="text-center text-4xl font-semibold lg:text-5xl"
         >
-          Our Success
+          {t("title")}
         </motion.h2>
         <motion.p
           ref={ref}
@@ -38,7 +41,7 @@ const OurSuccess = () => {
           }}
           className="text-center text-sm"
         >
-          We believe that great companies are built by great people
+          {t("description")}
         </motion.p>
 
         <div className="grid grid-cols-1 gap-5 divide-y md:grid-cols-2 md:divide-x-0 md:divide-y-0 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-y-0">
@@ -55,13 +58,11 @@ const OurSuccess = () => {
             className="space-y-5 p-4"
           >
             <h5 className="text-center text-xl">
-              25,000+ <br /> Workers Placed
+              {t.rich("success_1_title", {
+                br: () => <br />,
+              })}
             </h5>
-            <p className="text-center text-sm">
-              We've helped over 25,000 skilled workers find jobs globally. Our
-              rigorous selection process ensures we provide only the best
-              talent.
-            </p>
+            <p className="text-center text-sm">{t("success_1_description")}</p>
           </motion.div>
           <motion.div
             ref={ref}
@@ -76,13 +77,11 @@ const OurSuccess = () => {
             className="space-y-5 p-4"
           >
             <h5 className="text-center text-xl">
-              Expertise Across <br />
-              the Globe
+              {t.rich("success_2_title", {
+                br: () => <br />,
+              })}
             </h5>
-            <p className="text-center text-sm">
-              We specialize in navigating complex international recruitment
-              processes. Our knowledge helps us place workers efficiently.
-            </p>
+            <p className="text-center text-sm">{t("success_2_description")}</p>
           </motion.div>
           <motion.div
             ref={ref}
@@ -97,13 +96,11 @@ const OurSuccess = () => {
             className="space-y-5 p-4"
           >
             <h5 className="text-center text-xl">
-              Ethical <br /> Recruitment
+              {t.rich("success_3_title", {
+                br: () => <br />,
+              })}
             </h5>
-            <p className="text-center text-sm">
-              We believe in fair and honest recruitment practices. Our
-              commitment to ethical standards has earned us recognition from top
-              organizations.
-            </p>
+            <p className="text-center text-sm">{t("success_3_description")}</p>
           </motion.div>
           <motion.div
             ref={ref}
@@ -118,14 +115,11 @@ const OurSuccess = () => {
             className="space-y-5 p-4"
           >
             <h5 className="text-center text-xl">
-              Your Trusted <br />
-              Partner
+              {t.rich("success_4_title", {
+                br: () => <br />,
+              })}
             </h5>
-            <p className="text-center text-sm">
-              We strive to be your reliable partner in finding the right talent.
-              Our goal is to create successful and long-lasting matches in the
-              global workforce.
-            </p>
+            <p className="text-center text-sm">{t("success_4_description")}</p>
           </motion.div>
         </div>
       </div>

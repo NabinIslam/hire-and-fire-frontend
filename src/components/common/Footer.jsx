@@ -9,8 +9,11 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("footer");
+
   return (
     <footer className="mt-auto bg-[#004785] pb-[25px] pt-[50px] text-white">
       <div className="container space-y-6">
@@ -23,22 +26,12 @@ const Footer = () => {
               width={90}
             />
 
-            <p className="text-sm">
-              Hire & Fire is a cutting-edge job website designed to connect
-              employers with top-tier talent across various industries.
-              Utilizing advanced matching algorithms, it streamlines the hiring
-              process, ensuring quick and effective placements. Employers
-              benefit from efficient tools for posting jobs, screening
-              candidates, and managing applications. Ideal for businesses aiming
-              for growth, Hire & Fire is your go-to resource for all recruitment
-              needs. Please note that it operates on an employer basis and does
-              not provide jobs directly to workers.
-            </p>
+            <p className="text-sm">{t("description")}</p>
 
             <div>
               <Link href="/contact-us">
                 <button className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-white hover:bg-transparent">
-                  Contact Us
+                  {t("contact_button")}
                 </button>
               </Link>
             </div>
@@ -180,7 +173,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="basis-full space-y-5 md:basis-1/2 lg:basis-1/4">
-            <span className="text-xl">Get In Touch</span>
+            <span className="text-xl">{t("get_in_touch")}</span>
             <p>Subscribe Our Newsletter to Get Latest Update & News</p>
 
             <form className="flex w-full rounded-md bg-white">

@@ -8,10 +8,13 @@ import ArrowPrev from "../ui/ArrowPrev";
 import ArrowNext from "../ui/ArrowNext";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const OurClients = () => {
+  const t = useTranslations("OurClients");
+
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once
     threshold: 0.2, // Trigger when 10% of the component is in view
@@ -65,7 +68,7 @@ const OurClients = () => {
       }}
       className="space-y-[40px] py-[100px]"
     >
-      <h2 className="text-center text-5xl font-semibold">Our clients</h2>
+      <h2 className="text-center text-5xl font-semibold">{t("title")}</h2>
       <div className="container">
         <Slider {...settings}>
           <div className="relative min-h-[134px] rounded-lg border shadow-lg">
