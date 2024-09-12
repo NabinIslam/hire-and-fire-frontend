@@ -41,6 +41,7 @@ module.exports = {
         "contact-bg": "url('/Background image 2.jpg')",
         "our-success-bg": "url('/our-success-bg.jpg')",
         "why-choose-us-bg": "url('/images/why-choose-us-bg.png')",
+        "industry-card-bg": "url('/images/industry-card-bg.png')",
       },
       keyframes: {
         pulse: {

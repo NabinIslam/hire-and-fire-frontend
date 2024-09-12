@@ -8,10 +8,10 @@ const IndustryCard = ({ industry }) => {
 
   return (
     <FadeInLeftWithSlowBounce>
-      <div className="flex flex-col rounded-lg border p-4 text-center shadow-xl">
+      <div className="bg-industry-card-bg flex flex-col rounded-lg border border-b-8 border-b-primary bg-contain bg-no-repeat p-4 text-center shadow-xl">
         <div className="relative h-[240px] w-full">
           <Image
-            className="rounded-lg object-cover"
+            className="rounded-[33px] object-cover"
             src={photo}
             alt={name}
             fill
@@ -20,7 +20,7 @@ const IndustryCard = ({ industry }) => {
         <h3 className="mt-3 text-2xl font-medium">{name}</h3>
         <p className="my-3 text-sm font-medium">{shortDescription}</p>
         <Link className="mt-auto" href={`/industry/${slug}`}>
-          <button className="mx-auto flex items-center text-sm font-medium text-pink-600">
+          <button className="mx-auto flex items-center text-sm font-medium text-primary duration-200 hover:text-secondary">
             <span>Read More</span> <IoMdArrowDropright className="text-lg" />
           </button>
         </Link>
