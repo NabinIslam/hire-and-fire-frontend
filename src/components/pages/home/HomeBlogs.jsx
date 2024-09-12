@@ -7,6 +7,7 @@ const HomeBlogs = async () => {
   });
 
   const blogs = await data.json();
+
   return (
     <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
       {/* blog card */}

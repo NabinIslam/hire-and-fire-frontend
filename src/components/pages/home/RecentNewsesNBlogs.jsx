@@ -17,9 +17,8 @@ const RecentNewsesNBlogs = async () => {
       title={t("title")}
       description={t("description")}
     >
-      <Suspense fallback={<BlogSkeleton />}>
-        <HomeBlogs />
-      </Suspense>
+      <HomeBlogs />
+
       <div className="mt-10 flex justify-center">
         <Link href="/resources/blog">
           <Button>{t("view_all_button")}</Button>
