@@ -1,12 +1,8 @@
-"use client";
-
 import Button from "../../ui/Button";
 import Link from "next/link";
 import TitleDescSection from "../../common/TitleDescSection";
 import { useTranslations } from "next-intl";
 import HomeBlogs from "./HomeBlogs";
-import { Suspense } from "react";
-import BlogSkeleton from "@/components/skeletons/BlogSkeleton";
 
 const RecentNewsesNBlogs = () => {
   const t = useTranslations("blog");
