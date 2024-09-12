@@ -24,22 +24,23 @@ const TeamSection = () => {
 
   return (
     <TitleDescSection title={t("title")} description={t("description")}>
-      <div className="container grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {/* team card */}
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{
-            duration: 1, // Adjusting duration for overall animation speed
+            duration: 1,
             type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
+            stiffness: 50,
+            damping: 12,
           }}
           className="group rounded-lg shadow-xl"
         >
           <div className="relative">
             <Image className="" src={team1} alt="" />
+
             <div className="absolute bottom-0 flex h-[50px] w-full items-center justify-center gap-6 rounded-lg bg-secondary duration-200 group-hover:bg-primary">
               <Link
                 className="flex size-[30px] items-center justify-center rounded-full bg-white duration-200 group-hover:size-[40px]"

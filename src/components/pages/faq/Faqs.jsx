@@ -6,7 +6,7 @@ const Faqs = async () => {
   const faqs = await data.json();
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-6">
       {faqs.map((faq) => (
         <Accordion
           title={faq.question}

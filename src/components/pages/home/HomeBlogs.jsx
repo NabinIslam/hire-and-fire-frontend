@@ -2,12 +2,14 @@ import { apiBaseUrl } from "@/secrets";
 import BlogCard from "../blog/BlogCard";
 
 const HomeBlogs = async () => {
-  const data = await fetch(`${apiBaseUrl}/blogs`);
+  const data = await fetch(`${apiBaseUrl}/blogs`, {
+    cache: "no-store",
+  });
 
   const blogs = await data.json();
 
   return (
-    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
+    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-6 xl:grid-cols-4">
       {/* blog card */}
 
       {blogs.slice(0, 4).map((blog) => (

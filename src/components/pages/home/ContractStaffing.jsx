@@ -13,18 +13,19 @@ const ContractStaffing = () => {
     triggerOnce: true,
     threshold: 0.2,
   });
+
   return (
     <section className="py-[50px]">
       <div className="container flex flex-col-reverse items-center justify-between gap-24 lg:flex-row">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{
-            duration: 1, // Adjusting duration for overall animation speed
+            duration: 1,
             type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
+            stiffness: 50,
+            damping: 12,
           }}
           className="basis-1/2 text-center"
         >
@@ -32,13 +33,13 @@ const ContractStaffing = () => {
         </motion.div>
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
           transition={{
-            duration: 1, // Adjusting duration for overall animation speed
+            duration: 1,
             type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
+            stiffness: 50,
+            damping: 12,
           }}
           className="basis-1/2 space-y-5 text-center lg:text-left"
         >
@@ -47,18 +48,18 @@ const ContractStaffing = () => {
           <Button>{t("button")}</Button>
         </motion.div>
       </div>
-      <div className="container mt-[50px] grid grid-cols-1 gap-5 lg:grid-cols-3">
+      <div className="container mt-[50px] grid grid-cols-1 gap-6 lg:grid-cols-3">
         {/* card */}
 
         <SubServiceCard
           ref={ref}
-          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }} // Animate to final position
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{
-            duration: 1, // Adjusting duration for overall animation speed
+            duration: 1,
             type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
+            stiffness: 50,
+            damping: 12,
           }}
           icon={
             <svg
@@ -106,13 +107,13 @@ const ContractStaffing = () => {
         {/* card */}
         <SubServiceCard
           ref={ref}
-          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
           transition={{
-            duration: 1, // Adjusting duration for overall animation speed
+            duration: 1,
             type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
+            stiffness: 50,
+            damping: 12,
           }}
           icon={
             <svg

@@ -13,7 +13,7 @@ const OurMissionAndVision = () => {
           </h2>
         </FadeInUpWithSlowBounce>
 
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 md:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2">
           {/* card */}
 
           <FadeInLeftWithSlowBounce>

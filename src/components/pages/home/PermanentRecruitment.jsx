@@ -66,7 +66,7 @@ const PermanentRecruitment = () => {
           /> */}
         </motion.div>
       </div>
-      <div className="container mt-[50px] grid grid-cols-1 gap-5 lg:grid-cols-3">
+      <div className="container mt-[50px] grid grid-cols-1 gap-6 lg:grid-cols-3">
         {/* card */}
         <SubServiceCard
           ref={ref}
