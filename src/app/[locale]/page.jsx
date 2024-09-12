@@ -8,8 +8,6 @@ import RecentNewsesNBlogs from "@/components/pages/home/RecentNewsesNBlogs";
 import TeamSection from "@/components/pages/home/TeamSection";
 import WorkforcePlanning from "@/components/pages/home/WorkforcePlanning";
 import WorkSteps from "@/components/pages/home/WorkSteps";
-import BlogSkeleton from "@/components/skeletons/BlogSkeleton";
-import { Suspense } from "react";
 
 const HomePage = () => {
   return (
@@ -23,6 +21,7 @@ const HomePage = () => {
       <OurSuccess />
       <OurClients />
       <TeamSection />
+      <RecentNewsesNBlogs />
     </main>
   );
 };
