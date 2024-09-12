@@ -20,7 +20,41 @@
 
     "contact_button": "Contact Us",
 
-    "get_in_touch": "Get In Touch"
+    "quick_links": "Quick Links",
+
+    "Home": "Home",
+    "About_Us": "About Us",
+    "Services": "Services",
+    "Industries_We_Serve": "Industries We Serve",
+    "Blogs_and_Newses": "Blogs and Newses",
+    "FAQ": "FAQ",
+    "Contact_Us": "Contact Us",
+
+    "our_services": "Our Services",
+
+    "Permanent_Recruitment": "Permanent Recruitment",
+    "Contract_Staffing": "Contract Staffing",
+    "Housing_Accommodation_Support": "Housing & Accommodation Support",
+    "Compliance_and_Legal_Support": "Compliance and Legal Support",
+    "Workforce_Planning": "Workforce Planning",
+    "Background_Checks": "Background Checks",
+    "Onboarding_Support": "Onboarding Support",
+
+    "get_in_touch": "Get In Touch",
+
+    "subscribe_message": "Subscribe Our Newsletter to Get Latest Update & News",
+
+    "placeholder_text": "Your Email Here",
+
+    "subscribe_button": "Subscribe",
+
+    "copyright": "© Copyright 2024 “Hire & Fire” All Rights Reserved.",
+
+    "Privacy_Policy": "Privacy Policy",
+    "Terms_and_Conditions": "Terms of Conditions",
+    "Cookie_Policy": "Cookie Policy",
+
+    "follow_us": "Follow Us"
   },
 
   "HomePageHero": {

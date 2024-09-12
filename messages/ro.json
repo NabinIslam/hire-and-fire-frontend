@@ -20,7 +20,41 @@
 
     "contact_button": "Contactează-ne",
 
-    "get_in_touch": "Ia Legătura"
+    "quick_links": "Linkuri Rapide",
+
+    "Home": "Acasă",
+    "About_Us": "Despre Noi",
+    "Services": "Servicii",
+    "Industries_We_Serve": "Industrii pe care le Servim",
+    "Blogs_and_Newses": "Bloguri și Noutăți",
+    "FAQ": "Întrebări Frecvente",
+    "Contact_Us": "Contactează-ne",
+
+    "our_services": "Serviciile Noastre",
+
+    "Permanent_Recruitment": "Recrutare Permanentă",
+    "Contract_Staffing": "Angajare pe Contract",
+    "Housing_Accommodation_Support": "Suport pentru Cazare",
+    "Compliance_and_Legal_Support": "Suport pentru Conformitate și Legalitate",
+    "Workforce_Planning": "Planificarea Forței de Muncă",
+    "Background_Checks": "Verificări de Fundal",
+    "Onboarding_Support": "Suport pentru Integrarea Angajaților",
+
+    "get_in_touch": "Ia Legătura",
+
+    "subscribe_message": "Abonează-te la Newsletter-ul nostru pentru a primi cele mai recente actualizări și noutăți",
+
+    "placeholder_text": "Email-ul tău aici",
+
+    "subscribe_button": "Abonează-te",
+
+    "copyright": "© Drepturi de Autor 2024 'Hire & Fire' Toate Drepturile Rezervate.",
+
+    "Privacy_Policy": "Politica de Confidențialitate",
+    "Terms_and_Conditions": "Termeni și Condiții",
+    "Cookie_Policy": "Politica de Cookie-uri",
+
+    "follow_us": "Urmărește-ne"
   },
 
   "HomePageHero": {
