@@ -3,7 +3,7 @@ import TeamCard from "./TeamCard";
 import FadeInLeftWithSlowBounce from "../../animations/FadeInLeftWithSlowBounce";
 
 const Teams = async () => {
-  const data = await fetch(`${apiBaseUrl}/teams`);
+  const data = await fetch(`${apiBaseUrl}/teams`, { cache: "no-store" });
   const teams = await data.json();
 
   return (
