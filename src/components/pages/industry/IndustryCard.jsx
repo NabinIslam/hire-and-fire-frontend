@@ -17,8 +17,8 @@ const IndustryCard = ({ industry }) => {
             fill
           />
         </div>
-        <h3 className="mt-3 text-2xl font-medium">{name}</h3>
-        <p className="my-3 text-sm font-medium">{shortDescription}</p>
+        <h3 className="mt-[15px] text-2xl font-medium">{name}</h3>
+        <p className="my-[15px] text-sm font-medium">{shortDescription}</p>
         <Link className="mt-auto" href={`/industry/${slug}`}>
           <button className="mx-auto flex items-center text-sm font-medium text-primary duration-200 hover:text-secondary">
             <span>Read More</span> <IoMdArrowDropright className="text-lg" />
