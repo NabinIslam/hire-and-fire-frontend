@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoMdArrowDropright } from "react-icons/io";
@@ -19,6 +19,17 @@ import { Link } from "@/i18n/routing";
 const Header = () => {
   const t = useTranslations("Header");
 
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolling(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const [isPending, startTransition] = useTransition();
   const localActive = useLocale();
   const pathname = usePathname();
@@ -36,11 +47,14 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-[1000] bg-white py-[10px] shadow">
+    <header
+      className={`sticky top-0 z-[1000] bg-white py-[10px] shadow ease-in-out ${scrolling ? "bg-gray-800 py-2" : "bg-transparent py-8"}`}
+    >
       <nav className="container flex items-center justify-between">
         <div className="flex basis-1/4 items-center justify-start">
           <Link href="/">
             <Image
+              className={`w-auto transition-all duration-300 ease-in-out ${scrolling ? "h-10" : "h-16"}`}
               src="/images/Logo.png"
               width={52}
               height={39}
@@ -220,3 +234,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// className = "sticky top-0 z-[1000] bg-white py-[10px] shadow";
