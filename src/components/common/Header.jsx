@@ -190,33 +190,6 @@ const Header = () => {
               </option>
             ))}
           </select>
-
-          {/* <Select
-            className="w-[150px] rounded-full px-4 text-sm"
-            searchable={false}
-            options={languages}
-            onChange={(value) => console.log(value)}
-          /> */}
-
-          {/* <Dropdown className="border" label="Dropdown button">
-            {languages.map((language) => (
-              <Dropdown.Item>{language}</Dropdown.Item>
-            ))}
-          </Dropdown> */}
-
-          {/* <select className="rounded-full border" name="selectCountries" id="">
-            {languages.map((language) => (
-              <option value={language}>{language}</option>
-            ))}
-          </select> */}
-
-          {/* <ReactFlagsSelect
-            className="mb-[-5px]"
-            showSelectedLabel={false}
-            showOptionLabel={false}
-            selected={selected}
-            onSelect={(code) => setSelected(code)}
-          /> */}
         </div>
         <div className="flex basis-1/4 items-center justify-end lg:hidden">
           <button

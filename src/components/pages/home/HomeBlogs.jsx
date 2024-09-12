@@ -2,9 +2,7 @@ import { apiBaseUrl } from "@/secrets";
 import BlogCard from "../blog/BlogCard";
 
 const HomeBlogs = async () => {
-  const data = await fetch(`${apiBaseUrl}/blogs`, {
-    cache: "no-store",
-  });
+  const data = await fetch(`${apiBaseUrl}/blogs`);
 
   const blogs = await data.json();
 

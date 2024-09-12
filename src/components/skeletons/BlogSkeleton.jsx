@@ -24,6 +24,7 @@ const BlogSkeleton = () => {
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[15px] w-[88px]" />
       </div>
+
       {/* card  */}
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
@@ -34,6 +35,7 @@ const BlogSkeleton = () => {
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[15px] w-[88px]" />
       </div>
+
       {/* card  */}
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
@@ -44,6 +46,7 @@ const BlogSkeleton = () => {
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[15px] w-[88px]" />
       </div>
+
       {/* card  */}
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
@@ -54,6 +57,7 @@ const BlogSkeleton = () => {
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[15px] w-[88px]" />
       </div>
+
       {/* card  */}
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
@@ -64,6 +68,7 @@ const BlogSkeleton = () => {
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[15px] w-[88px]" />
       </div>
+
       {/* card  */}
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
@@ -74,6 +79,7 @@ const BlogSkeleton = () => {
         <Skeleton className="h-[10px]" />
         <Skeleton className="h-[15px] w-[88px]" />
       </div>
+
       {/* card  */}
       <div className="rounded-lg border p-4 text-center shadow-xl">
         <Skeleton className="h-[240px] w-full" />
