@@ -8,7 +8,7 @@ const IndustryCard = ({ industry }) => {
 
   return (
     <FadeInLeftWithSlowBounce>
-      <div className="bg-industry-card-bg flex flex-col rounded-lg border border-b-8 border-b-primary bg-contain bg-no-repeat p-4 text-center shadow-xl">
+      <div className="flex flex-col items-center rounded-lg border-b-8 border-b-primary bg-industry-card-bg bg-contain bg-no-repeat p-4 text-center shadow-xl">
         <div className="relative h-[240px] w-full">
           <Image
             className="rounded-[33px] object-cover"
