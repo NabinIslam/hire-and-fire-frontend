@@ -12,7 +12,7 @@ const Breadcrumbs = () => {
 
   const parts = location.split("/").filter(Boolean);
 
-  console.log(parts);
+
 
   // If the first part is a language code, remove it
   if (languageCodes.includes(parts[0])) {
