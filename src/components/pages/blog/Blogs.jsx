@@ -9,7 +9,7 @@ const Blogs = async () => {
   const blogs = await data.json();
 
   return (
-    <div className="grid grid-cols-1 gap-10 pb-[50px] md:grid-cols-2 md:gap-6 xl:grid-cols-4">
+    <div className="grid grid-cols-1 gap-12 pb-[50px] md:grid-cols-2 md:gap-x-6 md:gap-y-12 xl:grid-cols-4">
       {blogs?.map((blog) => (
         <BlogCard key={blog.id} blog={blog} />
       ))}

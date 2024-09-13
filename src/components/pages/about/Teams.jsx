@@ -17,7 +17,7 @@ const Teams = async () => {
         </h5>
       </FadeInLeftWithSlowBounce>
 
-      <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-20 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           ?.filter((element) => element.teamName === "The Founders")
           .map((team) => (
@@ -31,7 +31,7 @@ const Teams = async () => {
         </h5>
       </FadeInLeftWithSlowBounce>
 
-      <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-20 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           ?.filter((element) => element.teamName === "Recruitment Specialists")
           .map((team) => (
@@ -45,7 +45,7 @@ const Teams = async () => {
         </h5>
       </FadeInLeftWithSlowBounce>
 
-      <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-20 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           ?.filter((element) => element.teamName === "Sales & Marketing Team")
           .map((team) => (
@@ -59,7 +59,7 @@ const Teams = async () => {
         </h5>
       </FadeInLeftWithSlowBounce>
 
-      <div className="mb-20 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-20 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {teams
           ?.filter((element) => element.teamName === "Accounting Team")
           .map((team) => (

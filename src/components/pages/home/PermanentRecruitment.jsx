@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Button from "../../ui/Button";
-import SubServiceCard from "../../SubServiceCard";
+import SubServiceCard from "../../common/SubServiceCard";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";

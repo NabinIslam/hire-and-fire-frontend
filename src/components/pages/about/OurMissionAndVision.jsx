@@ -1,7 +1,7 @@
 import FadeInLeftWithSlowBounce from "../../animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "../../animations/FadeInRightWithSlowBounce ";
 import FadeInUpWithSlowBounce from "../../animations/FadeInUpWithSlowBounce";
-import SubServiceCard from "../../SubServiceCard";
+import SubServiceCard from "../../common/SubServiceCard";
 
 const OurMissionAndVision = () => {
   return (

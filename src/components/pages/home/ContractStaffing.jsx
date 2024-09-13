@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import SubServiceCard from "../../SubServiceCard";
+import SubServiceCard from "../../common/SubServiceCard";
 import Button from "../../ui/Button";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";

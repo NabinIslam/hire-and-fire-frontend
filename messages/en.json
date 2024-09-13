@@ -172,5 +172,7 @@
     "title": "Our Recent Newses & Blogs",
     "description": "Stay updated with the latest news articles and trending stories.",
     "view_all_button": "View All Blogs & Newses"
-  }
+  },
+
+  "about_us_banner_title": "About Us"
 }
