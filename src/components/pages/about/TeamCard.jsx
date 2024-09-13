@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const TeamCard = ({ team }) => {
-  const { photo, name, designtion } = team;
+
+  // const { photo, name, designtion } = team;
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger the animation only once
-    threshold: 0.2, // Trigger when 10% of the component is in view
+    triggerOnce: true,
+    threshold: 0.2,
   });
 
   return (
@@ -31,8 +32,8 @@ const TeamCard = ({ team }) => {
         <div className="relative min-h-[354px] w-full">
           <Image
             className="rounded-lg object-cover"
-            src={photo}
-            alt={name}
+            src={team?.photo}
+            alt={team?.name}
             fill
           />
         </div>
@@ -53,8 +54,8 @@ const TeamCard = ({ team }) => {
         </div>
       </div>
       <div className="py-4">
-        <h5 className="text-center text-xl font-medium">{name}</h5>
-        <h6 className="text-center text-sm">{designtion}</h6>
+        <h5 className="text-center text-xl font-medium">{team?.name}</h5>
+        <h6 className="text-center text-sm">{team?.designtion}</h6>
       </div>
     </motion.div>
   );
