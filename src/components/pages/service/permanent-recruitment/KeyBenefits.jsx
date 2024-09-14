@@ -85,7 +85,7 @@ const KeyBenefits = () => {
                 cy="204"
                 r="149"
                 stroke="#004785"
-                stroke-width="2"
+                strokeWidth="2"
               />
             </g>
             <g filter="url(#filter1_d_867_2715)">
@@ -122,14 +122,14 @@ const KeyBenefits = () => {
             <path
               d="M508 9V399"
               stroke="#004785"
-              stroke-width="3"
-              stroke-linecap="round"
+              strokeWidth="3"
+              strokeLinecap="round"
             />
             <path
               d="M108 9L108 399"
               stroke="#004785"
-              stroke-width="3"
-              stroke-linecap="round"
+              strokeWidth="3"
+              strokeLinecap="round"
             />
             <path
               d="M499 202.5C499 206.918 502.582 210.5 507 210.5C511.418 210.5 515 206.918 515 202.5C515 198.082 511.418 194.5 507 194.5C502.582 194.5 499 198.082 499 202.5ZM458 204H507V201H458V204Z"
@@ -171,9 +171,9 @@ const KeyBenefits = () => {
                 width="310"
                 height="310"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -206,9 +206,9 @@ const KeyBenefits = () => {
                 width="51.9512"
                 height="158.071"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -241,9 +241,9 @@ const KeyBenefits = () => {
                 width="158.123"
                 height="50.3329"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -276,9 +276,9 @@ const KeyBenefits = () => {
                 width="158.113"
                 height="50.9833"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -311,9 +311,9 @@ const KeyBenefits = () => {
                 width="50.6074"
                 height="158.121"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -346,9 +346,9 @@ const KeyBenefits = () => {
                 width="260"
                 height="260"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
