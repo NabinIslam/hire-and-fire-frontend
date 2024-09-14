@@ -36,7 +36,7 @@ const Hero = () => {
           <p className="mb-5 mt-3">{t("hero_description")}</p>
 
           <Link href="/hire-worker/request-talent">
-            <BgButton>{t("hero_button")}</BgButton>
+            <BgButton>Hire Worker</BgButton>
           </Link>
         </motion.div>
         <motion.div

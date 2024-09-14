@@ -15,7 +15,7 @@ import { useTransition } from "react";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);

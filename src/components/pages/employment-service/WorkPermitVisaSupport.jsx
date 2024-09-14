@@ -43,7 +43,7 @@ const WorkPermitVisaSupport = () => {
             tailored support maximizes efficiency and increases your chances of
             a successful outcome.
           </p>
-          <Button>Find Talent</Button>
+          <Button>Hire Worker</Button>
         </motion.div>
         <motion.div
           ref={ref}

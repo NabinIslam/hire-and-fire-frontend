@@ -9,6 +9,8 @@ import { useLocale } from "next-intl";
 const COOKIE_NAME = "googtrans";
 
 const LanguageSwitcher = () => {
+  const [isPending, startTransition] = useTransition();
+
   const [currentLanguage, setCurrentLanguage] = useState();
   const [languageConfig, setLanguageConfig] = useState();
   const router = useRouter();
@@ -49,8 +51,11 @@ const LanguageSwitcher = () => {
 
   // The following function switches the current language
   const switchLanguage = (e) => {
-    setCookie(null, COOKIE_NAME, "/auto/" + e.target.value);
-    window.location.reload();
+    startTransition(() => {
+      router.replace(`/${e.target.value}`);
+      setCookie(null, COOKIE_NAME, "/auto/" + e.target.value);
+      window.location.reload();
+    });
   };
 
   console.log(currentLanguage);
@@ -60,6 +65,7 @@ const LanguageSwitcher = () => {
       defaultValue={currentLanguage}
       onChange={switchLanguage}
       className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
+      disabled={isPending}
     >
       {languageConfig?.languages?.map((language) => (
         <option value={language.name} key={language.name}>

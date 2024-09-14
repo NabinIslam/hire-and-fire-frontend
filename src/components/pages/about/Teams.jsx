@@ -3,7 +3,9 @@ import FadeInLeftWithSlowBounce from "../../animations/FadeInLeftWithSlowBounce"
 import { apiBaseUrl } from "@/secrets";
 
 const Teams = async () => {
-  const data = await fetch(`${apiBaseUrl}/teams`);
+  const data = await fetch(`${apiBaseUrl}/teams/`, {
+    cache: "no-store",
+  });
 
   const teams = await data.json();
 
