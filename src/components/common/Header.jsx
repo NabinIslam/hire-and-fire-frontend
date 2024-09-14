@@ -174,7 +174,7 @@ const Header = () => {
         </div>
         <div className="hidden basis-1/4 items-center justify-end gap-6 lg:flex">
           <Link href="/contact-us">
-            <Button>Contact Us</Button>
+            <Button>Meet Us</Button>
           </Link>
 
           <LanguageSwitcher />
