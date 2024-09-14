@@ -6,6 +6,7 @@ import SubServiceCard from "../../common/SubServiceCard";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const PermanentRecruitment = () => {
   const t = useTranslations("PermanentRecruitment");
@@ -32,7 +33,11 @@ const PermanentRecruitment = () => {
         >
           <h2 className="text-4xl font-semibold lg:text-5xl">{t("title")}</h2>
           <p className="text-sm font-medium">{t("description")}</p>
-          <Button>{t("button")}</Button>
+          <div>
+            <Link href="/service/permanent-recruitment">
+              <Button>See More</Button>
+            </Link>
+          </div>
         </motion.div>
 
         <motion.div
