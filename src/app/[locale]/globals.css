@@ -51,3 +51,8 @@
     @apply h-4 w-4 rounded-full bg-blue-500; /* Customize as needed */
   }
 }
+
+.skiptranslate {
+  display: none !important;
+  visibility: hidden;
+}

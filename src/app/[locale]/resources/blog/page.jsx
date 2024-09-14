@@ -3,8 +3,9 @@ import PageBanner from "@/components/common/PageBanner";
 import TitleDescSection from "@/components/common/TitleDescSection";
 import { Suspense } from "react";
 import BlogSkeleton from "@/components/skeletons/BlogSkeleton";
+
 export const metadata = {
-  title: "Hire&Fire | Blog & News",
+  title: "Hire&Fire | Blogs & Newses",
 };
 
 const BlogPage = () => {

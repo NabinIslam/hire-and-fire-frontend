@@ -1,10 +1,18 @@
+"use client";
+
+import { useEffect, useState, useTransition } from "react";
+import { parseCookies, setCookie } from "nookies";
+import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
-import { useState } from "react";
+
+// The following cookie name is important because it's Google-predefined for the translation engine purpose
+const COOKIE_NAME = "googtrans";
 
 const LanguageSwitcher = () => {
-  const localActive = useLocale();
   const [currentLanguage, setCurrentLanguage] = useState();
   const [languageConfig, setLanguageConfig] = useState();
+  const router = useRouter();
+  const localActive = useLocale();
 
   // Initialize translation engine
   useEffect(() => {
@@ -13,7 +21,6 @@ const LanguageSwitcher = () => {
     const existingLanguageCookieValue = cookies[COOKIE_NAME];
 
     let languageValue;
-
     if (existingLanguageCookieValue) {
       // 2. If the cookie is defined, extract a language nickname from there.
       const sp = existingLanguageCookieValue.split("/");
@@ -25,12 +32,10 @@ const LanguageSwitcher = () => {
     if (global.__GOOGLE_TRANSLATION_CONFIG__ && !languageValue) {
       languageValue = global.__GOOGLE_TRANSLATION_CONFIG__.defaultLanguage;
     }
-
     if (languageValue) {
       // 4. Set the current language if we have a related decision.
       setCurrentLanguage(languageValue);
     }
-
     // 5. Set the language config.
     if (global.__GOOGLE_TRANSLATION_CONFIG__) {
       setLanguageConfig(global.__GOOGLE_TRANSLATION_CONFIG__);
@@ -43,23 +48,22 @@ const LanguageSwitcher = () => {
   }
 
   // The following function switches the current language
-  const switchLanguage = (lang) => () => {
-    // We just need to set the related cookie and reload the page
-    // "/auto/" prefix is Google's definition as far as a cookie name
-    setCookie(null, COOKIE_NAME, "/auto/" + lang);
+  const switchLanguage = (e) => {
+    setCookie(null, COOKIE_NAME, "/auto/" + e.target.value);
     window.location.reload();
   };
 
+  console.log(currentLanguage);
+
   return (
     <select
-      defaultValue={localActive}
-      onChange={onSelectChange}
+      defaultValue={currentLanguage}
+      onChange={switchLanguage}
       className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
-      disabled={isPending}
     >
-      {languages.map((language) => (
-        <option value={language.code} key={language.value}>
-          {language.label}
+      {languageConfig?.languages?.map((language) => (
+        <option value={language.name} key={language.name}>
+          {language.title}
         </option>
       ))}
     </select>
