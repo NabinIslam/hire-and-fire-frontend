@@ -41,7 +41,7 @@ const ProfessionalTraining = () => {
             instruction, hands-on learning, and career advancement
             opportunities.
           </p>
-          <Button>Contact Us</Button>
+          <Button>Meet Us</Button>
         </motion.div>
         <motion.div
           ref={ref}

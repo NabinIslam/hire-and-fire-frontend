@@ -42,7 +42,7 @@ const LanguageTraining = () => {
             experience. Plus, we offer flexible scheduling to fit the needs of
             workers, making it easy for them to prepare for their new adventure.
           </p>
-          <Button>Contact Us</Button>
+          <Button>Meet Us</Button>
         </motion.div>
         <motion.div
           ref={ref}

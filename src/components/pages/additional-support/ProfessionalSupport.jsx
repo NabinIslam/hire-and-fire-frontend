@@ -43,7 +43,7 @@ const ProfessionalSupport = () => {
             empower workers to thrive professionally and contribute effectively
             to organizational success.
           </p>
-          <Button>Contact Us</Button>
+          <Button>Meet Us</Button>
         </motion.div>
         <motion.div
           ref={ref}

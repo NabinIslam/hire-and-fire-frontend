@@ -18,7 +18,7 @@ const Partner = () => {
             Partner with us to access a pool of qualified talent and optimize
             your construction projects with ease."
           </p>
-          <Button>Contact Us</Button>
+          <Button>Meet Us</Button>
         </div>
         <div className="basis-1/2">
           <img src="/Image-1.jpg" alt="" />

@@ -104,7 +104,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer }) => {
         </div>
         <div className="mt-auto flex items-center justify-between">
           <Link href="/contact-us">
-            <Button>Contact Us</Button>
+            <Button>Meet Us</Button>
           </Link>
         </div>
       </div>

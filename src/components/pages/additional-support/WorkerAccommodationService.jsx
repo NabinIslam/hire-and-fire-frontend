@@ -41,7 +41,7 @@ const WorkerAccommodationService = () => {
             seamless integration to enhance productivity and employee
             satisfaction.
           </p>
-          <Button>Contact Us</Button>
+          <Button>Meet Us</Button>
         </motion.div>
         <motion.div
           ref={ref}

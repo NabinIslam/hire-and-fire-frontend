@@ -36,7 +36,7 @@ const IndustryDetailsPage = ({ params }) => {
           </p>
           <div>
             <Link href="/contact-us">
-              <Button>Contact Us</Button>
+              <Button>Meet Us</Button>
             </Link>
           </div>
         </div>

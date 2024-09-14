@@ -42,7 +42,7 @@ const PartnershipsPrograms = () => {
             enhance competitiveness, and deliver enhanced value to customers
             across diverse industries.
           </p>
-          <Button>Contact Us</Button>
+          <Button>Meet Us</Button>
         </motion.div>
         <motion.div
           ref={ref}
