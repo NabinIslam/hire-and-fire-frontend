@@ -11,6 +11,7 @@ import { Montserrat } from "next/font/google";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Script from "next/script";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -27,6 +28,12 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
+      <Script src="/assets/lang-config.js" strategy="beforeInteractive" />
+      <Script src="/assets/translation.js" strategy="beforeInteractive" />
+      <Script
+        src="//translate.google.com/translate_a/element.js?cb=TranslateInit"
+        strategy="afterInteractive"
+      />
       <body className={`${montserrat.className} flex min-h-screen flex-col`}>
         <NextIntlClientProvider messages={messages}>
           <TanstackQueryProvider>

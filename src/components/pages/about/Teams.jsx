@@ -7,7 +7,7 @@ const Teams = async () => {
 
   const teams = await data.json();
 
-  console.log(teams);
+
 
   return (
     <div>
