@@ -7,8 +7,6 @@ const Teams = async () => {
 
   const teams = await data.json();
 
-
-
   return (
     <div>
       <FadeInLeftWithSlowBounce>
