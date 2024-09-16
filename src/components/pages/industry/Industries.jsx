@@ -1,12 +1,8 @@
-import { apiBaseUrl } from "@/secrets";
 import IndustryCard from "./IndustryCard";
+import { getIndustries } from "@/services/getIndustries";
 
 const Industries = async () => {
-  const data = await fetch(`${apiBaseUrl}/industries`, {
-    cache: "no-store",
-  });
-
-  const industries = await data.json();
+  const industries = await getIndustries();
 
   return (
     <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

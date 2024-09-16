@@ -1,13 +1,9 @@
 import TeamCard from "./TeamCard";
 import FadeInLeftWithSlowBounce from "../../animations/FadeInLeftWithSlowBounce";
-import { apiBaseUrl } from "@/secrets";
+import { getTeams } from "@/services/getTeams";
 
 const Teams = async () => {
-  const data = await fetch(`${apiBaseUrl}/teams/`, {
-    cache: "no-store",
-  });
-
-  const teams = await data.json();
+  const teams = await getTeams();
 
   return (
     <div>

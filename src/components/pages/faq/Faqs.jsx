@@ -1,9 +1,8 @@
-import { apiBaseUrl } from "@/secrets";
+import { getFaqs } from "@/services/getFaqs";
 import Accordion from "../../ui/Accordion";
 
 const Faqs = async () => {
-  const data = await fetch(`${apiBaseUrl}/faqs`);
-  const faqs = await data.json();
+  const faqs = await getFaqs();
 
   return (
     <div className="space-y-6">

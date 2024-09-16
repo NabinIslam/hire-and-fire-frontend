@@ -1,7 +1,4 @@
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
-import BgButton from "@/components/ui/BgButton";
-import { Link } from "@/i18n/routing";
-import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
@@ -22,7 +19,7 @@ const WhyChooseUs = () => {
           <div className="container">
             {/* column */}
 
-            <div className="grid basis-full grid-cols-1 gap-10 md:grid-cols-3 lg:basis-2/3 lg:gap-x-14">
+            <div className="grid basis-full grid-cols-1 gap-10 lg:basis-2/3 lg:grid-cols-2 lg:gap-x-14 xl:grid-cols-3">
               <div className="flex gap-2">
                 <div className="basis-8">
                   <svg

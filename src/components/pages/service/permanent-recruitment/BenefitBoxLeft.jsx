@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const BenefitBoxLeft = ({ title, description, icon }) => {
   return (
     <div className="benefit-box relative flex flex-row-reverse items-center gap-4 rounded-lg border border-l-8 border-r-8 border-l-secondary border-r-secondary px-5 py-7 shadow-lg xl:flex-row">
@@ -12,7 +10,7 @@ const BenefitBoxLeft = ({ title, description, icon }) => {
         <p className="text-sm font-medium">{description}</p>
       </div>
 
-      <Image src={icon} alt={title} height={70} width={70} />
+      <div>{icon}</div>
     </div>
   );
 };
