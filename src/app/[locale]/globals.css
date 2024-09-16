@@ -56,3 +56,15 @@
   display: none !important;
   visibility: hidden;
 }
+
+/* src/components/VerticalTimeline.css */
+
+/* Add this to apply custom positioning for the dot */
+.timeline-item-left::before {
+  left: -1.75rem;
+}
+
+.timeline-item-right::before {
+  left: unset;
+  right: -1.75rem;
+}

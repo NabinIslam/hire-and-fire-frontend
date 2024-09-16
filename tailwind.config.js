@@ -43,6 +43,11 @@ module.exports = {
         "why-choose-us-bg": "url('/images/why-choose-us-bg.png')",
         "why-choose-us-pr-bg": "url('/images/why-choose-us-pr-bg.png')",
         "industry-card-bg": "url('/images/industry-card-bg.png')",
+        "timeline-card-bg": "url('/images/timeline-card-bg.png')",
+        "timeline-card-bg": "url('/images/timeline-card-bg.png')",
+        "work-permit-card-bg": "url('/images/work-permit-card-bg.png')",
+        "visa-application-card-bg":
+          "url('/images/visa-application-card-bg.png')",
       },
       keyframes: {
         pulse: {

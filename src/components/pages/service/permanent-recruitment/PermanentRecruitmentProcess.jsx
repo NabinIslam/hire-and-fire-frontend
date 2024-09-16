@@ -1,10 +1,34 @@
 "use client";
 
-import { FaFacebook } from "react-icons/fa6";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import VerticalTimeline from "./VerticalTimeline";
+
+// import {
+//   VerticalTimeline,
+//   VerticalTimelineElement,
+// } from "react-vertical-timeline-component";
+
+const timelineEvents = [
+  {
+    title: "Event 1",
+    description: "Description for event 1",
+    date: "Jan 1, 2024",
+  },
+  {
+    title: "Event 2",
+    description: "Description for event 2",
+    date: "Feb 14, 2024",
+  },
+  {
+    title: "Event 3",
+    description: "Description for event 3",
+    date: "Mar 30, 2024",
+  },
+  {
+    title: "Event 4",
+    description: "Description for event 4",
+    date: "Apr 15, 2024",
+  },
+];
 
 const PermanentRecruitmentProcess = () => {
   return (
@@ -20,13 +44,18 @@ const PermanentRecruitmentProcess = () => {
         </div>
 
         <div>
-          <VerticalTimeline lineColor="#F90945">
+          <VerticalTimeline events={timelineEvents} />
+        </div>
+
+        {/* <div>
+          <VerticalTimeline lineColor="#F90945" animate>
             <VerticalTimelineElement
+              iconStyle={{ backgroundImage: "none" }}
               visible
-              className="vertical-timeline-element--work"
-              contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              
+              contentStyle={{ background: "#F90945", color: "#fff" }}
               contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)",
+                borderRight: "7px solid  #F90945",
               }}
               icon={
                 <svg
@@ -951,7 +980,7 @@ const PermanentRecruitmentProcess = () => {
               }
             />
           </VerticalTimeline>
-        </div>
+        </div> */}
       </div>
     </section>
   );
