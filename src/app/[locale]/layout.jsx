@@ -6,6 +6,7 @@ import RsuiteProvider from "@/providers/RsuiteProvider";
 import TanstackQueryProvider from "@/providers/TanstackQueryProvider";
 import "react-loading-skeleton/dist/skeleton.css";
 import { Montserrat } from "next/font/google";
+import "react-vertical-timeline-component/style.min.css";
 
 //language imports
 
