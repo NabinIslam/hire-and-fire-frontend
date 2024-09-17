@@ -1,5 +1,6 @@
 "use client";
 
+import { ProcessTimeline } from "./Timeline";
 import VerticalTimeline from "./VerticalTimeline";
 
 // import {
@@ -44,7 +45,7 @@ const PermanentRecruitmentProcess = () => {
         </div>
 
         <div>
-          <VerticalTimeline events={timelineEvents} />
+          <ProcessTimeline />
         </div>
 
         {/* <div>

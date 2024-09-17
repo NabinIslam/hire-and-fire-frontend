@@ -58,8 +58,6 @@ const LanguageSwitcher = () => {
     });
   };
 
-  console.log(currentLanguage);
-
   return (
     <select
       defaultValue={currentLanguage}

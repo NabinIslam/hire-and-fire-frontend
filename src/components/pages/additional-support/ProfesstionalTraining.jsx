@@ -12,7 +12,7 @@ const ProfessionalTraining = () => {
   });
 
   return (
-    <section className="py-[50px]">
+    <section className="pb-[100px] pt-[50px]">
       <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row-reverse lg:gap-[100px]">
         <motion.div
           ref={ref}

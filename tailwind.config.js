@@ -48,6 +48,10 @@ module.exports = {
         "work-permit-card-bg": "url('/images/work-permit-card-bg.png')",
         "visa-application-card-bg":
           "url('/images/visa-application-card-bg.png')",
+        "employer-align-card-inner-bg":
+          "url('/images/employer-align-card-inner-bg.png')",
+        "employer-align-card-bg": "url('/images/employer-align-card-bg.png')",
+        "timeline-card-inner-bg": "url('/images/timeline-card-inner-bg.png')",
       },
       keyframes: {
         pulse: {

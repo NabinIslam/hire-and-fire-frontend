@@ -7,6 +7,8 @@ import TanstackQueryProvider from "@/providers/TanstackQueryProvider";
 import "react-loading-skeleton/dist/skeleton.css";
 import { Montserrat } from "next/font/google";
 import "react-vertical-timeline-component/style.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 //language imports
 

@@ -18,6 +18,8 @@ const AdditionalSupportPage = () => {
     <main>
       <PageBanner title="Additional Support" />
 
+      <LanguageTraining />
+
       <ProfessionalSupport />
 
       <section className="py-[50px]">
@@ -33,8 +35,6 @@ const AdditionalSupportPage = () => {
       <WorkerAccommodationService />
 
       <ProfessionalTraining />
-
-      <LanguageTraining />
     </main>
   );
 };

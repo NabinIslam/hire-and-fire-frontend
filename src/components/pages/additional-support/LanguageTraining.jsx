@@ -1,9 +1,44 @@
 "use client";
 
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import Button from "../../ui/Button";
+import Slider from "react-slick";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Button from "@/components/ui/Button";
+
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+      style={{
+        borderRadius: "100%",
+        border: "1px solid #ddd",
+        backgroundColor: "#ddd",
+      }}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+      style={{
+        borderRadius: "100%",
+        border: "1px solid #ddd",
+        backgroundColor: "#ddd",
+      }}
+    />
+  );
+}
 
 const LanguageTraining = () => {
   const { ref, inView } = useInView({
@@ -11,8 +46,36 @@ const LanguageTraining = () => {
     threshold: 0.2,
   });
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    nextArrow: (
+      <div>
+        <IoIosArrowForward className="rounded-full border p-2 text-4xl text-black shadow-2xl" />
+      </div>
+    ),
+    prevArrow: (
+      <div>
+        <IoIosArrowBack className="rounded-full border p-2 text-4xl text-black shadow-2xl" />
+      </div>
+    ),
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="pb-[100px] pt-[50px]">
+    <section className="pb-[50px] pt-[100px]">
       <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
         <motion.div
           ref={ref}
@@ -42,7 +105,6 @@ const LanguageTraining = () => {
             experience. Plus, we offer flexible scheduling to fit the needs of
             workers, making it easy for them to prepare for their new adventure.
           </p>
-          <Button>Meet Us</Button>
         </motion.div>
         <motion.div
           ref={ref}
@@ -63,6 +125,172 @@ const LanguageTraining = () => {
             fill
           />
         </motion.div>
+      </div>
+
+      <div className="container mt-[50px]">
+        <div className="slider-container">
+          <Slider {...settings}>
+            <div className="">
+              <ReactPlayer
+                className="h-full w-full"
+                url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+                light={
+                  <div className="relative min-h-full w-full">
+                    <Image
+                      className="h-full w-full rounded-lg"
+                      src="/images/additional-support-video-thumbnail.png"
+                      alt="thumbnail"
+                      fill
+                    />
+                  </div>
+                }
+                width="100%"
+                playIcon={
+                  <svg
+                    className="absolute"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="40" cy="40" r="40" fill="#F90945" />
+                    <path
+                      d="M60 40L30 57.3205L30 22.6795L60 40Z"
+                      fill="#D9D9D9"
+                    />
+                  </svg>
+                }
+              />
+              <div className="mt-4 flex items-center justify-center gap-3">
+                <h6 className="text-2xl font-medium">Demo Video</h6>
+                <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
+                  01
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <ReactPlayer
+                className="h-full w-full"
+                url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+                light={
+                  <div className="relative min-h-full w-full">
+                    <Image
+                      className="h-full w-full rounded-lg"
+                      src="/images/additional-support-video-thumbnail.png"
+                      alt="thumbnail"
+                      fill
+                    />
+                  </div>
+                }
+                width="100%"
+                playIcon={
+                  <svg
+                    className="absolute"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="40" cy="40" r="40" fill="#F90945" />
+                    <path
+                      d="M60 40L30 57.3205L30 22.6795L60 40Z"
+                      fill="#D9D9D9"
+                    />
+                  </svg>
+                }
+              />
+              <div className="mt-4 flex items-center justify-center gap-3">
+                <h6 className="text-2xl font-medium">Demo Video</h6>
+                <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
+                  01
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <ReactPlayer
+                className="h-full w-full"
+                url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+                light={
+                  <div className="relative min-h-full w-full">
+                    <Image
+                      className="h-full w-full rounded-lg"
+                      src="/images/additional-support-video-thumbnail.png"
+                      alt="thumbnail"
+                      fill
+                    />
+                  </div>
+                }
+                width="100%"
+                playIcon={
+                  <svg
+                    className="absolute"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="40" cy="40" r="40" fill="#F90945" />
+                    <path
+                      d="M60 40L30 57.3205L30 22.6795L60 40Z"
+                      fill="#D9D9D9"
+                    />
+                  </svg>
+                }
+              />
+              <div className="mt-4 flex items-center justify-center gap-3">
+                <h6 className="text-2xl font-medium">Demo Video</h6>
+                <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
+                  01
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <ReactPlayer
+                className="h-full w-full"
+                url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+                light={
+                  <div className="relative min-h-full w-full">
+                    <Image
+                      className="h-full w-full rounded-lg"
+                      src="/images/additional-support-video-thumbnail.png"
+                      alt="thumbnail"
+                      fill
+                    />
+                  </div>
+                }
+                width="100%"
+                playIcon={
+                  <svg
+                    className="absolute"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="40" cy="40" r="40" fill="#F90945" />
+                    <path
+                      d="M60 40L30 57.3205L30 22.6795L60 40Z"
+                      fill="#D9D9D9"
+                    />
+                  </svg>
+                }
+              />
+              <div className="mt-4 flex items-center justify-center gap-3">
+                <h6 className="text-2xl font-medium">Demo Video</h6>
+                <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
+                  01
+                </div>
+              </div>
+            </div>
+          </Slider>
+        </div>
+      </div>
+      <div className="container mt-10 flex items-center justify-center">
+        <Button>Meet Us</Button>
       </div>
     </section>
   );

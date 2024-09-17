@@ -4,6 +4,10 @@ import PermanentRecruitment from "@/components/pages/service/permanent-recruitme
 import PermanentRecruitmentProcess from "@/components/pages/service/permanent-recruitment/PermanentRecruitmentProcess";
 import WhyChooseUs from "@/components/pages/service/permanent-recruitment/WhyChooseUs";
 
+export const metadata = {
+  title: "Hire&Fire | Permanent Recruitment",
+};
+
 const PermanentRecruitmentPage = () => {
   return (
     <main>
