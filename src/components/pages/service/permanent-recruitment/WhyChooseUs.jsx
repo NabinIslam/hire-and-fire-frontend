@@ -2,7 +2,7 @@ import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBoun
 
 const WhyChooseUs = () => {
   return (
-    <section className="space-y-8 pt-[50px]">
+    <section className="space-y-8 pb-[100px] pt-[50px]">
       <div className="container space-y-8">
         <div className="mx-auto flex h-[56px] max-w-[232px] items-center justify-center rounded-full border-2 border-primary text-2xl font-medium text-primary">
           Why Choose Us

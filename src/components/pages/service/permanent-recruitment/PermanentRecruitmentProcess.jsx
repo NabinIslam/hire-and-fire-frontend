@@ -16,7 +16,7 @@ const PermanentRecruitmentProcess = () => {
           </h2>
         </div>
       </div>
-      <div className="container hidden xl:block">
+      <div className="container">
         {/* <ProcessTimeline /> */}
         <SVGTimeline />
       </div>

@@ -121,7 +121,7 @@ const TimelineStep1 = () => {
           </div>
         </motion.div>
       </div>
-      <div className="flex h-full items-center justify-center">
+      <div className="-order-1 flex h-full items-center justify-center lg:order-none">
         <div className="relative mx-auto h-full w-1 bg-primary">
           <svg
             className="absolute left-[-15px] top-[90px]"
