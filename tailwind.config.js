@@ -52,6 +52,9 @@ module.exports = {
           "url('/images/employer-align-card-inner-bg.png')",
         "employer-align-card-bg": "url('/images/employer-align-card-bg.png')",
         "timeline-card-inner-bg": "url('/images/timeline-card-inner-bg.png')",
+        "timeline-card-bg-left": "url('/images/timeline-card-bg-left.png')",
+        "timeline-card-inner-bg-right":
+          "url('/images/timeline-card-inner-bg-right.png')",
       },
       keyframes: {
         pulse: {
