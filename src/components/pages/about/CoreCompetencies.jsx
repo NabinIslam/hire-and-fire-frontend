@@ -8,6 +8,11 @@ const CoreCompetencies = () => {
     <FadeInUpWithSlowBounce>
       <div className="flex flex-wrap justify-center gap-10 pb-[50px]">
         <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+          <Image
+            src="/images/core-competencies-icons/communication.png"
+            width={80}
+            height={80}
+          />
           <div>
             <h6 className="text-2xl font-medium">Communication</h6>
             <p className="text-sm font-medium">

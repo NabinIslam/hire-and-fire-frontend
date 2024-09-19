@@ -1,14 +1,23 @@
 "use client";
 
+import { Label, RangeSlider } from "flowbite-react";
 import { useState } from "react";
 import { Slider } from "rsuite";
 
 const RequestTalentForm = () => {
-  const [value, setValue] = useState([20, 80]);
+  const [value, setValue] = useState(50);
+  const [buttonDisable, setButtonDisable] = useState(false);
 
-  const handleChange = (e) => {
-    setValue(e.target.value);
+  const handleInputChange = (event) => {
+    setValue(event.target.value);
   };
+
+  const sliderBackground = () => {
+    return {
+      background: `linear-gradient(to right, red ${value}%, #d1d5db ${value}%)`,
+    };
+  };
+
   return (
     <form className="space-y-5" action="">
       {/* field  */}
@@ -131,19 +140,37 @@ const RequestTalentForm = () => {
         </div>
       </div>
       {/* field  */}
-      <div className="space-y-10">
+      <div className="space-y-2">
         <div>
           <label className="text-sm" htmlFor="name">
             Number of Workers*
           </label>
         </div>
         <div className="relative">
-          <div className="flex items-center justify-between text-sm">
+          <div className="flex items-center justify-between text-sm font-medium">
             <span>1</span>
             <span>50</span>
           </div>
 
-          <Slider
+          <div className="relative w-full">
+            <RangeSlider
+              onChange={handleInputChange}
+              className="range-thumb"
+              min={0}
+              max={100}
+              defaultValue={50}
+              id="numberOfWorkers"
+              style={sliderBackground()}
+            />
+            <div
+              className="absolute -translate-y-16 transform text-sm font-medium text-white"
+              style={{ left: `calc(${value}% - 12px)` }}
+            >
+              {value}
+            </div>
+          </div>
+
+          {/* <Slider
             barClassName="bg-white"
             progress
             defaultValue={25}
@@ -152,8 +179,7 @@ const RequestTalentForm = () => {
             onChange={(value) => {
               console.log(value);
             }}
-          />
-          <hr />
+          /> */}
 
           {/* <input
                   className="range-thumb w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer"
@@ -232,7 +258,10 @@ const RequestTalentForm = () => {
         <input type="checkbox" id="accept" name="accept" required />
         <label for="accept">I accept</label>
       </div>
-      <button className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-white hover:bg-transparent hover:text-white">
+      <button
+        className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-white hover:bg-transparent hover:text-white"
+        disabled={buttonDisable}
+      >
         Send
       </button>
     </form>
