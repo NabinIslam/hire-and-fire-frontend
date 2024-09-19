@@ -58,7 +58,7 @@ const LanguageTraining = () => {
       </div>
     ),
     prevArrow: (
-      <div>
+      <div className="absolute">
         <IoIosArrowBack className="rounded-full border p-2 text-4xl text-black shadow-2xl" />
       </div>
     ),

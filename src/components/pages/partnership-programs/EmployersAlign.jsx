@@ -15,7 +15,7 @@ const EmployersAlign = () => {
             Employers Who Want to Align with Us
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
           {employersWhoWanttoAlignwithUs.map((cardData) => (
             <EmployersAlignCard cardData={cardData} key={cardData.id} />
           ))}

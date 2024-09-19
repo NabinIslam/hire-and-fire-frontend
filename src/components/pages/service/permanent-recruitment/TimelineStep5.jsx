@@ -20,15 +20,16 @@ const TimelineStep5 = () => {
       control.start("hidden");
     }
   }, [control, inView]);
+
   return (
     <div className="flex h-[220px] items-center justify-between">
-      <div className="basis-[45%]">
+      <div className="basis-full lg:basis-[45%]">
         <motion.div
           ref={ref}
           variants={boxVariant}
           initial="hidden"
           animate={control}
-          className="min-h-[183px] rounded-xl bg-timeline-card-bg bg-contain bg-right bg-no-repeat px-10 pb-7 pt-5"
+          className="min-h-[183px] rounded-xl lg:bg-timeline-card-bg bg-contain bg-right bg-no-repeat lg:px-10 pb-7 pt-5 bg-none"
         >
           <div className="flex h-full items-center justify-between gap-2 rounded-full border bg-white bg-timeline-card-inner-bg bg-contain bg-left bg-no-repeat p-4 text-black shadow">
             <div>
@@ -122,7 +123,7 @@ const TimelineStep5 = () => {
           </div>
         </motion.div>
       </div>
-      <div className="flex h-full items-center justify-center">
+      <div className="-order-1 hidden h-full items-center justify-center lg:order-none lg:flex">
         <div className="relative mx-auto h-full w-1 bg-primary">
           <svg
             className="absolute left-[-15px] top-[90px]"
@@ -218,7 +219,7 @@ const TimelineStep5 = () => {
           </svg>
         </div>
       </div>
-      <div className="basis-[45%]"></div>
+      <div className="hidden lg:block lg:basis-[45%]"></div>
     </div>
   );
 };

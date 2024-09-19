@@ -47,7 +47,7 @@ const AboutUsPage = () => {
       >
         <FadeInUpWithSlowBounce>
           <svg
-          className="mx-auto"
+            className="mx-auto"
             width="1276"
             height="476"
             viewBox="0 0 1276 476"

@@ -22,8 +22,8 @@ const TimelineStep4 = () => {
   }, [control, inView]);
   return (
     <div className="flex h-[220px] items-center justify-between">
-      <div className="basis-[45%]"></div>
-      <div className="flex h-full items-center justify-center">
+      <div className="hidden lg:block lg:basis-[45%]"></div>
+      <div className="-order-1 hidden h-full items-center justify-center lg:order-none lg:flex">
         <div className="relative mx-auto h-full w-1 bg-primary">
           <svg
             className="absolute left-[-15px] top-[90px]"
@@ -119,15 +119,15 @@ const TimelineStep4 = () => {
           </svg>
         </div>
       </div>
-      <div className="basis-[45%]">
+      <div className="basis-full lg:basis-[45%]">
         <motion.div
           ref={ref}
           variants={boxVariant}
           initial="hidden"
           animate={control}
-          className="bg-timeline-card-bg-left my-4 min-h-[183px] rounded-xl bg-contain bg-left bg-no-repeat p-4"
+          className="my-4 min-h-[183px] rounded-xl lg:bg-timeline-card-bg-left bg-none bg-contain bg-left bg-no-repeat p-4"
         >
-          <div className="bg-timeline-card-inner-bg-right mx-[25px] flex h-full flex-row-reverse items-center justify-between gap-2 rounded-full border bg-white bg-contain bg-right bg-no-repeat p-4 text-black shadow">
+          <div className="mx-[25px] flex h-full flex-row-reverse items-center justify-between gap-2 rounded-full border bg-white bg-timeline-card-inner-bg-right bg-contain bg-right bg-no-repeat p-4 text-black shadow">
             <div>
               <svg
                 width="110"
