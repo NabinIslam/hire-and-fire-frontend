@@ -164,7 +164,7 @@ const RequestTalentForm = () => {
             />
             <div
               className="absolute -translate-y-16 transform text-sm font-medium text-white"
-              style={{ left: `calc(${value}% - 12px)` }}
+              style={{ left: `calc(${value}% - 8px)` }}
             >
               {value}
             </div>
