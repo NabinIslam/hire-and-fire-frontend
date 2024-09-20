@@ -1,5 +1,6 @@
 import PageBanner from "@/components/common/PageBanner";
 import KeyBenefits from "@/components/pages/service/work-permit-assistance/KeyBenefits";
+import StepByStepProcess from "@/components/pages/service/work-permit-assistance/StepByStepProcess";
 import WhyChooseUs from "@/components/pages/service/work-permit-assistance/WhyChooseUs";
 import WorkPermitAssistance from "@/components/pages/service/work-permit-assistance/WorkPermitAssistance";
 
@@ -15,6 +16,8 @@ const WorkPermitAssistancePage = () => {
       <WorkPermitAssistance />
 
       <KeyBenefits />
+
+      <StepByStepProcess />
 
       <WhyChooseUs />
     </main>

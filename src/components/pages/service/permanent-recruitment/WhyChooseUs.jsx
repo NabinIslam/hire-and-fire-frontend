@@ -4,8 +4,10 @@ const WhyChooseUs = () => {
   return (
     <section className="space-y-8 pb-[100px] pt-[50px]">
       <div className="container space-y-8">
-        <div className="mx-auto flex h-[56px] max-w-[232px] items-center justify-center rounded-full border-2 border-primary text-2xl font-medium text-primary">
-          Why Choose Us
+        <div className="flex justify-center">
+          <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">
+            Why Choose Us
+          </span>
         </div>
         <div className="mx-auto mb-16 mt-5 max-w-[607px]">
           <h2 className="text-center text-5xl font-semibold">
