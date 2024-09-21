@@ -1,4 +1,5 @@
 import PageBanner from "@/components/common/PageBanner";
+import FlightAssistanceProcess from "@/components/pages/service/visa-application-flight-assistance/FlightAssistanceProcess";
 import KeyBenefits from "@/components/pages/service/visa-application-flight-assistance/KeyBenefits";
 import VisaApplication from "@/components/pages/service/visa-application-flight-assistance/VisaApplication";
 import WhyChooseUs from "@/components/pages/service/visa-application-flight-assistance/WhyChooseUs";
@@ -15,6 +16,8 @@ const VisaApplicationFlightAssistancePage = () => {
       <VisaApplication />
 
       <KeyBenefits />
+
+      <FlightAssistanceProcess />
 
       <WhyChooseUs />
     </main>

@@ -4,13 +4,10 @@ import Button from "../../ui/Button";
 import SubServiceCard from "../../common/SubServiceCard";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import ServiceImage from "@/components/common/ServiceImage";
 
-const PermanentRecruitment = () => {
-  const t = useTranslations("PermanentRecruitment");
-
+const WorkPermitAssistance = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -32,18 +29,18 @@ const PermanentRecruitment = () => {
           className="basis-full space-y-5 text-center lg:basis-1/2 xl:text-left"
         >
           <h2 className="text-4xl font-semibold lg:text-5xl">
-            Permanent Recruitment
+            Work Permit Assistance
           </h2>
           <p className="text-sm font-medium">
-            Permanent recruitment involves the process of hiring employees for
-            long-term positions within an organization. It includes sourcing
-            candidates, conducting interviews, and selecting the best fit based
-            on skills and cultural fit. This process aims to secure talented
-            individuals who align with the company's goals and values for
-            sustained productivity and growth. Permanent recruitment strategies
-            often involve various assessments and negotiations to ensure mutual
-            satisfaction and long-term commitment from both the employer and the
-            employee.
+            Our Work Permit Assistance service streamlines the process of
+            securing work permits for your international hires. With a deep
+            understanding of local regulations and requirements, we ensure
+            compliance while handling all paperwork and communication with
+            government authorities. From initial consultation to final approval,
+            we provide personalized support, allowing you to focus on your
+            business operations. Whether you're relocating employees or hiring
+            foreign talent, our team ensures a smooth and timely process,
+            minimizing delays and ensuring a hassle-free experience.
           </p>
           <div>
             <Link href="#">
@@ -65,12 +62,13 @@ const PermanentRecruitment = () => {
           className="w-full basis-full lg:basis-1/2"
         >
           <ServiceImage
-            title1="Tailored Job Matching"
-            desc1="Customized job matching for you."
-            title2="Global Talent Pool Access"
-            desc2="Access to a global talent pool."
-            title3="Retention-Focused Hiring"
-            desc3="Global retention-focused hiring."
+            imageLink="/images/services/Work Permit Assistance.png"
+            title1="Permit Application Guidance"
+            desc1="Efficient permit application support."
+            title2="Visa & Work Permit Solutions"
+            desc2="Comprehensive visa & permit services."
+            title3="Visa & Permit Processing Aid"
+            desc3="Expert help with visa processing."
           />
           {/* <Image
             className="hidden object-contain md:block"
@@ -180,4 +178,4 @@ const PermanentRecruitment = () => {
   );
 };
 
-export default PermanentRecruitment;
+export default WorkPermitAssistance;

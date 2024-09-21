@@ -1,20 +1,20 @@
 const VisaApplicationCard = ({ cardData }) => {
-  const { icon, title, description } = cardData;
+  const { icon, stepNo, title, description } = cardData;
 
   return (
-    <div className="relative p-3">
-      <div className="flex size-full flex-col items-center justify-start gap-3 rounded-lg border border-b-8 border-b-primary bg-white bg-visa-application-card-bg bg-contain bg-top bg-no-repeat p-6 text-center shadow">
-        {icon}
-        <h5
-          className="text-2xl font-medium"
-          dangerouslySetInnerHTML={{ __html: title }}
-        />
-        <p className="text-sm font-medium">{description}</p>
+    <div className="flex flex-col items-center justify-center rounded-lg border border-b-8 border-primary">
+      <div className="-mt-5 flex items-center justify-center">
+        <span className="rounded-full bg-primary px-14 py-2 text-sm font-medium text-white">
+          Step {stepNo}
+        </span>
       </div>
-
-      <div className="absolute left-0 top-[25%] h-[155px] w-[10px] rounded-l-lg bg-primary"></div>
-
-      <div className="absolute right-0 top-[25%] h-[155px] w-[10px] rounded-r-lg bg-primary"></div>
+      <div className="space-y-4 px-6 py-4">
+        <h6 className="text-center text-2xl font-medium">{title}</h6>
+        <p className="text-center text-sm font-medium">{description}</p>
+      </div>
+      <div className="-mb-12 mt-auto flex items-center justify-center">
+        {icon}
+      </div>
     </div>
   );
 };
