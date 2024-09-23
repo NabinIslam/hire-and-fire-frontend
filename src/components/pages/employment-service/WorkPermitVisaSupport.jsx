@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
+import { Link } from "@/i18n/routing";
 
 const WorkPermitVisaSupport = () => {
   const { ref, inView } = useInView({
@@ -43,7 +44,9 @@ const WorkPermitVisaSupport = () => {
             tailored support maximizes efficiency and increases your chances of
             a successful outcome.
           </p>
-          <Button>Hire Worker</Button>
+          <Link href="/hire-worker/request-talent">
+            <Button>Hire Worker</Button>
+          </Link>
         </motion.div>
         <motion.div
           ref={ref}

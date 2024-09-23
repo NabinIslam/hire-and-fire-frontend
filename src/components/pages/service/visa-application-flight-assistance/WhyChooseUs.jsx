@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
 const WhyChooseUs = () => {
@@ -8,7 +9,7 @@ const WhyChooseUs = () => {
         <div className="relative min-h-[600px] w-full basis-full lg:basis-1/2">
           <Image
             className="h-auto w-full object-contain object-center lg:object-left"
-            src="/images/why-choose-us-visa-flight.png"
+            src="/images/why-choose-us-visa-flight-assistance.png"
             fill
           />
         </div>
@@ -360,8 +361,10 @@ const WhyChooseUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-5">
-            <Button>Hire Worker</Button>
+          <div className="flex items-center justify-start gap-5">
+            <Link href="/hire-worker/request-talent">
+              <Button>Hire Worker</Button>
+            </Link>
           </div>
         </div>
       </div>

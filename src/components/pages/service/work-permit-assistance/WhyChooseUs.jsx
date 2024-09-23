@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
 const WhyChooseUs = () => {
@@ -161,7 +162,9 @@ const WhyChooseUs = () => {
             </div>
           </div>
           <div>
-            <Button>Hire Worker</Button>
+            <Link href="/hire-worker/request-talent">
+              <Button>Hire Worker</Button>
+            </Link>
           </div>
         </div>
         <div className="relative w-full basis-full lg:basis-1/2">

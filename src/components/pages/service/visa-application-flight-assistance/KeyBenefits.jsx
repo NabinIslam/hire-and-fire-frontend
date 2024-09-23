@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
 const KeyBenefits = () => {
@@ -337,7 +338,9 @@ const KeyBenefits = () => {
             </div>
           </div>
           <div className="flex items-center gap-5">
-            <Button>Hire Worker</Button>
+            <Link href="/hire-worker/request-talent">
+              <Button>Hire Worker</Button>
+            </Link>
             <button className="flex items-center rounded-lg border-2 border-primary py-1 pr-3 text-sm font-medium text-primary">
               <svg
                 width="36"
