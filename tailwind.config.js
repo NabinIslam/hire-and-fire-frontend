@@ -57,6 +57,8 @@ module.exports = {
           "url('/images/timeline-card-inner-bg-right.png')",
         "work-permit-card-bg-blue":
           "url('/images/work-permit-card-bg-blue.png')",
+        "partnership-bg": "url('/images/partnership-bg.png')",
+        "partnership-faq-bg": "url('/images/partnership-faq-bg.png')",
       },
       keyframes: {
         pulse: {

@@ -41,9 +41,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="110"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -76,9 +76,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -111,9 +111,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="67.4698"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -168,7 +168,7 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             fill="#F90945"
           />
         </g>
-        <g clip-path="url(#clip0_910_2825)">
+        <g clipPath="url(#clip0_910_2825)">
           <path
             d="M47.6185 50.5141H51.5359V59.9063H47.6185V50.5141ZM55.4398 59.9063H59.3572V46.616H55.4398V59.9063ZM63.2613 59.9063H67.1787V42.8154H63.2613V59.9063ZM71.0827 59.9063H75V39.1123H71.0827V59.9063ZM65.5839 66.4594L64.2594 63.1429C64.2411 63.0971 64.2335 63.0478 64.2373 62.9987C64.241 62.9496 64.256 62.902 64.281 62.8596C64.3432 62.7538 64.404 62.6472 64.4632 62.5398H60.4429C58.3984 65.0285 55.3917 66.4524 52.1684 66.4524C46.2649 66.4524 41.462 61.6496 41.462 55.7462C41.462 52.9132 42.5579 50.2427 44.5479 48.2266C46.5126 46.2361 49.1259 45.108 51.9164 45.0437L55.9895 42.2259C55.8936 42.1987 55.798 42.1727 55.7031 42.148C55.6555 42.1357 55.6114 42.1126 55.5741 42.0805C55.5369 42.0485 55.5074 42.0083 55.488 41.9631L54.0799 38.6838C53.4453 38.6134 52.8073 38.5778 52.1688 38.5773C51.5378 38.5773 50.8956 38.6131 50.2573 38.6837L48.8491 41.9631C48.8298 42.0083 48.8003 42.0485 48.763 42.0805C48.7257 42.1126 48.6816 42.1357 48.634 42.148C47.3781 42.4751 46.1737 42.9749 45.0552 43.6331C45.0128 43.658 44.9652 43.6729 44.9162 43.6766C44.8671 43.6804 44.8178 43.6728 44.7721 43.6546L41.4552 42.3304C40.4571 43.1285 39.5506 44.035 38.7525 45.0331L40.0767 48.3494C40.095 48.3951 40.1025 48.4443 40.0988 48.4934C40.0951 48.5425 40.0802 48.5901 40.0552 48.6325C39.3971 49.751 38.8976 50.9556 38.571 52.2116C38.5587 52.2593 38.5356 52.3035 38.5035 52.3408C38.4714 52.3781 38.4313 52.4076 38.386 52.427L35.1062 53.8349C35.0356 54.4697 35.0002 55.108 35 55.7467C35 56.3805 35.0357 57.0224 35.1062 57.6574L38.3858 59.0653C38.431 59.0847 38.4712 59.1143 38.5032 59.1516C38.5353 59.1889 38.5584 59.2331 38.5708 59.2808C38.8974 60.5368 39.3969 61.7413 40.055 62.8598C40.0799 62.9023 40.0948 62.9498 40.0986 62.9989C40.1023 63.048 40.0947 63.0973 40.0765 63.143L38.7523 66.4594C39.5503 67.4576 40.4568 68.364 41.455 69.1621L44.7719 67.8379C44.8176 67.8196 44.8668 67.8121 44.9159 67.8158C44.965 67.8195 45.0126 67.8344 45.055 67.8593C46.1731 68.5177 47.3775 69.017 48.6334 69.343C48.6811 69.3553 48.7253 69.3784 48.7626 69.4105C48.8 69.4425 48.8295 69.4827 48.8489 69.528L50.257 72.8087C50.8918 72.8791 51.5299 72.9146 52.1686 72.9151C52.7986 72.9151 53.4406 72.8793 54.0797 72.8086L55.4878 69.528C55.5072 69.4827 55.5367 69.4425 55.5741 69.4105C55.6114 69.3784 55.6556 69.3553 55.7033 69.343C56.9592 69.0169 58.1636 68.5176 59.2818 67.8593C59.3242 67.8344 59.3718 67.8195 59.4209 67.8158C59.4699 67.8121 59.5192 67.8196 59.5649 67.8379L62.881 69.1621C63.8794 68.3641 64.7859 67.4577 65.5839 66.4594Z"
             fill="#F90945"
@@ -182,9 +182,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="110"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -217,9 +217,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -252,9 +252,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="67.4698"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -317,7 +317,7 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             fill="#F90945"
           />
         </g>
-        <g clip-path="url(#clip0_910_2832)">
+        <g clipPath="url(#clip0_910_2832)">
           <path
             d="M38.6719 59.3399H36.1719C35.5247 59.3399 35 59.8646 35 60.5118V74.5743C35 75.2214 35.5247 75.7461 36.1719 75.7461H39.8438V60.5118C39.8438 59.8646 39.3191 59.3399 38.6719 59.3399ZM70.2348 60.1218L65.113 63.7081C65.2051 64.094 65.2517 64.4893 65.2519 64.8861C65.2519 67.6909 62.978 69.9646 60.1731 69.9644L52.9966 69.9639C52.3495 69.9638 51.8248 69.4391 51.8248 68.7919C51.8249 68.1447 52.3496 67.62 52.9968 67.6201L60.1733 67.6207L60.1734 67.6205C61.6837 67.6206 62.908 66.3963 62.9081 64.886C62.9081 63.3757 61.6838 62.1514 60.1736 62.1514H53.7473C52.7459 62.1514 51.7705 61.8639 50.9106 61.3507C48.6419 59.9966 45.8675 59.8702 43.4844 61.0135L42.1875 61.6356V75.7461H58.3659C61.0919 75.7461 63.6788 74.7093 65.6501 72.8268L74.0632 64.7924C74.3593 64.5096 74.5949 64.1698 74.7559 63.7933C74.917 63.4169 75 63.0118 75 62.6024C75 60.1522 72.2419 58.7164 70.2348 60.1218ZM69.0625 43.5586C68.4153 43.5586 67.8906 44.0833 67.8906 44.7305C67.8906 45.3777 68.4153 45.9024 69.0625 45.9024H71.4062C72.0534 45.9024 72.5781 45.3777 72.5781 44.7305C72.5781 44.0833 72.0534 43.5586 71.4062 43.5586H69.0625ZM68.8672 40.6672L70.8969 39.4954C71.4573 39.1718 71.6494 38.455 71.3258 37.8946C71.0022 37.3341 70.2855 37.1421 69.725 37.4657L67.6953 38.6375C67.1348 38.9611 66.9428 39.6779 67.2664 40.2383C67.59 40.7988 68.3067 40.9908 68.8672 40.6672ZM67.6953 50.8235L69.725 51.9954C70.2855 52.3189 71.0022 52.1269 71.3258 51.5664C71.6494 51.006 71.4573 50.2893 70.8969 49.9657L68.8672 48.7938C68.3067 48.4702 67.59 48.6622 67.2664 49.2227C66.9428 49.7832 67.1348 50.4999 67.6953 50.8235ZM44.0625 45.9024C44.7097 45.9024 45.2344 45.3777 45.2344 44.7305C45.2344 44.0833 44.7097 43.5586 44.0625 43.5586H41.7188C41.0716 43.5586 40.5469 44.0833 40.5469 44.7305C40.5469 45.3777 41.0716 45.9024 41.7188 45.9024H44.0625ZM42.2281 39.4954L44.2578 40.6672C44.8183 40.9908 45.535 40.7988 45.8586 40.2383C46.1822 39.6779 45.9902 38.9611 45.4297 38.6375L43.4 37.4657C42.8395 37.1421 42.1228 37.3341 41.7992 37.8946C41.4756 38.455 41.6676 39.1718 42.2281 39.4954ZM43.4 51.9954L45.4297 50.8235C45.9902 50.4999 46.1822 49.7832 45.8586 49.2227C45.535 48.6622 44.8183 48.4702 44.2578 48.7938L42.2281 49.9657C41.6677 50.2893 41.4756 51.006 41.7992 51.5664C42.1228 52.1269 42.8395 52.3189 43.4 51.9954Z"
             fill="#F90945"
@@ -335,9 +335,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="110"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -370,9 +370,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -405,9 +405,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="67.4698"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -470,10 +470,10 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             fill="#F90945"
           />
         </g>
-        <g clip-path="url(#clip0_910_2838)">
+        <g clipPath="url(#clip0_910_2838)">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M46.2656 44.8946C46.375 45.2774 46.5391 45.6367 46.75 45.9571L42.25 48.0117C42.1406 47.6289 41.9766 47.2696 41.7656 46.9492L46.2656 44.8946ZM57.8203 39.6055L53.3203 41.6602C53.5312 41.9883 53.7031 42.3477 53.8125 42.7227L58.3125 40.668C58.0938 40.3477 57.9297 39.9883 57.8203 39.6055ZM41.2266 49.0977C41.1328 45.4805 35.8281 45.4805 35.7344 49.0977C35.8203 52.7149 41.1406 52.7149 41.2266 49.0977ZM40.6562 57.1602H36.3047C36.1016 57.1602 35.9219 57.2383 35.7891 57.3789C35.6563 57.5117 35.5703 57.6914 35.5703 57.8946V66.5508H41.3828V57.8867C41.3828 57.4883 41.0547 57.1602 40.6562 57.1602ZM52.2109 51.8789H47.8594C47.4609 51.8789 47.1328 52.2071 47.1328 52.6055V66.543H52.6875C52.5703 65.3008 52.6562 63.9805 52.9453 62.7852V52.6055C52.9375 52.2071 52.6172 51.8789 52.2109 51.8789ZM51.9766 41.8711C49.3516 39.3789 45.5938 43.1289 48.0938 45.7539C50.7188 48.2461 54.4688 44.4961 51.9766 41.8711ZM64.3359 47.3242C64.3359 46.9258 64.0078 46.5977 63.6094 46.5977H59.2578C58.8516 46.5977 58.5313 46.9258 58.5313 47.3242V55.418C60.2422 54.4571 62.2578 53.9258 64.3438 53.9649V47.3242H64.3359ZM63.5313 36.5899C60.9063 34.0977 57.1484 37.8477 59.6484 40.4727C62.2969 42.9571 66.0156 39.2305 63.5313 36.5899ZM64.125 73.1446C59.875 73.1446 56.4297 69.6992 56.4297 65.4492C56.375 58.6289 64.8594 55.1992 69.5703 60.0039C74.375 64.7149 70.9453 73.1992 64.125 73.1446ZM66.1797 61.3477C66.2344 59.668 64.0156 58.7774 62.8906 59.9805C62.0625 60.6524 62.375 62.4102 62.3203 63.3477C61.4063 63.4024 59.625 63.0899 58.9609 63.9102C57.75 65.0352 58.6484 67.2617 60.3203 67.1992H64.25C64.7812 67.1992 65.2656 66.9805 65.6172 66.6367C65.9688 66.2852 66.1797 65.8086 66.1797 65.2696V61.3477ZM63.4922 61.3477V63.9336C63.4922 64.2617 63.2266 64.5196 62.9063 64.5196H60.3203C60.1094 64.5196 59.9219 64.6055 59.7891 64.7383C59.3203 65.1758 59.6641 66.0508 60.3203 66.0196H64.25C64.4609 66.0196 64.6484 65.9336 64.7813 65.8008C64.9141 65.668 65 65.4805 65 65.2696V61.3399C65 60.3633 63.5 60.3555 63.4922 61.3477ZM71.4141 72.7461C67.7109 76.7227 60.5312 76.7227 56.8281 72.7461C50.3906 66.3867 54.9531 55.1133 64.1172 55.1446C73.2656 55.0977 77.8672 66.3711 71.4141 72.7461ZM64.125 56.5742C56.2656 56.5117 52.3047 66.293 57.8516 71.7227C60.9922 75.1367 67.2578 75.1367 70.3984 71.7227C75.9453 66.3008 71.9844 56.5196 64.125 56.5742Z"
             fill="#F90945"
           />
@@ -486,9 +486,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="110"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -521,9 +521,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -556,9 +556,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="67.4698"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -621,10 +621,10 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             fill="#F90945"
           />
         </g>
-        <g clip-path="url(#clip0_910_2844)">
+        <g clipPath="url(#clip0_910_2844)">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M57.722 44.3398C58.929 44.6273 60.0823 45.1055 61.1387 45.7563L63.3588 44.7702L65.9755 47.3869L64.9897 49.6064C65.6407 50.663 66.1189 51.8166 66.4065 53.0239L68.6715 53.8958V57.5963L66.4059 58.4684C66.1184 59.6754 65.6402 60.8287 64.9894 61.8851L65.9755 64.1052L63.3588 66.7219L61.1394 65.7361C60.0827 66.3871 58.9291 66.8653 57.7218 67.1529L56.8501 69.4179H53.1495L52.2774 67.1523C51.0705 66.8648 49.9171 66.3866 48.8608 65.7358L46.6406 66.7219L44.0239 64.1053L45.0097 61.8858C44.3587 60.8292 43.8805 59.6755 43.593 58.4683L41.3279 57.5964V53.8958L43.5933 53.0239C43.8808 51.8168 44.3589 50.6633 45.0098 49.6069L44.0239 47.387L46.6405 44.7703L48.8607 45.7564C49.917 45.1056 51.0704 44.6274 52.2773 44.3399L53.1494 42.0743H56.8499L57.722 44.3398ZM54.9998 48.1031C50.7788 48.1031 47.3569 51.5251 47.3569 55.7461C47.3569 59.967 50.7788 63.389 54.9998 63.389C59.2207 63.389 62.6427 59.967 62.6427 55.7461C62.6427 51.5251 59.2207 48.1031 54.9998 48.1031ZM54.9998 49.3531C51.469 49.3531 48.6068 52.2152 48.6068 55.7461C48.6068 59.2769 51.4689 62.139 54.9998 62.139C58.5305 62.139 61.3927 59.2769 61.3927 55.7461C61.3927 52.2153 58.5305 49.3531 54.9998 49.3531ZM54.078 56.3651L52.5098 54.797C52.1034 54.3906 51.4441 54.3906 51.0377 54.797C50.6313 55.2034 50.6313 55.8627 51.0377 56.269L53.3441 58.5754C53.7505 58.9819 54.4098 58.9819 54.8162 58.5754C56.2063 57.1852 57.5808 55.7794 58.9646 54.3828C59.3681 53.9756 59.3669 53.3184 58.9601 52.914C58.5533 52.5094 57.8944 52.5105 57.4905 52.9185L54.078 56.3651ZM55.0515 73.8719C46.1593 73.9038 38.4981 67.4348 37.0969 58.5783C35.7964 50.3591 40.3181 42.2603 47.9437 39.0504L47.0887 40.6625C47.0505 40.7349 47.027 40.8142 47.0194 40.8957C47.0119 40.9773 47.0205 41.0595 47.0448 41.1377C47.0691 41.2159 47.1085 41.2886 47.1608 41.3516C47.2132 41.4146 47.2774 41.4666 47.3499 41.5047C47.4224 41.5429 47.5016 41.5664 47.5832 41.574C47.6647 41.5815 47.7469 41.5729 47.8252 41.5486C47.9034 41.5243 47.976 41.4849 48.039 41.4326C48.102 41.3802 48.154 41.316 48.1922 41.2435L49.7987 38.2146C50.0084 37.859 49.819 37.3935 49.4125 37.2918L46.0576 36.4508C45.9781 36.4309 45.8954 36.4268 45.8143 36.4389C45.7333 36.4509 45.6554 36.4789 45.5851 36.521C45.5148 36.5632 45.4535 36.6188 45.4048 36.6846C45.356 36.7505 45.3206 36.8253 45.3008 36.9048C45.2809 36.9843 45.2768 37.067 45.2889 37.148C45.301 37.2291 45.3289 37.307 45.371 37.3773C45.4132 37.4476 45.4688 37.5088 45.5346 37.5576C45.6005 37.6064 45.6753 37.6417 45.7548 37.6616L47.1808 38.0192C39.1831 41.5412 34.493 50.0936 35.8664 58.7736C37.3644 68.2422 45.5451 75.1511 55.0515 75.117C55.2146 75.1138 55.3698 75.0469 55.484 74.9305C55.5982 74.8141 55.6621 74.6575 55.6621 74.4945C55.6621 74.3314 55.5982 74.1749 55.484 74.0585C55.3698 73.9421 55.2146 73.8751 55.0515 73.8719ZM64.2446 73.8304L62.8172 73.4725C70.8502 69.9409 75.509 61.4146 74.1331 52.7184C72.6347 43.2483 64.4564 36.3403 54.9479 36.3751C54.7845 36.3777 54.6286 36.4445 54.514 36.5609C54.3993 36.6774 54.3351 36.8343 54.3351 36.9977C54.3351 37.1611 54.3993 37.318 54.514 37.4345C54.6286 37.551 54.7845 37.6177 54.9479 37.6203C63.8437 37.5877 71.5008 44.0538 72.9026 52.9139C74.2058 61.1506 69.7148 69.2165 62.0546 72.4438L62.9108 70.8297C62.9489 70.7572 62.9725 70.6779 62.98 70.5964C62.9875 70.5149 62.9789 70.4326 62.9546 70.3544C62.9304 70.2762 62.8909 70.2035 62.8386 70.1406C62.7862 70.0776 62.722 70.0255 62.6495 69.9874C62.5771 69.9492 62.4978 69.9257 62.4163 69.9182C62.3347 69.9107 62.2525 69.9193 62.1743 69.9435C62.096 69.9678 62.0234 70.0072 61.9604 70.0596C61.8974 70.1119 61.8454 70.1762 61.8072 70.2486L60.2006 73.2776C59.991 73.6332 60.1803 74.0986 60.5869 74.2003L63.9419 75.0415C64.0214 75.0614 64.104 75.0655 64.1851 75.0534C64.2661 75.0413 64.344 75.0134 64.4143 74.9713C64.4846 74.9291 64.5459 74.8735 64.5947 74.8077C64.6435 74.7418 64.6788 74.667 64.6987 74.5875C64.7186 74.508 64.7226 74.4253 64.7106 74.3442C64.6985 74.2631 64.6706 74.1852 64.6284 74.1149C64.5863 74.0446 64.5307 73.9833 64.4648 73.9344C64.399 73.8856 64.3241 73.8503 64.2446 73.8304Z"
             fill="#F90945"
           />
@@ -637,9 +637,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="110"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -672,9 +672,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -707,9 +707,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="67.4698"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -788,9 +788,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="110"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -823,9 +823,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -858,9 +858,9 @@ export const whyChooseUsForVisaApplicationFlightAssistance = [
             width="110"
             height="67.4698"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"

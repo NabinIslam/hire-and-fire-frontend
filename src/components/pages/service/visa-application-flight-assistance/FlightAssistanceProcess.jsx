@@ -3,7 +3,7 @@ import VisaApplicationCard from "./VisaApplicationCard";
 
 const FlightAssistanceProcess = () => {
   return (
-    <section className="pt-[50px] pb-[100px]">
+    <section className="pb-[100px] pt-[50px]">
       <div className="container">
         <div className="flex items-center justify-center">
           <span className="rounded-full border-2 border-primary px-5 py-3 text-center text-2xl font-medium text-primary">

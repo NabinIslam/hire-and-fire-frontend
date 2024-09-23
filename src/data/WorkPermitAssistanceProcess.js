@@ -24,7 +24,7 @@ export const WorkPermitAssistanceProcess = [
             r="39.5"
             transform="rotate(90 45 45.9453)"
             className="stroke-secondary group-hover:stroke-primary"
-            stroke-dasharray="2 2"
+            strokeDasharray="2 2"
           />
         </g>
         <g filter="url(#filter1_d_1075_3069)">
@@ -42,7 +42,7 @@ export const WorkPermitAssistanceProcess = [
             className="fill-secondary group-hover:fill-primary"
           />
         </g>
-        <g clip-path="url(#clip0_1075_3069)">
+        <g clipPath="url(#clip0_1075_3069)">
           <path
             d="M34.6815 47.631C34.6815 45.9747 36.0254 44.6308 37.6816 44.6308C39.3379 44.6308 40.6801 45.9747 40.6801 47.631C40.6801 49.3885 39.7271 51.6173 37.6816 51.6173C35.5733 51.6173 34.6815 49.2873 34.6815 47.631ZM40.0239 52.5423H35.3377C33.5697 52.5423 32.1211 53.888 32.1211 55.5303V59.1484C32.1211 59.8797 32.718 60.4766 33.4493 60.4766H41.9123C42.6436 60.4766 43.2405 59.8797 43.2405 59.1484L43.2405 55.5303C43.2405 53.888 41.7937 52.5423 40.0239 52.5423H40.0239ZM49.3159 47.631C49.3159 49.2873 50.2078 51.6173 52.3161 51.6173C54.3616 51.6173 55.3145 49.3885 55.3145 47.631C55.3145 45.9747 53.9723 44.6308 52.3161 44.6308C50.6598 44.6308 49.3159 45.9747 49.3159 47.631ZM54.6583 52.5423H49.9721C48.2041 52.5423 46.7555 53.888 46.7555 55.5303L46.7555 59.1484C46.7555 59.8797 47.3524 60.4766 48.0837 60.4766H56.5468C57.278 60.4766 57.875 59.8797 57.875 59.1484V55.5303C57.875 53.888 56.4281 52.5423 54.6584 52.5423H54.6583ZM47.3385 40.2728C45.5862 42.0251 42.8931 42.2625 40.8861 40.9849L38.9488 41.3235L39.2874 39.3862C38.0098 37.3791 38.2472 34.6861 39.9995 32.9338C42.0258 30.9075 45.3122 30.9075 47.3385 32.9338C49.3648 34.9619 49.3648 38.2465 47.3385 40.2729L47.3385 40.2728ZM42.2735 36.6041C42.2735 36.2172 41.958 35.9001 41.5712 35.9001C41.1844 35.9001 40.8689 36.2172 40.8689 36.6041C40.8689 36.9909 41.1844 37.3064 41.5712 37.3064C41.958 37.3064 42.2735 36.9909 42.2735 36.6041ZM44.372 36.6041C44.372 36.2172 44.0549 35.9001 43.6681 35.9001C43.2813 35.9001 42.9658 36.2172 42.9658 36.6041C42.9658 36.9909 43.2813 37.3064 43.6681 37.3064C44.0549 37.3064 44.372 36.9909 44.372 36.6041ZM46.469 36.6041C46.469 36.2172 46.1535 35.9001 45.7667 35.9001C45.3799 35.9001 45.0628 36.2172 45.0628 36.6041C45.0628 36.9909 45.3782 37.3064 45.7667 37.3064C46.1552 37.3064 46.469 36.9909 46.469 36.6041ZM51.0473 42.6394L50.7087 40.7021C51.9862 38.695 51.7506 36.002 49.9983 34.2497C49.911 34.1627 49.8207 34.0789 49.7275 33.9982C50.7588 36.4058 50.294 39.3061 48.3329 41.2671C47.4765 42.1234 46.4263 42.7153 45.2813 43.0018C46.5789 43.2677 47.9584 43.0344 49.1117 42.3008L51.0472 42.6394H51.0473Z"
             className="fill-secondary group-hover:fill-primary"
@@ -56,9 +56,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -91,9 +91,9 @@ export const WorkPermitAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -126,9 +126,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="50"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -194,7 +194,7 @@ export const WorkPermitAssistanceProcess = [
             r="39.5"
             transform="rotate(90 45 45.9453)"
             className="stroke-secondary group-hover:stroke-primary"
-            stroke-dasharray="2 2"
+            strokeDasharray="2 2"
           />
         </g>
         <g filter="url(#filter1_d_1075_3067)">
@@ -224,9 +224,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -259,9 +259,9 @@ export const WorkPermitAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -294,9 +294,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="50"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -354,7 +354,7 @@ export const WorkPermitAssistanceProcess = [
             r="39.5"
             transform="rotate(90 45 45.9453)"
             className="stroke-secondary group-hover:stroke-primary"
-            stroke-dasharray="2 2"
+            strokeDasharray="2 2"
           />
         </g>
         <g filter="url(#filter1_d_1075_3067)">
@@ -384,9 +384,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -419,9 +419,9 @@ export const WorkPermitAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -454,9 +454,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="50"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -514,7 +514,7 @@ export const WorkPermitAssistanceProcess = [
             r="39.5"
             transform="rotate(90 45 45.9453)"
             className="stroke-secondary group-hover:stroke-primary"
-            stroke-dasharray="2 2"
+            strokeDasharray="2 2"
           />
         </g>
         <g filter="url(#filter1_d_1075_3070)">
@@ -552,9 +552,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -587,9 +587,9 @@ export const WorkPermitAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -622,9 +622,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="50"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -682,7 +682,7 @@ export const WorkPermitAssistanceProcess = [
             r="39.5"
             transform="rotate(90 45 45.9453)"
             className="stroke-secondary group-hover:stroke-primary"
-            stroke-dasharray="2 2"
+            strokeDasharray="2 2"
           />
         </g>
         <g filter="url(#filter1_d_1201_2601)">
@@ -700,7 +700,7 @@ export const WorkPermitAssistanceProcess = [
             className="fill-secondary group-hover:fill-primary"
           />
         </g>
-        <g clip-path="url(#clip0_1201_2601)">
+        <g clipPath="url(#clip0_1201_2601)">
           <path
             d="M46.0764 54.9673C46.0764 54.4725 46.123 53.9885 46.2111 53.5189H34.6446C34.1592 53.5189 33.7656 53.1254 33.7656 52.64C33.7656 52.1546 34.1592 51.7611 34.6446 51.7611H46.7624C47.101 51.0094 47.5556 50.3155 48.1096 49.705C48.0179 49.7368 47.9214 49.7531 47.8243 49.7533H34.6446C33.4843 49.7123 33.4763 48.0399 34.6446 47.9955H47.8242C48.4161 47.9842 48.8574 48.6057 48.6548 49.1598C49.7067 48.2058 51.018 47.5331 52.4688 47.261V37.5775C52.4688 36.0169 51.1976 34.8158 49.707 34.8158H47.2454C47.1292 36.8428 45.4439 38.4564 43.3883 38.4564H39.0805C37.0249 38.4564 35.3396 36.8428 35.2234 34.8158H32.7618C31.2711 34.8158 30 36.017 30 37.5775V58.2885C30 59.8457 31.2686 61.0502 32.7618 61.0502H48.9758C47.2079 59.6113 46.0764 57.4191 46.0764 54.9673ZM34.6446 40.4642H47.8243C48.3097 40.4642 48.7032 40.8577 48.7032 41.3431C48.7032 41.8285 48.3097 42.222 47.8243 42.222H34.6446C33.4837 42.1807 33.4768 40.5085 34.6446 40.4642ZM34.6446 44.2299H47.8243C48.3097 44.2299 48.7032 44.6234 48.7032 45.1088C48.7032 45.5942 48.3097 45.9877 47.8243 45.9877H34.6446C33.4837 45.9464 33.4768 44.2741 34.6446 44.2299ZM39.3516 57.2846H34.6446C33.4812 57.2421 33.4791 55.5701 34.6446 55.5268H39.3516C39.837 55.5268 40.2305 55.9203 40.2305 56.4057C40.2305 56.8911 39.837 57.2846 39.3516 57.2846Z"
             className="fill-secondary group-hover:fill-primary"
@@ -718,9 +718,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -753,9 +753,9 @@ export const WorkPermitAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -788,9 +788,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="50"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -856,7 +856,7 @@ export const WorkPermitAssistanceProcess = [
             r="39.5"
             transform="rotate(90 45 45.9453)"
             className="stroke-secondary group-hover:stroke-primary"
-            stroke-dasharray="2 2"
+            strokeDasharray="2 2"
           />
         </g>
         <g filter="url(#filter1_d_1075_3076)">
@@ -874,7 +874,7 @@ export const WorkPermitAssistanceProcess = [
             className="fill-secondary group-hover:fill-primary"
           />
         </g>
-        <g clip-path="url(#clip0_1075_3076)">
+        <g clipPath="url(#clip0_1075_3076)">
           <path
             d="M46.848 52.0509L53.0154 57.2267C53.217 57.3964 53.5192 57.3699 53.6889 57.1684L54.0124 56.7812L47.1132 50.9903L46.7897 51.3774C46.62 51.579 46.6465 51.8812 46.848 52.0509ZM49.8813 48.2752C49.4041 47.8721 48.6882 47.9358 48.2851 48.4131L47.2139 49.6858L55.2798 56.4524L56.351 55.1797C56.7541 54.7024 56.6904 53.9865 56.2132 53.5835L49.8813 48.2752ZM59.4109 42.8024C58.2707 42.0441 56.701 42.1714 55.6988 43.1047C55.2041 43.5648 54.8774 44.177 54.7707 44.8441C54.5056 46.4987 53.9063 48.079 52.8298 49.3623L52.8245 49.3676L54.6276 50.879C55.7571 49.6274 57.226 48.7418 58.817 48.1426C59.2836 47.9676 59.7132 47.6706 60.0579 47.257C61.2033 45.8994 60.9329 43.8206 59.4109 42.8024ZM29.3321 59.2684V30.7487H29.3268C28.7223 30.7487 28.2344 31.2365 28.2344 31.8411V61.4267C28.2344 62.0312 28.7223 62.5191 29.3268 62.5191H51.1382C51.7427 62.5191 52.2306 62.0312 52.2306 61.4267V61.4161H31.4904C31.2076 61.417 30.9274 61.3621 30.6659 61.2547C30.4043 61.1472 30.1665 60.9892 29.966 60.7897C29.7655 60.5902 29.6064 60.3532 29.4976 60.0921C29.3888 59.8311 29.3326 59.5512 29.3321 59.2684ZM42.3935 40.1085C44.7904 40.1085 46.7366 38.157 46.7366 35.7653C46.7366 33.3684 44.7851 31.4221 42.3935 31.4221C39.9965 31.4221 38.0503 33.3737 38.0503 35.7653C38.0503 38.157 39.9965 40.1085 42.3935 40.1085ZM39.9859 35.6593C40.035 35.6101 40.0932 35.5711 40.1574 35.5445C40.2215 35.5179 40.2903 35.5042 40.3598 35.5042C40.4292 35.5042 40.498 35.5179 40.5621 35.5445C40.6263 35.5711 40.6846 35.6101 40.7336 35.6593L41.5344 36.46L44.0533 33.9411C44.1024 33.892 44.1607 33.853 44.2248 33.8265C44.289 33.7999 44.3577 33.7862 44.4272 33.7862C44.4966 33.7862 44.5654 33.7999 44.6295 33.8265C44.6937 33.853 44.7519 33.892 44.801 33.9411C44.8501 33.9902 44.8891 34.0485 44.9157 34.1126C44.9422 34.1768 44.9559 34.2455 44.9559 34.3149C44.9559 34.3844 44.9422 34.4531 44.9157 34.5173C44.8891 34.5814 44.8501 34.6397 44.801 34.6888L41.9109 37.579C41.8048 37.685 41.6723 37.7327 41.5344 37.7327C41.3965 37.7327 41.2639 37.6797 41.1579 37.579L39.9806 36.4017C39.8832 36.3023 39.8291 36.1685 39.8301 36.0294C39.8311 35.8903 39.8871 35.7572 39.9859 35.6593Z"
             className="fill-secondary group-hover:fill-primary"
@@ -892,9 +892,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -927,9 +927,9 @@ export const WorkPermitAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -962,9 +962,9 @@ export const WorkPermitAssistanceProcess = [
             width="90"
             height="50"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"

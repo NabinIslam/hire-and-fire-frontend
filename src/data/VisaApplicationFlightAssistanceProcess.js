@@ -64,9 +64,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -99,9 +99,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57"
             height="26.2732"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -134,9 +134,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.2031"
             height="57.0048"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -169,9 +169,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.5469"
             height="56.9725"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -204,9 +204,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57.0215"
             height="25.8029"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -239,9 +239,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -343,9 +343,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -378,9 +378,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57"
             height="26.2732"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -413,9 +413,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.2031"
             height="57.0048"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -448,9 +448,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.5469"
             height="56.9725"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -483,9 +483,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57.0215"
             height="25.8029"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -518,9 +518,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -614,9 +614,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -649,9 +649,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57"
             height="26.2732"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -684,9 +684,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.2031"
             height="57.0048"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -719,9 +719,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.5469"
             height="56.9725"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -754,9 +754,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57.0215"
             height="25.8029"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -789,9 +789,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -881,9 +881,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -916,9 +916,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57"
             height="26.2732"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -951,9 +951,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.2031"
             height="57.0048"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -986,9 +986,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="56.9766"
             height="26.5162"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1021,9 +1021,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.5469"
             height="56.9725"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1056,9 +1056,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1133,8 +1133,8 @@ export const VisaApplicationFlightAssistanceProcess = [
           <circle cx="45" cy="45" r="30" fill="#FBFBFB" />
         </g>
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M40.3047 39.4844C40.3047 36.464 42.753 34.0156 45.7734 34.0156C48.7938 34.0156 51.2422 36.464 51.2422 39.4844C51.2422 42.5048 48.7938 44.9531 45.7734 44.9531C42.753 44.9531 40.3047 42.5048 40.3047 39.4844ZM40.0887 36.2031C39.5119 37.2003 39.2091 38.3324 39.2109 39.4844C39.2109 43.1088 42.149 46.0469 45.7734 46.0469C49.3979 46.0469 52.3359 43.1088 52.3359 39.4844C52.3378 38.3324 52.035 37.2003 51.4582 36.2031H55.6172C56.0523 36.2031 56.4696 36.376 56.7773 36.6837C57.085 36.9913 57.2578 37.4086 57.2578 37.8438V48.5078H33.7422V37.8438C33.7422 37.4086 33.915 36.9913 34.2227 36.6837C34.5304 36.376 34.9477 36.2031 35.3828 36.2031H40.0887ZM48.9554 39.3127C49.0816 39.2445 49.1759 39.1295 49.2181 38.9924C49.2603 38.8554 49.247 38.7072 49.181 38.5799C49.115 38.4526 49.0017 38.3563 48.8654 38.3117C48.7291 38.2672 48.5807 38.2779 48.4523 38.3417L46.9139 39.1388L45.004 37.2832C44.8997 37.1838 44.7603 37.1296 44.6163 37.1324C44.4722 37.1352 44.3351 37.1947 44.2346 37.298C44.1342 37.4013 44.0786 37.5401 44.0799 37.6841C44.0812 37.8282 44.1393 37.966 44.2416 38.0674L45.8905 39.6692L44.167 40.562L43.3535 39.7718C43.2488 39.6743 43.1102 39.6217 42.9672 39.6253C42.8242 39.6288 42.6883 39.6883 42.5886 39.7908C42.4889 39.8934 42.4334 40.031 42.4339 40.174C42.4345 40.317 42.491 40.4541 42.5914 40.556L43.5463 41.4837C43.6698 41.6037 43.8278 41.6817 43.9981 41.7069C44.1684 41.732 44.3423 41.7029 44.4951 41.6238L48.9554 39.3127ZM47.9609 53.1562H43.0391V56.4375H40.3047C40.0146 56.4375 39.7364 56.5527 39.5313 56.7579C39.3262 56.963 39.2109 57.2412 39.2109 57.5312C39.2109 57.8213 39.3262 58.0995 39.5313 58.3046C39.7364 58.5098 40.0146 58.625 40.3047 58.625H50.6953C50.9854 58.625 51.2636 58.5098 51.4687 58.3046C51.6738 58.0995 51.7891 57.8213 51.7891 57.5312C51.7891 57.2412 51.6738 56.963 51.4687 56.7579C51.2636 56.5527 50.9854 56.4375 50.6953 56.4375H47.9609V53.1562ZM55.6172 52.0625C56.0523 52.0625 56.4696 51.8896 56.7773 51.582C57.085 51.2743 57.2578 50.857 57.2578 50.4219V49.6016H33.7422V50.4219C33.7422 50.857 33.915 51.2743 34.2227 51.582C34.5304 51.8896 34.9477 52.0625 35.3828 52.0625H55.6172Z"
           fill="#F90945"
         />
@@ -1146,9 +1146,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1181,9 +1181,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57"
             height="26.2732"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1216,9 +1216,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.2031"
             height="57.0048"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1251,9 +1251,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.5469"
             height="56.9725"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1286,9 +1286,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57.0215"
             height="25.8029"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1321,9 +1321,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1399,8 +1399,8 @@ export const VisaApplicationFlightAssistanceProcess = [
           <circle cx="45" cy="45" r="30" fill="#FBFBFB" />
         </g>
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M52.7856 49.387L50.8114 54.6767C50.5396 55.405 50.1149 56.0749 49.5938 55.523C49.4388 55.3588 49.307 55.1385 49.3316 54.8965L49.7669 50.6037C49.768 50.5915 49.7724 50.5799 49.7796 50.5701C49.7867 50.5603 49.7965 50.5526 49.8077 50.5479L52.6947 49.3005C52.7069 49.2951 52.7205 49.2934 52.7337 49.2958C52.7469 49.2981 52.7591 49.3043 52.7687 49.3137C52.789 49.3329 52.7953 49.3608 52.7856 49.387ZM49.0419 60.2447V61.7152C49.0423 61.7503 49.0564 61.7839 49.0813 61.8088C49.1061 61.8336 49.1397 61.8477 49.1749 61.8481H50.8146C50.8497 61.8477 50.8833 61.8335 50.9081 61.8087C50.933 61.7839 50.9471 61.7503 50.9475 61.7152V60.2447C50.9475 60.2266 50.9403 60.2093 50.9275 60.1965C50.9148 60.1837 50.8974 60.1765 50.8794 60.1765H49.1102C49.0921 60.1765 49.0748 60.1837 49.062 60.1965C49.0492 60.2093 49.042 60.2266 49.0419 60.2447ZM40.0515 60.2447V61.7152C40.0515 61.7874 40.1123 61.8481 40.1845 61.8481H41.8242C41.8594 61.8477 41.8929 61.8335 41.9178 61.8087C41.9426 61.7839 41.9567 61.7503 41.9572 61.7152V60.2447C41.9571 60.2266 41.9499 60.2093 41.9371 60.1965C41.9244 60.1837 41.9071 60.1765 41.889 60.1765H40.1198C40.1017 60.1765 40.0844 60.1837 40.0716 60.1965C40.0588 60.2093 40.0516 60.2266 40.0515 60.2447ZM62.1851 38.3249C61.2666 36.1118 56.2042 36.8625 53.6914 37.3747C53.6777 37.3774 53.6652 37.3842 53.6556 37.3943C53.646 37.4044 53.6397 37.4172 53.6377 37.431C53.6354 37.4447 53.6374 37.4589 53.6435 37.4714C53.6496 37.484 53.6595 37.4943 53.6717 37.501C53.9463 37.6553 54.1895 37.8599 54.3886 38.104C54.3962 38.1137 54.4064 38.121 54.4179 38.1252C54.4295 38.1294 54.4419 38.1304 54.454 38.128C56.0692 37.8259 57.4876 37.6834 58.6321 37.7113C61.8017 37.7887 62.274 39.0103 60.0845 41.3009C59.4857 41.9273 58.7101 42.5947 57.7842 43.2831C57.7744 43.2901 57.7667 43.2997 57.762 43.3108C57.7572 43.3218 57.7555 43.334 57.7571 43.3459C57.7584 43.3579 57.7629 43.3693 57.7702 43.3789C57.7774 43.3886 57.7871 43.3961 57.7983 43.4006L58.5938 43.7367C58.617 43.7465 58.6419 43.7434 58.6619 43.728C59.477 43.1011 60.1712 42.4904 60.7254 41.9106C62.0311 40.5447 62.5887 39.2975 62.1851 38.3249ZM57.008 43.8376C56.6948 43.7437 56.3779 43.7013 56.0611 43.7104C55.3235 43.7315 54.849 44.0001 54.2292 44.3122C54.2189 44.3176 54.2073 44.3202 54.1956 44.3197C54.1839 44.3192 54.1726 44.3156 54.1628 44.3093C54.1528 44.3033 54.1445 44.2948 54.1388 44.2846C54.1331 44.2744 54.1302 44.2629 54.1304 44.2512V40.288C54.1304 38.9174 53.0107 37.7977 51.6401 37.7977H39.359C37.9885 37.7977 36.8688 38.9174 36.8688 40.288V52.254C36.8689 52.2699 36.8634 52.2853 36.8533 52.2975C36.8433 52.3098 36.8292 52.3181 36.8136 52.321C35.7414 52.5298 34.7501 52.6707 33.8614 52.7403C31.5257 52.9232 29.9661 52.641 29.6316 51.8352C29.3541 51.1667 29.9486 50.1352 31.1998 48.9103C32.3416 47.7923 34.0093 46.5602 36.0622 45.3203C36.0724 45.3144 36.0808 45.3059 36.0866 45.2956C36.0924 45.2853 36.0954 45.2737 36.0952 45.262V44.3912C36.0952 44.366 36.0827 44.3445 36.0608 44.332C36.039 44.3195 36.014 44.3198 35.9923 44.3326C33.7023 45.6859 31.8402 47.0456 30.5796 48.2798C29.0587 49.769 28.3815 51.1325 28.814 52.1747C29.3143 53.3802 31.1929 53.8379 33.9272 53.6237C36.0282 53.4592 38.9538 52.7174 41.6851 51.869C41.7403 51.8518 41.7966 51.838 41.8505 51.8174C42.723 51.4833 40.9074 49.1731 40.4524 48.4365C40.4404 48.417 40.4387 48.395 40.4477 48.374C40.4566 48.353 40.4736 48.3389 40.4959 48.334C40.5187 48.3291 40.5431 48.3312 40.5718 48.3462L43.2459 49.7449C43.8402 50.0557 44.452 50.2542 45.05 49.9518L55.1732 44.8314C55.767 44.531 56.39 44.5134 57.0103 44.7783L58.6125 45.4627C58.7532 45.5228 58.7524 45.7198 58.6131 45.7779C51.5871 48.8138 44.4932 52.5504 36.9242 53.9944C36.9085 53.9973 36.8944 54.0055 36.8843 54.0178C36.8741 54.03 36.8686 54.0454 36.8687 54.0613V57.0313C36.8687 58.4018 37.9884 59.5216 39.359 59.5216H51.6399C53.0104 59.5216 54.1302 58.4019 54.1302 57.0313V48.7251C54.1302 48.6973 54.1458 48.6735 54.1714 48.6625L58.963 46.5922C59.8135 46.2256 59.8117 45.013 58.9588 44.6487L57.9853 44.2329L57.9841 44.2324L57.0139 43.8398C57.012 43.839 57.01 43.8382 57.008 43.8376ZM48.35 36.9608V32.4865C48.35 32.4677 48.3568 32.4515 48.3701 32.4382C48.3764 32.4318 48.3839 32.4267 48.3923 32.4233C48.4006 32.4199 48.4095 32.4182 48.4185 32.4184C48.7355 32.4194 48.9995 32.4186 49.2689 32.1492C49.3541 32.0642 49.4218 31.9633 49.4679 31.8521C49.5141 31.7409 49.5378 31.6217 49.5378 31.5014V30.0686C49.5378 29.5634 49.1261 29.1517 48.621 29.1517H42.3782C41.873 29.1517 41.4613 29.5634 41.4613 30.0686V31.5014C41.4613 32.0065 41.873 32.4181 42.3782 32.4181H42.5809C42.6185 32.4181 42.6491 32.4488 42.6491 32.4863V36.9607C42.6491 36.9983 42.6798 37.0289 42.7173 37.0289H43.4678C43.4858 37.0289 43.5032 37.0217 43.5159 37.0089C43.5287 36.9961 43.5359 36.9788 43.5359 36.9607V32.4863C43.5359 32.4487 43.5666 32.4181 43.6041 32.4181H47.3948C47.4324 32.4181 47.463 32.4488 47.463 32.4863V36.9607C47.463 36.9983 47.4937 37.0289 47.5312 37.0289H48.2817C48.2906 37.0289 48.2995 37.0272 48.3078 37.0238C48.3161 37.0203 48.3236 37.0153 48.33 37.009C48.3363 37.0027 48.3414 36.9952 48.3448 36.9869C48.3482 36.9786 48.35 36.9698 48.35 36.9608ZM43.5918 45.3616C43.5908 45.3609 43.5899 45.3603 43.5889 45.3597C42.9582 44.9589 43.2275 44.4922 43.9705 44.7002L43.973 44.7008L50.1819 46.1891C50.2103 46.1959 50.2305 46.2187 50.2338 46.2478C50.237 46.2768 50.2226 46.3036 50.1963 46.3165L47.1379 47.8365C47.1269 47.8421 47.1145 47.8446 47.1022 47.8437C47.0898 47.8427 47.078 47.8383 47.068 47.831L43.5918 45.3616Z"
           fill="#F90945"
         />
@@ -1412,9 +1412,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1447,9 +1447,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57"
             height="26.2732"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1482,9 +1482,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.2031"
             height="57.0048"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1517,9 +1517,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.5469"
             height="56.9725"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1552,9 +1552,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57.0215"
             height="25.8029"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1587,9 +1587,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1664,20 +1664,20 @@ export const VisaApplicationFlightAssistanceProcess = [
           <circle cx="45" cy="45" r="30" fill="#FBFBFB" />
         </g>
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M55.419 52.5498V54.0854C55.419 55.1142 55.0182 56.0814 54.291 56.8088C53.5635 57.5362 52.5965 57.9368 51.5677 57.9368H49.4796C49.5002 57.844 49.511 57.7475 49.511 57.6486C49.511 57.5497 49.5002 57.4532 49.4796 57.3604H51.5677C53.3735 57.3604 54.8427 55.8913 54.8427 54.0854V52.5655H55.1307C55.227 52.5654 55.3233 52.5602 55.419 52.5498ZM48.9346 57.6486C48.9346 58.0695 48.592 58.4119 48.1711 58.4119H46.5703C46.1494 58.4119 45.807 58.0695 45.807 57.6486C45.807 57.2277 46.1494 56.8853 46.5703 56.8853H48.1711C48.592 56.8852 48.9346 57.2277 48.9346 57.6486ZM49.7478 41.0907H41.2898C41.2451 41.0907 41.2022 41.1085 41.1706 41.1402C41.1389 41.1718 41.1211 41.2147 41.1211 41.2594V47.1884C41.1211 47.2331 41.1389 47.276 41.1706 47.3077C41.2022 47.3393 41.2451 47.3571 41.2898 47.3571H42.5436C42.62 47.3571 42.6933 47.3875 42.7473 47.4415C42.8014 47.4956 42.8318 47.5689 42.8318 47.6453V48.8685L44.2586 47.4416C44.2853 47.4149 44.3171 47.3936 44.3521 47.3791C44.3871 47.3646 44.4246 47.3572 44.4625 47.3572H49.7477C49.7924 47.3571 49.8353 47.3393 49.8669 47.3077C49.8985 47.2761 49.9163 47.2332 49.9164 47.1885V41.2594C49.9164 41.2147 49.8987 41.1718 49.867 41.1402C49.8354 41.1085 49.7925 41.0907 49.7478 41.0907ZM47.9011 45.4838H43.1366C43.0602 45.4838 42.9869 45.4534 42.9328 45.3994C42.8788 45.3453 42.8484 45.272 42.8484 45.1956C42.8484 45.1192 42.8788 45.0459 42.9328 44.9918C42.9869 44.9378 43.0602 44.9074 43.1366 44.9074H47.9011C47.9775 44.9074 48.0508 44.9378 48.1048 44.9918C48.1589 45.0459 48.1892 45.1192 48.1892 45.1956C48.1892 45.272 48.1589 45.3453 48.1048 45.3994C48.0508 45.4534 47.9775 45.4838 47.9011 45.4838ZM47.9011 43.5348H43.1366C43.0602 43.5348 42.9869 43.5044 42.9328 43.4504C42.8788 43.3963 42.8484 43.323 42.8484 43.2466C42.8484 43.1702 42.8788 43.0969 42.9328 43.0428C42.9869 42.9888 43.0602 42.9584 43.1366 42.9584H47.9011C47.9775 42.9584 48.0508 42.9888 48.1048 43.0428C48.1589 43.0969 48.1892 43.1702 48.1892 43.2466C48.1892 43.323 48.1589 43.3963 48.1048 43.4504C48.0508 43.5044 47.9775 43.5348 47.9011 43.5348ZM57.1821 45.799V49.9426C57.1794 51.0714 56.2601 51.9889 55.1308 51.9891H53.5341C53.5127 51.989 53.4921 51.9805 53.4769 51.9653C53.4618 51.9501 53.4533 51.9295 53.4533 51.908V43.8334C53.4533 43.7888 53.4895 43.7525 53.5341 43.7525H55.1306C56.2601 43.7525 57.1794 44.6701 57.1821 45.799ZM58.6309 47.2479V48.4939C58.6309 49.0344 58.2595 49.4898 57.7585 49.6183V46.1234C58.2595 46.252 58.6309 46.7071 58.6309 47.2479Z"
           fill="#F90945"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M37.5844 43.8335V51.9081C37.5844 51.9527 37.5482 51.9891 37.5035 51.9891H35.907C34.7775 51.9891 33.8582 51.0714 33.8555 49.9427V45.7988C33.8584 44.6698 34.7776 43.7526 35.907 43.7526H37.5035C37.5482 43.7526 37.5844 43.7888 37.5844 43.8335ZM55.9713 43.146V43.3142C55.7006 43.2226 55.4166 43.176 55.1308 43.1763H54.4089V43.0086C54.4089 41.8085 54.1739 40.6443 53.7101 39.5481C53.2623 38.4894 52.6213 37.5388 51.8048 36.7225C50.9886 35.906 50.038 35.265 48.9792 34.8173C47.8831 34.3534 46.7188 34.1184 45.5187 34.1184C44.3186 34.1184 43.1544 34.3534 42.0582 34.8173C40.9997 35.265 40.0489 35.9059 39.2326 36.7223C38.4164 37.5386 37.7753 38.4894 37.3276 39.5482C36.864 40.6443 36.6289 41.8086 36.6289 43.0085V43.1764H35.907C35.6132 43.1764 35.3305 43.2248 35.0665 43.3143V43.1457C35.0665 37.3823 39.7553 32.6934 45.5187 32.6934C48.3108 32.6934 50.9358 33.7805 52.91 35.7547C54.8842 37.7289 55.9713 40.3539 55.9713 43.146Z"
           fill="#F90945"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M33.2787 46.1233V49.6184C32.7776 49.4898 32.4063 49.0345 32.4063 48.494V47.2479C32.4062 46.7072 32.7776 46.2519 33.2787 46.1233Z"
           fill="#F90945"
         />
@@ -1689,9 +1689,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1724,9 +1724,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57"
             height="26.2732"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1759,9 +1759,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.2031"
             height="57.0048"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1794,9 +1794,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.5469"
             height="56.9725"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1829,9 +1829,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57.0215"
             height="25.8029"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1864,9 +1864,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1956,9 +1956,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="90"
             height="90"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -1991,9 +1991,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57"
             height="26.2732"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -2026,9 +2026,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.5469"
             height="56.9725"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -2061,9 +2061,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="26.2031"
             height="57.0048"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -2096,9 +2096,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="57.0215"
             height="25.8029"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -2131,9 +2131,9 @@ export const VisaApplicationFlightAssistanceProcess = [
             width="70"
             height="70"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
