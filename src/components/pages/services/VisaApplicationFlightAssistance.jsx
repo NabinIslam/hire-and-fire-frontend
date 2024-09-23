@@ -62,6 +62,7 @@ const VisaApplicationFlightAssistance = () => {
           className="w-full basis-full lg:basis-1/2"
         >
           <ServiceImage
+            imageLink="/images/services/Visa Application Flight Assistance.png"
             title1="Visa and Travel Support"
             desc1="Assistance with visas and travel."
             title2="Visa and Flight Coordination"
@@ -97,8 +98,8 @@ const VisaApplicationFlightAssistance = () => {
               <path d="M29.7949 27.2461C30.2832 27.5586 30.7324 27.9297 31.1523 28.3301C32.002 27.1777 32.5098 25.8203 32.6172 24.3945H30.2637C30.2246 25.3613 30.0684 26.3184 29.7949 27.2461ZM30.2637 23.2227H32.6172C32.5098 21.7969 32.002 20.4297 31.1523 19.2871C30.7422 19.6973 30.2832 20.0586 29.7949 20.3711C30.0684 21.2988 30.2246 22.2656 30.2637 23.2227Z" />
             </svg>
           }
-          title="Work Permit Filing Assistance"
-          description="Guiding you through the work permit filing process with expert support."
+          title="Visa and Flight Management"
+          description="Complete management of visa applications and flight arrangements for seamless travel."
         />
 
         {/* card */}
@@ -135,8 +136,8 @@ const VisaApplicationFlightAssistance = () => {
               </defs>
             </svg>
           }
-          title="Work Permit Compliance Support"
-          description="Ensuring your work permits meet all compliance requirements with expert guidance."
+          title="Visa Application & Flight Services"
+          description="Expert services for visa applications and flight arrangements, ensuring smooth travel."
         />
         {/* card */}
         <SubServiceCard
@@ -168,8 +169,8 @@ const VisaApplicationFlightAssistance = () => {
               </defs>
             </svg>
           }
-          title="Work Permit Application Services"
-          description="Streamlined services for efficient and accurate work permit application and processing."
+          title="Visa & Travel Logistics Support"
+          description="Assisting with visa applications and travel logistics for a hassle-free journey."
         />
       </div>
     </section>
