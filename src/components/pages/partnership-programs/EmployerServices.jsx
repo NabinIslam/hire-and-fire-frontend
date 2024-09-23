@@ -3,7 +3,7 @@ import EmployersServiceCard from "./EmployersServiceCard";
 
 const EmployerServices = () => {
   return (
-    <section className="bg-[#F6F6F6] py-[50px]">
+    <section className="bg-[#F6F6F6] py-[100px]">
       <div className="container">
         <div className="flex items-center justify-center">
           <span className="rounded-full border-2 border-primary bg-white px-5 py-3 text-2xl font-medium text-primary">

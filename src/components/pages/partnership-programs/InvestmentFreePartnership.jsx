@@ -2,7 +2,7 @@ import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBoun
 
 const InvestmentFreePartnership = () => {
   return (
-    <section className="py-[50px]">
+    <section className="pt-[100px]">
       <div className="container">
         <div className="flex items-center justify-center">
           <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">

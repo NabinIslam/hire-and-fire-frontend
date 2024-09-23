@@ -14,7 +14,7 @@ const PermanentWithUs = () => {
   });
 
   return (
-    <section className="pb-[50px] pt-[100px]">
+    <section className="pb-[100px] pt-[100px]">
       <div className="container flex flex-col items-center justify-between gap-16 lg:gap-24 xl:flex-row">
         <motion.div
           ref={ref}

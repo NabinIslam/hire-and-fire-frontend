@@ -1,9 +1,8 @@
-import OurClients from "@/components/common/OurClients";
 import PageBanner from "@/components/common/PageBanner";
 import CareerOpportunities from "@/components/pages/partnership-programs/CareerOpportunities";
-import EmployersAlign from "@/components/pages/partnership-programs/EmployersAlign";
+import ContactInfo from "@/components/pages/partnership-programs/ContactInfo";
 import EmployerServices from "@/components/pages/partnership-programs/EmployerServices";
-import FAQ from "@/components/pages/partnership-programs/faq";
+import Faq from "@/components/pages/partnership-programs/FAQ";
 import InvestmentFreePartnership from "@/components/pages/partnership-programs/InvestmentFreePartnership";
 import PartnerWithUs from "@/components/pages/partnership-programs/PartnerWithUs";
 
@@ -19,7 +18,9 @@ const PartnershipsProgramsPage = () => {
       <EmployerServices />
       <InvestmentFreePartnership />
       <CareerOpportunities />
-      <FAQ />
+      <Faq />
+      <ContactInfo />
+
       {/* <EmployersAlign />
       <OurClients /> */}
     </main>
