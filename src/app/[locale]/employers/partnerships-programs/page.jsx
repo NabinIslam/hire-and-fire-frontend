@@ -2,8 +2,8 @@ import PageBanner from "@/components/common/PageBanner";
 import CareerOpportunities from "@/components/pages/partnership-programs/CareerOpportunities";
 import ContactInfo from "@/components/pages/partnership-programs/ContactInfo";
 import EmployerServices from "@/components/pages/partnership-programs/EmployerServices";
-import Faq from "@/components/pages/partnership-programs/FAQ";
 import InvestmentFreePartnership from "@/components/pages/partnership-programs/InvestmentFreePartnership";
+import PartnershipFaq from "@/components/pages/partnership-programs/PartnershipFaq";
 import PartnerWithUs from "@/components/pages/partnership-programs/PartnerWithUs";
 
 export const metadata = {
@@ -18,7 +18,7 @@ const PartnershipsProgramsPage = () => {
       <EmployerServices />
       <InvestmentFreePartnership />
       <CareerOpportunities />
-      <Faq />
+      <PartnershipFaq />
       <ContactInfo />
 
       {/* <EmployersAlign />
