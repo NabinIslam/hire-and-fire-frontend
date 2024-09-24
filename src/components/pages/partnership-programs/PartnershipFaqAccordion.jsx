@@ -23,7 +23,7 @@ const PartnershipFaqAccordion = ({ title, answer }) => {
         </div>
 
         <div
-          className={`h-full basis-full px-2 text-left text-lg font-medium ${accordionOpen ? "text-white" : ""}`}
+          className={`h-full basis-full px-2 text-left text-sm font-medium ${accordionOpen ? "text-white" : ""}`}
         >
           {title}
         </div>
