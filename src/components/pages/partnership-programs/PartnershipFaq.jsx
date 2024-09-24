@@ -15,7 +15,7 @@ const PartnershipFaq = () => {
           Frequently Asked Questions
         </h2>
 
-        <p className="my-5 text-sm font-medium text-white">
+        <p className="mb-7 mt-5 text-sm font-medium text-white">
           A Frequently Asked Questions (FAQ) section provides concise answers to
           common queries, helping users quickly find essential information about
           a product or service.

@@ -19,7 +19,6 @@ const PartnershipsProgramsPage = () => {
       <InvestmentFreePartnership />
       <CareerOpportunities />
       <PartnershipFaq />
-      <ContactInfo />
 
       {/* <EmployersAlign />
       <OurClients /> */}

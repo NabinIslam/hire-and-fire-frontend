@@ -65,10 +65,69 @@ const AboutHero = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="flex items-center justify-center lg:justify-start">
             <Link href="/hire-worker/request-talent">
               <Button>Request Talent</Button>
             </Link>
+            <button className="flex items-center justify-start font-semibold text-primary">
+              <svg
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_d_24_3609)">
+                  <circle cx="40" cy="40" r="20" fill="#F90945" />
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="18.3333"
+                    stroke="#FDFDFD"
+                    stroke-width="3.33333"
+                  />
+                </g>
+                <path d="M48 40L36 46.9282L36 33.0718L48 40Z" fill="#FDFDFD" />
+                <defs>
+                  <filter
+                    id="filter0_d_24_3609"
+                    x="0"
+                    y="0"
+                    width="80"
+                    height="80"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="10" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_24_3609"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_24_3609"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+              <span className="-ml-2">Watch Video</span>
+            </button>
           </div>
         </motion.div>
         <motion.div

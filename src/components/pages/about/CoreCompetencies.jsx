@@ -7,7 +7,7 @@ const CoreCompetencies = () => {
   return (
     <FadeInUpWithSlowBounce>
       <div className="flex flex-wrap justify-center gap-10 pb-[50px]">
-        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
           <Image
             src="/images/core-competencies-icons/communication.png"
             width={80}
@@ -20,7 +20,7 @@ const CoreCompetencies = () => {
             </p>
           </div>
         </div>
-        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
           <Image
             src="/images/core-competencies-icons/organizational-skills.png"
             width={80}
@@ -35,7 +35,7 @@ const CoreCompetencies = () => {
             </p>
           </div>
         </div>
-        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
           <Image
             src="/images/core-competencies-icons/attention-to-details.png"
             width={80}
@@ -49,7 +49,7 @@ const CoreCompetencies = () => {
             </p>
           </div>
         </div>
-        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
           <Image
             src="/images/core-competencies-icons/decision-making.png"
             width={80}
@@ -64,7 +64,7 @@ const CoreCompetencies = () => {
             </p>
           </div>
         </div>
-        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
           <Image
             src="/images/core-competencies-icons/networking.png"
             width={80}
@@ -79,7 +79,7 @@ const CoreCompetencies = () => {
             </p>
           </div>
         </div>
-        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
           <Image
             src="/images/core-competencies-icons/adaptability.png"
             width={80}
@@ -93,7 +93,7 @@ const CoreCompetencies = () => {
             </p>
           </div>
         </div>
-        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
           <Image
             src="/images/core-competencies-icons/leadership.png"
             width={80}
@@ -107,7 +107,7 @@ const CoreCompetencies = () => {
             </p>
           </div>
         </div>
-        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
           <Image
             src="/images/core-competencies-icons/time-management.png"
             width={80}
@@ -121,7 +121,7 @@ const CoreCompetencies = () => {
             </p>
           </div>
         </div>
-        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border p-5 shadow-lg">
+        <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
           <Image
             src="/images/core-competencies-icons/problem-solving.png"
             width={80}

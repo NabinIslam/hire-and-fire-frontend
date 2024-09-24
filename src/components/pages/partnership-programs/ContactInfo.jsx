@@ -2,12 +2,12 @@ const ContactInfo = () => {
   return (
     <section className="py-[50px]">
       <div className="container">
-        <div className="flex flex-col items-start justify-between gap-y-6 divide-primary rounded-lg border py-4 shadow-lg xl:flex-row xl:items-center xl:divide-x-2">
-          <div className="flex h-full items-center justify-between gap-4 xl:px-6">
+        <div className="flex flex-col items-start justify-between gap-y-6 divide-primary rounded-lg border py-4 shadow-lg lg:flex-row lg:items-center lg:divide-x-2">
+          <div className="flex h-full items-center justify-between gap-4 lg:px-5 xl:px-14">
             <div>
               <svg
-                width="60"
-                height="60"
+                width="40"
+                height="40"
                 viewBox="0 0 60 60"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,14 +39,14 @@ const ContactInfo = () => {
               </svg>
             </div>
 
-            <h6 className="text-md font-medium">+(40) 7372 28622</h6>
+            <h6 className="text-sm font-medium">+(40) 7372 28622</h6>
           </div>
 
-          <div className="flex h-full items-center justify-between gap-4 xl:px-6">
+          <div className="flex h-full items-center justify-between gap-4 xl:px-14">
             <div>
               <svg
-                width="60"
-                height="60"
+                width="40"
+                height="40"
                 viewBox="0 0 60 60"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,14 +66,14 @@ const ContactInfo = () => {
               </svg>
             </div>
 
-            <h6 className="text-md font-medium">career@hireandfire.eu</h6>
+            <h6 className="text-sm font-medium">career@hireandfire.eu</h6>
           </div>
 
-          <div className="flex h-full items-center justify-between gap-4 xl:px-6">
+          <div className="flex h-full items-center justify-between gap-4 xl:px-14">
             <div>
               <svg
-                width="60"
-                height="60"
+                width="40"
+                height="40"
                 viewBox="0 0 60 60"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,17 +97,17 @@ const ContactInfo = () => {
               </svg>
             </div>
 
-            <h6 className="text-md font-medium">
+            <h6 className="text-sm font-medium">
               Bucureşti Sectorul 1, Strada ING. <br /> ZABLOVSCHI, Nr. 10,
               BIROUL 1
             </h6>
           </div>
 
-          <div className="flex h-full items-center justify-between gap-4 xl:px-6">
+          <div className="flex h-full items-center justify-between gap-4 xl:px-14">
             <div>
               <svg
-                width="60"
-                height="60"
+                width="40"
+                height="40"
                 viewBox="0 0 60 60"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +143,7 @@ const ContactInfo = () => {
               </svg>
             </div>
 
-            <h6 className="text-md font-medium">+(40) 7372 28622</h6>
+            <h6 className="text-sm font-medium">+(40) 7372 28622</h6>
           </div>
         </div>
       </div>
