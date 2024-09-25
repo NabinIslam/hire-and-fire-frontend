@@ -9,22 +9,22 @@ import { Montserrat } from "next/font/google";
 import "react-vertical-timeline-component/style.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Script from "next/script";
 
 //language imports
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import Script from "next/script";
-
-const montserrat = Montserrat({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Hire&Fire",
   description: "Your Partner in international Construction Recruitment",
 };
+
+const montserrat = Montserrat({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export default async function LocaleLayout({ children, params: { locale } }) {
   const messages = await getMessages();

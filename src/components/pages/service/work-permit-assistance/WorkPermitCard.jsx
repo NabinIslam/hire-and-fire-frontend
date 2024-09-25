@@ -1,6 +1,4 @@
-const WorkPermitCard = ({ cardData }) => {
-  const { icon, title, description, stepNo } = cardData;
-
+const WorkPermitCard = ({ icon, title, description, stepNo }) => {
   return (
     <div className="group flex flex-col">
       <div className="flex items-center justify-center">
@@ -18,9 +16,9 @@ const WorkPermitCard = ({ cardData }) => {
         {/* shapes */}
         <div className="absolute bottom-0 left-1/2 mx-auto h-[8px] w-[200px] -translate-x-1/2 rounded-t-lg bg-secondary duration-200 group-hover:bg-primary"></div>
 
-        <div className="absolute bottom-0 left-0 h-[100px] w-[8px] -translate-y-1/2 rounded-r-lg bg-secondary duration-200 group-hover:bg-primary"></div>
+        <div className="absolute bottom-0 left-0 h-[100px] w-[8px] -translate-y-[75%] rounded-r-lg bg-secondary duration-200 group-hover:bg-primary"></div>
 
-        <div className="absolute bottom-0 right-0 h-[100px] w-[8px] -translate-y-1/2 rounded-l-lg bg-secondary duration-200 group-hover:bg-primary"></div>
+        <div className="absolute bottom-0 right-0 h-[100px] w-[8px] -translate-y-[75%] rounded-l-lg bg-secondary duration-200 group-hover:bg-primary"></div>
       </div>
     </div>
   );
