@@ -43,7 +43,7 @@ const WorkPermitAssistance = () => {
             minimizing delays and ensuring a hassle-free experience.
           </p>
           <div>
-            <Link href="#">
+            <Link href="/service/work-permit-assistance">
               <Button>See More</Button>
             </Link>
           </div>

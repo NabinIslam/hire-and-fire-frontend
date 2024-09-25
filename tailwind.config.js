@@ -61,6 +61,11 @@ module.exports = {
         "partnership-faq-bg": "url('/images/partnership-faq-bg.png')",
       },
       keyframes: {
+        slideLeftRight: {
+          "0%": { transform: "translateX(-20%)" },
+          "50%": { transform: "translateX(20%)" },
+          "100%": { transform: "translateX(-20%)" },
+        },
         pulse: {
           "25%": {
             transform: "scale(0.9)",
@@ -72,19 +77,20 @@ module.exports = {
         floating: {
           "0%": {
             shadow: "0 5px 15px 0px rgba(0,0,0,0.6)",
-            transform: "translateY(0px)",
+            transform: "translateY(5px)",
           },
           "50%": {
             shadow: "0 25px 15px 0px rgba(0,0,0,0.2)",
-            transform: "translateY(-20px)",
+            transform: "translateY(-5px)",
           },
           "100%": {
             shadow: "0 5px 15px 0px rgba(0,0,0,0.6)",
-            transform: "translateY(0px)",
+            transform: "translateY(5px)",
           },
         },
       },
       animation: {
+        slideLeftRight: "slideLeftRight 4s ease-in-out infinite",
         pulse: "pulse 1s ease-in-out infinite",
         floating: "floating 3s ease-in-out infinite",
       },
