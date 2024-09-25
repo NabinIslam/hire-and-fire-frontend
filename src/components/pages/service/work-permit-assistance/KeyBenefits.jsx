@@ -83,7 +83,7 @@ const KeyBenefits = () => {
           </div>
           <div className="flex basis-1/2 flex-col justify-end gap-5">
             <svg
-              className="animate-slideLeftRight mx-auto"
+              className="mx-auto animate-slideLeftRight"
               width="258"
               height="80"
               viewBox="0 0 258 118"

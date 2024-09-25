@@ -75,12 +75,12 @@
 }
 
 #numberOfWorkers::-webkit-slider-runnable-track {
-   /* Background color for the track */
+  /* Background color for the track */
   border-radius: 10px;
 }
 
 /* For Firefox */
 #numberOfWorkers::-moz-range-track {
-   /* Background color for the track */
+  /* Background color for the track */
   border-radius: 10px;
 }
