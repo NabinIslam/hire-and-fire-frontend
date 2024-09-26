@@ -5,6 +5,8 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import { Link } from "@/i18n/routing";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 
 const WorkPermitVisaSupport = () => {
   const { ref, inView } = useInView({
@@ -15,18 +17,7 @@ const WorkPermitVisaSupport = () => {
   return (
     <section className="pb-[100px] pt-[50px]">
       <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="basis-full text-center lg:basis-1/2 lg:text-left"
-        >
+        <FadeInLeftWithSlowBounce className="basis-full text-center lg:basis-1/2 lg:text-left">
           <h2 className="text-4xl font-semibold lg:text-5xl">
             Work Permit & Visa Support
           </h2>
@@ -47,26 +38,15 @@ const WorkPermitVisaSupport = () => {
           <Link href="/hire-worker/request-talent">
             <Button>Hire Worker</Button>
           </Link>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
-          transition={{
-            duration: 1, // Adjusting duration for overall animation speed
-            type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
-          }}
-          className="relative min-h-[400px] w-full basis-full lg:basis-1/2"
-        >
+        </FadeInLeftWithSlowBounce>
+        <FadeInRightWithSlowBounce className="relative min-h-[400px] w-full basis-full lg:basis-1/2">
           <Image
             className="object-contain"
             src="/images/work-permit-visa-support.png"
             alt="Work Permit & Visa Support"
             fill
           />
-        </motion.div>
+        </FadeInRightWithSlowBounce>
       </div>
     </section>
   );

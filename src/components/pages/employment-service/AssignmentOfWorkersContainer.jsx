@@ -4,7 +4,6 @@ import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlow
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const AssignmentOfWorkersContainer = () => {

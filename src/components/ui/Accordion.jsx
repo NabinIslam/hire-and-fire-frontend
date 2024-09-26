@@ -2,13 +2,13 @@
 
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
-import FadeInDownWithSlowBounce from "../animations/FadeInDownWithSlowBounce";
+import FadeInLeftWithSlowBounce from "../animations/FadeInLeftWithSlowBounce";
 
 const Accordion = ({ title, answer }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <FadeInDownWithSlowBounce>
+    <FadeInLeftWithSlowBounce>
       <div
         className={`rounded-lg border border-l-8 border-l-primary pl-3 shadow duration-500 ${accordionOpen ? "bg-primary" : ""} `}
       >
@@ -83,7 +83,7 @@ const Accordion = ({ title, answer }) => {
           </div>
         </div>
       </div>
-    </FadeInDownWithSlowBounce>
+    </FadeInLeftWithSlowBounce>
   );
 };
 
