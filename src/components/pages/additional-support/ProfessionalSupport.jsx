@@ -2,30 +2,14 @@
 
 import Image from "next/image";
 import Button from "../../ui/Button";
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 
 const ProfessionalSupport = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger the animation only once
-    threshold: 0.2, // Trigger when 10% of the component is in view
-  });
-
   return (
     <section className="pb-[50px] pt-[50px]">
       <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="basis-full text-center lg:basis-1/2 lg:text-left"
-        >
+        <FadeInLeftWithSlowBounce className="basis-full text-center lg:basis-1/2 lg:text-left">
           <div className="flex h-[46px] w-[264px] items-center justify-center border-2 border-dashed border-primary text-xl font-medium text-primary">
             Professional Support
           </div>
@@ -44,26 +28,15 @@ const ProfessionalSupport = () => {
             to organizational success.
           </p>
           <Button>Meet Us</Button>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
-          transition={{
-            duration: 1, // Adjusting duration for overall animation speed
-            type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
-          }}
-          className="relative min-h-[400px] w-full basis-full lg:basis-1/2"
-        >
+        </FadeInLeftWithSlowBounce>
+        <FadeInRightWithSlowBounce className="relative min-h-[400px] w-full basis-full lg:basis-1/2">
           <Image
             className="object-contain lg:object-right"
             src="/images/additional-support-img.png"
             alt="Work Permit & Visa Support"
             fill
           />
-        </motion.div>
+        </FadeInRightWithSlowBounce>
       </div>
     </section>
   );

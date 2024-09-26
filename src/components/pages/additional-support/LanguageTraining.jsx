@@ -7,6 +7,10 @@ import { useInView } from "react-intersection-observer";
 import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "@/components/ui/Button";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -77,18 +81,7 @@ const LanguageTraining = () => {
   return (
     <section className="pb-[50px] pt-[100px]">
       <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="basis-full text-center lg:basis-1/2 lg:text-left"
-        >
+        <FadeInLeftWithSlowBounce className="basis-full text-center lg:basis-1/2 lg:text-left">
           <h6 className="text-2xl font-medium text-primary">
             Language Training
           </h6>
@@ -105,30 +98,19 @@ const LanguageTraining = () => {
             experience. Plus, we offer flexible scheduling to fit the needs of
             workers, making it easy for them to prepare for their new adventure.
           </p>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="relative min-h-[400px] w-full basis-full lg:basis-1/2"
-        >
+        </FadeInLeftWithSlowBounce>
+        <FadeInRightWithSlowBounce className="relative min-h-[400px] w-full basis-full lg:basis-1/2">
           <Image
             className="object-contain lg:object-right"
             src="/images/language-skill.png"
             alt="Work Permit & Visa Support"
             fill
           />
-        </motion.div>
+        </FadeInRightWithSlowBounce>
       </div>
 
       <div className="container mt-[50px]">
-        <div className="slider-container">
+        <FadeInDownWithSlowBounce className="slider-container">
           <Slider {...settings}>
             <div className="">
               <ReactPlayer
@@ -287,11 +269,11 @@ const LanguageTraining = () => {
               </div>
             </div>
           </Slider>
-        </div>
+        </FadeInDownWithSlowBounce>
       </div>
-      <div className="container mt-10 flex items-center justify-center">
+      <FadeInUpWithSlowBounce className="container mt-10 flex items-center justify-center">
         <Button>Meet Us</Button>
-      </div>
+      </FadeInUpWithSlowBounce>
     </section>
   );
 };

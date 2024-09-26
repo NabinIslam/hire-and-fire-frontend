@@ -1,31 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { useInView } from "react-intersection-observer";
 import Button from "../../ui/Button";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 
 const WorkerAccommodationService = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <section className="py-[50px]">
       <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="basis-full text-center lg:basis-1/2 lg:text-left"
-        >
+        <FadeInLeftWithSlowBounce className="basis-full text-center lg:basis-1/2 lg:text-left">
           <h6 className="text-2xl font-medium text-primary">
             Worker Accommodation Service
           </h6>
@@ -42,26 +26,15 @@ const WorkerAccommodationService = () => {
             satisfaction.
           </p>
           <Button>Meet Us</Button>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="relative min-h-[400px] w-full basis-full lg:basis-1/2"
-        >
+        </FadeInLeftWithSlowBounce>
+        <FadeInRightWithSlowBounce className="relative min-h-[400px] w-full basis-full lg:basis-1/2">
           <Image
             className="object-contain lg:object-right"
             src="/images/global-accomodation.png"
             alt="Work Permit & Visa Support"
             fill
           />
-        </motion.div>
+        </FadeInRightWithSlowBounce>
       </div>
     </section>
   );
