@@ -9,7 +9,7 @@ const KeySkills = () => {
       <div className="container flex flex-col items-center justify-between gap-20 lg:flex-row">
         <FadeInLeftWithSlowBounce className="relative min-h-[440px] w-full lg:min-h-[624px]">
           <Image
-            className="h-auto w-full object-contain object-right"
+            className="h-auto w-full object-contain object-center"
             src="/images/key-skills.png"
             fill
           />
