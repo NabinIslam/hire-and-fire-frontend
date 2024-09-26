@@ -1,41 +1,29 @@
 "use client";
 
 import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+
 import { useTranslations } from "next-intl";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 
 const WorkSteps = () => {
   const t = useTranslations("WorkSteps");
 
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <section className="pb-[100px] pt-[50px]">
-      <h6 className="text-center text-2xl font-medium text-primary">
-        {t("work_title_1")}
-      </h6>
-      <h2 className="mt-[20px] text-center text-4xl font-semibold lg:text-5xl">
-        {t("work_title_2")}
-      </h2>
-      <div className="container mt-[60px] flex flex-col items-center justify-between gap-5 xl:flex-row">
+      <FadeInUpWithSlowBounce className="container">
+        <h6 className="text-center text-2xl font-medium text-primary">
+          {t("work_title_1")}
+        </h6>
+        <h2 className="mt-[20px] text-center text-4xl font-semibold lg:text-5xl">
+          {t("work_title_2")}
+        </h2>
+      </FadeInUpWithSlowBounce>
+      <div className="container mt-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
         {/* step card start*/}
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="group relative min-h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
-        >
+        <FadeInLeftWithSlowBounce className="group relative border shadow-lg duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -69,27 +57,16 @@ const WorkSteps = () => {
           <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             01
           </span>
-        </motion.div>
+        </FadeInLeftWithSlowBounce>
 
         {/* step card end*/}
 
-        <HiArrowLongDown className="text-4xl lg:hidden" />
-        <HiArrowLongRight className="hidden text-4xl lg:inline" />
+        {/* <HiArrowLongDown className="text-4xl lg:hidden" />
+        <HiArrowLongRight className="hidden text-4xl lg:inline" /> */}
 
         {/* step card start*/}
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="group relative min-h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
-        >
+        <FadeInUpWithSlowBounce className="group relative border shadow-lg duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -127,11 +104,11 @@ const WorkSteps = () => {
           <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             02
           </span>
-        </motion.div>
+        </FadeInUpWithSlowBounce>
 
         {/* step card end*/}
 
-        <HiArrowLongDown className="text-4xl lg:hidden" />
+        {/* <HiArrowLongDown className="text-4xl lg:hidden" />
         <HiArrowLongRight className="hidden text-4xl lg:inline" />
 
         <svg
@@ -146,22 +123,11 @@ const WorkSteps = () => {
             d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
             fill="black"
           />
-        </svg>
+        </svg> */}
 
         {/* step card start*/}
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="group relative h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
-        >
+        <FadeInUpWithSlowBounce className="group relative border shadow-lg duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -199,11 +165,11 @@ const WorkSteps = () => {
           <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             03
           </span>
-        </motion.div>
+        </FadeInUpWithSlowBounce>
 
         {/* step card end*/}
 
-        <HiArrowLongDown className="text-4xl lg:hidden" />
+        {/* <HiArrowLongDown className="text-4xl lg:hidden" />
         <HiArrowLongRight className="hidden text-4xl lg:inline" />
 
         <svg
@@ -218,22 +184,11 @@ const WorkSteps = () => {
             d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
             fill="black"
           />
-        </svg>
+        </svg> */}
 
         {/* step card start*/}
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="group relative min-h-[270px] w-[350px] border shadow-lg duration-200 hover:scale-105"
-        >
+        <FadeInRightWithSlowBounce className="group relative border shadow-lg duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -263,7 +218,7 @@ const WorkSteps = () => {
           <span className="absolute left-[15px] top-[10px] z-50 text-xl text-white">
             04
           </span>
-        </motion.div>
+        </FadeInRightWithSlowBounce>
 
         {/* step card end*/}
       </div>
