@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const FadeInLeftWithSlowBounce = ({ children }) => {
+const FadeInLeftWithSlowBounce = ({ children, className }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -11,6 +11,7 @@ const FadeInLeftWithSlowBounce = ({ children }) => {
 
   return (
     <motion.div
+      className={className}
       ref={ref}
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}

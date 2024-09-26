@@ -3,6 +3,7 @@ import Link from "next/link";
 import TitleDescSection from "../../common/TitleDescSection";
 import { useTranslations } from "next-intl";
 import HomeBlogs from "./HomeBlogs";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 
 const RecentNewsesNBlogs = () => {
   const t = useTranslations("blog");
@@ -15,11 +16,11 @@ const RecentNewsesNBlogs = () => {
     >
       <HomeBlogs />
 
-      <div className="mt-10 flex justify-center">
+      <FadeInUpWithSlowBounce className="mt-10 flex justify-center">
         <Link href="/resources/blog">
           <Button>{t("view_all_button")}</Button>
         </Link>
-      </div>
+      </FadeInUpWithSlowBounce>
     </TitleDescSection>
   );
 };

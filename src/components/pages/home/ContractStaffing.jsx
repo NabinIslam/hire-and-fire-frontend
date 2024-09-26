@@ -1,33 +1,15 @@
-"use client";
-
 import Button from "../../ui/Button";
 import SubServiceCard from "../../common/SubServiceCard";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { Link } from "@/i18n/routing";
 import ServiceImage from "@/components/common/ServiceImage";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 
 const ContractStaffing = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <section className="pb-[50px] pt-[100px]">
       <div className="container flex flex-col items-center justify-between gap-16 lg:gap-24 xl:flex-row-reverse">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="basis-full space-y-5 text-center lg:basis-1/2 xl:text-left"
-        >
+        <FadeInRightWithSlowBounce className="basis-full space-y-5 text-center lg:basis-1/2 xl:text-left">
           <h2 className="text-4xl font-semibold lg:text-5xl">
             Contract Staffing
           </h2>
@@ -48,20 +30,9 @@ const ContractStaffing = () => {
               <Button>See More</Button>
             </Link>
           </div>
-        </motion.div>
+        </FadeInRightWithSlowBounce>
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="w-full basis-full lg:basis-1/2"
-        >
+        <FadeInLeftWithSlowBounce className="w-full basis-full lg:basis-1/2">
           <ServiceImage
             imageLink="/images/services/Contract Staffing.png"
             title1="Cost-Effective Hiring"
@@ -71,20 +42,11 @@ const ContractStaffing = () => {
             title3="Rapid Deployment of Talent"
             desc3="Quick deployment of skilled talent."
           />
-        </motion.div>
+        </FadeInLeftWithSlowBounce>
       </div>
       <div className="container mt-[50px] grid grid-cols-1 gap-6 lg:grid-cols-3">
         {/* card */}
         <SubServiceCard
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"
@@ -103,15 +65,6 @@ const ContractStaffing = () => {
 
         {/* card */}
         <SubServiceCard
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"
@@ -129,15 +82,6 @@ const ContractStaffing = () => {
         />
         {/* card */}
         <SubServiceCard
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"

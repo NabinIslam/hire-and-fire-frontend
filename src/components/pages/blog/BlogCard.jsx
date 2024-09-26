@@ -5,44 +5,27 @@ import Image from "next/image";
 import { IoMdArrowDropright } from "react-icons/io";
 import { MdCalendarMonth } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { formatDate } from "@/Utils/formatDate";
 import { FaPlayCircle } from "react-icons/fa";
 import { Link } from "@/i18n/routing";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const BlogCard = ({ blog }) => {
-  // const {
-  //   title,
-  //   description,
-  //   short_description,
-  //   slug,
-  //   created_at,
-  //   thumbnail,
-  //   video,
-  // } = blog;
-
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.01,
-  });
+  const {
+    title,
+    short_description,
+    slug,
+    created_at,
+    thumbnail,
+    video,
+    view_count,
+  } = blog;
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-      transition={{
-        duration: 1,
-        type: "spring",
-        stiffness: 50,
-        damping: 12,
-      }}
-      className="flex flex-col items-start gap-3 rounded-lg border p-4 shadow-xl"
-    >
-      {blog?.video ? (
+    <FadeInLeftWithSlowBounce className="flex flex-col items-start gap-3 rounded-lg border p-4 shadow-xl">
+      {video ? (
         <ReactPlayer
           className="relative min-h-[200px] w-full rounded-lg duration-200 hover:scale-125"
           url="https://youtu.be/ZEyAs3NWH4A?si=o8pfJ1T-YSg-11ZO"
@@ -55,8 +38,8 @@ const BlogCard = ({ blog }) => {
             <div className="relative min-h-full w-full">
               <Image
                 className="h-full w-full rounded-lg"
-                src={blog?.thumbnail}
-                alt={blog?.title}
+                src={thumbnail}
+                alt={title}
                 fill
               />
             </div>
@@ -70,8 +53,8 @@ const BlogCard = ({ blog }) => {
       ) : (
         <div className="relative min-h-[200px] w-full">
           <Image
-            src={blog?.thumbnail}
-            alt={blog?.title}
+            src={thumbnail}
+            alt={title}
             fill
             className="h-full w-full rounded-lg"
           />
@@ -82,29 +65,27 @@ const BlogCard = ({ blog }) => {
         <div className="flex items-center gap-2">
           <MdCalendarMonth />
 
-          <p className="text-sm font-medium">{formatDate(blog?.created_at)}</p>
+          <p className="text-sm font-medium">{formatDate(created_at)}</p>
         </div>
         <div className="flex items-center gap-2">
           <FaRegEye />
 
-          <p className="text-sm font-medium">{blog?.view_count} Views</p>
+          <p className="text-sm font-medium">{view_count} Views</p>
         </div>
       </div>
 
-      <h5 className="text-xl font-medium">{blog?.title}</h5>
-      <p className="line-clamp-3 text-sm font-medium">
-        {blog?.short_description}
-      </p>
+      <h5 className="text-xl font-medium">{title}</h5>
+      <p className="line-clamp-3 text-sm font-medium">{short_description}</p>
       <div className="mt-auto">
         <Link
           className="flex items-center text-sm font-medium text-primary duration-200 hover:text-secondary"
-          href={`/resources/blog/${blog?.slug}`}
+          href={`/resources/blog/${slug}`}
         >
           Read more
           <IoMdArrowDropright className="text-xl" />
         </Link>
       </div>
-    </motion.div>
+    </FadeInLeftWithSlowBounce>
   );
 };
 
