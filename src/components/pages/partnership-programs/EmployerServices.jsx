@@ -1,10 +1,11 @@
-import { employersServices } from "@/data/EmployerServices";
 import EmployersServiceCard from "./EmployersServiceCard";
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 
 const EmployerServices = () => {
   return (
     <section className="bg-[#F6F6F6] py-[100px]">
-      <div className="container">
+      <FadeInDownWithSlowBounce className="container">
         <div className="flex items-center justify-center">
           <span className="rounded-full border-2 border-primary bg-white px-5 py-3 text-2xl font-medium text-primary">
             Employer Services
@@ -13,12 +14,10 @@ const EmployerServices = () => {
         <h2 className="mb-20 mt-5 text-center text-4xl font-semibold lg:text-5xl">
           For supplyer break a agancy
         </h2>
+      </FadeInDownWithSlowBounce>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
-          {/* {employersServices.map((cardData) => (
-            <EmployersServiceCard key={cardData.id} cardData={cardData} />
-          ))} */}
-
+      <div className="container">
+        <FadeInUpWithSlowBounce className="grid grid-cols-1 gap-x-8 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
           {/* card 1  */}
           <EmployersServiceCard
             icon={
@@ -985,7 +984,7 @@ const EmployerServices = () => {
             title="Technology Integration"
             description="Utilize advanced technologies and tools to enhance supply chain visibility, automate processes, and improve overall efficiency."
           />
-        </div>
+        </FadeInUpWithSlowBounce>
       </div>
     </section>
   );

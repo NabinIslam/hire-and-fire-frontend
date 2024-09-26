@@ -1,10 +1,13 @@
 import { partnershipFaqQuesAns } from "@/data/partnershipFaqQuesAns";
 import PartnershipFaqAccordion from "./PartnershipFaqAccordion";
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 
 const PartnershipFaq = () => {
   return (
     <section className="bg-partnership-faq-bg bg-cover bg-center bg-no-repeat py-[100px]">
-      <div className="container">
+      <FadeInDownWithSlowBounce className="container">
         <div className="flex items-center justify-start">
           <span className="rounded-full border-2 border-primary bg-white px-5 py-3 text-2xl font-medium text-primary">
             FAQ
@@ -20,9 +23,10 @@ const PartnershipFaq = () => {
           common queries, helping users quickly find essential information about
           a product or service.
         </p>
-
+      </FadeInDownWithSlowBounce>
+      <div className="container">
         <div className="flex flex-col justify-between gap-x-20 gap-y-6 lg:flex-row">
-          <div className="space-y-6">
+          <FadeInLeftWithSlowBounce className="space-y-6">
             {partnershipFaqQuesAns
               .filter((item) => item.position === "left")
               .map((item) => (
@@ -32,8 +36,8 @@ const PartnershipFaq = () => {
                   key={item.id}
                 />
               ))}
-          </div>
-          <div className="space-y-6">
+          </FadeInLeftWithSlowBounce>
+          <FadeInRightWithSlowBounce className="space-y-6">
             {partnershipFaqQuesAns
               .filter((item) => item.position === "right")
               .map((item) => (
@@ -43,7 +47,7 @@ const PartnershipFaq = () => {
                   key={item.id}
                 />
               ))}
-          </div>
+          </FadeInRightWithSlowBounce>
         </div>
       </div>
     </section>

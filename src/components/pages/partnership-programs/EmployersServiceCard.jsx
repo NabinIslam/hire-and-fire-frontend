@@ -9,9 +9,9 @@ const EmployersServiceCard = ({ icon, title, description }) => {
 
       {/* shapes  */}
 
-      <div className="absolute bottom-0 left-0 h-[100px] w-[8px] -translate-y-1/2 rounded-r-lg bg-primary duration-200 group-hover:bg-secondary"></div>
+      <div className="absolute bottom-0 left-0 h-[100px] w-[8px] -translate-y-[40%] rounded-r-lg bg-primary duration-200 group-hover:bg-secondary"></div>
 
-      <div className="absolute bottom-0 right-0 h-[100px] w-[8px] -translate-y-1/2 rounded-l-lg bg-primary duration-200 group-hover:bg-secondary"></div>
+      <div className="absolute bottom-0 right-0 h-[100px] w-[8px] -translate-y-[40%] rounded-l-lg bg-primary duration-200 group-hover:bg-secondary"></div>
     </div>
   );
 };

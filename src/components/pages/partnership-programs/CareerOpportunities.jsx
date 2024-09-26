@@ -1,9 +1,11 @@
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import CareerOpportunityCard from "./CareerOpportunityCard";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 
 const CareerOpportunities = () => {
   return (
     <section className="pb-[100px] pt-[100px]">
-      <div className="container">
+      <FadeInDownWithSlowBounce className="container">
         <div className="flex items-center justify-center">
           <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">
             Career Opportunities
@@ -13,8 +15,9 @@ const CareerOpportunities = () => {
         <h2 className="mb-20 mt-5 text-center text-4xl font-semibold lg:text-5xl">
           Looking for a Career with Us
         </h2>
-
-        <div className="grid grid-cols-1 gap-x-6 gap-y-28 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      </FadeInDownWithSlowBounce>
+      <div className="container">
+        <FadeInUpWithSlowBounce className="grid grid-cols-1 gap-x-6 gap-y-28 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {/* card 1 */}
           <CareerOpportunityCard
             icon={
@@ -669,12 +672,10 @@ const CareerOpportunities = () => {
             title="Work-Life Balance"
             description="Benefit from flexible schedules and supportive policies that help you maintain a healthy balance between work and personal life."
           />
-        </div>
+        </FadeInUpWithSlowBounce>
       </div>
     </section>
   );
 };
 
 export default CareerOpportunities;
-
-// className = "mx-auto fill-primary duration-200 group-hover:fill-secondary";

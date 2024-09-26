@@ -1,9 +1,10 @@
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 
 const InvestmentFreePartnership = () => {
   return (
     <section className="pt-[100px]">
-      <div className="container">
+      <FadeInDownWithSlowBounce className="container">
         <div className="flex items-center justify-center">
           <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">
             Investment-Free Partnership
@@ -14,7 +15,7 @@ const InvestmentFreePartnership = () => {
             Become a Business Partner Without Investment Money
           </h2>
         </div>
-      </div>
+      </FadeInDownWithSlowBounce>
 
       <div className="bg-partnership-bg bg-cover bg-center bg-no-repeat py-[70px] text-white">
         <FadeInUpWithSlowBounce>
