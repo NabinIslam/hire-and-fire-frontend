@@ -1,33 +1,15 @@
-"use client";
-
 import Button from "../../ui/Button";
 import SubServiceCard from "../../common/SubServiceCard";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { Link } from "@/i18n/routing";
 import ServiceImage from "@/components/common/ServiceImage";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 
 const WorkPermitAssistance = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <section className="pb-[50px] pt-[100px]">
       <div className="container flex flex-col items-center justify-between gap-16 lg:gap-24 xl:flex-row">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="basis-full space-y-5 text-center lg:basis-1/2 xl:text-left"
-        >
+        <FadeInLeftWithSlowBounce className="basis-full space-y-5 text-center lg:basis-1/2 xl:text-left">
           <h2 className="text-4xl font-semibold lg:text-5xl">
             Work Permit Assistance
           </h2>
@@ -47,20 +29,9 @@ const WorkPermitAssistance = () => {
               <Button>See More</Button>
             </Link>
           </div>
-        </motion.div>
+        </FadeInLeftWithSlowBounce>
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="w-full basis-full lg:basis-1/2"
-        >
+        <FadeInRightWithSlowBounce className="w-full basis-full lg:basis-1/2">
           <ServiceImage
             imageLink="/images/services/Work Permit Assistance.png"
             title1="Permit Application Guidance"
@@ -70,31 +41,11 @@ const WorkPermitAssistance = () => {
             title3="Visa & Permit Processing Aid"
             desc3="Expert help with visa processing."
           />
-          {/* <Image
-            className="hidden object-contain md:block"
-            src="/images/permanent-recruitment.png"
-            alt="Permanent Recruitment"
-            fill
-          />
-
-          <img
-            className="absolute hidden h-full w-auto transition-transform duration-1000 group-hover:translate-x-full md:block lg:-translate-x-20"
-            src="/images/permanent-rec.png"
-          /> */}
-        </motion.div>
+        </FadeInRightWithSlowBounce>
       </div>
       <div className="container mt-[50px] grid grid-cols-1 gap-6 lg:grid-cols-3">
         {/* card */}
         <SubServiceCard
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"
@@ -110,18 +61,8 @@ const WorkPermitAssistance = () => {
           title="Work Permit Filing Assistance"
           description="Guiding you through the work permit filing process with expert support."
         />
-
         {/* card */}
         <SubServiceCard
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"
@@ -147,15 +88,6 @@ const WorkPermitAssistance = () => {
         />
         {/* card */}
         <SubServiceCard
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
           icon={
             <svg
               className="mx-auto fill-secondary group-hover:fill-white"

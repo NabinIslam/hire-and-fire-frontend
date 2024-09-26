@@ -1,3 +1,4 @@
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import PageBanner from "@/components/common/PageBanner";
 import RequestTalentForm from "@/components/pages/request-talent/RequestTalentForm";
 
@@ -12,13 +13,15 @@ const RequestTalentPage = () => {
       <section className="px-4 py-[100px]">
         <div className="container">
           <div className="mx-auto max-w-5xl space-y-5 rounded-2xl bg-secondary px-5 py-6 text-white shadow-xl md:px-0 lg:px-[150px] lg:py-[100px]">
-            <h2 className="text-center text-3xl font-semibold lg:text-5xl">
-              Find Skilled Workers for your business
-            </h2>
-            <p className="text-center text-sm">
-              Fill out this form and Contact us and find out how to most
-              efficiently involve foreign workers in your business.
-            </p>
+            <FadeInDownWithSlowBounce className="space-y-5">
+              <h2 className="text-center text-3xl font-semibold lg:text-4xl">
+                Find Skilled Workers for your business
+              </h2>
+              <p className="text-center text-sm">
+                Fill out this form and Contact us and find out how to most
+                efficiently involve foreign workers in your business.
+              </p>
+            </FadeInDownWithSlowBounce>
             <RequestTalentForm />
           </div>
         </div>
