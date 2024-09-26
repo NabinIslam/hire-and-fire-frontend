@@ -42,17 +42,6 @@ const WorkforcePlanning = () => {
             title3="Talent Gap Identification"
             desc3="Identifying critical talent gaps ."
           />
-          {/* <Image
-            className="hidden object-contain md:block"
-            src="/images/permanent-recruitment.png"
-            alt="Permanent Recruitment"
-            fill
-          />
-
-          <img
-            className="absolute hidden h-full w-auto transition-transform duration-1000 group-hover:translate-x-full md:block lg:-translate-x-20"
-            src="/images/permanent-rec.png"
-          /> */}
         </FadeInRightWithSlowBounce>
       </div>
       <div className="container mt-[50px] grid grid-cols-1 gap-6 lg:grid-cols-3">

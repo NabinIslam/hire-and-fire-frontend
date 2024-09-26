@@ -71,17 +71,6 @@ const OnboardingSupport = () => {
             title3="Cultural Assimilation"
             desc3="Adapting to company culture"
           />
-          {/* <Image
-            className="hidden object-contain md:block"
-            src="/images/permanent-recruitment.png"
-            alt="Permanent Recruitment"
-            fill
-          />
-
-          <img
-            className="absolute hidden h-full w-auto transition-transform duration-1000 group-hover:translate-x-full md:block lg:-translate-x-20"
-            src="/images/permanent-rec.png"
-          /> */}
         </motion.div>
       </div>
       <div className="container mt-[50px] grid grid-cols-1 gap-6 lg:grid-cols-3">
