@@ -2,11 +2,9 @@ import AboutHero from "@/components/pages/about/AboutHero";
 import CoreCompetencies from "@/components/pages/about/CoreCompetencies";
 import OurMissionAndVision from "@/components/pages/about/OurMissionAndVision";
 import OurValues from "@/components/pages/about/OurValues";
-import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import PageBanner from "@/components/common/PageBanner";
 import Teams from "@/components/pages/about/Teams";
 import TitleDescSection from "@/components/common/TitleDescSection";
-
 import OurClients from "@/components/common/OurClients";
 import WhyChooseUs from "@/components/pages/about/WhyChooseUs";
 import KeySkills from "@/components/pages/about/KeySkills";

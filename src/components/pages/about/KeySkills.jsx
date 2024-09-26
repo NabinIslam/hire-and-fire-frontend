@@ -1,3 +1,5 @@
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
@@ -5,14 +7,14 @@ const KeySkills = () => {
   return (
     <section className="pb-[50px] pt-[100px]">
       <div className="container flex flex-col items-center justify-between gap-20 lg:flex-row">
-        <div className="relative min-h-[440px] w-full lg:min-h-[624px]">
+        <FadeInLeftWithSlowBounce className="relative min-h-[440px] w-full lg:min-h-[624px]">
           <Image
             className="h-auto w-full object-contain object-right"
             src="/images/key-skills.png"
             fill
           />
-        </div>
-        <div className="space-y-5">
+        </FadeInLeftWithSlowBounce>
+        <FadeInRightWithSlowBounce className="space-y-5">
           <h2 className="text-center text-5xl font-semibold lg:text-left">
             Key Skills
           </h2>
@@ -367,7 +369,7 @@ const KeySkills = () => {
           <div className="flex items-center justify-center lg:justify-start">
             <Button>Contact Us</Button>
           </div>
-        </div>
+        </FadeInRightWithSlowBounce>
       </div>
     </section>
   );
