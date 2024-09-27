@@ -1,5 +1,6 @@
 "use client";
 
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import { apiBaseUrl } from "@/secrets";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
@@ -75,7 +76,7 @@ const RequestTalentForm = () => {
       <div className="grid grid-cols-1 gap-x-10 gap-y-5 lg:grid-cols-2">
         {/* column  */}
 
-        <div>
+        <FadeInDownWithSlowBounce>
           <div className="mb-2 block">
             <Label value="Full Name*" />
           </div>
@@ -86,9 +87,9 @@ const RequestTalentForm = () => {
             required
             shadow
           />
-        </div>
+        </FadeInDownWithSlowBounce>
 
-        <div>
+        <FadeInDownWithSlowBounce>
           <div className="mb-2 block">
             <Label value="Email*" />
           </div>
@@ -99,9 +100,9 @@ const RequestTalentForm = () => {
             required
             shadow
           />
-        </div>
+        </FadeInDownWithSlowBounce>
 
-        <div>
+        <FadeInDownWithSlowBounce>
           <div className="mb-2 block">
             <Label value="Phone Number*" />
           </div>
@@ -112,9 +113,9 @@ const RequestTalentForm = () => {
             required
             shadow
           />
-        </div>
+        </FadeInDownWithSlowBounce>
 
-        <div>
+        <FadeInDownWithSlowBounce>
           <div className="mb-2 block">
             <Label value="Company Name*" />
           </div>
@@ -125,8 +126,9 @@ const RequestTalentForm = () => {
             required
             shadow
           />
-        </div>
-        <div>
+        </FadeInDownWithSlowBounce>
+
+        <FadeInDownWithSlowBounce>
           <div className="mb-2 block">
             <Label value="Company Tax ID*" />
           </div>
@@ -137,9 +139,9 @@ const RequestTalentForm = () => {
             required
             shadow
           />
-        </div>
+        </FadeInDownWithSlowBounce>
 
-        <div className="space-y-2">
+        <FadeInDownWithSlowBounce className="space-y-2">
           <div className="mb-2 block">
             <Label value="Number of Workers*" />
           </div>
@@ -169,9 +171,9 @@ const RequestTalentForm = () => {
               </div>
             </div>
           </div>
-        </div>
+        </FadeInDownWithSlowBounce>
 
-        <div>
+        <FadeInDownWithSlowBounce>
           <div className="mb-2 block">
             <Label value="Position Requiring a Foreign Worker*" />
           </div>
@@ -182,8 +184,9 @@ const RequestTalentForm = () => {
             required
             shadow
           />
-        </div>
-        <div>
+        </FadeInDownWithSlowBounce>
+
+        <FadeInDownWithSlowBounce>
           <div className="mb-2 block">
             <Label value="Location of Work*" />
           </div>
@@ -194,11 +197,11 @@ const RequestTalentForm = () => {
             required
             shadow
           />
-        </div>
+        </FadeInDownWithSlowBounce>
 
         {/* column  */}
 
-        <div>
+        <FadeInDownWithSlowBounce>
           <div className="mb-2 block">
             <Label value="Do you have any foreign workers (If any please write number)*" />
           </div>
@@ -209,17 +212,18 @@ const RequestTalentForm = () => {
             required
             shadow
           />
-        </div>
+        </FadeInDownWithSlowBounce>
       </div>
+
       <div className="grid grid-cols-1 gap-x-10 gap-y-5 lg:grid-cols-2">
-        <div>
+        <FadeInDownWithSlowBounce>
           <div className="mb-2 block">
             <Label value="Comments (Optional)" />
           </div>
           <Textarea {...register("comment")} rows={5} />
-        </div>
+        </FadeInDownWithSlowBounce>
       </div>
-      <div className="space-y-6">
+      <FadeInDownWithSlowBounce className="space-y-6">
         <ul className="list-disc space-y-3 px-4 text-sm">
           <li>
             By submitting this form you are agreeing with our terms and polices
@@ -258,7 +262,7 @@ const RequestTalentForm = () => {
             )}
           </button>
         </div>
-      </div>
+      </FadeInDownWithSlowBounce>
     </form>
   );
 };
