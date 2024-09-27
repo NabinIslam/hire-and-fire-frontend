@@ -1,14 +1,21 @@
-import Button from "@/components/ui/Button";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 const NotFoundPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-5">
-      <h1 className="text-4xl font-bold">Page not found :(</h1>
-      <Link className="shadow-2xl" href="/">
-        <Button>Go To Home</Button>
-      </Link>
-    </div>
+    <main>
+      <div className="container flex flex-col items-center justify-center">
+        <h1 className="text-center text-6xl">404 - error</h1>
+        <h3 className="text-center text-4xl">PAGE NOT FOUND</h3>
+        <p className="text-center text-sm font-medium">
+          Verify the URL or return to homepage.
+        </p>
+        <Link href="/">
+          <button className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm duration-200 hover:border-white hover:bg-transparent">
+            Back to Home
+          </button>
+        </Link>
+      </div>
+    </main>
   );
 };
 
