@@ -15,6 +15,7 @@ import Script from "next/script";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Toaster } from "sonner";
 
 export const metadata = {
   title: "Hire&Fire",
@@ -36,6 +37,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           <TanstackQueryProvider>
             <RsuiteProvider>
               <Header />
+              <Toaster position="top-center" />
               {children}
               <Footer />
             </RsuiteProvider>

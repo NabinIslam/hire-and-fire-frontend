@@ -59,6 +59,7 @@ module.exports = {
           "url('/images/work-permit-card-bg-blue.png')",
         "partnership-bg": "url('/images/partnership-bg.png')",
         "partnership-faq-bg": "url('/images/partnership-faq-bg.png')",
+        "hire-worker-bg": "url('/images/hire-worker-bg.png')",
       },
       keyframes: {
         slideLeftRight: {

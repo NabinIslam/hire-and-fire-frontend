@@ -12,7 +12,7 @@
   "proxy": "http://192.168.11.110:8000/api",
   "dependencies": {
     "@tailwindcss/typography": "^0.5.15",
-    "@tanstack/react-query": "^5.52.2",
+    "@tanstack/react-query": "^5.56.2",
     "aos": "^2.3.4",
     "axios": "^1.7.5",
     "flowbite-react": "^0.10.1",
@@ -27,6 +27,7 @@
     "react-dom": "^18",
     "react-dropdown-select": "^4.11.3",
     "react-flags-select": "^2.2.3",
+    "react-hook-form": "^7.53.0",
     "react-i18next": "^15.0.1",
     "react-icons": "^5.3.0",
     "react-intersection-observer": "^9.13.0",
@@ -37,7 +38,8 @@
     "react-slick": "^0.30.2",
     "react-vertical-timeline-component": "^3.6.0",
     "rsuite": "^5.70.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "sonner": "^1.5.0"
   },
   "devDependencies": {
     "eslint": "^9.9.1",

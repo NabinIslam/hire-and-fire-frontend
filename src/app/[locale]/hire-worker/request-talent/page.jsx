@@ -1,6 +1,7 @@
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
-import PageBanner from "@/components/common/PageBanner";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import RequestTalentForm from "@/components/pages/request-talent/RequestTalentForm";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export const metadata = {
   title: "Hire&Fire | Request Talent",
@@ -8,19 +9,20 @@ export const metadata = {
 
 const RequestTalentPage = () => {
   return (
-    <main>
-      <PageBanner title="Request Talent" />
+    <main className="bg-hire-worker-bg bg-cover bg-center bg-no-repeat">
+      <section className="space-y-6 pt-[50px] text-center text-white">
+        <FadeInUpWithSlowBounce className="space-y-4">
+          <h1 className="text-3xl font-semibold lg:text-5xl">Hire Worker</h1>
+          <Breadcrumbs />
+        </FadeInUpWithSlowBounce>
+      </section>
       <section className="px-4 py-[100px]">
         <div className="container">
-          <div className="mx-auto max-w-5xl space-y-5 rounded-2xl bg-secondary px-5 py-6 text-white shadow-xl md:px-0 lg:px-[150px] lg:py-[100px]">
+          <div className="space-y-10 rounded-lg bg-white px-10 py-10 shadow-xl">
             <FadeInDownWithSlowBounce className="space-y-5">
               <h2 className="text-center text-3xl font-semibold lg:text-4xl">
-                Find Skilled Workers for your business
+                Hire Skilled Workers for your business
               </h2>
-              <p className="text-center text-sm">
-                Fill out this form and Contact us and find out how to most
-                efficiently involve foreign workers in your business.
-              </p>
             </FadeInDownWithSlowBounce>
             <RequestTalentForm />
           </div>
