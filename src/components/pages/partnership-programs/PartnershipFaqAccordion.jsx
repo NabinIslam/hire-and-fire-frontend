@@ -12,9 +12,9 @@ const PartnershipFaqAccordion = ({ title, answer }) => {
     >
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className={`flex w-full items-center justify-between rounded-l-lg duration-500 ${accordionOpen ? "rounded-r-lg bg-primary" : ""}`}
+        className={`flex min-h-14 w-full items-stretch justify-between rounded-l-lg duration-500 ${accordionOpen ? "rounded-r-lg bg-primary" : ""}`}
       >
-        <div className="flex w-[60px] items-center justify-center rounded-l-lg bg-primary py-3">
+        <div className="flex min-h-full w-[60px] items-center justify-center rounded-l-lg bg-primary py-3">
           {accordionOpen ? (
             <HiOutlineArrowDown className="text-2xl text-white" />
           ) : (
@@ -23,7 +23,7 @@ const PartnershipFaqAccordion = ({ title, answer }) => {
         </div>
 
         <div
-          className={`text-md h-full basis-full px-2 text-left font-medium ${accordionOpen ? "text-white" : ""}`}
+          className={`text-md flex min-h-full basis-full items-center justify-start px-3 py-1 text-left font-medium ${accordionOpen ? "text-white" : ""}`}
         >
           {title}
         </div>
