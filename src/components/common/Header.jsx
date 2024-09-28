@@ -168,7 +168,17 @@ const Header = () => {
               </Link>
             </li>
             <li className="group relative px-4">
-              <p className="flex cursor-pointer duration-200 hover:text-primary">
+              <p
+                className={`flex cursor-pointer duration-200 hover:text-primary ${
+                  pathname === `/${localActive}/resources/faq`
+                    ? "text-primary"
+                    : ""
+                } ${
+                  pathname === `/${localActive}/resources/blog`
+                    ? "text-primary"
+                    : ""
+                } `}
+              >
                 Resources <MdKeyboardArrowDown className="text-xl" />
               </p>
 
