@@ -1,10 +1,11 @@
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import SVGTimeline from "./SVGTimeline";
 import { ProcessTimeline } from "./Timeline";
 
 const PermanentRecruitmentProcess = () => {
   return (
     <section className="space-y-20 py-[50px]">
-      <div className="container space-y-8">
+      <FadeInDownWithSlowBounce className="container space-y-8">
         <div className="flex items-center justify-center">
           <span className="mx-auto rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">
             Permanent Recruitment Process
@@ -15,7 +16,7 @@ const PermanentRecruitmentProcess = () => {
             Our Step-by-Step Permanent Recruitment Process
           </h2>
         </div>
-      </div>
+      </FadeInDownWithSlowBounce>
       <div className="container">
         {/* <ProcessTimeline /> */}
         <SVGTimeline />

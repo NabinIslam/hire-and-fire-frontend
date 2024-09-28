@@ -1,35 +1,16 @@
 "use client";
 
-import Image from "next/image";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import Button from "../../../ui/Button";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
+import ServiceImage from "@/components/common/ServiceImage";
 
 const PermanentRecruitment = () => {
-  const t = useTranslations("PermanentRecruitment");
-
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <section className="pb-[50px] pt-[100px]">
-      <div className="container flex flex-col items-center justify-between md:gap-6 lg:flex-row lg:gap-24">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="basis-full space-y-5 text-center lg:basis-1/2 lg:text-left"
-        >
+      <div className="container flex flex-col items-center justify-between gap-16 lg:gap-24 xl:flex-row">
+        <FadeInLeftWithSlowBounce className="basis-full space-y-5 text-center lg:basis-1/2 xl:text-left">
           <h2 className="text-4xl font-semibold lg:text-5xl">
             Permanent Recruitment
           </h2>
@@ -45,31 +26,23 @@ const PermanentRecruitment = () => {
             employee.
           </p>
           <div>
-            <Link href="/service/permanent-recruitment">
-              <Button>Hire Worker</Button>
+            <Link href="#">
+              <Button>See More</Button>
             </Link>
           </div>
-        </motion.div>
+        </FadeInLeftWithSlowBounce>
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="group relative min-h-[400px] w-full basis-full lg:basis-1/2"
-        >
-          <Image
-            className="object-contain"
-            src="/images/permanent-rec-full.png"
-            alt="Permanent Recruitment"
-            fill
+        <FadeInRightWithSlowBounce className="w-full basis-full lg:basis-1/2">
+          <ServiceImage
+            imageLink="/images/services/Permanent Recruitment.png"
+            title1="Tailored Job Matching"
+            desc1="Customized job matching for you."
+            title2="Global Talent Pool Access"
+            desc2="Access to a global talent pool."
+            title3="Retention-Focused Hiring"
+            desc3="Global retention-focused hiring."
           />
-        </motion.div>
+        </FadeInRightWithSlowBounce>
       </div>
     </section>
   );

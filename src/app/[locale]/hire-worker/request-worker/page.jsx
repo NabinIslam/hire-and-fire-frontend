@@ -4,7 +4,7 @@ import RequestTalentForm from "@/components/pages/request-talent/RequestTalentFo
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export const metadata = {
-  title: "Hire&Fire | Request Talent",
+  title: "Hire&Fire | Request Worker",
 };
 
 const RequestTalentPage = () => {
@@ -12,7 +12,7 @@ const RequestTalentPage = () => {
     <main className="bg-hire-worker-bg bg-cover bg-center bg-no-repeat">
       <section className="space-y-6 pt-[50px] text-center text-white">
         <FadeInUpWithSlowBounce className="space-y-4">
-          <h1 className="text-3xl font-semibold lg:text-5xl">Hire Worker</h1>
+          <h1 className="text-3xl font-semibold lg:text-5xl">Request Worker</h1>
           <Breadcrumbs />
         </FadeInUpWithSlowBounce>
       </section>

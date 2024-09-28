@@ -1,9 +1,10 @@
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 
 const WhyChooseUs = () => {
   return (
     <section className="space-y-8 pb-[100px] pt-[50px]">
-      <div className="container space-y-8">
+      <FadeInDownWithSlowBounce className="container space-y-8">
         <div className="flex justify-center">
           <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">
             Why Choose Us
@@ -14,7 +15,7 @@ const WhyChooseUs = () => {
             Why Choose Us for Parmanent Recruitment
           </h2>
         </div>
-      </div>
+      </FadeInDownWithSlowBounce>
 
       <section className="bg-why-choose-us-pr-bg bg-cover bg-center bg-no-repeat py-[70px] text-white">
         <FadeInUpWithSlowBounce>

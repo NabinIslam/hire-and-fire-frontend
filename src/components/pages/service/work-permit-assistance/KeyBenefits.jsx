@@ -1,3 +1,5 @@
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import Image from "next/image";
 
 const KeyBenefits = () => {
@@ -6,7 +8,7 @@ const KeyBenefits = () => {
       {/* container row */}
       <div className="container flex flex-col items-center justify-start gap-20 lg:flex-row">
         {/* column */}
-        <div className="flex w-full justify-start gap-5">
+        <FadeInLeftWithSlowBounce className="flex w-full justify-start gap-5">
           <div className="flex basis-1/2 flex-col justify-center">
             <div className="relative min-h-[235px] w-full lg:min-h-[370px]">
               <Image
@@ -220,9 +222,9 @@ const KeyBenefits = () => {
               />
             </div>
           </div>
-        </div>
+        </FadeInLeftWithSlowBounce>
         {/* column */}
-        <div className="space-y-6">
+        <FadeInRightWithSlowBounce className="space-y-6">
           <div className="flex items-center justify-center lg:justify-start">
             <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">
               Why Choose Us
@@ -550,7 +552,7 @@ const KeyBenefits = () => {
               </div>
             </div>
           </div>
-        </div>
+        </FadeInRightWithSlowBounce>
       </div>
     </section>
   );

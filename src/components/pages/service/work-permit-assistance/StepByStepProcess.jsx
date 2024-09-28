@@ -1,11 +1,12 @@
 import WorkPermitAssistancePage from "@/app/[locale]/service/work-permit-assistance/page";
 import WorkPermitCard from "./WorkPermitCard";
 import { WorkPermitAssistanceProcess } from "@/data/WorkPermitAssistanceProcess";
+import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 
 const StepByStepProcess = () => {
   return (
-    <section className="py-[50px]">
-      <div className="container space-y-6">
+    <section className="space-y-10 py-[50px]">
+      <FadeInDownWithSlowBounce className="container space-y-6">
         <div className="flex items-center justify-center">
           <span className="rounded-full border-2 border-primary px-5 py-3 text-center text-2xl font-medium text-primary">
             Work Permit Assistance Process
@@ -16,6 +17,8 @@ const StepByStepProcess = () => {
             Our Step-by-Step Work Permit Assistance Process
           </h2>
         </div>
+      </FadeInDownWithSlowBounce>
+      <div className="container">
         <div className="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
           <WorkPermitCard
             stepNo="01"

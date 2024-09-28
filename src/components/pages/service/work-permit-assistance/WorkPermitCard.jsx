@@ -1,6 +1,8 @@
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+
 const WorkPermitCard = ({ icon, title, description, stepNo }) => {
   return (
-    <div className="group flex flex-col">
+    <FadeInLeftWithSlowBounce className="group flex flex-col">
       <div className="flex items-center justify-center">
         <span className="rounded-t-lg bg-secondary px-[100px] py-2 font-medium text-white duration-200 group-hover:bg-primary">
           Step {stepNo}
@@ -20,7 +22,7 @@ const WorkPermitCard = ({ icon, title, description, stepNo }) => {
 
         <div className="absolute bottom-0 right-0 h-[100px] w-[8px] -translate-y-[75%] rounded-l-lg bg-secondary duration-200 group-hover:bg-primary"></div>
       </div>
-    </div>
+    </FadeInLeftWithSlowBounce>
   );
 };
 

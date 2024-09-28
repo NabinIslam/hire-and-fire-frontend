@@ -25,7 +25,7 @@ const PermanentRecruitment = () => {
             employee.
           </p>
           <div>
-            <Link href="#">
+            <Link href="/service/permanent-recruitment">
               <Button>See More</Button>
             </Link>
           </div>

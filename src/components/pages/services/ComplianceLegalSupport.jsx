@@ -26,7 +26,7 @@ const ComplianceLegalSupport = () => {
             promoting sustainable business practices.
           </p>
           <div>
-            <Link href="#">
+            <Link href="/service/compliance-and-legal-support">
               <Button>See More</Button>
             </Link>
           </div>

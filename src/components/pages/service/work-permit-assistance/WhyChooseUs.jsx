@@ -1,3 +1,5 @@
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import Button from "@/components/ui/Button";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
@@ -6,7 +8,7 @@ const WhyChooseUs = () => {
   return (
     <section className="pb-[100px] pt-[50px]">
       <div className="container flex flex-col justify-between lg:flex-row">
-        <div className="basis-full space-y-6 lg:basis-1/2">
+        <FadeInLeftWithSlowBounce className="basis-full space-y-6 lg:basis-1/2">
           <div className="flex items-center">
             <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">
               Why Choose Us
@@ -166,14 +168,14 @@ const WhyChooseUs = () => {
               <Button>Hire Worker</Button>
             </Link>
           </div>
-        </div>
-        <div className="relative w-full basis-full lg:basis-1/2">
+        </FadeInLeftWithSlowBounce>
+        <FadeInRightWithSlowBounce className="relative w-full basis-full lg:basis-1/2">
           <Image
             className="object-contain object-right"
             src="/images/why-choose-us.png"
             fill
           />
-        </div>
+        </FadeInRightWithSlowBounce>
       </div>
     </section>
   );

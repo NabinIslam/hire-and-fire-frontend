@@ -25,7 +25,7 @@ const VisaApplicationFlightAssistance = () => {
             on your business while we handle the logistics.
           </p>
           <div>
-            <Link href="#">
+            <Link href="/service/visa-application-flight-assistance">
               <Button>See More</Button>
             </Link>
           </div>

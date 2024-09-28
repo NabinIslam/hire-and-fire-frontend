@@ -1,8 +1,8 @@
-const VisaApplicationCard = ({ cardData }) => {
-  const { icon, stepNo, title, description } = cardData;
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 
+const VisaApplicationCard = ({ icon, stepNo, title, description }) => {
   return (
-    <div className="flex flex-col items-center justify-center rounded-lg border border-b-8 border-primary">
+    <FadeInLeftWithSlowBounce className="flex flex-col items-center justify-center rounded-lg border border-b-8 border-primary">
       <div className="-mt-5 flex items-center justify-center">
         <span className="rounded-full bg-primary px-14 py-2 text-sm font-medium text-white">
           Step {stepNo}
@@ -15,7 +15,7 @@ const VisaApplicationCard = ({ cardData }) => {
       <div className="-mb-12 mt-auto flex items-center justify-center">
         {icon}
       </div>
-    </div>
+    </FadeInLeftWithSlowBounce>
   );
 };
 

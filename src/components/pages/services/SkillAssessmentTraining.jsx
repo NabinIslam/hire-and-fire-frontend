@@ -29,7 +29,7 @@ const SkillAssessmentTraining = () => {
             organizational success.
           </p>
           <div>
-            <Link href="#">
+            <Link href="/service/skill-assessment-and-training">
               <Button>See More</Button>
             </Link>
           </div>

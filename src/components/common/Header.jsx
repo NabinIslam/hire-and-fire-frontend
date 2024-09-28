@@ -129,7 +129,7 @@ const Header = () => {
                     ? "text-primary"
                     : ""
                 } ${
-                  pathname === `/${localActive}/hire-worker/request-talent`
+                  pathname === `/${localActive}/hire-worker/request-worker`
                     ? "text-primary"
                     : ""
                 } `}
@@ -151,10 +151,10 @@ const Header = () => {
                 <li>
                   <Link
                     className={`${pathname === `/${localActive}/hire-worker/request-talent` ? "text-primary" : ""} flex hover:text-primary`}
-                    href="/hire-worker/request-talent"
+                    href="/hire-worker/request-worker"
                   >
                     <IoMdArrowDropright className="text-xl" />
-                    Request Talent
+                    Request Worker
                   </Link>
                 </li>
               </ul>

@@ -27,7 +27,7 @@ const BackgroundChecks = () => {
             and protect the organization's reputation and assets.
           </p>
           <div>
-            <Link href="#">
+            <Link href="/background-checks">
               <Button>See More</Button>
             </Link>
           </div>

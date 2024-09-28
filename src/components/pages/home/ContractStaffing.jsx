@@ -26,7 +26,7 @@ const ContractStaffing = () => {
             demands.
           </p>
           <div>
-            <Link href="#">
+            <Link href="/service/contract-staffing">
               <Button>See More</Button>
             </Link>
           </div>
