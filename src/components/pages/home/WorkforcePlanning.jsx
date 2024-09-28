@@ -1,11 +1,19 @@
+"use client";
+
 import Button from "../../ui/Button";
 import SubServiceCard from "../../common/SubServiceCard";
 import { Link } from "@/i18n/routing";
 import ServiceImage from "@/components/common/ServiceImage";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
+import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 
 const WorkforcePlanning = () => {
+  const pathname = usePathname();
+  const localActive = useLocale();
+
   return (
     <section className="pb-[50px] pt-[50px]">
       <div className="container flex flex-col items-center justify-between gap-16 lg:gap-24 xl:flex-row">
@@ -122,6 +130,13 @@ const WorkforcePlanning = () => {
           description="We optimize the allocation of human resources to maximize efficiency."
         />
       </div>
+      {pathname === `/${localActive}` && (
+        <FadeInUpWithSlowBounce className="mt-10 flex items-center justify-center">
+          <Link href="/services">
+            <Button>View All Services</Button>
+          </Link>
+        </FadeInUpWithSlowBounce>
+      )}
     </section>
   );
 };

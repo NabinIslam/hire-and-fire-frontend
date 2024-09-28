@@ -1,7 +1,9 @@
-import { apiBaseUrl } from "@/secrets";
+import { apiBaseUrl, path, port } from "@/secrets";
 
 export const getTeams = async () => {
-  const res = await fetch(`${apiBaseUrl}/teams`, { cache: "no-store" });
+  const res = await fetch(`${apiBaseUrl}:${port}${path}/teams`, {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     throw new Error("Failed to fetch teams");

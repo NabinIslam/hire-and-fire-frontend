@@ -1,7 +1,7 @@
-import { apiBaseUrl } from "@/secrets";
+import { apiBaseUrl, path, port } from "@/secrets";
 
 export const getBlogBySlug = async (blogSlug) => {
-  const res = await fetch(`${apiBaseUrl}/blogs/${blogSlug}`, {
+  const res = await fetch(`${apiBaseUrl}:${port}${path}/blogs/${blogSlug}`, {
     cache: "no-store",
   });
 

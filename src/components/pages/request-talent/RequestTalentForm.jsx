@@ -251,7 +251,7 @@ const RequestTalentForm = () => {
           >
             {mutation.isPending ? (
               <>
-                <Spinner aria-label="Small spinner example" size="sm" />{" "}
+                <Spinner aria-label="Small spinner example" size="sm" />
                 Submitting
               </>
             ) : (
