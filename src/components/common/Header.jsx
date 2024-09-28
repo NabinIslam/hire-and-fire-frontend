@@ -72,7 +72,21 @@ const Header = () => {
               </Link>
             </li>
             <li className="group relative px-4">
-              <p className="flex cursor-pointer duration-200 hover:text-primary">
+              <p
+                className={`flex cursor-pointer duration-200 hover:text-primary ${
+                  pathname === `/${localActive}/employers/employment-service`
+                    ? "text-primary"
+                    : ""
+                } ${
+                  pathname === `/${localActive}/employers/additional-support`
+                    ? "text-primary"
+                    : ""
+                } ${
+                  pathname === `/${localActive}/employers/partnerships-programs`
+                    ? "text-primary"
+                    : ""
+                }`}
+              >
                 Employer <MdKeyboardArrowDown className="text-xl" />
               </p>
 
@@ -109,7 +123,17 @@ const Header = () => {
               </ul>
             </li>
             <li className="group relative px-4">
-              <p className="flex cursor-pointer duration-200 hover:text-primary">
+              <p
+                className={`flex cursor-pointer duration-200 hover:text-primary ${
+                  pathname === `/${localActive}/hire-worker/our-process`
+                    ? "text-primary"
+                    : ""
+                } ${
+                  pathname === `/${localActive}/hire-worker/request-talent`
+                    ? "text-primary"
+                    : ""
+                } `}
+              >
                 Hire Worker <MdKeyboardArrowDown className="text-xl" />
               </p>
 

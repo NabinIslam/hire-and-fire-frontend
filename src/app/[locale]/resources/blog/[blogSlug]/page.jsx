@@ -1,32 +1,30 @@
 import BlogDescription from "@/components/BlogDescription";
 import PageBanner from "@/components/common/PageBanner";
 import TitleDescSection from "@/components/common/TitleDescSection";
-import BlogCard from "@/components/pages/blog/BlogCard";
-import { apiBaseUrl } from "@/secrets";
+import Blogs from "@/components/pages/blog-details/Blogs";
+import BlogSkeleton from "@/components/skeletons/BlogSkeleton";
+import { getBlogBySlug } from "@/services/getBlogBySlug";
 import { formatDate } from "@/Utils/formatDate";
 import Image from "next/image";
+import { Suspense } from "react";
 import { FaRegEye } from "react-icons/fa";
 import { MdCalendarMonth } from "react-icons/md";
 
 const BlogDetailsPage = async ({ params }) => {
   const { blogSlug } = params;
 
-  const data = await fetch(`${apiBaseUrl}/blogs/${blogSlug}`, {
-    cache: "no-store",
-  });
-
-  const blog = await data.json();
+  const blog = await getBlogBySlug(blogSlug);
 
   return (
     <main>
       <PageBanner title={blog?.title} />
 
       <section className="py-[100px]">
-        <div className="container flex gap-10">
+        <div className="container flex flex-col gap-x-10 xl:flex-row">
           <main className="basis-full space-y-5 lg:basis-[80%]">
             <div className="relative min-h-[500px] w-full">
               <Image
-                className="h-full w-full rounded-lg object-cover"
+                className="object-contain object-left"
                 src={blog?.thumbnail}
                 alt={blog?.title}
                 fill
@@ -111,14 +109,9 @@ const BlogDetailsPage = async ({ params }) => {
           title="Our Similar Blogs & Newses"
           description="Stay updated with the latest news articles and trending stories."
         >
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
-            {/* blog card */}
-
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-          </div>
+          <Suspense fallback={<BlogSkeleton />}>
+            <Blogs currentBlog={blog} />
+          </Suspense>
         </TitleDescSection>
       </section>
     </main>

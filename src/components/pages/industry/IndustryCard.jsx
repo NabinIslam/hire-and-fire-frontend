@@ -19,12 +19,12 @@ const IndustryCard = ({ industry }) => {
           />
         </div>
         <h3 className="mt-[15px] text-2xl font-medium">{name}</h3>
-        <p className="my-[15px] text-sm font-medium">{shortDescription}</p>
-        <Link className="mt-auto" href={`/industry/${slug}`}>
+        <p className="mt-[15px] text-sm font-medium">{shortDescription}</p>
+        {/* <Link className="mt-auto" href={`/industry/${slug}`}>
           <button className="mx-auto flex items-center text-sm font-medium text-primary duration-200 hover:text-secondary">
             <span>Read More</span> <IoMdArrowDropright className="text-lg" />
           </button>
-        </Link>
+        </Link> */}
       </div>
     </FadeInLeftWithSlowBounce>
   );
