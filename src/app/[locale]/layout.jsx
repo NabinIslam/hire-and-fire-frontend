@@ -10,12 +10,12 @@ import "react-vertical-timeline-component/style.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Script from "next/script";
+import { Toaster } from "sonner";
 
 //language imports
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { Toaster } from "sonner";
 
 export const metadata = {
   title: "Hire&Fire",
