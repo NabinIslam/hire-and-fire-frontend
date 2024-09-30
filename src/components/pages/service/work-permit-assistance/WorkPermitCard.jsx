@@ -8,7 +8,7 @@ const WorkPermitCard = ({ icon, title, description, stepNo }) => {
           Step {stepNo}
         </span>
       </div>
-      <div className="relative basis-full rounded-lg border border-secondary duration-200 group-hover:border-primary">
+      <div className="relative basis-full rounded-lg border-2 border-secondary duration-200 group-hover:border-primary">
         <div className="mx-10 my-5 flex h-full flex-col items-center gap-5">
           {icon}
           <h5 className="text-center text-2xl font-medium">{title}</h5>

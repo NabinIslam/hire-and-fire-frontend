@@ -9,7 +9,7 @@ const WorkPermitAssistance = () => {
   return (
     <section className="pb-[50px] pt-[100px]">
       <div className="container flex flex-col items-center justify-between gap-16 lg:gap-24 xl:flex-row">
-        <FadeInLeftWithSlowBounce className="basis-full space-y-5 text-center lg:basis-1/2 xl:text-left">
+        <FadeInLeftWithSlowBounce className="z-50 basis-full space-y-5 text-center lg:basis-1/2 xl:text-left">
           <h2 className="text-4xl font-semibold lg:text-5xl">
             Work Permit Assistance
           </h2>

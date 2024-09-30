@@ -2,9 +2,9 @@ import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlow
 
 const VisaApplicationCard = ({ icon, stepNo, title, description }) => {
   return (
-    <FadeInLeftWithSlowBounce className="flex flex-col items-center justify-center rounded-lg border border-b-8 border-primary">
+    <FadeInLeftWithSlowBounce className="group flex flex-col items-center justify-center rounded-lg border border-b-8 border-primary duration-200 hover:border-secondary">
       <div className="-mt-5 flex items-center justify-center">
-        <span className="rounded-full bg-primary px-14 py-2 text-sm font-medium text-white">
+        <span className="rounded-full bg-primary px-14 py-2 text-sm font-medium text-white duration-200 group-hover:bg-secondary">
           Step {stepNo}
         </span>
       </div>
