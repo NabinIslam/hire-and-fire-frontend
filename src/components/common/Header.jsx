@@ -236,7 +236,11 @@ const Header = () => {
         </div>
       </nav>
 
-      <MobileDrawer isOpen={isOpen} toggleDrawer={toggleDrawer} />
+      <MobileDrawer
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        toggleDrawer={toggleDrawer}
+      />
     </header>
   );
 };

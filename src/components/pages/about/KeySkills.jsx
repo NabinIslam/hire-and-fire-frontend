@@ -1,6 +1,7 @@
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import Button from "@/components/ui/Button";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
 const KeySkills = () => {
@@ -367,7 +368,9 @@ const KeySkills = () => {
             </div>
           </div>
           <div className="flex items-center justify-center lg:justify-start">
-            <Button>Contact Us</Button>
+            <Link href="/contact-us">
+              <Button>Meet Us</Button>
+            </Link>
           </div>
         </FadeInRightWithSlowBounce>
       </div>
