@@ -30,6 +30,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
           <ul className="space-y-3">
             <li>
               <Link
+                onClick={toggleDrawer}
                 className={`block w-full rounded-lg px-3 py-2 text-sm font-medium text-secondary ${pathname === "/about-us" ? "bg-primary text-white" : ""}`}
                 href="/about-us"
               >
@@ -41,6 +42,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
                 <ul>
                   <li>
                     <Link
+                      onClick={toggleDrawer}
                       className={`block w-full rounded-lg px-3 py-2 text-sm font-medium text-secondary ${pathname === "/employers/employment-service" ? "bg-primary text-white" : ""}`}
                       href="/employers/employment-service"
                     >
@@ -49,6 +51,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
                   </li>
                   <li>
                     <Link
+                      onClick={toggleDrawer}
                       className={`block w-full rounded-lg px-3 py-2 text-sm font-medium text-secondary ${pathname === "/employers/additional-support" ? "bg-primary text-white" : ""}`}
                       href="/employers/additional-support"
                     >
@@ -57,6 +60,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
                   </li>
                   <li>
                     <Link
+                      onClick={toggleDrawer}
                       className={`block w-full rounded-lg px-3 py-2 text-sm font-medium text-secondary ${pathname === "/employers/partnerships-programs" ? "bg-primary text-white" : ""}`}
                       href="/employers/partnerships-programs"
                     >
@@ -71,6 +75,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
                 <ul>
                   <li>
                     <Link
+                      onClick={toggleDrawer}
                       className={`block w-full rounded-lg px-3 py-2 text-sm font-medium text-secondary ${pathname === "/hire-worker/our-process" ? "bg-primary text-white" : ""}`}
                       href="/hire-worker/our-process"
                     >
@@ -79,6 +84,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
                   </li>
                   <li>
                     <Link
+                      onClick={toggleDrawer}
                       className={`block w-full rounded-lg px-3 py-2 text-sm font-medium text-secondary ${pathname === "/hire-worker/request-worker" ? "bg-primary text-white" : ""}`}
                       href="/hire-worker/request-worker"
                     >
@@ -90,6 +96,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
             </li>
             <li>
               <Link
+                onClick={toggleDrawer}
                 className={`block w-full rounded-lg px-3 py-2 text-sm font-medium text-secondary ${pathname === "/industry" ? "bg-primary text-white" : ""}`}
                 href="/industry"
               >
@@ -101,6 +108,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
                 <ul>
                   <li>
                     <Link
+                      onClick={toggleDrawer}
                       className={`block w-full rounded-lg px-3 py-2 text-sm font-medium text-secondary ${pathname === "/resources/faq" ? "bg-primary text-white" : ""}`}
                       href="/resources/faq"
                     >
@@ -109,6 +117,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
                   </li>
                   <li>
                     <Link
+                      onClick={toggleDrawer}
                       className={`block w-full rounded-lg px-3 py-2 text-sm font-medium text-secondary ${pathname === "/resources/blog" ? "bg-primary text-white" : ""}`}
                       href="/resources/blog"
                     >
