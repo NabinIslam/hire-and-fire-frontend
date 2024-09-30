@@ -121,6 +121,15 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
+                  href="/service/permanent-recruitment"
+                >
+                  {t("Permanent_Recruitment")}
+                </Link>
+              </li>
+              <li className="flex items-center">
+                <IoMdArrowDropright className="text-2xl" />
+                <Link
+                  className="duration-200 hover:text-primary"
                   href="/service/contract-staffing"
                 >
                   {t("Contract_Staffing")}
@@ -130,16 +139,7 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  href="/service/permanent-recruitment"
-                >
-                  {t("Housing_Accommodation_Support")}
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <IoMdArrowDropright className="text-2xl" />
-                <Link
-                  className="duration-200 hover:text-primary"
-                  href="/service/permanent-recruitment"
+                  href="/service/compliance-and-legal-support"
                 >
                   {t("Compliance_and_Legal_Support")}
                 </Link>
@@ -148,7 +148,7 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  href="/service/permanent-recruitment"
+                  href="/service/workforce-planning"
                 >
                   {t("Workforce_Planning")}
                 </Link>
@@ -157,7 +157,7 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  href="/service/permanent-recruitment"
+                  href="/service/background-checks"
                 >
                   {t("Background_Checks")}
                 </Link>
@@ -166,7 +166,7 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  href="/service/permanent-recruitment"
+                  href="/service/onboarding-support"
                 >
                   {t("Onboarding_Support")}
                 </Link>
