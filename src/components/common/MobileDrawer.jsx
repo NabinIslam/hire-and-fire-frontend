@@ -18,13 +18,15 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
     >
       <div className="flex h-screen flex-col bg-[#F9FAFB] p-4">
         <div>
-          <Image
-            className="h-[50px] w-auto"
-            src="/images/Logo.png"
-            alt="Hire and Fire"
-            height={50}
-            width={50}
-          />
+          <Link href="/">
+            <Image
+              className="h-[50px] w-auto"
+              src="/images/Logo.png"
+              alt="Hire and Fire"
+              height={50}
+              width={50}
+            />
+          </Link>
         </div>
         <div className="mt-10">
           <ul className="space-y-3">

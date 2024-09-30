@@ -54,7 +54,7 @@ const OurClients = () => {
       <FadeInDownWithSlowBounce className="container space-y-8">
         <h2 className="text-center text-5xl font-semibold">{t("title")}</h2>
         <Slider {...settings}>
-          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
+          <div className="relative min-h-[134px] rounded-lg border shadow">
             <Image
               className="object-contain px-12"
               src="/images/clients/flexjobs-logo.png"
@@ -62,7 +62,7 @@ const OurClients = () => {
               alt="Flexjobs Logo"
             />
           </div>
-          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
+          <div className="relative min-h-[134px] rounded-lg border shadow">
             <Image
               className="object-contain px-12"
               src="/images/clients/Upwork-logo.png"
@@ -70,7 +70,7 @@ const OurClients = () => {
               fill
             />
           </div>
-          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
+          <div className="relative min-h-[134px] rounded-lg border shadow">
             <Image
               className="object-contain px-12"
               src="/images/clients/linkedin-logo.png"
@@ -78,7 +78,7 @@ const OurClients = () => {
               fill
             />
           </div>
-          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
+          <div className="relative min-h-[134px] rounded-lg border shadow">
             <Image
               className="object-contain px-12"
               src="/images/clients/glassdoor-logo.png"
@@ -86,7 +86,7 @@ const OurClients = () => {
               fill
             />
           </div>
-          <div className="relative min-h-[134px] rounded-lg border shadow-lg">
+          <div className="relative min-h-[134px] rounded-lg border shadow">
             <Image
               className="object-contain px-12"
               src="/images/clients/Indeed-logo.png"

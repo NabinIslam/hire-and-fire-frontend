@@ -351,7 +351,7 @@ const KeyBenefits = () => {
           </div>
           <div className="flex items-center gap-5">
             <Link href="/hire-worker/request-worker">
-              <Button>Hire Worker</Button>
+              <Button>Request Worker</Button>
             </Link>
             <button className="flex items-center rounded-lg border-2 border-primary py-1 pr-3 text-sm font-medium text-primary">
               <svg

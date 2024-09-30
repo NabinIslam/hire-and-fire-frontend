@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
 import { FaPhone, FaEnvelope } from "react-icons/fa6";
 import {
@@ -10,6 +9,7 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const Footer = () => {
   const t = useTranslations("footer");
@@ -110,43 +110,64 @@ const Footer = () => {
             <ul className="flex flex-col justify-between gap-6">
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link className="duration-200 hover:text-primary" href="/home">
+                <Link
+                  className="duration-200 hover:text-primary"
+                  href="/service/permanent-recruitment"
+                >
                   {t("Permanent_Recruitment")}
                 </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link className="duration-200 hover:text-primary" href="/home">
+                <Link
+                  className="duration-200 hover:text-primary"
+                  href="/service/contract-staffing"
+                >
                   {t("Contract_Staffing")}
                 </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link className="duration-200 hover:text-primary" href="/home">
+                <Link
+                  className="duration-200 hover:text-primary"
+                  href="/service/permanent-recruitment"
+                >
                   {t("Housing_Accommodation_Support")}
                 </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link className="duration-200 hover:text-primary" href="/home">
+                <Link
+                  className="duration-200 hover:text-primary"
+                  href="/service/permanent-recruitment"
+                >
                   {t("Compliance_and_Legal_Support")}
                 </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link className="duration-200 hover:text-primary" href="/home">
+                <Link
+                  className="duration-200 hover:text-primary"
+                  href="/service/permanent-recruitment"
+                >
                   {t("Workforce_Planning")}
                 </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link className="duration-200 hover:text-primary" href="/home">
+                <Link
+                  className="duration-200 hover:text-primary"
+                  href="/service/permanent-recruitment"
+                >
                   {t("Background_Checks")}
                 </Link>
               </li>
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link className="duration-200 hover:text-primary" href="/home">
+                <Link
+                  className="duration-200 hover:text-primary"
+                  href="/service/permanent-recruitment"
+                >
                   {t("Onboarding_Support")}
                 </Link>
               </li>

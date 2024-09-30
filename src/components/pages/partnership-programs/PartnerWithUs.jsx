@@ -27,8 +27,8 @@ const PermanentWithUs = () => {
             more capable workforce.
           </p>
           <div>
-            <Link href="#">
-              <Button>Hire Worker</Button>
+            <Link href="/hire-worker/request-worker">
+              <Button>Request Worker</Button>
             </Link>
           </div>
         </FadeInLeftWithSlowBounce>

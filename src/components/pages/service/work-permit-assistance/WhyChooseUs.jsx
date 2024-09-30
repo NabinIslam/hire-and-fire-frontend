@@ -165,7 +165,7 @@ const WhyChooseUs = () => {
           </div>
           <div>
             <Link href="/hire-worker/request-talent">
-              <Button>Hire Worker</Button>
+              <Button>Request Worker</Button>
             </Link>
           </div>
         </FadeInLeftWithSlowBounce>

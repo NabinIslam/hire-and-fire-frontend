@@ -381,7 +381,7 @@ const WhyChooseUs = () => {
           </div>
           <div className="flex items-center justify-start gap-5">
             <Link href="/hire-worker/request-worker">
-              <Button>Hire Worker</Button>
+              <Button>Request Worker</Button>
             </Link>
           </div>
         </FadeInRightWithSlowBounce>

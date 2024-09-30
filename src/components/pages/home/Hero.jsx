@@ -19,8 +19,8 @@ const Hero = () => {
           </h1>
           <p className="mb-5 mt-3">{t("hero_description")}</p>
 
-          <Link href="/hire-worker/request-talent">
-            <BgButton>Hire Worker</BgButton>
+          <Link href="/hire-worker/request-worker">
+            <BgButton>Request Worker</BgButton>
           </Link>
         </FadeInLeftWithSlowBounce>
         <FadeInRightWithSlowBounce className="relative min-h-[400px] w-full basis-full md:min-h-[472px] lg:basis-1/2">

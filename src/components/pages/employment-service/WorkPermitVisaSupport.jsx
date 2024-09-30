@@ -35,8 +35,8 @@ const WorkPermitVisaSupport = () => {
             tailored support maximizes efficiency and increases your chances of
             a successful outcome.
           </p>
-          <Link href="/hire-worker/request-talent">
-            <Button>Hire Worker</Button>
+          <Link href="/hire-worker/request-worker">
+            <Button>Request Worker</Button>
           </Link>
         </FadeInLeftWithSlowBounce>
         <FadeInRightWithSlowBounce className="relative min-h-[400px] w-full basis-full lg:basis-1/2">
