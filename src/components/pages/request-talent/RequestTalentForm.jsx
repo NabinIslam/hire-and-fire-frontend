@@ -160,12 +160,19 @@ const RequestTalentForm = () => {
                 style={sliderBackground()}
                 required
               />
-              <div
-                className="absolute -translate-y-16 transform text-sm font-medium text-white"
+              {/* <div
+                className="absolute -translate-y-16 transform text-sm font-medium text-black"
                 style={{ left: `calc(${value}% - 8px)` }}
               >
                 {value}
-              </div>
+              </div> */}
+            </div>
+            <div className="mt-1">
+              <input
+                className="w-[100px] rounded-lg border-2 border-gray-300 font-medium"
+                type="number"
+                value={value}
+              />
             </div>
           </div>
         </FadeInDownWithSlowBounce>
