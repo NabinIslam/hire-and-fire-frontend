@@ -25,6 +25,11 @@ const SkillAssessmentTraining = () => {
             employee satisfaction and retention, contributing to overall
             organizational success.
           </p>
+          <div>
+            <Link href="/hire-worker/request-worker">
+              <Button>Request Worker</Button>
+            </Link>
+          </div>
         </FadeInLeftWithSlowBounce>
 
         <FadeInRightWithSlowBounce className="w-full basis-full lg:basis-1/2">

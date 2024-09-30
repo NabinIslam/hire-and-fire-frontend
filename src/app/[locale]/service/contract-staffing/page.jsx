@@ -9,7 +9,7 @@ const ContractStaffingPage = () => {
     <main>
       <PageBanner title="Contract Staffing" />
       {/* spacer */}
-      <div className="h-[50px] w-full"></div>
+
       <ContractStaffing />
       <KeyBenefits />
       <ContractStaffingProcess />

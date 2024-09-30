@@ -25,8 +25,8 @@ const WorkforcePlanning = () => {
             retention strategies.
           </p>
           <div>
-            <Link href="/service/workforce-planning">
-              <Button>See More</Button>
+            <Link href="/hire-worker/request-worker">
+              <Button>Request Worker</Button>
             </Link>
           </div>
         </FadeInLeftWithSlowBounce>

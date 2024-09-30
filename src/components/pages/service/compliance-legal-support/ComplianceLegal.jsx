@@ -25,8 +25,8 @@ const ComplianceLegal = () => {
             promoting sustainable business practices.
           </p>
           <div>
-            <Link href="/service/compliance-and-legal-support">
-              <Button>See More</Button>
+            <Link href="/hire-worker/request-worker">
+              <Button>Request Worker</Button>
             </Link>
           </div>
         </FadeInLeftWithSlowBounce>

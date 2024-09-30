@@ -26,8 +26,8 @@ const PermanentRecruitment = () => {
             employee.
           </p>
           <div>
-            <Link href="#">
-              <Button>See More</Button>
+            <Link href="/hire-worker/request-worker">
+              <Button>Request Worker</Button>
             </Link>
           </div>
         </FadeInLeftWithSlowBounce>
