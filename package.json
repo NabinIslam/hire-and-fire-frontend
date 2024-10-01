@@ -11,9 +11,11 @@
   },
   "proxy": "http://192.168.11.110:8000/api",
   "dependencies": {
+    "@headlessui/react": "^2.1.8",
     "@tailwindcss/typography": "^0.5.15",
     "@tanstack/react-query": "^5.56.2",
     "aos": "^2.3.4",
+    "autoprefixer": "^10.4.20",
     "axios": "^1.7.5",
     "flowbite-react": "^0.10.1",
     "framer-motion": "^11.3.31",
@@ -32,6 +34,7 @@
     "react-icons": "^5.3.0",
     "react-intersection-observer": "^9.13.0",
     "react-loading-skeleton": "^3.4.0",
+    "react-modal": "^3.16.1",
     "react-modern-drawer": "^1.4.0",
     "react-player": "^2.16.0",
     "react-range-slider-input": "^3.0.7",
@@ -39,13 +42,14 @@
     "react-vertical-timeline-component": "^3.6.0",
     "rsuite": "^5.70.0",
     "slick-carousel": "^1.8.1",
-    "sonner": "^1.5.0"
+    "sonner": "^1.5.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "eslint": "^9.9.1",
-    "postcss": "^8",
+    "postcss": "^8.4.47",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.13"
   }
 }
