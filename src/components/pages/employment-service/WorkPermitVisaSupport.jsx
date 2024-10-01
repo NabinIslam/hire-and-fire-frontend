@@ -18,7 +18,7 @@ const WorkPermitVisaSupport = () => {
     <section className="pb-[100px] pt-[50px]">
       <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
         <FadeInLeftWithSlowBounce className="basis-full text-center lg:basis-1/2 lg:text-left">
-          <h2 className="text-4xl font-semibold lg:text-4xl">
+          <h2 className="text-4xl font-semibold leading-[62px] lg:text-4xl">
             Work Permit & Visa Support
           </h2>
           <p className="my-5 text-sm font-medium">

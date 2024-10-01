@@ -17,19 +17,19 @@ const ServiceImage = ({
         fill
       />
       <div className="absolute hidden h-full w-full flex-col items-start justify-center space-y-5 px-5 transition-transform duration-1000 group-hover:translate-x-1/2 xl:flex">
-        <div className="rounded-md p-2 backdrop-blur-lg">
+        <div className="rounded-md bg-[#F4F3F380] bg-opacity-[50%] p-2">
           <div className="rounded bg-white p-3">
             <h6 className="text-lg font-medium text-secondary">{title1}</h6>
             <p className="text-sm">{desc1}</p>
           </div>
         </div>
-        <div className="ml-12 rounded-md p-2 backdrop-blur-lg">
+        <div className="ml-12 rounded-md bg-[#F4F3F380] bg-opacity-[50%] p-2">
           <div className="rounded bg-white p-3">
             <h6 className="text-lg font-medium text-secondary">{title2}</h6>
             <p className="text-sm">{desc2}</p>
           </div>
         </div>
-        <div className="rounded-md p-2 backdrop-blur-lg">
+        <div className="rounded-md bg-[#F4F3F380] bg-opacity-[50%] p-2">
           <div className="rounded bg-white p-3">
             <h6 className="text-lg font-medium text-secondary">{title3}</h6>
             <p className="text-sm">{desc3}</p>

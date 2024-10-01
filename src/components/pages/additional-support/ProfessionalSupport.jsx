@@ -14,7 +14,7 @@ const ProfessionalSupport = () => {
           <div className="flex h-[46px] w-[264px] items-center justify-center border-2 border-dashed border-primary text-xl font-medium text-primary">
             Professional Support
           </div>
-          <h2 className="mt-5 text-4xl font-semibold lg:text-4xl">
+          <h2 className="mt-5 text-4xl font-semibold leading-[62px] lg:text-4xl">
             We also provide support for Workers
           </h2>
           <p className="my-5 text-sm font-medium">

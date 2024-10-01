@@ -85,7 +85,7 @@ const LanguageTraining = () => {
           <h6 className="text-2xl font-medium text-primary">
             Language Training
           </h6>
-          <h2 className="mt-5 text-4xl font-semibold lg:text-4xl">
+          <h2 className="mt-5 text-4xl font-semibold leading-[62px] lg:text-4xl">
             Essential Language Skills for the Workplace
           </h2>
           <p className="my-5 text-sm font-medium">

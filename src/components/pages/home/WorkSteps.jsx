@@ -16,7 +16,7 @@ const WorkSteps = () => {
         <h6 className="text-center text-2xl font-medium text-primary">
           {t("work_title_1")}
         </h6>
-        <h2 className="mt-[20px] text-center text-4xl font-semibold lg:text-4xl">
+        <h2 className="mt-[20px] text-center text-4xl font-semibold leading-[62px] lg:text-4xl">
           {t("work_title_2")}
         </h2>
       </FadeInUpWithSlowBounce>

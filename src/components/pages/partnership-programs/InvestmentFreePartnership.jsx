@@ -11,7 +11,7 @@ const InvestmentFreePartnership = () => {
           </span>
         </div>
         <div className="mx-auto max-w-[700px]">
-          <h2 className="mb-10 mt-5 text-center text-4xl font-semibold lg:text-4xl">
+          <h2 className="mb-10 mt-5 text-center text-4xl font-semibold leading-[62px] lg:text-4xl">
             Become a Business Partner Without Investment Money
           </h2>
         </div>
