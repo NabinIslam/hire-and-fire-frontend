@@ -10,7 +10,7 @@ const AboutHero = () => {
       <div className="container flex flex-col items-center justify-between gap-16 lg:flex-row">
         <FadeInLeftWithSlowBounce className="basis-full space-y-6 text-center lg:basis-1/2 lg:text-left">
           <h6 className="text-2xl font-medium text-primary">About Us</h6>
-          <h2 className="text-4xl font-semibold md:text-5xl lg:text-[40px]">
+          <h2 className="text-4xl font-semibold md:text-4xl lg:text-[40px]">
             We believe that great companies are built by great people
           </h2>
           <p className="text-sm font-medium">

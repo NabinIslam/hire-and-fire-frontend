@@ -12,7 +12,7 @@ const CompanyPoints = () => {
         {/* card */}
 
         <FadeInLeftWithSlowBounce>
-          <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-primary hover:text-white">
+          <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-md duration-200 hover:scale-105 hover:bg-primary hover:text-white">
             <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary p-2 group-hover:bg-white">
               <svg
                 className="stroke-white stroke-2 group-hover:stroke-primary"
@@ -39,7 +39,7 @@ const CompanyPoints = () => {
 
         {/* card */}
         <FadeInUpWithSlowBounce>
-          <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-primary hover:text-white">
+          <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-md duration-200 hover:scale-105 hover:bg-primary hover:text-white">
             <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary p-2 group-hover:bg-white">
               <svg
                 className="stroke-white stroke-2 group-hover:stroke-primary"
@@ -66,7 +66,7 @@ const CompanyPoints = () => {
         {/* card */}
 
         <FadeInUpWithSlowBounce>
-          <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-primary hover:text-white">
+          <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-md duration-200 hover:scale-105 hover:bg-primary hover:text-white">
             <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary p-2 group-hover:bg-white">
               <svg
                 className="stroke-white stroke-2 group-hover:stroke-primary"
@@ -92,7 +92,7 @@ const CompanyPoints = () => {
 
         {/* card */}
         <FadeInRightWithSlowBounce>
-          <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-lg duration-200 hover:scale-105 hover:bg-primary hover:text-white">
+          <div className="group space-y-4 rounded-lg bg-white px-3 py-4 text-center shadow-md duration-200 hover:scale-105 hover:bg-primary hover:text-white">
             <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary p-2 group-hover:bg-white">
               <svg
                 className="stroke-white stroke-2 group-hover:stroke-primary"

@@ -14,7 +14,7 @@ const PartnershipFaq = () => {
           </span>
         </div>
 
-        <h2 className="my-5 text-start text-4xl font-semibold text-white lg:text-5xl">
+        <h2 className="my-5 text-start text-4xl font-semibold text-white lg:text-4xl">
           Frequently Asked Questions
         </h2>
 

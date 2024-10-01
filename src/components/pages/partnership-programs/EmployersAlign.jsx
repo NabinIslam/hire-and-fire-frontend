@@ -11,7 +11,7 @@ const EmployersAlign = () => {
           </span>
         </div>
         <div className="mx-auto mb-16 mt-5 max-w-[651px]">
-          <h2 className="text-center text-5xl font-semibold">
+          <h2 className="text-center text-4xl font-semibold">
             Employers Who Want to Align with Us
           </h2>
         </div>

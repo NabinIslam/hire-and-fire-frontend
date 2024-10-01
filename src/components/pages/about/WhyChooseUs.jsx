@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
         {/* column */}
 
         <FadeInLeftWithSlowBounce className="basis-full space-y-6 text-center lg:basis-1/3 lg:text-left">
-          <h2 className="text-5xl font-semibold">Why Choose Us?</h2>
+          <h2 className="text-4xl font-semibold">Why Choose Us?</h2>
           <p className="text-sm">
             Choose our job website for streamlined recruitment, user-friendly
             interface, compliance assurance, and dedicated support for both

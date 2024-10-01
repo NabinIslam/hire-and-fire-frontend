@@ -38,7 +38,7 @@ const AddressInfoSection = () => {
             stiffness: 50,
             damping: 12,
           }}
-          className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-xl"
+          className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg"
         >
           <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white">
             <FaMapMarkerAlt />
@@ -63,7 +63,7 @@ const AddressInfoSection = () => {
             stiffness: 50,
             damping: 12,
           }}
-          className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-xl"
+          className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg"
         >
           <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white">
             <FaPhoneVolume />
@@ -85,7 +85,7 @@ const AddressInfoSection = () => {
             stiffness: 50, // Slowing down the movement
             damping: 12, // Adjusting damping to control bounce
           }}
-          className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-xl"
+          className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg"
         >
           <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white">
             <FaEnvelope />

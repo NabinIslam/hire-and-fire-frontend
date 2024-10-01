@@ -18,8 +18,8 @@ const BenefitsSection = () => {
       </div>
       <div className="container mt-20 grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-4 lg:gap-5">
         {/* card */}
-        <div className="space-y-4 rounded-xl border border-b-8 border-b-[#F90945] px-6 py-5 shadow-xl">
-          <div className="mx-auto mt-[-50px] size-[60px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-lg">
+        <div className="space-y-4 rounded-xl border border-b-8 border-b-[#F90945] px-6 py-5 shadow-lg">
+          <div className="mx-auto mt-[-50px] size-[60px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-md">
             <div className="flex size-full items-center justify-center rounded-full bg-[#F90945]">
               <GiGearHammer className="text-3xl text-white" />
             </div>
@@ -34,8 +34,8 @@ const BenefitsSection = () => {
         </div>
 
         {/* card */}
-        <div className="space-y-4 rounded-xl border border-b-8 border-b-[#F90945] px-6 py-5 shadow-xl">
-          <div className="mx-auto mt-[-50px] size-[60px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-lg">
+        <div className="space-y-4 rounded-xl border border-b-8 border-b-[#F90945] px-6 py-5 shadow-lg">
+          <div className="mx-auto mt-[-50px] size-[60px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-md">
             <div className="flex size-full items-center justify-center rounded-full bg-[#F90945]">
               <IoBarChartSharp className="text-3xl text-white" />
             </div>
@@ -50,8 +50,8 @@ const BenefitsSection = () => {
         </div>
 
         {/* card */}
-        <div className="space-y-4 rounded-xl border border-b-8 border-b-[#F90945] px-6 py-5 shadow-xl">
-          <div className="mx-auto mt-[-50px] size-[60px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-lg">
+        <div className="space-y-4 rounded-xl border border-b-8 border-b-[#F90945] px-6 py-5 shadow-lg">
+          <div className="mx-auto mt-[-50px] size-[60px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-md">
             <div className="flex size-full items-center justify-center rounded-full bg-[#F90945]">
               <IoDocumentText className="text-3xl text-white" />
             </div>
@@ -66,8 +66,8 @@ const BenefitsSection = () => {
         </div>
 
         {/* card */}
-        <div className="space-y-4 rounded-xl border border-b-8 border-b-[#F90945] px-6 py-5 shadow-xl">
-          <div className="mx-auto mt-[-50px] size-[60px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-lg">
+        <div className="space-y-4 rounded-xl border border-b-8 border-b-[#F90945] px-6 py-5 shadow-lg">
+          <div className="mx-auto mt-[-50px] size-[60px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-md">
             <div className="flex size-full items-center justify-center rounded-full bg-[#F90945]">
               <FaUsersGear className="text-3xl text-white" />
             </div>

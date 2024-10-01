@@ -6,7 +6,7 @@ const RoleCard = ({ role }) => {
   const { title, description, image } = role;
 
   return (
-    <div className="flex flex-col rounded-lg border p-4 text-center shadow-xl">
+    <div className="flex flex-col rounded-lg border p-4 text-center shadow-lg">
       <div className="relative h-[240px] w-full">
         <Image
           className="rounded-lg object-cover"

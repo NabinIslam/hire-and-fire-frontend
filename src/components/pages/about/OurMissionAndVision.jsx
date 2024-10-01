@@ -6,7 +6,7 @@ const OurMissionAndVision = () => {
     <section className="py-[50px]">
       <div className="container space-y-10">
         <FadeInUpWithSlowBounce>
-          <h2 className="text-center text-4xl font-semibold lg:text-5xl">
+          <h2 className="text-center text-4xl font-semibold lg:text-4xl">
             Our Mission & Vision
           </h2>
         </FadeInUpWithSlowBounce>

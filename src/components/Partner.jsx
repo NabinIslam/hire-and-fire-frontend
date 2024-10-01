@@ -5,7 +5,7 @@ const Partner = () => {
     <section className="py-[50px]">
       <div className="container flex flex-col items-center justify-between gap-10 lg:flex-row lg:gap-24">
         <div className="basis-1/2 space-y-5 text-center lg:text-left">
-          <h2 className="text-2xl font-bold md:text-5xl">
+          <h2 className="text-2xl font-bold md:text-4xl">
             Your Partner in international Construction Recruitment
           </h2>
           <p className="text-sm leading-5">

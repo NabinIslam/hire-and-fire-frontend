@@ -1,16 +1,20 @@
+"use client";
 import Button from "../../ui/Button";
 import SubServiceCard from "../../common/SubServiceCard";
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import ServiceImage from "@/components/common/ServiceImage";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 
 const PermanentRecruitment = () => {
+  const pathname = usePathname();
+
   return (
     <section className="pb-[50px] pt-[50px]">
       <div className="container flex flex-col items-center justify-between gap-16 lg:gap-24 xl:flex-row">
         <FadeInLeftWithSlowBounce className="z-50 basis-full space-y-5 text-center lg:basis-1/2 xl:text-left">
-          <h2 className="text-4xl font-semibold lg:text-5xl">
+          <h2 className="text-4xl font-semibold lg:text-4xl">
             Permanent Recruitment
           </h2>
           <p className="text-sm font-medium">
@@ -115,6 +119,14 @@ const PermanentRecruitment = () => {
           description="We strengthen your company's appeal to high-quality candidates."
         />
       </div>
+
+      {pathname === "/" && (
+        <FadeInUpWithSlowBounce className="flex items-center justify-center pt-10">
+          <Link href="/services">
+            <Button>View All Services</Button>
+          </Link>
+        </FadeInUpWithSlowBounce>
+      )}
     </section>
   );
 };

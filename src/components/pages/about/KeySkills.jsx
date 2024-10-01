@@ -16,7 +16,7 @@ const KeySkills = () => {
           />
         </FadeInLeftWithSlowBounce>
         <FadeInRightWithSlowBounce className="space-y-5">
-          <h2 className="text-center text-5xl font-semibold lg:text-left">
+          <h2 className="text-center text-4xl font-semibold lg:text-left">
             Key Skills
           </h2>
           <p className="text-center text-sm lg:text-left">

@@ -24,7 +24,7 @@ const AdditionalSupportPage = () => {
 
       <section className="py-[50px]">
         <FadeInDownWithSlowBounce>
-          <h2 className="my-5 text-center text-4xl font-semibold lg:text-5xl">
+          <h2 className="my-5 text-center text-4xl font-semibold lg:text-4xl">
             Our Best Supports
           </h2>
         </FadeInDownWithSlowBounce>

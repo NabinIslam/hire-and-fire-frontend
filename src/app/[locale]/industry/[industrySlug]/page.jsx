@@ -21,7 +21,7 @@ const IndustryDetailsPage = ({ params }) => {
 
       <div className="container flex flex-col items-center justify-between pb-[50px] pt-[100px] md:gap-6 lg:flex-row lg:gap-24">
         <div className="basis-full space-y-5 text-center lg:basis-1/2 lg:text-left">
-          <h2 className="text-4xl font-semibold lg:text-5xl">
+          <h2 className="text-4xl font-semibold lg:text-4xl">
             Your Partner in international Construction Recruitment
           </h2>
           <p className="text-sm font-medium">

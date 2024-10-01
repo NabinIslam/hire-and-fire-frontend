@@ -52,7 +52,7 @@ const OurClients = () => {
   return (
     <section className="space-y-[40px] py-[100px]">
       <FadeInDownWithSlowBounce className="container space-y-8">
-        <h2 className="text-center text-5xl font-semibold">{t("title")}</h2>
+        <h2 className="text-center text-4xl font-semibold">{t("title")}</h2>
         <Slider {...settings}>
           <div className="relative min-h-[134px] rounded-lg border shadow">
             <Image

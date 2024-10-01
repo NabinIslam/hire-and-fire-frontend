@@ -21,7 +21,7 @@ const EmploymentServicePage = () => {
               Direct Employment
             </h6>
 
-            <h2 className="mt-4 text-center text-4xl font-semibold md:text-5xl lg:text-left lg:text-[40px]">
+            <h2 className="mt-4 text-center text-4xl font-semibold md:text-4xl lg:text-left lg:text-[40px]">
               Mediation in Employment
             </h2>
           </FadeInDownWithSlowBounce>

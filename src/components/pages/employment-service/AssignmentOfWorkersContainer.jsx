@@ -14,12 +14,12 @@ const AssignmentOfWorkersContainer = () => {
           <h6 className="text-2xl font-medium text-primary">
             Temporary in Employment
           </h6>
-          <h2 className="mb-10 mt-4 text-4xl font-semibold md:text-5xl lg:text-[40px]">
+          <h2 className="mb-10 mt-4 text-4xl font-semibold md:text-4xl lg:text-[40px]">
             Assignment of workers
           </h2>
         </FadeInDownWithSlowBounce>
         <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
-          <FadeInLeftWithSlowBounce className="min-h-[380px] basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg lg:basis-1/3">
+          <FadeInLeftWithSlowBounce className="min-h-[380px] basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-md lg:basis-1/3">
             <Image
               className="mx-auto"
               src="/images/assignment-workers-icons/1.png"
@@ -43,7 +43,7 @@ const AssignmentOfWorkersContainer = () => {
 
           <div className="basis-full space-y-8 lg:basis-1/3">
             <FadeInDownWithSlowBounce>
-              <div className="min-h-[380px] space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg">
+              <div className="min-h-[380px] space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-md">
                 <Image
                   className="mx-auto"
                   src="/images/assignment-workers-icons/2.png"
@@ -64,7 +64,7 @@ const AssignmentOfWorkersContainer = () => {
             </FadeInDownWithSlowBounce>
 
             <FadeInUpWithSlowBounce>
-              <div className="min-h-[380px] space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg">
+              <div className="min-h-[380px] space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-md">
                 <Image
                   className="mx-auto"
                   src="/images/assignment-workers-icons/3.png"
@@ -86,7 +86,7 @@ const AssignmentOfWorkersContainer = () => {
               </div>
             </FadeInUpWithSlowBounce>
           </div>
-          <FadeInRightWithSlowBounce className="min-h-[380px] basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-lg lg:basis-1/3">
+          <FadeInRightWithSlowBounce className="min-h-[380px] basis-full space-y-4 rounded-3xl border-t-[24px] border-secondary px-8 py-5 shadow-md lg:basis-1/3">
             <Image
               className="mx-auto"
               src="/images/assignment-workers-icons/4.png"

@@ -6,7 +6,7 @@ const ContactFormSection = () => {
     <FadeInDownWithSlowBounce>
       <section className="px-4 pb-[100px] xl:px-0">
         <div className="container">
-          <div className="flex min-h-[600px] flex-col justify-between bg-[#FBFBFB] shadow-lg lg:flex-row">
+          <div className="flex min-h-[600px] flex-col justify-between bg-[#FBFBFB] shadow-md lg:flex-row">
             <div className="relative min-h-[500px] w-full basis-full md:h-auto lg:basis-1/2">
               <iframe
                 className="absolute left-0 top-0 h-full w-full focus:border-0 focus:ring-0"

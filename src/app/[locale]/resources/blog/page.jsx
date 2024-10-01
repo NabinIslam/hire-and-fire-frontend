@@ -12,6 +12,7 @@ const BlogPage = () => {
   return (
     <main>
       <PageBanner title="Blog" />
+      <div className="h-[50px] w-full"></div>
       <TitleDescSection
         title="Our Blogs & Newses"
         description="Stay updated with the latest news articles and trending stories."

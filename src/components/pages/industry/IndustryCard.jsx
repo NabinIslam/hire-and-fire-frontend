@@ -9,10 +9,10 @@ const IndustryCard = ({ industry }) => {
   return (
     <FadeInLeftWithSlowBounce className="group relative">
       <div className="absolute h-[150px] w-full rounded-t-lg rounded-bl-3xl rounded-br-3xl bg-primary duration-200 group-hover:bg-secondary"></div>
-      <div className="flex flex-col items-center rounded-lg border-b-8 border-b-primary p-4 text-center shadow-xl duration-200 group-hover:border-b-secondary">
+      <div className="flex flex-col items-center rounded-lg border-b-8 border-b-primary p-4 text-center shadow-lg duration-200 group-hover:border-b-secondary">
         <div className="relative min-h-[240px] w-full rounded-b-full">
           <Image
-            className="rounded-[33px] object-cover"
+            className="rounded-[33px] object-cover duration-200 group-hover:scale-105"
             src={photo}
             alt={name}
             fill

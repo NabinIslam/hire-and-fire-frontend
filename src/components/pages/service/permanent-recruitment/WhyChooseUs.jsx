@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
           </span>
         </div>
         <div className="mx-auto mb-16 mt-5 max-w-[607px]">
-          <h2 className="text-center text-5xl font-semibold">
+          <h2 className="text-center text-4xl font-semibold">
             Why Choose Us for Parmanent Recruitment
           </h2>
         </div>

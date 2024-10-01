@@ -16,14 +16,14 @@ const WorkSteps = () => {
         <h6 className="text-center text-2xl font-medium text-primary">
           {t("work_title_1")}
         </h6>
-        <h2 className="mt-[20px] text-center text-4xl font-semibold lg:text-5xl">
+        <h2 className="mt-[20px] text-center text-4xl font-semibold lg:text-4xl">
           {t("work_title_2")}
         </h2>
       </FadeInUpWithSlowBounce>
-      <div className="container mt-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+      <div className="container mt-[60px] grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
         {/* step card start*/}
 
-        <FadeInLeftWithSlowBounce className="group relative border shadow-lg duration-200 hover:scale-105">
+        <FadeInLeftWithSlowBounce className="group relative border shadow-md duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -66,7 +66,7 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <FadeInUpWithSlowBounce className="group relative border shadow-lg duration-200 hover:scale-105">
+        <FadeInUpWithSlowBounce className="group relative border shadow-md duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -127,7 +127,7 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <FadeInUpWithSlowBounce className="group relative border shadow-lg duration-200 hover:scale-105">
+        <FadeInUpWithSlowBounce className="group relative border shadow-md duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg
@@ -188,7 +188,7 @@ const WorkSteps = () => {
 
         {/* step card start*/}
 
-        <FadeInRightWithSlowBounce className="group relative border shadow-lg duration-200 hover:scale-105">
+        <FadeInRightWithSlowBounce className="group relative border shadow-md duration-200 hover:scale-105">
           <div className="m-5 space-y-4">
             <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">
               <svg

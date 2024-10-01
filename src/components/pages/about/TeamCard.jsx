@@ -5,7 +5,7 @@ import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlow
 
 const TeamCard = ({ team }) => {
   return (
-    <FadeInLeftWithSlowBounce className="group rounded-lg shadow-xl">
+    <FadeInLeftWithSlowBounce className="group rounded-lg shadow-lg">
       <div className="relative">
         <div className="relative min-h-[354px] w-full">
           <Image

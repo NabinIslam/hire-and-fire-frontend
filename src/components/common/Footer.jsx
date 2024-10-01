@@ -43,7 +43,7 @@ const Footer = () => {
             <ul className="flex flex-col justify-between gap-6">
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
-                <Link className="duration-200 hover:text-primary" href="/home">
+                <Link className="duration-200 hover:text-primary" href="/">
                   {t("Home")}
                 </Link>
               </li>
@@ -112,9 +112,18 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  href="/service/permanent-recruitment"
+                  href="/service/work-permit-assistance"
                 >
-                  {t("Permanent_Recruitment")}
+                  Work Permit Assistance
+                </Link>
+              </li>
+              <li className="flex items-center">
+                <IoMdArrowDropright className="text-2xl" />
+                <Link
+                  className="duration-200 hover:text-primary"
+                  href="/service/visa-application-flight-assistance"
+                >
+                  Visa Application Flight Assistance
                 </Link>
               </li>
               <li className="flex items-center">
@@ -139,15 +148,6 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  href="/service/compliance-and-legal-support"
-                >
-                  {t("Compliance_and_Legal_Support")}
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <IoMdArrowDropright className="text-2xl" />
-                <Link
-                  className="duration-200 hover:text-primary"
                   href="/service/workforce-planning"
                 >
                   {t("Workforce_Planning")}
@@ -157,9 +157,28 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
+                  href="/service/compliance-and-legal-support"
+                >
+                  {t("Compliance_and_Legal_Support")}
+                </Link>
+              </li>
+
+              <li className="flex items-center">
+                <IoMdArrowDropright className="text-2xl" />
+                <Link
+                  className="duration-200 hover:text-primary"
                   href="/service/background-checks"
                 >
                   {t("Background_Checks")}
+                </Link>
+              </li>
+              <li className="flex items-center">
+                <IoMdArrowDropright className="text-2xl" />
+                <Link
+                  className="duration-200 hover:text-primary"
+                  href="/service/skill-assessment-and-training"
+                >
+                  Skill Assessment & Training
                 </Link>
               </li>
               <li className="flex items-center">

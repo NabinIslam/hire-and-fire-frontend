@@ -13,7 +13,7 @@ const WorkerAccommodationService = () => {
           <h6 className="text-2xl font-medium text-primary">
             Worker Accommodation Service
           </h6>
-          <h2 className="mt-5 text-4xl font-semibold lg:text-5xl">
+          <h2 className="mt-5 text-4xl font-semibold lg:text-4xl">
             Global Accommodation Services for Workers
           </h2>
           <p className="my-5 text-sm font-medium">

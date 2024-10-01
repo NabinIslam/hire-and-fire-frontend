@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const TimelineItem = ({ event, isLeft }) => {
   return (
     <motion.div
-      className={`timeline-item relative mb-8 w-1/2 rounded-lg bg-white p-6 shadow-lg ${
+      className={`timeline-item relative mb-8 w-1/2 rounded-lg bg-white p-6 shadow-md ${
         isLeft ? "timeline-item-left" : "timeline-item-right"
       }`}
       initial={{ opacity: 0, x: isLeft ? -100 : 100 }} // Slide in from left/right

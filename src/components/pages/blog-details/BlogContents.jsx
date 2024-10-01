@@ -62,7 +62,7 @@ const BlogContents = async ({ blogSlug }) => {
           Do you want to receive news? Subscribe to our newsletter.
         </h4>
         <form action="">
-          <div className="flex h-12 items-center justify-between rounded-md border bg-white shadow-lg">
+          <div className="flex h-12 items-center justify-between rounded-md border bg-white shadow-md">
             <input
               className="placeholder:text-slate-500 text-slate-500 basis-full border-none px-3 text-sm focus:ring-0"
               type="text"
@@ -77,7 +77,7 @@ const BlogContents = async ({ blogSlug }) => {
             </button>
           </div>
         </form>
-        <div className="rounded-lg border shadow-lg">
+        <div className="rounded-lg border shadow-md">
           <div className="border-b border-black p-4">
             <h5 className="text-xl font-medium">In This Article</h5>
           </div>

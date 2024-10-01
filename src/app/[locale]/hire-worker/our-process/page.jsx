@@ -13,6 +13,7 @@ const OurProcessPage = () => {
   return (
     <main>
       <PageBanner title="Our Process" />
+      <div className="h-[50px] w-full"></div>
       <TitleDescSection
         title="Our Process"
         description="We ensure top-quality results through a streamlined approach involving clear communication, expert execution, and continuous improvement, guaranteeing efficiency and satisfaction at every step of the project."

@@ -2,7 +2,7 @@ const EmployersServiceCard = ({ icon, title, description }) => {
   //   const { icon, title, description } = cardData;
 
   return (
-    <div className="group relative space-y-4 rounded-lg border border-b-8 border-b-primary px-8 py-4 shadow-lg duration-200 hover:border-b-secondary">
+    <div className="group relative space-y-4 rounded-lg border border-b-8 border-b-primary px-8 py-4 shadow-md duration-200 hover:border-b-secondary">
       <div className="-mt-14">{icon}</div>
       <h6 className="text-center text-2xl font-medium">{title}</h6>
       <p className="text-center text-sm font-medium">{description}</p>

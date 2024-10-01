@@ -3,7 +3,7 @@ const EmployersAlignCard = ({ cardData }) => {
 
   return (
     <div className="group relative">
-      <div className="relative z-50 m-3 rounded-lg border bg-white text-center shadow-lg">
+      <div className="relative z-50 m-3 rounded-lg border bg-white text-center shadow-md">
         <div class="absolute -z-50 h-20 w-full rounded-t-lg border-l-[220px] border-r-[220px] border-t-[100px] border-transparent border-t-primary group-hover:border-t-secondary"></div>
 
         <div className="z-50 flex flex-col items-center justify-between gap-4 px-6 py-4">

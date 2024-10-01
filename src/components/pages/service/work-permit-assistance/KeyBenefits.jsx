@@ -230,7 +230,7 @@ const KeyBenefits = () => {
               Why Choose Us
             </span>
           </div>
-          <h2 className="text-center text-4xl font-semibold lg:text-left lg:text-5xl">
+          <h2 className="text-center text-4xl font-semibold lg:text-left lg:text-4xl">
             Key Benefits of Our  Work Permit Assistance
           </h2>
           <p className="text-center text-sm font-medium lg:text-left">

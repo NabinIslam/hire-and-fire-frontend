@@ -14,7 +14,7 @@ const KeyBenefits = () => {
               Key Benefits
             </span>
           </div>
-          <h2 className="text-left text-4xl font-semibold lg:text-5xl">
+          <h2 className="text-left text-4xl font-semibold lg:text-4xl">
             Key Benefits of Our Compliance & Legal Support
           </h2>
           <p className="text-left text-sm font-medium">

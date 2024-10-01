@@ -8,8 +8,8 @@ const OurValues = () => {
   return (
     <div className="mx-auto mt-16 flex max-w-6xl flex-wrap items-center justify-center gap-x-10 gap-y-20">
       {/* card */}
-      <FadeInLeftWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[#F90945] px-8 py-5 shadow-xl">
-        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-lg">
+      <FadeInLeftWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[#F90945] px-8 py-5 shadow-lg">
+        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-md">
           <div className="flex size-full items-center justify-center rounded-full bg-[#F90945]">
             <Image
               src="/images/our-values-icons/integrity.png"
@@ -26,8 +26,8 @@ const OurValues = () => {
       </FadeInLeftWithSlowBounce>
 
       {/* card */}
-      <FadeInDownWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[#F90945] px-8 py-5 shadow-xl">
-        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-lg">
+      <FadeInDownWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[#F90945] px-8 py-5 shadow-lg">
+        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-md">
           <div className="flex size-full items-center justify-center rounded-full bg-[#F90945]">
             <Image
               src="/images/our-values-icons/collaboration.png"
@@ -44,8 +44,8 @@ const OurValues = () => {
       </FadeInDownWithSlowBounce>
 
       {/* card */}
-      <FadeInRightWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[#F90945] px-8 py-5 shadow-xl">
-        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-lg">
+      <FadeInRightWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[#F90945] px-8 py-5 shadow-lg">
+        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-md">
           <div className="flex size-full items-center justify-center rounded-full bg-[#F90945]">
             <Image
               src="/images/our-values-icons/excellence.png"
@@ -62,8 +62,8 @@ const OurValues = () => {
       </FadeInRightWithSlowBounce>
 
       {/* card */}
-      <FadeInUpWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[rgb(249,9,69)] px-8 py-5 shadow-xl">
-        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-lg">
+      <FadeInUpWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[rgb(249,9,69)] px-8 py-5 shadow-lg">
+        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-md">
           <div className="flex size-full items-center justify-center rounded-full bg-[#F90945]">
             <Image
               src="/images/our-values-icons/empowerment.png"
@@ -80,8 +80,8 @@ const OurValues = () => {
       </FadeInUpWithSlowBounce>
 
       {/* card */}
-      <FadeInUpWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[#F90945] px-8 py-5 shadow-xl">
-        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-lg">
+      <FadeInUpWithSlowBounce className="w-[350px] space-y-4 rounded-lg border border-b-8 border-b-[#F90945] px-8 py-5 shadow-lg">
+        <div className="mx-auto mt-[-60px] size-[80px] rounded-full border-2 border-dotted border-[#F90945] bg-white p-1 shadow-md">
           <div className="flex size-full items-center justify-center rounded-full bg-[#F90945]">
             <Image
               src="/images/our-values-icons/responsibility.png"

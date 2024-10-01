@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
               Why Choose Us
             </span>
           </div>
-          <h2 className="text-left text-4xl font-semibold lg:text-5xl">
+          <h2 className="text-left text-4xl font-semibold lg:text-4xl">
             Why Choose Us for Work Permit Assistance?
           </h2>
           <p className="text-left text-sm font-medium">

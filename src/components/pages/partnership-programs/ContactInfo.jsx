@@ -2,7 +2,7 @@ const ContactInfo = () => {
   return (
     <section className="py-[50px]">
       <div className="container">
-        <div className="flex flex-col items-start justify-between gap-y-6 divide-primary rounded-lg border py-4 shadow-lg lg:flex-row lg:items-center lg:divide-x-2">
+        <div className="flex flex-col items-start justify-between gap-y-6 divide-primary rounded-lg border py-4 shadow-md lg:flex-row lg:items-center lg:divide-x-2">
           <div className="flex h-full items-center justify-between gap-4 lg:px-5 xl:px-14">
             <div>
               <svg

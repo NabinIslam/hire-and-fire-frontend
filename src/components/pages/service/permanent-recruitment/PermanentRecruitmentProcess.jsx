@@ -12,7 +12,7 @@ const PermanentRecruitmentProcess = () => {
           </span>
         </div>
         <div className="mx-auto mb-16 mt-5 max-w-[607px]">
-          <h2 className="text-center text-5xl font-semibold">
+          <h2 className="text-center text-4xl font-semibold">
             Our Step-by-Step Permanent Recruitment Process
           </h2>
         </div>

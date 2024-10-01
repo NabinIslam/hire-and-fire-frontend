@@ -18,7 +18,7 @@ const WorkStepCard = ({ icon, title, description, stepNumber }) => {
         stiffness: 50,
         damping: 12,
       }}
-      className="group relative min-h-[270px] w-[350px] shadow-lg duration-200 hover:scale-105"
+      className="group relative min-h-[270px] w-[350px] shadow-md duration-200 hover:scale-105"
     >
       <div className="m-5 space-y-4">
         <div className="mx-auto flex size-[80px] items-center justify-center rounded-full bg-primary duration-200 group-hover:bg-secondary">

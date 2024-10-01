@@ -8,15 +8,17 @@ import RecentNewsesNBlogs from "@/components/pages/home/RecentNewsesNBlogs";
 import TeamSection from "@/components/pages/home/TeamSection";
 import WorkforcePlanning from "@/components/pages/home/WorkforcePlanning";
 import WorkSteps from "@/components/pages/home/WorkSteps";
+import VisaApplicationFlightAssistance from "@/components/pages/services/VisaApplicationFlightAssistance";
+import WorkPermitAssistance from "@/components/pages/services/WorkPermitAssistance";
 
 const HomePage = () => {
   return (
     <main>
       <Hero />
       <CompanyPoints />
+      <WorkPermitAssistance />
+      <VisaApplicationFlightAssistance />
       <PermanentRecruitment />
-      <ContractStaffing />
-      <WorkforcePlanning />
       <WorkSteps />
       <OurSuccess />
       <OurClients />

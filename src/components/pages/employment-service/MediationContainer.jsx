@@ -11,7 +11,7 @@ const MediationContainer = () => {
     <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
       {/* card  */}
 
-      <FadeInLeftWithSlowBounce className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
+      <FadeInLeftWithSlowBounce className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-md md:flex-row">
         <div className="basis-[50px]">
           <Image
             src="/images/mediation-icons/1.png"
@@ -41,7 +41,7 @@ const MediationContainer = () => {
 
       {/* card  */}
 
-      <FadeInRightWithSlowBounce className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
+      <FadeInRightWithSlowBounce className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-md md:flex-row">
         <div className="basis-[50px]">
           <Image
             src="/images/mediation-icons/2.png"
@@ -73,7 +73,7 @@ const MediationContainer = () => {
 
       {/* card  */}
 
-      <FadeInLeftWithSlowBounce className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
+      <FadeInLeftWithSlowBounce className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-md md:flex-row">
         <div className="basis-[50px]">
           <Image
             src="/images/mediation-icons/3.png"
@@ -105,7 +105,7 @@ const MediationContainer = () => {
 
       {/* card  */}
 
-      <FadeInRightWithSlowBounce className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-lg md:flex-row">
+      <FadeInRightWithSlowBounce className="flex flex-col gap-3 rounded-lg border border-b-8 border-b-secondary p-5 shadow-md md:flex-row">
         <div className="basis-[50px]">
           <Image
             src="/images/mediation-icons/4.png"

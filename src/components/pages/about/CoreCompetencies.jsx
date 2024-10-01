@@ -5,7 +5,7 @@ const CoreCompetencies = () => {
   return (
     <FadeInLeftWithSlowBounce className="flex flex-wrap justify-center gap-10 pb-[50px]">
       {/* card */}
-      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
+      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-md">
         <div className="basis-[80px]">
           <svg
             width="80"
@@ -49,7 +49,7 @@ const CoreCompetencies = () => {
             </defs>
           </svg>
         </div>
-        <div>
+        <div className="space-y-2">
           <h6 className="text-2xl font-medium">Communication</h6>
           <p className="text-sm font-medium">
             Exceptional ability to convey information clearly and effectively.
@@ -57,7 +57,7 @@ const CoreCompetencies = () => {
         </div>
       </div>
       {/* card */}
-      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
+      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-md">
         <div className="basis-[80px]">
           <svg
             width="80"
@@ -76,7 +76,7 @@ const CoreCompetencies = () => {
           </svg>
         </div>
 
-        <div>
+        <div className="space-y-2">
           <h6 className="text-2xl font-medium">Organizational Skills</h6>
           <p className="text-sm font-medium">
             Highly organized in managing recruitment processes and employee
@@ -85,7 +85,7 @@ const CoreCompetencies = () => {
         </div>
       </div>
       {/* card */}
-      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
+      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-md">
         <div className="basis-[80px]">
           <svg
             width="80"
@@ -118,7 +118,7 @@ const CoreCompetencies = () => {
           </svg>
         </div>
 
-        <div>
+        <div className="space-y-2">
           <h6 className="text-2xl font-medium">Attention to Details</h6>
           <p className="text-sm font-medium">
             Meticulous in reviewing resumes and conducting background checks.
@@ -126,7 +126,7 @@ const CoreCompetencies = () => {
         </div>
       </div>
       {/* card */}
-      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
+      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-md">
         <div className="basis-[80px]">
           <svg
             width="80"
@@ -145,7 +145,7 @@ const CoreCompetencies = () => {
           </svg>
         </div>
 
-        <div>
+        <div className="space-y-2">
           <h6 className="text-2xl font-medium">Decision-Making</h6>
           <p className="text-sm font-medium">
             Strong decision-making skills for hiring and termination processes.
@@ -153,7 +153,7 @@ const CoreCompetencies = () => {
         </div>
       </div>
       {/* card */}
-      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
+      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-md">
         <div className="basis-[80px]">
           <svg
             width="80"
@@ -206,7 +206,7 @@ const CoreCompetencies = () => {
           </svg>
         </div>
 
-        <div>
+        <div className="space-y-2">
           <h6 className="text-2xl font-medium">Networking</h6>
           <p className="text-sm font-medium">
             Building and maintaining professional relationships to source
@@ -215,7 +215,7 @@ const CoreCompetencies = () => {
         </div>
       </div>
       {/* card */}
-      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
+      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-md">
         <div className="basis-[80px]">
           <svg
             width="80"
@@ -232,7 +232,7 @@ const CoreCompetencies = () => {
           </svg>
         </div>
 
-        <div>
+        <div className="space-y-2">
           <h6 className="text-2xl font-medium">Adaptability</h6>
           <p className="text-sm font-medium">
             Flexible and able to adapt to changing job market conditions.{" "}
@@ -240,7 +240,7 @@ const CoreCompetencies = () => {
         </div>
       </div>
       {/* card */}
-      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
+      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-md">
         <div className="basis-[80px]">
           <svg
             width="80"
@@ -273,7 +273,7 @@ const CoreCompetencies = () => {
           </svg>
         </div>
 
-        <div>
+        <div className="space-y-2">
           <h6 className="text-2xl font-medium">Leadership</h6>
           <p className="text-sm font-medium">
             Leading recruitment and HR teams to achieve organizational goals.
@@ -281,7 +281,7 @@ const CoreCompetencies = () => {
         </div>
       </div>
       {/* card */}
-      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
+      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-md">
         <div className="basis-[80px]">
           <svg
             width="80"
@@ -354,7 +354,7 @@ const CoreCompetencies = () => {
           </svg>
         </div>
 
-        <div>
+        <div className="space-y-2">
           <h6 className="text-2xl font-medium">Time Management</h6>
           <p className="text-sm font-medium">
             Efficiently managing multiple tasks and deadlines.
@@ -362,7 +362,7 @@ const CoreCompetencies = () => {
         </div>
       </div>
       {/* card */}
-      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-lg">
+      <div className="flex max-w-[460px] items-center gap-5 rounded-bl-3xl rounded-br-lg rounded-tl-lg rounded-tr-3xl border bg-[##FBFBFB] p-5 shadow-md">
         <div className="basis-[80px]">
           <svg
             width="80"
@@ -399,7 +399,7 @@ const CoreCompetencies = () => {
           </svg>
         </div>
 
-        <div>
+        <div className="space-y-2">
           <h6 className="text-2xl font-medium">Problem-Solving</h6>
           <p className="text-sm font-medium">
             Quick to identify issues and implement effective solutions.

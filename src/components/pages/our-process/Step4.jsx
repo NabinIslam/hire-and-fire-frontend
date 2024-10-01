@@ -7,7 +7,7 @@ const Step4 = () => {
     <section className="flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse lg:gap-[100px]">
       <FadeInLeftWithSlowBounce className="basis-full space-y-5 text-center lg:basis-1/2 lg:text-left">
         <h6 className="text-2xl font-medium text-primary">Step 04</h6>
-        <h2 className="text-4xl font-semibold md:text-5xl lg:text-[40px]">
+        <h2 className="text-4xl font-semibold md:text-4xl lg:text-[40px]">
           Select & We Complete Visa Procedures
         </h2>
         <p className="text-sm font-medium">
