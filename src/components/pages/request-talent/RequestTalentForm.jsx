@@ -1,7 +1,7 @@
 "use client";
 
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
-import { apiBaseUrl } from "@/secrets";
+import { apiUrl } from "@/secrets";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import {
@@ -23,11 +23,12 @@ const RequestTalentForm = () => {
   const mutation = useMutation({
     mutationFn: async (data) =>
       await axios
-        .post(`${apiBaseUrl}/requesttalents/`, data)
+        .post(`${apiUrl}/requesttalents/`, data)
         .then(function (response) {
           console.log(response);
         })
         .catch(function (error) {
+          console.error(error);
           toast.error(`Something went wrong!, please try again`);
         }),
   });
@@ -50,9 +51,9 @@ const RequestTalentForm = () => {
         company_tax_id: data.company_tax_id,
         email_address: data.email,
         phone_number: data.phone_number,
-        foregin_worker: data.foreign_workers,
+        foregin_worker: parseInt(data.foreign_workers),
         job_position: data.position,
-        number_of_workers: data.number_of_workers,
+        number_of_workers: parseInt(data.number_of_workers),
         location_of_work: data.location,
         comments: data.comment,
       };
@@ -212,7 +213,7 @@ const RequestTalentForm = () => {
           <TextInput
             {...register("foreign_workers")}
             className="bg-[#F7F8F8]"
-            type="text"
+            type="number"
             required
             shadow
           />
@@ -243,7 +244,8 @@ const RequestTalentForm = () => {
             id="accept"
             onClick={() => setButtonDisabled((prev) => !prev)}
           />
-          <Label htmlFor="accept">I accept</Label>
+
+          <Label htmlFor="accept">I accept </Label>
         </div>
 
         <div>
