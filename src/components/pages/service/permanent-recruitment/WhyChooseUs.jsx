@@ -3,7 +3,7 @@ import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBoun
 
 const WhyChooseUs = () => {
   return (
-    <section className="space-y-8 pb-[100px] pt-[50px]">
+    <section className="space-y-8 pt-[50px]">
       <FadeInDownWithSlowBounce className="container space-y-8">
         <div className="flex justify-center">
           <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">

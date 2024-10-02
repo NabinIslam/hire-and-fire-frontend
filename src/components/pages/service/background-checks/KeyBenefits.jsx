@@ -355,6 +355,7 @@ const KeyBenefits = () => {
             </Link>
             <button className="flex items-center rounded-lg border-2 border-primary py-1 pr-3 text-sm font-medium text-primary">
               <svg
+                className="animate-floating"
                 width="36"
                 height="36"
                 viewBox="0 0 72 72"

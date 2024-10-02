@@ -67,6 +67,7 @@ const AboutHero = () => {
               onClick={() => setIsOpen(true)}
             >
               <svg
+                className="animate-floating"
                 width="80"
                 height="80"
                 viewBox="0 0 80 80"
