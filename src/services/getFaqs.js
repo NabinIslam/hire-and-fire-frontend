@@ -1,7 +1,7 @@
-import { apiBaseUrl, path, port } from "@/secrets";
+import { apiUrl } from "@/secrets";
 
 export const getFaqs = async () => {
-  const res = await fetch(`${apiBaseUrl}:${port}${path}/faqs`, {
+  const res = await fetch(`${apiUrl}/faqs`, {
     cache: "no-store",
   });
 
