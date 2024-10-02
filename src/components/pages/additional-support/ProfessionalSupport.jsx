@@ -5,6 +5,7 @@ import Button from "../../ui/Button";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import ServiceImage from "@/components/common/ServiceImage";
+import { Link } from "@/i18n/routing";
 
 const ProfessionalSupport = () => {
   return (
@@ -28,7 +29,9 @@ const ProfessionalSupport = () => {
             empower workers to thrive professionally and contribute effectively
             to organizational success.
           </p>
-          <Button>Meet Us</Button>
+          <Link href="/contact-us">
+            <Button>Meet Us</Button>
+          </Link>
         </FadeInLeftWithSlowBounce>
         <FadeInRightWithSlowBounce className="relative min-h-[400px] w-full basis-full lg:basis-1/2">
           <ServiceImage

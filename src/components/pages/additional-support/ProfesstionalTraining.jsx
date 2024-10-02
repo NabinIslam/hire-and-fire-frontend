@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "../../ui/Button";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
+import { Link } from "@/i18n/routing";
 
 const ProfessionalTraining = () => {
   return (
@@ -25,7 +26,9 @@ const ProfessionalTraining = () => {
             instruction, hands-on learning, and career advancement
             opportunities.
           </p>
-          <Button>Meet Us</Button>
+          <Link href="/contact-us">
+            <Button>Meet Us</Button>
+          </Link>
         </FadeInLeftWithSlowBounce>
         <FadeInRightWithSlowBounce className="relative min-h-[400px] w-full basis-full lg:basis-1/2">
           <Image

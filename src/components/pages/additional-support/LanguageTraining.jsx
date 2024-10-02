@@ -1,9 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { useInView } from "react-intersection-observer";
 import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "@/components/ui/Button";
@@ -11,6 +9,7 @@ import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlow
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
+import { Link } from "@/i18n/routing";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -45,11 +44,6 @@ function SamplePrevArrow(props) {
 }
 
 const LanguageTraining = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   const settings = {
     dots: false,
     infinite: true,
@@ -272,7 +266,9 @@ const LanguageTraining = () => {
         </FadeInDownWithSlowBounce>
       </div>
       <FadeInUpWithSlowBounce className="container mt-10 flex items-center justify-center">
-        <Button>Meet Us</Button>
+        <Link href="/contact-us">
+          <Button>Meet Us</Button>
+        </Link>
       </FadeInUpWithSlowBounce>
     </section>
   );
