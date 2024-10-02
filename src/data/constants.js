@@ -31,7 +31,7 @@ const navlinks = [
       },
       {
         label: "Request Talent",
-        path: "/hire-worker/request-talent",
+        path: "/hire-worker/request-worker",
       },
     ],
   },

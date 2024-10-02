@@ -54,7 +54,7 @@ const Header = () => {
           <Link href="/">
             <Image
               className={`w-auto transition-all duration-300 ease-in-out ${scrolling ? "h-10" : "h-16"}`}
-              src="/images/Logo.png"
+              src="/assets/logo.svg"
               width={52}
               height={39}
               alt="Hire and Fire"
@@ -150,7 +150,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    className={`${pathname === `/${localActive}/hire-worker/request-talent` ? "text-primary" : ""} flex hover:text-primary`}
+                    className={`${pathname === `/${localActive}/hire-worker/request-worker` ? "text-primary" : ""} flex hover:text-primary`}
                     href="/hire-worker/request-worker"
                   >
                     <IoMdArrowDropright className="text-xl" />

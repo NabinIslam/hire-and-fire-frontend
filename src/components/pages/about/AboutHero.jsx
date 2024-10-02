@@ -54,8 +54,8 @@ const AboutHero = () => {
             </div>
           </div>
           <div className="flex items-center justify-center lg:justify-start">
-            <Link href="/hire-worker/request-talent">
-              <Button>Request Talent</Button>
+            <Link href="/hire-worker/request-worker">
+              <Button>Request Worker</Button>
             </Link>
 
             <button
@@ -135,7 +135,7 @@ const AboutHero = () => {
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="relative z-10"
+          className="relative z-50"
           onClose={() => setIsOpen(false)}
         >
           <Transition.Child

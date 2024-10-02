@@ -364,7 +364,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
           <div className="flex items-center justify-start gap-5">
-            <Link href="/hire-worker/request-talent">
+            <Link href="/hire-worker/request-worker">
               <Button>Request Worker</Button>
             </Link>
           </div>

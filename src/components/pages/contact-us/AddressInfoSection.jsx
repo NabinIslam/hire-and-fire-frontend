@@ -1,19 +1,13 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
+import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
+import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 
 const AddressInfoSection = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <>
       <FadeInDownWithSlowBounce>
@@ -28,75 +22,50 @@ const AddressInfoSection = () => {
 
       <div className="flex flex-wrap items-center justify-center gap-6">
         {/* card */}
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg"
-        >
-          <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white">
+        <FadeInLeftWithSlowBounce className="group flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg duration-200 hover:bg-primary">
+          <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white duration-200 group-hover:bg-secondary group-hover:text-white">
             <FaMapMarkerAlt />
           </div>
-          <h6 className="text-2xl font-medium">Office Address</h6>
+          <h6 className="text-2xl font-medium duration-200 group-hover:text-white">
+            Office Address
+          </h6>
           <Link href="https://maps.app.goo.gl/52W4k1TirayToasE7">
-            <p className="text-center text-sm font-medium">
+            <p className="text-center text-sm font-medium group-hover:text-white">
               Bucureşti Sectorul 1, Strada ING.
               <br /> ZABLOVSCHI, Nr. 10, BIROUL 1
             </p>
           </Link>
-        </motion.div>
+        </FadeInLeftWithSlowBounce>
 
         {/* card */}
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 50,
-            damping: 12,
-          }}
-          className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg"
-        >
-          <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white">
+        <FadeInUpWithSlowBounce className="group flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg hover:bg-primary">
+          <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white duration-200 group-hover:bg-secondary group-hover:text-white">
             <FaPhoneVolume />
           </div>
-          <h6 className="text-2xl font-medium">Call Us</h6>
+          <h6 className="text-2xl font-medium duration-200 group-hover:text-white">
+            Call Us
+          </h6>
           <Link href="tel:+40737228622">
-            <p className="text-center text-sm font-medium">+(40) 7372 28622</p>
+            <p className="text-center text-sm font-medium group-hover:text-white">
+              +(40) 7372 28622
+            </p>
           </Link>
-        </motion.div>
+        </FadeInUpWithSlowBounce>
 
         {/* card */}
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 100 }} // Start off-screen to the left
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }} // Animate to final position
-          transition={{
-            duration: 1, // Adjusting duration for overall animation speed
-            type: "spring",
-            stiffness: 50, // Slowing down the movement
-            damping: 12, // Adjusting damping to control bounce
-          }}
-          className="flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg"
-        >
-          <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white">
+        <FadeInRightWithSlowBounce className="group flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg hover:bg-primary">
+          <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white duration-200 group-hover:bg-secondary group-hover:text-white">
             <FaEnvelope />
           </div>
-          <h6 className="text-2xl font-medium">Email Us</h6>
+          <h6 className="text-2xl font-medium duration-200 group-hover:text-white">
+            Email Us
+          </h6>
           <Link href="mailto:career@hireandfire.eu">
-            <p className="text-center text-sm font-medium">
+            <p className="text-center text-sm font-medium group-hover:text-white">
               career@hireandfire.eu
             </p>
           </Link>
-        </motion.div>
+        </FadeInRightWithSlowBounce>
       </div>
     </>
   );

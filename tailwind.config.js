@@ -41,7 +41,8 @@ module.exports = {
         "banner-bg": "url('/Background-image-1.jpg')",
         "contact-bg": "url('/Background image 2.jpg')",
         "our-success-bg": "url('/our-success-bg.jpg')",
-        "why-choose-us-bg": "url('/images/why-choose-us-bg.png')",
+        "about-us-why-choose-us-bg":
+          "url('/images/about-us-why-choose-us.png')",
         "why-choose-us-pr-bg": "url('/images/why-choose-us-pr-bg.png')",
         "industry-card-bg": "url('/images/industry-card-bg.png')",
         "timeline-card-bg": "url('/images/timeline-card-bg.png')",

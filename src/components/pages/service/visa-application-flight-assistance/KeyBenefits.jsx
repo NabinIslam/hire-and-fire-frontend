@@ -340,7 +340,7 @@ const KeyBenefits = () => {
             </div>
           </div>
           <div className="flex items-center gap-5">
-            <Link href="/hire-worker/request-talent">
+            <Link href="/hire-worker/request-worker">
               <Button>Request Worker</Button>
             </Link>
             <button className="flex items-center rounded-lg border-2 border-primary py-1 pr-3 text-sm font-medium text-primary">

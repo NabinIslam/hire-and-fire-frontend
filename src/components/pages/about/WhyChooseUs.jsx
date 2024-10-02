@@ -7,7 +7,7 @@ import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSl
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-why-choose-us-bg bg-cover bg-center bg-no-repeat py-[70px] text-white">
+    <section className="bg-about-us-why-choose-us-bg bg-cover bg-center bg-no-repeat py-[70px] text-white">
       <div className="container flex flex-col justify-between gap-10 lg:flex-row lg:gap-20">
         {/* column */}
 
@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
           </p>
           <div>
             <Link href="/contact-us">
-              <BgButton>Contact Us</BgButton>
+              <BgButton>Meet Us</BgButton>
             </Link>
           </div>
         </FadeInLeftWithSlowBounce>
