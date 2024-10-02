@@ -6,8 +6,6 @@ import ProfessionalTraining from "@/components/pages/additional-support/Professt
 import WorkerAccommodationService from "@/components/pages/additional-support/WorkerAccommodationService";
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import PageBanner from "@/components/common/PageBanner";
-import Button from "@/components/ui/Button";
-import Image from "next/image";
 
 export const metadata = {
   title: "Hire&Fire | Additional Support",

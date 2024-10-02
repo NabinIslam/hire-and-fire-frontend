@@ -5,8 +5,12 @@ import Button from "../../ui/Button";
 import Image from "next/image";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
-import { Fragment, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import { useState } from "react";
+import dynamic from "next/dynamic";
+import { RxCross2 } from "react-icons/rx";
+import VideoModal from "@/components/common/VideoModal";
+
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const AboutHero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -132,10 +136,47 @@ const AboutHero = () => {
         </FadeInRightWithSlowBounce>
       </div>
 
-      <Transition appear show={isOpen} as={Fragment}>
+      <VideoModal isOpen={isOpen} setIsOpen={setIsOpen}>
+        <div className="mb-5 flex justify-end">
+          <RxCross2
+            className="cursor-pointer rounded-full p-1 text-4xl duration-200 hover:bg-black hover:bg-opacity-[10%]"
+            onClick={() => setIsOpen(false)}
+          />
+        </div>
+        <ReactPlayer
+          className="min-h-[60vh] w-full"
+          url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+          light={
+            <div className="relative min-h-full w-full">
+              <Image
+                className="min-h-full w-full rounded-lg object-cover"
+                src="/images/additional-support-video-thumbnail.png"
+                alt="thumbnail"
+                fill
+              />
+            </div>
+          }
+          width="100%"
+          playIcon={
+            <svg
+              className="absolute"
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="40" cy="40" r="40" fill="#F90945" />
+              <path d="M60 40L30 57.3205L30 22.6795L60 40Z" fill="#D9D9D9" />
+            </svg>
+          }
+        />
+      </VideoModal>
+
+      {/* <Transition appear show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="relative z-50"
+          className="relative z-10"
           onClose={() => setIsOpen(false)}
         >
           <Transition.Child
@@ -161,34 +202,50 @@ const AboutHero = () => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="min-h-[70%] max-w-2xl transform overflow-hidden rounded-2xl bg-primary p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title
-                    as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
-                  >
-                    Modal Title
-                  </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Your modal description goes here.
-                    </p>
-                  </div>
-
-                  <div className="mt-4">
-                    <button
-                      type="button"
-                      className="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+                <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <div className="mb-5 flex justify-end">
+                    <RxCross2
+                      className="cursor-pointer rounded-full p-1 text-4xl duration-200 hover:bg-black hover:bg-opacity-[10%]"
                       onClick={() => setIsOpen(false)}
-                    >
-                      Close Modal
-                    </button>
+                    />
                   </div>
+                  <ReactPlayer
+                    className="min-h-[60vh] w-full"
+                    url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+                    light={
+                      <div className="relative min-h-full w-full">
+                        <Image
+                          className="min-h-full w-full rounded-lg object-cover"
+                          src="/images/additional-support-video-thumbnail.png"
+                          alt="thumbnail"
+                          fill
+                        />
+                      </div>
+                    }
+                    width="100%"
+                    playIcon={
+                      <svg
+                        className="absolute"
+                        width="80"
+                        height="80"
+                        viewBox="0 0 80 80"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="40" cy="40" r="40" fill="#F90945" />
+                        <path
+                          d="M60 40L30 57.3205L30 22.6795L60 40Z"
+                          fill="#D9D9D9"
+                        />
+                      </svg>
+                    }
+                  />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
           </div>
         </Dialog>
-      </Transition>
+      </Transition> */}
     </section>
   );
 };
