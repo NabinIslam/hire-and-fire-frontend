@@ -4,7 +4,6 @@ import KeyBenefits from "@/components/pages/service/compliance-legal-support/Key
 import LegalProcess from "@/components/pages/service/compliance-legal-support/LegalProcess";
 import WhyChooseUs from "@/components/pages/service/compliance-legal-support/WhyChooseUs";
 
-
 const ComplianceAndLegalSupportPage = () => {
   return (
     <main>
