@@ -1,10 +1,16 @@
+"use client";
+
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
+import VideoModal from "@/components/common/VideoModal";
 import Button from "@/components/ui/Button";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import { useState } from "react";
 
 const KeyBenefits = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="pb-[100px] pt-[50px]">
       <div className="container flex flex-col justify-between gap-[100px] lg:flex-row">
@@ -99,7 +105,9 @@ const KeyBenefits = () => {
               </svg>
 
               <div className="basis-full space-y-2">
-                <h6 className="text-xl font-medium">Expert Consultation</h6>
+                <h6 className="mt-1 text-xl font-medium">
+                  Expert Consultation
+                </h6>
                 <p className="text-sm font-medium">
                   Receive tailored support from industry experts to navigate
                   your visa application and travel seamlessly.
@@ -171,7 +179,7 @@ const KeyBenefits = () => {
               </svg>
 
               <div className="basis-full space-y-2">
-                <h6 className="text-xl font-medium">Efficient Process</h6>
+                <h6 className="mt-1 text-xl font-medium">Efficient Process</h6>
                 <p className="text-sm font-medium">
                   A streamlined approach that simplifies visa and travel
                   arrangements, ensuring quick and hassle-free service.
@@ -259,7 +267,9 @@ const KeyBenefits = () => {
               </svg>
 
               <div className="basis-full space-y-2">
-                <h6 className="text-xl font-medium">Customized Solutions</h6>
+                <h6 className="mt-1 text-xl font-medium">
+                  Customized Solutions
+                </h6>
                 <p className="text-sm font-medium">
                   Personalized visa and travel services tailored to individual
                   needs, providing a seamless and stress-free experience.
@@ -331,7 +341,9 @@ const KeyBenefits = () => {
               </svg>
 
               <div className="basis-full space-y-2">
-                <h6 className="text-xl font-medium">All-Inclusive Support</h6>
+                <h6 className="mt-1 text-xl font-medium">
+                  All-Inclusive Support
+                </h6>
                 <p className="text-sm font-medium">
                   Comprehensive assistance for every step of the visa and travel
                   process, ensuring complete peace of mind.
@@ -343,7 +355,10 @@ const KeyBenefits = () => {
             <Link href="/hire-worker/request-worker">
               <Button>Request Worker</Button>
             </Link>
-            <button className="flex items-center rounded-lg border-2 border-primary py-1 pr-3 text-sm font-medium text-primary">
+            <button
+              className="flex items-center rounded-lg border-2 border-primary py-1 pr-3 text-sm font-medium text-primary"
+              onClick={() => setIsOpen(true)}
+            >
               <svg
                 className="animate-floating"
                 width="36"
@@ -416,6 +431,7 @@ const KeyBenefits = () => {
           />
         </FadeInRightWithSlowBounce>
       </div>
+      <VideoModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </section>
   );
 };

@@ -137,42 +137,7 @@ const AboutHero = () => {
         </FadeInRightWithSlowBounce>
       </div>
 
-      <VideoModal isOpen={isOpen} setIsOpen={setIsOpen}>
-        <div className="mb-5 flex justify-end">
-          <RxCross2
-            className="cursor-pointer rounded-full p-1 text-4xl duration-200 hover:bg-black hover:bg-opacity-[10%]"
-            onClick={() => setIsOpen(false)}
-          />
-        </div>
-        <ReactPlayer
-          className="min-h-[60vh] w-full"
-          url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
-          light={
-            <div className="relative min-h-full w-full">
-              <Image
-                className="min-h-full w-full rounded-lg object-cover"
-                src="/images/additional-support-video-thumbnail.png"
-                alt="thumbnail"
-                fill
-              />
-            </div>
-          }
-          width="100%"
-          playIcon={
-            <svg
-              className="absolute"
-              width="80"
-              height="80"
-              viewBox="0 0 80 80"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="40" cy="40" r="40" fill="#F90945" />
-              <path d="M60 40L30 57.3205L30 22.6795L60 40Z" fill="#D9D9D9" />
-            </svg>
-          }
-        />
-      </VideoModal>
+      <VideoModal isOpen={isOpen} setIsOpen={setIsOpen} />
 
       {/* <Transition appear show={isOpen} as={Fragment}>
         <Dialog

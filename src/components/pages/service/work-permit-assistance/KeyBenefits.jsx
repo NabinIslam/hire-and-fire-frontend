@@ -1,8 +1,14 @@
+"use client";
+
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
+import VideoModal from "@/components/common/VideoModal";
 import Image from "next/image";
+import { useState } from "react";
 
 const KeyBenefits = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="py-[50px]">
       {/* container row */}
@@ -18,7 +24,10 @@ const KeyBenefits = () => {
               />
             </div>
             <div className="basis-full">
-              <button className="text-md mt-6 flex w-full items-center justify-start rounded-lg border-2 border-primary px-4 font-medium md:justify-center">
+              <button
+                className="text-md mt-6 flex w-full items-center justify-start rounded-lg border-2 border-primary px-4 font-medium md:justify-center"
+                onClick={() => setIsOpen(true)}
+              >
                 <svg
                   className="animate-floating"
                   width="60"
@@ -227,11 +236,11 @@ const KeyBenefits = () => {
         <FadeInRightWithSlowBounce className="space-y-6">
           <div className="flex items-center justify-center lg:justify-start">
             <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">
-              Why Choose Us
+              Key Benefits
             </span>
           </div>
           <h2 className="text-center text-4xl font-semibold lg:text-left lg:text-4xl">
-            Key Benefits of Our  Work Permit Assistance
+            Key Benefits of Our Work Permit Assistance
           </h2>
           <p className="text-center text-sm font-medium lg:text-left">
             Expert guidance, personalized support, and efficient processing
@@ -554,6 +563,7 @@ const KeyBenefits = () => {
           </div>
         </FadeInRightWithSlowBounce>
       </div>
+      <VideoModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </section>
   );
 };

@@ -1,10 +1,16 @@
+"use client";
+
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
+import VideoModal from "@/components/common/VideoModal";
 import Button from "@/components/ui/Button";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import { useState } from "react";
 
 const KeyBenefits = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="pb-[100px] pt-[50px]">
       <div className="container flex flex-col justify-between gap-[100px] lg:flex-row">
@@ -353,7 +359,10 @@ const KeyBenefits = () => {
             <Link href="/hire-worker/request-worker">
               <Button>Request Worker</Button>
             </Link>
-            <button className="flex items-center rounded-lg border-2 border-primary py-1 pr-3 text-sm font-medium text-primary">
+            <button
+              onClick={() => setIsOpen(true)}
+              className="flex items-center rounded-lg border-2 border-primary py-1 pr-3 text-sm font-medium text-primary"
+            >
               <svg
                 className="animate-floating"
                 width="36"
@@ -426,6 +435,7 @@ const KeyBenefits = () => {
           />
         </FadeInRightWithSlowBounce>
       </div>
+      <VideoModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </section>
   );
 };
