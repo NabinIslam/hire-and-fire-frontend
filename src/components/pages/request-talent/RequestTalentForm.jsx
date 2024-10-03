@@ -27,6 +27,8 @@ const RequestTalentForm = () => {
         .then(function (response) {
           if (response.status === 201) {
             reset();
+            setValue(0);
+            setButtonDisabled(true);
             toast("Thanks for submitting");
           }
         })
@@ -46,6 +48,8 @@ const RequestTalentForm = () => {
   };
 
   const onSubmit = (data) => {
+    if (buttonDisabled) return toast("Please accept the terms and conditions");
+
     try {
       const submitData = {
         company_name: data.company_name,
@@ -239,7 +243,7 @@ const RequestTalentForm = () => {
         <div className="flex items-center gap-2">
           <Checkbox
             id="accept"
-            onClick={() => setButtonDisabled((prev) => !prev)}
+            onClick={() => setButtonDisabled(!buttonDisabled)}
           />
 
           <Label htmlFor="accept">I accept </Label>
