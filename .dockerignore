@@ -1,9 +1,5 @@
 node_modules
 npm-debug.log
-.DS_Store
-*.env.local
-*.env.development.local
-*.env.test.local
-*.env.production.local
-.next
-.vscode
+Dockerfile
+docker-compose.yml
+*.md

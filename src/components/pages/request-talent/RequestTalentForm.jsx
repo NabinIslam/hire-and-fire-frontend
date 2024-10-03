@@ -25,10 +25,12 @@ const RequestTalentForm = () => {
       await axios
         .post(`${apiUrl}/requesttalents/`, data)
         .then(function (response) {
-          console.log(response);
+          if (response.status === 201) {
+            reset();
+            toast("Thanks for submitting");
+          }
         })
         .catch(function (error) {
-          console.error(error);
           toast.error(`Something went wrong!, please try again`);
         }),
   });
@@ -59,11 +61,6 @@ const RequestTalentForm = () => {
       };
 
       mutation.mutate(submitData);
-
-      if (mutation.isSuccess) {
-        reset();
-        toast("Thanks for submitting");
-      }
     } catch (error) {
       toast.error("Failed to submit. Something went wrong!");
     }
