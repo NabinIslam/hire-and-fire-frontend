@@ -243,16 +243,16 @@ const Footer = () => {
             <ul className="flex items-center justify-center gap-8">
               <li>
                 <Link
-                  className="duration-200 hover:underline"
                   href="/privacy-policy"
+                  className="duration-200 hover:underline"
                 >
                   {t("Privacy_Policy")}
                 </Link>
               </li>
               <li>
                 <Link
-                  className="duration-200 hover:underline"
                   href="/terms-of-conditions"
+                  className="duration-200 hover:underline"
                 >
                   {t("Terms_and_Conditions")}
                 </Link>
