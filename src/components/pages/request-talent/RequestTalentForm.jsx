@@ -25,6 +25,7 @@ const RequestTalentForm = () => {
       await axios
         .post(`${apiUrl}/requesttalents/`, data)
         .then(function (response) {
+          console.log(response);
           if (response.status === 201) {
             reset();
             setValue(0);
