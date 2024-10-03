@@ -28,7 +28,6 @@ const RequestTalentForm = () => {
           if (response.status === 201) {
             reset();
             setValue(0);
-            setButtonDisabled(true);
             toast("Thanks for submitting");
           }
         })
@@ -243,7 +242,7 @@ const RequestTalentForm = () => {
         <div className="flex items-center gap-2">
           <Checkbox
             id="accept"
-            onClick={() => setButtonDisabled(!buttonDisabled)}
+            onChange={() => setButtonDisabled(!buttonDisabled)}
           />
 
           <Label htmlFor="accept">I accept </Label>
