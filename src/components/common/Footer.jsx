@@ -29,7 +29,7 @@ const Footer = () => {
             <p className="text-sm">{t("description")}</p>
 
             <div>
-              <Link href="/contact-us">
+              <Link href="/meet-us">
                 <button className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-white hover:bg-transparent">
                   {t("contact_button")}
                 </button>
@@ -96,7 +96,7 @@ const Footer = () => {
                 <IoMdArrowDropright className="text-2xl" />
                 <Link
                   className="duration-200 hover:text-primary"
-                  href="/contact-us"
+                  href="/meet-us"
                 >
                   {t("Contact_Us")}
                 </Link>

@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
             employers
           </p>
           <div>
-            <Link href="/contact-us">
+            <Link href="/meet-us">
               <BgButton>Meet Us</BgButton>
             </Link>
           </div>

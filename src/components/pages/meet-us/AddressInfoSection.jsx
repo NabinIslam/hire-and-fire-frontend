@@ -12,7 +12,7 @@ const AddressInfoSection = () => {
     <>
       <FadeInDownWithSlowBounce>
         <h4 className="text-center text-[40px] font-bold text-primary">
-          Contact Us
+          Meet Us
         </h4>
 
         <p className="mb-8 mt-2 text-center text-2xl font-medium">

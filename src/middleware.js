@@ -19,6 +19,6 @@ export const config = {
     "/resources/blog",
     "/resources/blog/:path*",
     "/resources/faq",
-    "/contact-us",
+    "/meet-us",
   ],
 };

@@ -17,7 +17,7 @@ const RoleCard = ({ role }) => {
       </div>
       <h3 className="mt-3 text-2xl font-medium">{title}</h3>
       <p className="my-3 text-sm font-medium">{description}</p>
-      <Link className="mt-auto" href="/contact-us">
+      <Link className="mt-auto" href="/meet-us">
         <button className="mx-auto flex items-center text-sm font-medium text-pink-600">
           <span>Contact Us</span> <IoMdArrowDropright className="text-lg" />
         </button>

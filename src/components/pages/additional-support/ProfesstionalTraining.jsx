@@ -26,7 +26,7 @@ const ProfessionalTraining = () => {
             instruction, hands-on learning, and career advancement
             opportunities.
           </p>
-          <Link href="/contact-us">
+          <Link href="/meet-us">
             <Button>Meet Us</Button>
           </Link>
         </FadeInLeftWithSlowBounce>

@@ -266,7 +266,7 @@ const LanguageTraining = () => {
         </FadeInDownWithSlowBounce>
       </div>
       <FadeInUpWithSlowBounce className="container mt-10 flex items-center justify-center">
-        <Link href="/contact-us">
+        <Link href="/meet-us">
           <Button>Meet Us</Button>
         </Link>
       </FadeInUpWithSlowBounce>

@@ -368,7 +368,7 @@ const KeySkills = () => {
             </div>
           </div>
           <div className="flex items-center justify-center lg:justify-start">
-            <Link href="/contact-us">
+            <Link href="/meet-us">
               <Button>Meet Us</Button>
             </Link>
           </div>

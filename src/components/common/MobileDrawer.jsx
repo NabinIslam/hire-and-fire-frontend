@@ -132,7 +132,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
           </ul>
         </div>
         <div className="mt-auto flex items-center justify-between">
-          <Link onClick={() => setIsOpen(false)} href="/contact-us">
+          <Link onClick={() => setIsOpen(false)} href="/meet-us">
             <Button>Meet Us</Button>
           </Link>
         </div>

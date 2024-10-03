@@ -26,7 +26,7 @@ const WorkerAccommodationService = () => {
             seamless integration to enhance productivity and employee
             satisfaction.
           </p>
-          <Link href="/contact-us">
+          <Link href="/meet-us">
             <Button>Meet Us</Button>
           </Link>
         </FadeInLeftWithSlowBounce>

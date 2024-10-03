@@ -207,7 +207,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="hidden basis-1/4 items-center justify-end gap-6 lg:flex">
-          <Link href="/contact-us">
+          <Link href="/meet-us">
             <Button>Meet Us</Button>
           </Link>
 

@@ -29,7 +29,7 @@ const ProfessionalSupport = () => {
             empower workers to thrive professionally and contribute effectively
             to organizational success.
           </p>
-          <Link href="/contact-us">
+          <Link href="/meet-us">
             <Button>Meet Us</Button>
           </Link>
         </FadeInLeftWithSlowBounce>
