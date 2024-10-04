@@ -1,12 +1,10 @@
 import BestSupports from "@/components/pages/additional-support/BestSupports";
 import LanguageTraining from "@/components/pages/additional-support/LanguageTraining";
-import OtherSupports from "@/components/pages/additional-support/OtherSupports";
 import ProfessionalSupport from "@/components/pages/additional-support/ProfessionalSupport";
 import ProfessionalTraining from "@/components/pages/additional-support/ProfesstionalTraining";
 import WorkerAccommodationService from "@/components/pages/additional-support/WorkerAccommodationService";
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import PageBanner from "@/components/common/PageBanner";
-import LanguageTrainingCarousel from "@/components/pages/additional-support/LanguageTrainingCarousel";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import { Link } from "@/i18n/routing";
 import Button from "@/components/ui/Button";

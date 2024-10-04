@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useTransition } from "react";
 import { parseCookies, setCookie } from "nookies";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 
 // The following cookie name is important because it's Google-predefined for the translation engine purpose
@@ -10,10 +10,11 @@ const COOKIE_NAME = "googtrans";
 
 const LanguageSwitcher = () => {
   const [isPending, startTransition] = useTransition();
-
   const [currentLanguage, setCurrentLanguage] = useState();
   const [languageConfig, setLanguageConfig] = useState();
   const router = useRouter();
+  const { pathname, asPath, query } = router;
+
   const localActive = useLocale();
 
   // Initialize translation engine
@@ -23,6 +24,7 @@ const LanguageSwitcher = () => {
     const existingLanguageCookieValue = cookies[COOKIE_NAME];
 
     let languageValue;
+
     if (existingLanguageCookieValue) {
       // 2. If the cookie is defined, extract a language nickname from there.
       const sp = existingLanguageCookieValue.split("/");
@@ -51,10 +53,20 @@ const LanguageSwitcher = () => {
 
   // The following function switches the current language
   const switchLanguage = (e) => {
+    // startTransition(() => {
+    //   router.replace(`/${e.target.value}`, undefined, { shallow: true });
+    //   setCookie(null, COOKIE_NAME, "/auto/" + e.target.value);
+
+    //   window.location.reload();
+    // });
+    const selectedLang = e.target.value; // e.g., 'fr', 'es', etc.
+
+    // Update the URL without reloading the page
     startTransition(() => {
-      router.replace(`/${e.target.value}`);
-      setCookie(null, COOKIE_NAME, "/auto/" + e.target.value);
-      window.location.reload();
+      router.replace({
+        pathname: `/${selectedLang}${pathname?.substring(3)}`, // Remove old lang code and replace it with the new one
+        query,
+      });
     });
   };
 
