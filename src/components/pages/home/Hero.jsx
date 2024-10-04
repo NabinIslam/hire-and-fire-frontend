@@ -14,7 +14,7 @@ const Hero = () => {
     <section className="bg-hero-bg bg-cover bg-no-repeat pb-[140px] pt-[50px] text-white">
       <div className="container flex flex-col items-center justify-between gap-16 lg:flex-row">
         <FadeInLeftWithSlowBounce className="basis-full text-center lg:basis-1/2 lg:text-left">
-          <h1 className="text-4xl font-semibold leading-[60px] md:text-4xl md:leading-[60px] lg:text-[56px] lg:leading-[60px]">
+          <h1 className="text-4xl font-semibold md:text-4xl lg:text-[56px]">
             {t("hero_title")}
           </h1>
           <p className="mb-5 mt-3">{t("hero_description")}</p>
