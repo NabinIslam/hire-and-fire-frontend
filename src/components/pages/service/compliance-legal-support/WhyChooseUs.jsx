@@ -22,7 +22,7 @@ const WhyChooseUs = () => {
               Why Choose Us
             </span>
           </div>
-          <h2 className="text-left text-4xl font-semibold leading-[62px] lg:text-4xl">
+          <h2 className="text-left text-4xl font-semibold lg:text-4xl">
             Why Choose Us for Compliance & Legal Support
           </h2>
           <p className="text-left text-sm font-medium">

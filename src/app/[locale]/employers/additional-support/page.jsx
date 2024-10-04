@@ -6,6 +6,10 @@ import ProfessionalTraining from "@/components/pages/additional-support/Professt
 import WorkerAccommodationService from "@/components/pages/additional-support/WorkerAccommodationService";
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import PageBanner from "@/components/common/PageBanner";
+import LanguageTrainingCarousel from "@/components/pages/additional-support/LanguageTrainingCarousel";
+import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
+import { Link } from "@/i18n/routing";
+import Button from "@/components/ui/Button";
 
 export const metadata = {
   title: "Hire&Fire | Additional Support",
@@ -18,11 +22,17 @@ const AdditionalSupportPage = () => {
 
       <LanguageTraining />
 
+      <FadeInUpWithSlowBounce className="container mt-10 flex items-center justify-center">
+        <Link href="/meet-us">
+          <Button>Meet Us</Button>
+        </Link>
+      </FadeInUpWithSlowBounce>
+
       <ProfessionalSupport />
 
       <section className="py-[50px]">
         <FadeInDownWithSlowBounce>
-          <h2 className="my-5 text-center text-4xl font-semibold leading-[62px] lg:text-4xl">
+          <h2 className="my-5 text-center text-4xl font-semibold lg:text-4xl">
             Our Best Supports
           </h2>
         </FadeInDownWithSlowBounce>

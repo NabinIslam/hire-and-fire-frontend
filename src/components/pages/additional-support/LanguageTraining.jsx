@@ -3,13 +3,9 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Slider from "react-slick";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Button from "@/components/ui/Button";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
-import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
-import { Link } from "@/i18n/routing";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -47,19 +43,10 @@ const LanguageTraining = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 2,
-    nextArrow: (
-      <div>
-        <IoIosArrowForward className="rounded-full border p-2 text-4xl text-black shadow-2xl" />
-      </div>
-    ),
-    prevArrow: (
-      <div className="absolute">
-        <IoIosArrowBack className="rounded-full border p-2 text-4xl text-black shadow-2xl" />
-      </div>
-    ),
+
     responsive: [
       {
         breakpoint: 1000,
@@ -79,7 +66,7 @@ const LanguageTraining = () => {
           <h6 className="text-2xl font-medium text-primary">
             Language Training
           </h6>
-          <h2 className="mt-5 text-4xl font-semibold leading-[62px] lg:text-4xl">
+          <h2 className="mt-5 text-4xl font-semibold lg:text-4xl">
             Essential Language Skills for the Workplace
           </h2>
           <p className="my-5 text-sm font-medium">
@@ -103,173 +90,166 @@ const LanguageTraining = () => {
         </FadeInRightWithSlowBounce>
       </div>
 
-      <div className="container mt-[50px]">
-        <FadeInDownWithSlowBounce className="slider-container">
-          <Slider {...settings}>
-            <div className="">
-              <ReactPlayer
-                className="h-full w-full"
-                url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
-                light={
-                  <div className="relative min-h-full w-full">
-                    <Image
-                      className="h-full w-full rounded-lg"
-                      src="/images/additional-support-video-thumbnail.png"
-                      alt="thumbnail"
-                      fill
-                    />
-                  </div>
-                }
-                width="100%"
-                playIcon={
-                  <svg
-                    className="absolute"
-                    width="80"
-                    height="80"
-                    viewBox="0 0 80 80"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="40" cy="40" r="40" fill="#F90945" />
-                    <path
-                      d="M60 40L30 57.3205L30 22.6795L60 40Z"
-                      fill="#D9D9D9"
-                    />
-                  </svg>
-                }
-              />
-              <div className="mt-4 flex items-center justify-center gap-3">
-                <h6 className="text-2xl font-medium">Demo Video</h6>
-                <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
-                  01
+      <FadeInDownWithSlowBounce className="slider-container container mt-[50px] px-14">
+        <Slider {...settings}>
+          <div className="">
+            <ReactPlayer
+              className="h-full w-full"
+              url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+              light={
+                <div className="relative min-h-full w-full">
+                  <Image
+                    className="h-full w-full rounded-lg"
+                    src="/images/additional-support-video-thumbnail.png"
+                    alt="thumbnail"
+                    fill
+                  />
                 </div>
+              }
+              width="100%"
+              playIcon={
+                <svg
+                  className="absolute"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="40" cy="40" r="40" fill="#F90945" />
+                  <path
+                    d="M60 40L30 57.3205L30 22.6795L60 40Z"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              }
+            />
+            <div className="mt-4 flex items-center justify-center gap-3">
+              <h6 className="text-2xl font-medium">Demo Video</h6>
+              <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
+                01
               </div>
             </div>
-            <div className="">
-              <ReactPlayer
-                className="h-full w-full"
-                url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
-                light={
-                  <div className="relative min-h-full w-full">
-                    <Image
-                      className="h-full w-full rounded-lg"
-                      src="/images/additional-support-video-thumbnail.png"
-                      alt="thumbnail"
-                      fill
-                    />
-                  </div>
-                }
-                width="100%"
-                playIcon={
-                  <svg
-                    className="absolute"
-                    width="80"
-                    height="80"
-                    viewBox="0 0 80 80"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="40" cy="40" r="40" fill="#F90945" />
-                    <path
-                      d="M60 40L30 57.3205L30 22.6795L60 40Z"
-                      fill="#D9D9D9"
-                    />
-                  </svg>
-                }
-              />
-              <div className="mt-4 flex items-center justify-center gap-3">
-                <h6 className="text-2xl font-medium">Demo Video</h6>
-                <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
-                  01
+          </div>
+          <div className="">
+            <ReactPlayer
+              className="h-full w-full"
+              url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+              light={
+                <div className="relative min-h-full w-full">
+                  <Image
+                    className="h-full w-full rounded-lg"
+                    src="/images/additional-support-video-thumbnail.png"
+                    alt="thumbnail"
+                    fill
+                  />
                 </div>
+              }
+              width="100%"
+              playIcon={
+                <svg
+                  className="absolute"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="40" cy="40" r="40" fill="#F90945" />
+                  <path
+                    d="M60 40L30 57.3205L30 22.6795L60 40Z"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              }
+            />
+            <div className="mt-4 flex items-center justify-center gap-3">
+              <h6 className="text-2xl font-medium">Demo Video</h6>
+              <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
+                01
               </div>
             </div>
-            <div className="">
-              <ReactPlayer
-                className="h-full w-full"
-                url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
-                light={
-                  <div className="relative min-h-full w-full">
-                    <Image
-                      className="h-full w-full rounded-lg"
-                      src="/images/additional-support-video-thumbnail.png"
-                      alt="thumbnail"
-                      fill
-                    />
-                  </div>
-                }
-                width="100%"
-                playIcon={
-                  <svg
-                    className="absolute"
-                    width="80"
-                    height="80"
-                    viewBox="0 0 80 80"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="40" cy="40" r="40" fill="#F90945" />
-                    <path
-                      d="M60 40L30 57.3205L30 22.6795L60 40Z"
-                      fill="#D9D9D9"
-                    />
-                  </svg>
-                }
-              />
-              <div className="mt-4 flex items-center justify-center gap-3">
-                <h6 className="text-2xl font-medium">Demo Video</h6>
-                <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
-                  01
+          </div>
+          <div className="">
+            <ReactPlayer
+              className="h-full w-full"
+              url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+              light={
+                <div className="relative min-h-full w-full">
+                  <Image
+                    className="h-full w-full rounded-lg"
+                    src="/images/additional-support-video-thumbnail.png"
+                    alt="thumbnail"
+                    fill
+                  />
                 </div>
+              }
+              width="100%"
+              playIcon={
+                <svg
+                  className="absolute"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="40" cy="40" r="40" fill="#F90945" />
+                  <path
+                    d="M60 40L30 57.3205L30 22.6795L60 40Z"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              }
+            />
+            <div className="mt-4 flex items-center justify-center gap-3">
+              <h6 className="text-2xl font-medium">Demo Video</h6>
+              <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
+                01
               </div>
             </div>
-            <div className="">
-              <ReactPlayer
-                className="h-full w-full"
-                url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
-                light={
-                  <div className="relative min-h-full w-full">
-                    <Image
-                      className="h-full w-full rounded-lg"
-                      src="/images/additional-support-video-thumbnail.png"
-                      alt="thumbnail"
-                      fill
-                    />
-                  </div>
-                }
-                width="100%"
-                playIcon={
-                  <svg
-                    className="absolute"
-                    width="80"
-                    height="80"
-                    viewBox="0 0 80 80"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="40" cy="40" r="40" fill="#F90945" />
-                    <path
-                      d="M60 40L30 57.3205L30 22.6795L60 40Z"
-                      fill="#D9D9D9"
-                    />
-                  </svg>
-                }
-              />
-              <div className="mt-4 flex items-center justify-center gap-3">
-                <h6 className="text-2xl font-medium">Demo Video</h6>
-                <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
-                  01
+          </div>
+          <div className="">
+            <ReactPlayer
+              className="h-full w-full"
+              url="https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
+              light={
+                <div className="relative min-h-full w-full">
+                  <Image
+                    className="h-full w-full rounded-lg"
+                    src="/images/additional-support-video-thumbnail.png"
+                    alt="thumbnail"
+                    fill
+                  />
                 </div>
+              }
+              width="100%"
+              playIcon={
+                <svg
+                  className="absolute"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="40" cy="40" r="40" fill="#F90945" />
+                  <path
+                    d="M60 40L30 57.3205L30 22.6795L60 40Z"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              }
+            />
+            <div className="mt-4 flex items-center justify-center gap-3">
+              <h6 className="text-2xl font-medium">Demo Video</h6>
+              <div className="flex size-[36px] items-center justify-center rounded-full bg-primary text-[18px] text-white">
+                01
               </div>
             </div>
-          </Slider>
-        </FadeInDownWithSlowBounce>
-      </div>
-      <FadeInUpWithSlowBounce className="container mt-10 flex items-center justify-center">
-        <Link href="/meet-us">
-          <Button>Meet Us</Button>
-        </Link>
-      </FadeInUpWithSlowBounce>
+          </div>
+        </Slider>
+      </FadeInDownWithSlowBounce>
     </section>
   );
 };

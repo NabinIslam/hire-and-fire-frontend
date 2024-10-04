@@ -10,12 +10,14 @@ import { Link } from "@/i18n/routing";
 const ProfessionalSupport = () => {
   return (
     <section className="pb-[50px] pt-[50px]">
-      <div className="container flex flex-col items-center justify-between md:gap-[50px] lg:flex-row lg:gap-[100px]">
+      <div className="container flex flex-col items-center justify-between gap-10 md:gap-[50px] lg:flex-row lg:gap-[100px]">
         <FadeInLeftWithSlowBounce className="basis-full text-center lg:basis-1/2 lg:text-left">
-          <div className="flex h-[46px] w-[264px] items-center justify-center border-2 border-dashed border-primary text-xl font-medium text-primary">
-            Professional Support
+          <div className="flex items-center justify-center lg:justify-start">
+            <div className="flex h-[46px] w-[264px] items-center justify-center border-2 border-dashed border-primary text-xl font-medium text-primary lg:mr-auto">
+              Professional Support
+            </div>
           </div>
-          <h2 className="mt-5 text-4xl font-semibold leading-[62px] lg:text-4xl">
+          <h2 className="mt-5 text-4xl font-semibold lg:text-4xl">
             We also provide support for Workers
           </h2>
           <p className="my-5 text-sm font-medium">

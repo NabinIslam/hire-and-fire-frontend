@@ -38,7 +38,7 @@ const AddressInfoSection = () => {
         </FadeInLeftWithSlowBounce>
 
         {/* card */}
-        <FadeInUpWithSlowBounce className="group flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg hover:bg-primary">
+        <FadeInUpWithSlowBounce className="group flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg hover:bg-primary duration-200">
           <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white duration-200 group-hover:bg-secondary group-hover:text-white">
             <FaPhoneVolume />
           </div>
@@ -53,7 +53,7 @@ const AddressInfoSection = () => {
         </FadeInUpWithSlowBounce>
 
         {/* card */}
-        <FadeInRightWithSlowBounce className="group flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg hover:bg-primary">
+        <FadeInRightWithSlowBounce className="group flex min-h-[180px] w-[355px] flex-col items-center gap-4 rounded-xl border bg-[#FAF8F8] p-4 shadow-lg hover:bg-primary duration-200">
           <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-primary text-white duration-200 group-hover:bg-secondary group-hover:text-white">
             <FaEnvelope />
           </div>

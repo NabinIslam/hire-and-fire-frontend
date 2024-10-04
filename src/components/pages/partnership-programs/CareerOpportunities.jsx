@@ -12,7 +12,7 @@ const CareerOpportunities = () => {
           </span>
         </div>
 
-        <h2 className="mb-20 mt-5 text-center text-4xl font-semibold leading-[62px] lg:text-4xl">
+        <h2 className="mb-20 mt-5 text-center text-4xl font-semibold lg:text-4xl">
           Looking for a Career with Us
         </h2>
       </FadeInDownWithSlowBounce>

@@ -84,3 +84,13 @@
   /* Background color for the track */
   border-radius: 10px;
 }
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 33px;
+  line-height: 1;
+  color: #f90945;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -12,7 +12,7 @@ const OnboardingSupport = () => {
     <section className="pb-[100px] pt-[50px]">
       <div className="container flex flex-col items-center justify-between gap-16 lg:gap-24 xl:flex-row">
         <FadeInLeftWithSlowBounce className="basis-full space-y-5 text-center lg:basis-1/2 xl:text-left">
-          <h2 className="text-4xl font-semibold leading-[62px] lg:text-4xl">
+          <h2 className="text-4xl font-semibold lg:text-4xl">
             Onboarding Support
           </h2>
           <p className="text-sm font-medium">

@@ -11,7 +11,7 @@ const OurSuccess = () => {
   return (
     <section className="space-y-8 bg-our-success-bg bg-cover bg-center py-[70px] text-white">
       <FadeInUpWithSlowBounce className="container space-y-6">
-        <h2 className="text-center text-4xl font-semibold leading-[62px] lg:text-4xl">
+        <h2 className="text-center text-4xl font-semibold lg:text-4xl">
           {t("title")}
         </h2>
         <p className="text-center text-sm">{t("description")}</p>

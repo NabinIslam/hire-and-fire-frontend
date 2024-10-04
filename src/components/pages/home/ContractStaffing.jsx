@@ -10,7 +10,7 @@ const ContractStaffing = () => {
     <section className="pb-[50px] pt-[50px]">
       <div className="container flex flex-col items-center justify-between gap-16 lg:gap-24 xl:flex-row-reverse">
         <FadeInRightWithSlowBounce className="z-50 basis-full space-y-5 text-center lg:basis-1/2 xl:text-left">
-          <h2 className="text-4xl font-semibold leading-[62px] lg:text-4xl">
+          <h2 className="text-4xl font-semibold lg:text-4xl">
             Contract Staffing
           </h2>
           <p className="text-sm font-medium">

@@ -12,7 +12,7 @@ const FlightAssistanceProcess = () => {
           </span>
         </div>
         <div className="mx-auto mb-16 mt-6 max-w-[840px]">
-          <h2 className="text-center text-4xl font-semibold leading-[62px] lg:text-4xl">
+          <h2 className="text-center text-4xl font-semibold lg:text-4xl">
             Our Step-by-Step Visa Application Flight Assistance Process
           </h2>
         </div>
