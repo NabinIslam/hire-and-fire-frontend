@@ -23,7 +23,7 @@ const Breadcrumbs = () => {
       {parts.map((part, index) => (
         <Fragment key={index}>
           {index >= 0 && <MdKeyboardDoubleArrowRight />}
-          {capitalizeAndRemoveHyphens(part)}
+          <span>{capitalizeAndRemoveHyphens(part)}</span>
         </Fragment>
       ))}
     </div>
