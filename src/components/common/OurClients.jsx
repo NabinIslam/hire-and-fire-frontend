@@ -15,10 +15,11 @@ const OurClients = () => {
   const t = useTranslations("OurClients");
 
   const settings = {
-    speed: 500,
+    speed: 700,
     slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
+    infinite: true,
     adaptiveHeight: true,
     prevArrow: <ArrowPrev />,
     nextArrow: <ArrowNext />,
@@ -54,33 +55,33 @@ const OurClients = () => {
       <FadeInDownWithSlowBounce className="container space-y-8">
         <h2 className="text-center text-4xl font-semibold">{t("title")}</h2>
         <Slider {...settings}>
-          <div className="relative min-h-[134px] rounded-lg border shadow">
+          <div className="relative min-h-[134px] rounded-lg border p-2 shadow">
             <Image
-              className="object-contain px-12"
+              className="object-contain object-center px-12"
               src="/images/clients/flexjobs-logo.png"
               fill
               alt="Flexjobs Logo"
             />
           </div>
-          <div className="relative min-h-[134px] rounded-lg border shadow">
+          <div className="relative min-h-[134px] rounded-lg border p-2 shadow">
             <Image
-              className="object-contain px-12"
+              className="object-contain object-center px-12"
               src="/images/clients/Upwork-logo.png"
               alt="Upwork Logo"
               fill
             />
           </div>
-          <div className="relative min-h-[134px] rounded-lg border shadow">
+          <div className="relative min-h-[134px] rounded-lg border p-2 shadow">
             <Image
-              className="object-contain px-12"
+              className="object-contain object-center px-12"
               src="/images/clients/linkedin-logo.png"
               alt="Linkedin Logo"
               fill
             />
           </div>
-          <div className="relative min-h-[134px] rounded-lg border shadow">
+          <div className="relative min-h-[134px] rounded-lg border p-2 shadow">
             <Image
-              className="object-contain px-12"
+              className="object-contain object-center px-12"
               src="/images/clients/glassdoor-logo.png"
               alt="Glassdoor Logo"
               fill
@@ -88,7 +89,7 @@ const OurClients = () => {
           </div>
           <div className="relative min-h-[134px] rounded-lg border shadow">
             <Image
-              className="object-contain px-12"
+              className="object-contain object-center px-12"
               src="/images/clients/Indeed-logo.png"
               alt="Indeed Logo"
               fill
