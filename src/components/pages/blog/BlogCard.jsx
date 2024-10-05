@@ -24,7 +24,7 @@ const BlogCard = ({ blog }) => {
   // } = blog);
 
   return (
-    <FadeInLeftWithSlowBounce className="flex flex-col items-start gap-3 rounded-lg border p-4 shadow-lg">
+    <FadeInLeftWithSlowBounce className="flex flex-col items-start gap-3 rounded-lg border p-4 shadow-lg bg-white">
       {blog?.video ? (
         <ReactPlayer
           className="relative min-h-[200px] w-full rounded-lg duration-200 hover:scale-125"

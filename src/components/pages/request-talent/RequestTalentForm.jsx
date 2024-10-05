@@ -64,6 +64,7 @@ const RequestTalentForm = () => {
         comments: data.comment,
       };
 
+
       mutation.mutate(submitData);
     } catch (error) {
       toast.error("Failed to submit. Something went wrong!");

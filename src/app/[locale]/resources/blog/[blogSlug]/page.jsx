@@ -13,7 +13,7 @@ const BlogDetailsPage = async ({ params }) => {
   const blog = await getBlogBySlug(blogSlug);
 
   return (
-    <main>
+    <main className="">
       <PageBanner title={blog?.title} />
 
       <section className="py-[100px]">

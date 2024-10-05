@@ -9,16 +9,9 @@ const BlogContents = async ({ blogSlug }) => {
   const blog = await getBlogBySlug(blogSlug);
 
   return (
-    <div className="container flex flex-col gap-x-10 xl:flex-row">
-      <main className="basis-full space-y-5 lg:basis-[80%]">
-        <div className="relative min-h-[500px] w-full">
-          <Image
-            className="object-contain object-left"
-            src={blog?.thumbnail}
-            alt={blog?.title}
-            fill
-          />
-        </div>
+    <div className="container mb-5">
+      <main className="mx-auto max-w-5xl space-y-5 rounded-xl border bg-white p-10 shadow-lg">
+        <h2 className="text-4xl font-semibold">{blog?.title}</h2>
 
         <div className="flex items-center gap-10">
           <div className="flex items-center gap-2">
@@ -34,8 +27,6 @@ const BlogContents = async ({ blogSlug }) => {
             <p className="text-sm font-medium">{blog?.view_count} Views</p>
           </div>
         </div>
-
-        <h2 className="text-4xl font-semibold">{blog?.title}</h2>
 
         <BlogDescription description={blog?.description} />
 
@@ -56,45 +47,47 @@ const BlogContents = async ({ blogSlug }) => {
               for sustained growth and success in the global economy.
             </p> */}
       </main>
-
-      <aside className="basis-full space-y-5 lg:basis-[20%]">
-        <h4 className="text-2xl font-semibold">
-          Do you want to receive news? Subscribe to our newsletter.
-        </h4>
-        <form action="">
-          <div className="flex h-12 items-center justify-between rounded-md border bg-white shadow-md">
-            <input
-              className="placeholder:text-slate-500 text-slate-500 basis-full border-none px-3 text-sm focus:ring-0"
-              type="text"
-              placeholder="Your Email Here"
-              required
-            />
-            <button
-              type="submit"
-              className="h-full w-[150px] basis-auto rounded-md border-2 border-primary bg-primary px-2 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:bg-white hover:text-primary"
-            >
-              Subscribe
-            </button>
-          </div>
-        </form>
-        <div className="rounded-lg border shadow-md">
-          <div className="border-b border-black p-4">
-            <h5 className="text-xl font-medium">In This Article</h5>
-          </div>
-          <div className="rounded-lg px-10 py-4 font-medium">
-            <ol className="list-decimal space-y-3">
-              <li>Why Skilled Workers matter for a business?</li>
-              <li>Benefit of skilled Worker</li>
-              <li>Hiring From Abroad</li>
-              <li>Impact on Business</li>
-              <li>Challenges and Solution</li>
-              <li>Conclusion</li>
-            </ol>
-          </div>
-        </div>
-      </aside>
     </div>
   );
 };
 
 export default BlogContents;
+
+{
+  /* <aside className="basis-full space-y-5 lg:basis-[20%]">
+<h4 className="text-2xl font-semibold">
+  Do you want to receive news? Subscribe to our newsletter.
+</h4>
+<form action="">
+  <div className="flex h-12 items-center justify-between rounded-md border bg-white shadow-md">
+    <input
+      className="placeholder:text-slate-500 text-slate-500 basis-full border-none px-3 text-sm focus:ring-0"
+      type="text"
+      placeholder="Your Email Here"
+      required
+    />
+    <button
+      type="submit"
+      className="h-full w-[150px] basis-auto rounded-md border-2 border-primary bg-primary px-2 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:bg-white hover:text-primary"
+    >
+      Subscribe
+    </button>
+  </div>
+</form>
+<div className="rounded-lg border shadow-md">
+  <div className="border-b border-black p-4">
+    <h5 className="text-xl font-medium">In This Article</h5>
+  </div>
+  <div className="rounded-lg px-10 py-4 font-medium">
+    <ol className="list-decimal space-y-3">
+      <li>Why Skilled Workers matter for a business?</li>
+      <li>Benefit of skilled Worker</li>
+      <li>Hiring From Abroad</li>
+      <li>Impact on Business</li>
+      <li>Challenges and Solution</li>
+      <li>Conclusion</li>
+    </ol>
+  </div>
+</div>
+</aside> */
+}
