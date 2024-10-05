@@ -2,8 +2,9 @@
 
 import { useEffect, useState, useTransition } from "react";
 import { parseCookies, setCookie } from "nookies";
-import { usePathname, useRouter } from "next/navigation";
+
 import { useLocale } from "next-intl";
+import { useRouter } from "@/i18n/routing";
 
 // The following cookie name is important because it's Google-predefined for the translation engine purpose
 const COOKIE_NAME = "googtrans";
@@ -13,7 +14,6 @@ const LanguageSwitcher = () => {
   const [currentLanguage, setCurrentLanguage] = useState();
   const [languageConfig, setLanguageConfig] = useState();
   const router = useRouter();
-  const { pathname, asPath, query } = router;
 
   const localActive = useLocale();
 
@@ -53,21 +53,25 @@ const LanguageSwitcher = () => {
 
   // The following function switches the current language
   const switchLanguage = (e) => {
-    // startTransition(() => {
-    //   router.replace(`/${e.target.value}`, undefined, { shallow: true });
-    //   setCookie(null, COOKIE_NAME, "/auto/" + e.target.value);
+    const selectedLang = e.target.value;
 
-    //   window.location.reload();
-    // });
-    const selectedLang = e.target.value; // e.g., 'fr', 'es', etc.
+    startTransition(() => {
+      // router.push(`/${selectedLang}`, undefined, { shallow: true });
+      router.push({ selectedLang });
+      setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
+
+      window.location.reload();
+    });
+
+    // e.g., 'fr', 'es', etc.
 
     // Update the URL without reloading the page
-    startTransition(() => {
-      router.replace({
-        pathname: `/${selectedLang}${pathname?.substring(3)}`, // Remove old lang code and replace it with the new one
-        query,
-      });
-    });
+    // startTransition(() => {
+    //   router.replace({
+    //     pathname: `/${selectedLang}${pathname?.substring(3)}`, // Remove old lang code and replace it with the new one
+    //     query,
+    //   });
+    // });
   };
 
   return (
