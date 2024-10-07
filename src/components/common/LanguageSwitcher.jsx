@@ -58,7 +58,7 @@ const LanguageSwitcher = () => {
       const selectedLang = e.target.value;
 
       // router.push(asPath, asPath, { locale: selectedLang });
-      router.push(`/${selectedLang}`, undefined, { shallow: true });
+      router.push(`/${selectedLang}`);
       setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
 
       window.location.reload();
