@@ -9,13 +9,13 @@ import "react-modern-drawer/dist/index.css";
 import Button from "../ui/Button";
 import { languages } from "@/data/languages";
 import MobileDrawer from "./MobileDrawer";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 import { useTransition } from "react";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
-import LanguageSwitcher from "./LanguageSwitcher";
 import { Link } from "@/i18n/routing";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -210,6 +210,8 @@ const Header = () => {
           <Link href="/meet-us">
             <Button>Meet Us</Button>
           </Link>
+
+          {/* <SwitchLanguage /> */}
 
           <LanguageSwitcher />
 

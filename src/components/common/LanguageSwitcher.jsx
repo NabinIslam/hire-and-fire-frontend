@@ -10,6 +10,7 @@ import { useRouter } from "@/i18n/routing";
 const COOKIE_NAME = "googtrans";
 
 const LanguageSwitcher = () => {
+  console.log("language switch detected");
   const [isPending, startTransition] = useTransition();
   const [currentLanguage, setCurrentLanguage] = useState();
   const [languageConfig, setLanguageConfig] = useState();
@@ -53,11 +54,11 @@ const LanguageSwitcher = () => {
 
   // The following function switches the current language
   const switchLanguage = (e) => {
-    const selectedLang = e.target.value;
-
     startTransition(() => {
-      // router.push(`/${selectedLang}`, undefined, { shallow: true });
-      router.push({ selectedLang });
+      const selectedLang = e.target.value;
+
+      // router.push(asPath, asPath, { locale: selectedLang });
+      router.push(`/${selectedLang}`, undefined, { shallow: true });
       setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
 
       window.location.reload();
@@ -76,7 +77,7 @@ const LanguageSwitcher = () => {
 
   return (
     <select
-      defaultValue={currentLanguage}
+      defaultValue={localActive}
       onChange={switchLanguage}
       className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
       disabled={isPending}
