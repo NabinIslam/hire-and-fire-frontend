@@ -8,11 +8,9 @@ import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSl
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
 
 const WorkforcePlanning = () => {
   const pathname = usePathname();
-  const localActive = useLocale();
 
   return (
     <section className="pb-[50px] pt-[50px]">
@@ -130,7 +128,7 @@ const WorkforcePlanning = () => {
           description="We optimize the allocation of human resources to maximize efficiency."
         />
       </div>
-      {pathname === `/${localActive}` && (
+      {pathname === `/` && (
         <FadeInUpWithSlowBounce className="mt-10 flex items-center justify-center">
           <Link href="/services">
             <Button>View All Services</Button>
