@@ -54,15 +54,20 @@ const LanguageSwitcher = () => {
 
   // The following function switches the current language
   const switchLanguage = (e) => {
-    startTransition(() => {
-      const selectedLang = e.target.value;
+    const selectedLang = e.target.value;
 
-      // router.push(asPath, asPath, { locale: selectedLang });
-      router.push(`/${selectedLang}`);
-      setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
+    // router.push(asPath, asPath, { locale: selectedLang });
+    router.push(`/${selectedLang}`);
 
-      window.location.reload();
-    });
+    setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
+
+    // window.location.reload();
+
+    // startTransition(() => {
+    //   setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
+
+    //   window.location.reload();
+    // });
 
     // e.g., 'fr', 'es', etc.
 
@@ -80,7 +85,6 @@ const LanguageSwitcher = () => {
       defaultValue={localActive}
       onChange={switchLanguage}
       className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
-      disabled={isPending}
     >
       {languageConfig?.languages?.map((language) => (
         <option value={language.name} key={language.name}>
