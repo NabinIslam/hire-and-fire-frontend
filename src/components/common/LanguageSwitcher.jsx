@@ -2,16 +2,14 @@
 
 import { useEffect, useState, useTransition } from "react";
 import { parseCookies, setCookie } from "nookies";
-import { useRouter } from "next/navigation";
 
 // The following cookie name is important because it's Google-predefined for the translation engine purpose
 const COOKIE_NAME = "googtrans";
 
 const LanguageSwitcher = () => {
   const [isPending, startTransition] = useTransition();
-  const [currentLanguage, setCurrentLanguage] = useState();
-  const [languageConfig, setLanguageConfig] = useState();
-  const router = useRouter();
+  const [currentLanguage, setCurrentLanguage] = useState("");
+  const [languageConfig, setLanguageConfig] = useState(null);
 
   // Initialize translation engine
   useEffect(() => {
@@ -49,38 +47,16 @@ const LanguageSwitcher = () => {
 
   // The following function switches the current language
   const switchLanguage = (e) => {
-    const selectedLang = e.target.value;
+    // We just need to set the related cookie and reload the page
+    // "/auto/" prefix is Google's definition as far as a cookie name
 
-    // router.push(asPath, asPath, { locale: selectedLang });
-
-    startTransition(() => {
-      router.push(`/${selectedLang}`);
-
-      setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
-    });
-
-    // window.location.reload();
-
-    // startTransition(() => {
-    //   setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
-
-    //   window.location.reload();
-    // });
-
-    // e.g., 'fr', 'es', etc.
-
-    // Update the URL without reloading the page
-    // startTransition(() => {
-    //   router.replace({
-    //     pathname: `/${selectedLang}${pathname?.substring(3)}`, // Remove old lang code and replace it with the new one
-    //     query,
-    //   });
-    // });
+    setCookie(null, COOKIE_NAME, "/auto/" + e.target.value);
+    window.location.reload();
   };
 
   return (
     <select
-      defaultValue={localActive}
+      defaultValue={currentLanguage}
       onChange={switchLanguage}
       className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
       disabled={isPending}

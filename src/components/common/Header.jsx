@@ -10,6 +10,7 @@ import Button from "../ui/Button";
 import MobileDrawer from "./MobileDrawer";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -191,7 +192,7 @@ const Header = () => {
 
           {/* <SwitchLanguage /> */}
 
-          {/* <LanguageSwitcher /> */}
+          <LanguageSwitcher />
 
           {/* <select
             defaultValue={localActive}
