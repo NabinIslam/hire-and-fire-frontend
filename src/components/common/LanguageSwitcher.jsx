@@ -10,7 +10,6 @@ import { useRouter } from "next/navigation";
 const COOKIE_NAME = "googtrans";
 
 const LanguageSwitcher = () => {
-  console.log("language switch detected");
   const [isPending, startTransition] = useTransition();
   const [currentLanguage, setCurrentLanguage] = useState();
   const [languageConfig, setLanguageConfig] = useState();
