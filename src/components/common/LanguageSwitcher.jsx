@@ -4,7 +4,7 @@ import { useEffect, useState, useTransition } from "react";
 import { parseCookies, setCookie } from "nookies";
 
 import { useLocale } from "next-intl";
-import { useRouter } from "@/i18n/routing";
+import { useRouter } from "next/navigation";
 
 // The following cookie name is important because it's Google-predefined for the translation engine purpose
 const COOKIE_NAME = "googtrans";
