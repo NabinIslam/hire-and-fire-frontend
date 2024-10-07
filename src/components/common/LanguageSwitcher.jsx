@@ -7,7 +7,6 @@ import { parseCookies, setCookie } from "nookies";
 const COOKIE_NAME = "googtrans";
 
 const LanguageSwitcher = () => {
-  const [isPending, startTransition] = useTransition();
   const [currentLanguage, setCurrentLanguage] = useState("");
   const [languageConfig, setLanguageConfig] = useState(null);
 
@@ -59,7 +58,6 @@ const LanguageSwitcher = () => {
       defaultValue={currentLanguage}
       onChange={switchLanguage}
       className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
-      disabled={isPending}
     >
       {languageConfig?.languages?.map((language) => (
         <option value={language.name} key={language.name}>
