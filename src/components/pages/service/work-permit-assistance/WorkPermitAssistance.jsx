@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import Button from "@/components/ui/Button";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";

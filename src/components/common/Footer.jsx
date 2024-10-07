@@ -8,12 +8,9 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 
 const Footer = () => {
-  const t = useTranslations("footer");
-
   return (
     <footer className="mt-auto bg-[#004785] pb-[25px] pt-[50px] text-white">
       <div className="container space-y-6">
@@ -26,25 +23,33 @@ const Footer = () => {
               width={90}
             />
 
-            <p className="text-sm">{t("description")}</p>
+            <p className="text-sm">
+              Hire & Fire is a cutting-edge job website designed to connect
+              employers with top-tier talent across various industries.
+              Utilizing advanced matching algorithms, it streamlines the hiring
+              process, ensuring quick and effective placements. Employers
+              benefit from efficient tools for posting jobs, screening
+              candidates, and managing applications. Ideal for businesses aiming
+              for growth, Hire & Fire is your go-to resource for all recruitment
+              needs. Please note that it operates on an employer basis and does
+              not provide jobs directly to workers.
+            </p>
 
             <div>
               <Link href="/meet-us">
                 <button className="rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-white hover:bg-transparent">
-                  {t("contact_button")}
+                  Contact Us
                 </button>
               </Link>
             </div>
           </div>
           <div className="basis-full space-y-5 md:basis-1/2 lg:basis-1/4 xl:pl-[80px]">
-            <span className="border-b-[1px] pb-1 text-xl">
-              {t("quick_links")}
-            </span>
+            <span className="border-b-[1px] pb-1 text-xl">Quick Links</span>
             <ul className="flex flex-col justify-between gap-6">
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
                 <Link className="duration-200 hover:text-primary" href="/">
-                  {t("Home")}
+                  Home
                 </Link>
               </li>
               <li className="flex items-center">
@@ -53,7 +58,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/about-us"
                 >
-                  {t("About_Us")}
+                  About Us
                 </Link>
               </li>
               <li className="flex items-center">
@@ -62,7 +67,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/services"
                 >
-                  {t("Services")}
+                  Services
                 </Link>
               </li>
               <li className="flex items-center">
@@ -71,7 +76,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/industry"
                 >
-                  {t("Industries_We_Serve")}
+                  Industries We Serve
                 </Link>
               </li>
               <li className="flex items-center">
@@ -80,7 +85,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/resources/blog"
                 >
-                  {t("Blogs_and_Newses")}
+                  Blogs and Newses
                 </Link>
               </li>
               <li className="flex items-center">
@@ -89,7 +94,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/resources/faq"
                 >
-                  {t("FAQ")}
+                  FAQ
                 </Link>
               </li>
               <li className="flex items-center">
@@ -98,15 +103,13 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/meet-us"
                 >
-                  {t("Contact_Us")}
+                  Contact Us
                 </Link>
               </li>
             </ul>
           </div>
           <div className="basis-full space-y-5 md:basis-1/2 lg:basis-1/4">
-            <span className="border-b-[1px] pb-1 text-xl">
-              {t("our_services")}
-            </span>
+            <span className="border-b-[1px] pb-1 text-xl">our services</span>
             <ul className="flex flex-col justify-between gap-6">
               <li className="flex items-center">
                 <IoMdArrowDropright className="text-2xl" />
@@ -132,7 +135,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/service/permanent-recruitment"
                 >
-                  {t("Permanent_Recruitment")}
+                  Permanent Recruitment
                 </Link>
               </li>
               <li className="flex items-center">
@@ -141,7 +144,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/service/contract-staffing"
                 >
-                  {t("Contract_Staffing")}
+                  Contract Staffing
                 </Link>
               </li>
               <li className="flex items-center">
@@ -150,7 +153,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/service/workforce-planning"
                 >
-                  {t("Workforce_Planning")}
+                  Workforce Planning
                 </Link>
               </li>
               <li className="flex items-center">
@@ -159,7 +162,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/service/compliance-and-legal-support"
                 >
-                  {t("Compliance_and_Legal_Support")}
+                  Compliance and Legal Support
                 </Link>
               </li>
 
@@ -169,7 +172,7 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/service/background-checks"
                 >
-                  {t("Background_Checks")}
+                  Background Checks
                 </Link>
               </li>
               <li className="flex items-center">
@@ -187,27 +190,27 @@ const Footer = () => {
                   className="duration-200 hover:text-primary"
                   href="/service/onboarding-support"
                 >
-                  {t("Onboarding_Support")}
+                  Onboarding Support
                 </Link>
               </li>
             </ul>
           </div>
           <div className="basis-full space-y-5 md:basis-1/2 lg:basis-1/4">
-            <span className="text-xl">{t("get_in_touch")}</span>
-            <p>{t("subscribe_message")}</p>
+            <span className="text-xl">Get In Touch</span>
+            <p>Subscribe Our Newsletter to Get Latest Update & News</p>
 
             <form className="flex w-full rounded-md bg-white">
               <input
                 className="rounded-md border-none bg-white text-sm text-black focus:ring-0"
                 type="email"
-                placeholder={t("placeholder_text")}
+                placeholder="Your Email Here"
                 required
               />
               <button
                 type="submit"
                 className="ml-auto basis-auto rounded-md border-2 border-primary bg-primary px-4 py-3 text-sm text-white duration-200 hover:border-primary hover:bg-transparent hover:text-primary"
               >
-                {t("subscribe_button")}
+                Subscribe
               </button>
             </form>
 
@@ -218,7 +221,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <FaEnvelope className="rounded-full bg-[#F90945] p-2 text-3xl" />
-                <Link href="contact@hireandfire.agency" target="_blank">
+                <Link href="contact@hireandfire.agency" target=" blank">
                   contact@hireandfire.agency
                 </Link>
               </div>
@@ -226,7 +229,7 @@ const Footer = () => {
                 <FaMapMarkerAlt className="rounded-full bg-[#F90945] p-2 text-3xl" />
                 <Link
                   href="https://maps.app.goo.gl/qNxPC3VBa4J9Kobm6"
-                  target="_blank"
+                  target=" blank"
                 >
                   Strada ING. Zablovschi, Nr. 10,
                   <br /> Biroul 1, Sectorul 1, Bucuresti, Romania.
@@ -238,7 +241,9 @@ const Footer = () => {
 
         <hr />
         <div className="flex flex-col items-center justify-between gap-6 text-center text-sm md:text-left xl:flex-row">
-          <div className="basis-full lg:basis-1/3">{t("copyright")}</div>
+          <div className="basis-full lg:basis-1/3">
+            © Copyright 2024 “Hire & Fire” All Rights Reserved.
+          </div>
           <div className="basis-full lg:basis-1/3">
             <ul className="flex items-center justify-center gap-8">
               <li>
@@ -246,7 +251,7 @@ const Footer = () => {
                   href="/privacy-policy"
                   className="duration-200 hover:underline"
                 >
-                  {t("Privacy_Policy")}
+                  Privacy Policy
                 </Link>
               </li>
               <li>
@@ -254,36 +259,36 @@ const Footer = () => {
                   href="/terms-of-conditions"
                   className="duration-200 hover:underline"
                 >
-                  {t("Terms_and_Conditions")}
+                  Terms & Conditions
                 </Link>
               </li>
               <li>
                 <Link className="duration-200 hover:underline" href="#">
-                  {t("Cookie_Policy")}
+                  Cookie Policy
                 </Link>
               </li>
             </ul>
           </div>
           <div className="basis-full lg:basis-1/3">
             <div className="flex flex-col items-center justify-end gap-3 font-medium xl:flex-row xl:gap-10">
-              {t("follow_us")}
+              Follow Us
               <span className="flex items-center gap-3">
                 <Link
                   href="https://www.facebook.com/hireandfire.eu"
-                  target="_blank"
+                  target=" blank"
                 >
                   <FaFacebook className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
                 <Link
                   href="https://www.instagram.com/hireandfire.eu/"
-                  target="_blank"
+                  target=" blank"
                 >
                   <FaInstagram className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
-                <Link href="https://twitter.com/hireandfireeu" target="_blank">
+                <Link href="https://twitter.com/hireandfireeu" target=" blank">
                   <FaTwitter className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
-                <Link href="https://telegram.org/" target="_blank">
+                <Link href="https://telegram.org/" target=" blank">
                   <FaTelegramPlane className="rounded-full bg-white p-1 text-2xl text-[#f90945] duration-200 hover:bg-primary hover:text-white" />
                 </Link>
               </span>

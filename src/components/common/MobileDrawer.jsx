@@ -1,10 +1,12 @@
 import Button from "../ui/Button";
 import Drawer from "react-modern-drawer";
 import Image from "next/image";
-import { Link, usePathname } from "@/i18n/routing";
+
 import EmployerNavDropdown from "./EmployerNavDropdown";
 import HireWorkerNavDropdown from "./HireWorkerNavDropdown";
 import ResourcesNavDropdown from "./ResourcesNavDropdown";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const MobileDrawer = ({ isOpen, toggleDrawer, setIsOpen }) => {
   const pathname = usePathname();

@@ -7,15 +7,9 @@ import { IoMdArrowDropright } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
 import "react-modern-drawer/dist/index.css";
 import Button from "../ui/Button";
-import { languages } from "@/data/languages";
 import MobileDrawer from "./MobileDrawer";
-import { useLocale } from "next-intl";
-
-import { useTransition } from "react";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import { Link } from "@/i18n/routing";
-import LanguageSwitcher from "./LanguageSwitcher";
+import Link from "next/link";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -29,20 +23,12 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const [isPending, startTransition] = useTransition();
-  const localActive = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
-  };
-
-  const onSelectChange = (e) => {
-    const nextLocale = e.target.value;
-
-    startTransition(() => router.replace(`/${nextLocale}`));
   };
 
   return (
@@ -65,7 +51,7 @@ const Header = () => {
           <ul className="flex justify-center text-sm font-medium">
             <li className="px-4">
               <Link
-                className={`${pathname === `/${localActive}/about-us` ? "text-primary" : ""} duration-200 hover:text-primary`}
+                className={`${pathname === `/about-us` ? "text-primary" : ""} duration-200 hover:text-primary`}
                 href="/about-us"
               >
                 About Us
@@ -74,15 +60,15 @@ const Header = () => {
             <li className="group relative px-4">
               <p
                 className={`flex cursor-pointer duration-200 hover:text-primary ${
-                  pathname === `/${localActive}/employers/employment-service`
+                  pathname === `/employers/employment-service`
                     ? "text-primary"
                     : ""
                 } ${
-                  pathname === `/${localActive}/employers/additional-support`
+                  pathname === `/employers/additional-support`
                     ? "text-primary"
                     : ""
                 } ${
-                  pathname === `/${localActive}/employers/partnerships-programs`
+                  pathname === `/employers/partnerships-programs`
                     ? "text-primary"
                     : ""
                 }`}
@@ -95,7 +81,7 @@ const Header = () => {
               <ul className="animate-fadeIn absolute top-5 hidden w-56 space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
-                    className={`${pathname === `/${localActive}/employers/employment-service` ? "text-primary" : ""} flex hover:text-primary`}
+                    className={`${pathname === `/employers/employment-service` ? "text-primary" : ""} flex hover:text-primary`}
                     href="/employers/employment-service"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -104,7 +90,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    className={`${pathname === `/${localActive}/employers/additional-support` ? "text-primary" : ""} flex hover:text-primary`}
+                    className={`${pathname === `/employers/additional-support` ? "text-primary" : ""} flex hover:text-primary`}
                     href="/employers/additional-support"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -113,7 +99,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    className={`${pathname === `/${localActive}/employers/partnerships-programs` ? "text-primary" : ""} flex hover:text-primary`}
+                    className={`${pathname === `/employers/partnerships-programs` ? "text-primary" : ""} flex hover:text-primary`}
                     href="/employers/partnerships-programs"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -125,11 +111,9 @@ const Header = () => {
             <li className="group relative px-4">
               <p
                 className={`flex cursor-pointer duration-200 hover:text-primary ${
-                  pathname === `/${localActive}/hire-worker/our-process`
-                    ? "text-primary"
-                    : ""
+                  pathname === `/hire-worker/our-process` ? "text-primary" : ""
                 } ${
-                  pathname === `/${localActive}/hire-worker/request-worker`
+                  pathname === `/hire-worker/request-worker`
                     ? "text-primary"
                     : ""
                 } `}
@@ -141,7 +125,7 @@ const Header = () => {
               <ul className="animate-fadeIn absolute top-5 hidden w-44 space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
-                    className={`${pathname === `/${localActive}/hire-worker/our-process` ? "text-primary" : ""} flex hover:text-primary`}
+                    className={`${pathname === `/hire-worker/our-process` ? "text-primary" : ""} flex hover:text-primary`}
                     href="/hire-worker/our-process"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -150,7 +134,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    className={`${pathname === `/${localActive}/hire-worker/request-worker` ? "text-primary" : ""} flex hover:text-primary`}
+                    className={`${pathname === `/hire-worker/request-worker` ? "text-primary" : ""} flex hover:text-primary`}
                     href="/hire-worker/request-worker"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -161,7 +145,7 @@ const Header = () => {
             </li>
             <li className="px-4">
               <Link
-                className={`${pathname === `/${localActive}/industry` ? "text-primary" : ""} duration-200 hover:text-primary`}
+                className={`${pathname === `/industry` ? "text-primary" : ""} duration-200 hover:text-primary`}
                 href="/industry"
               >
                 Industry
@@ -170,14 +154,8 @@ const Header = () => {
             <li className="group relative px-4">
               <p
                 className={`flex cursor-pointer duration-200 hover:text-primary ${
-                  pathname === `/${localActive}/resources/faq`
-                    ? "text-primary"
-                    : ""
-                } ${
-                  pathname === `/${localActive}/resources/blog`
-                    ? "text-primary"
-                    : ""
-                } `}
+                  pathname === `/resources/faq` ? "text-primary" : ""
+                } ${pathname === `/resources/blog` ? "text-primary" : ""} `}
               >
                 Resources <MdKeyboardArrowDown className="text-xl" />
               </p>
@@ -186,7 +164,7 @@ const Header = () => {
               <ul className="animate-fadeIn absolute top-5 hidden w-44 space-y-4 rounded-lg border bg-white p-4 shadow-2xl hover:block group-hover:block">
                 <li>
                   <Link
-                    className={`${pathname === `/${localActive}/resources/faq` ? "text-primary" : ""} duration-20 0 flex hover:text-primary`}
+                    className={`${pathname === `/resources/faq` ? "text-primary" : ""} duration-20 0 flex hover:text-primary`}
                     href="/resources/faq"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -195,7 +173,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    className={`${pathname === `/${localActive}/resources/blog` ? "text-primary" : ""} duration-20 0 flex hover:text-primary`}
+                    className={`${pathname === `/resources/blog` ? "text-primary" : ""} duration-20 0 flex hover:text-primary`}
                     href="/resources/blog"
                   >
                     <IoMdArrowDropright className="text-xl" />
@@ -213,7 +191,7 @@ const Header = () => {
 
           {/* <SwitchLanguage /> */}
 
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
 
           {/* <select
             defaultValue={localActive}
@@ -248,5 +226,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// className = "sticky top-0 z-[1000] bg-white py-[10px] shadow";

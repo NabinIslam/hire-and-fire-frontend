@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "../../ui/Button";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 
 const ProfessionalTraining = () => {
   return (

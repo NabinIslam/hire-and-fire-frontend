@@ -5,7 +5,7 @@ import Button from "../../ui/Button";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import ServiceImage from "@/components/common/ServiceImage";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 
 const ProfessionalSupport = () => {
   return (

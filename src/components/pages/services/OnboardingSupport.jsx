@@ -2,7 +2,7 @@
 
 import Button from "../../ui/Button";
 import SubServiceCard from "../../common/SubServiceCard";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import ServiceImage from "@/components/common/ServiceImage";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";

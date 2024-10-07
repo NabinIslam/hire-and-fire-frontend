@@ -1,7 +1,7 @@
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import Button from "@/components/ui/Button";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import Image from "next/image";
 
 const KeySkills = () => {

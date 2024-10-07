@@ -1,23 +1,18 @@
 "use client";
 
-import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
-
-import { useTranslations } from "next-intl";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 
 const WorkSteps = () => {
-  const t = useTranslations("WorkSteps");
-
   return (
     <section className="pb-[100px] pt-[50px]">
       <FadeInUpWithSlowBounce className="container">
         <h6 className="text-center text-2xl font-medium text-primary">
-          {t("work_title_1")}
+          Work Steps
         </h6>
         <h2 className="mt-[20px] text-center text-4xl font-semibold lg:text-4xl">
-          {t("work_title_2")}
+          How It Works?
         </h2>
       </FadeInUpWithSlowBounce>
       <div className="container mt-[60px] grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
@@ -44,12 +39,11 @@ const WorkSteps = () => {
               </svg>
             </div>
             <h5 className="text-center text-xl font-medium">
-              {t.rich("card_1_title", {
-                br: () => <br />,
-              })}
+              Tell Us <br />
+              Your Need
             </h5>
             <p className="text-center text-sm font-medium">
-              {t("card_1_description")}
+              Share your specific requirements and job descriptions.
             </p>
           </div>
 
@@ -91,12 +85,11 @@ const WorkSteps = () => {
               </svg>
             </div>
             <h5 className="text-center text-xl font-medium">
-              {t.rich("card_2_title", {
-                br: () => <br />,
-              })}
+              View Matched <br />
+              Candidates
             </h5>
             <p className="text-center text-sm font-medium">
-              {t("card_2_description")}
+              Review profiles of candidates that match your needs.
             </p>
           </div>
           {/* badge */}
@@ -152,12 +145,11 @@ const WorkSteps = () => {
               </svg>
             </div>
             <h5 className="text-center text-xl font-medium">
-              {t.rich("card_3_title", {
-                br: () => <br />,
-              })}
+              Interview Selected <br />
+              Candidates
             </h5>
             <p className="text-center text-sm font-medium">
-              {t("card_3_description")}
+              Conduct interviews with shortlisted candidates.
             </p>
           </div>
           {/* badge */}
@@ -205,12 +197,11 @@ const WorkSteps = () => {
               </svg>
             </div>
             <h5 className="text-center text-xl font-medium">
-              {t.rich("card_4_title", {
-                br: () => <br />,
-              })}
+              Select and We Complete Visa Procedures
             </h5>
             <p className="text-center text-sm font-medium">
-              {t("card_4_description")}
+              Choose your candidates, and we handle the rest, including visa
+              processing.
             </p>
           </div>
           {/* badge */}

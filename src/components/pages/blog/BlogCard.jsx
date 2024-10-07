@@ -7,7 +7,7 @@ import { MdCalendarMonth } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
 import { formatDate } from "@/Utils/formatDate";
 import { FaPlayCircle } from "react-icons/fa";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
@@ -24,7 +24,7 @@ const BlogCard = ({ blog }) => {
   // } = blog);
 
   return (
-    <FadeInLeftWithSlowBounce className="flex flex-col items-start gap-3 rounded-lg border p-4 shadow-lg bg-white">
+    <FadeInLeftWithSlowBounce className="flex flex-col items-start gap-3 rounded-lg border bg-white p-4 shadow-lg">
       {blog?.video ? (
         <ReactPlayer
           className="relative min-h-[200px] w-full rounded-lg duration-200 hover:scale-125"

@@ -2,7 +2,7 @@
 
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import Button from "../../../ui/Button";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import ServiceImage from "@/components/common/ServiceImage";
 

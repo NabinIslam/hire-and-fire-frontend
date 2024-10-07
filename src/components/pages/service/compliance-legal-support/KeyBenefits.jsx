@@ -4,7 +4,7 @@ import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlow
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import VideoModal from "@/components/common/VideoModal";
 import Button from "@/components/ui/Button";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 

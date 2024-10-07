@@ -2,8 +2,6 @@
 
 import { useEffect, useState, useTransition } from "react";
 import { parseCookies, setCookie } from "nookies";
-
-import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 
 // The following cookie name is important because it's Google-predefined for the translation engine purpose
@@ -14,8 +12,6 @@ const LanguageSwitcher = () => {
   const [currentLanguage, setCurrentLanguage] = useState();
   const [languageConfig, setLanguageConfig] = useState();
   const router = useRouter();
-
-  const localActive = useLocale();
 
   // Initialize translation engine
   useEffect(() => {
@@ -56,9 +52,12 @@ const LanguageSwitcher = () => {
     const selectedLang = e.target.value;
 
     // router.push(asPath, asPath, { locale: selectedLang });
-    router.push(`/${selectedLang}`);
 
-    setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
+    startTransition(() => {
+      router.push(`/${selectedLang}`);
+
+      setCookie(null, COOKIE_NAME, "/auto/" + selectedLang);
+    });
 
     // window.location.reload();
 
@@ -84,6 +83,7 @@ const LanguageSwitcher = () => {
       defaultValue={localActive}
       onChange={switchLanguage}
       className="cursor-pointer rounded-md border-none bg-white px-4 py-2 text-sm text-gray-700 ring-2 focus:ring-2 focus:ring-blue-500"
+      disabled={isPending}
     >
       {languageConfig?.languages?.map((language) => (
         <option value={language.name} key={language.name}>

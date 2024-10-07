@@ -1,11 +1,12 @@
 "use client";
 import Button from "../../ui/Button";
 import SubServiceCard from "../../common/SubServiceCard";
-import { Link, usePathname } from "@/i18n/routing";
 import ServiceImage from "@/components/common/ServiceImage";
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const PermanentRecruitment = () => {
   const pathname = usePathname();

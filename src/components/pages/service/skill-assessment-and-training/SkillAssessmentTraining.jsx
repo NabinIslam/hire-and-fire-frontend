@@ -2,7 +2,7 @@ import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlow
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
 import ServiceImage from "@/components/common/ServiceImage";
 import Button from "@/components/ui/Button";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 
 const SkillAssessmentTraining = () => {
   return (

@@ -6,7 +6,7 @@ import WorkerAccommodationService from "@/components/pages/additional-support/Wo
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";
 import PageBanner from "@/components/common/PageBanner";
 import FadeInUpWithSlowBounce from "@/components/animations/FadeInUpWithSlowBounce";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import Button from "@/components/ui/Button";
 
 export const metadata = {

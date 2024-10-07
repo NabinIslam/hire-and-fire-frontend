@@ -12,8 +12,6 @@ import FadeInDownWithSlowBounce from "../animations/FadeInDownWithSlowBounce";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const OurClients = () => {
-  const t = useTranslations("OurClients");
-
   const settings = {
     speed: 700,
     slidesToShow: 5,
@@ -53,7 +51,7 @@ const OurClients = () => {
   return (
     <section className="space-y-[40px] py-[100px]">
       <FadeInDownWithSlowBounce className="container space-y-8">
-        <h2 className="text-center text-4xl font-semibold">{t("title")}</h2>
+        <h2 className="text-center text-4xl font-semibold">Our clients</h2>
         <Slider {...settings}>
           <div className="relative min-h-[134px] rounded-lg border p-2 shadow">
             <Image

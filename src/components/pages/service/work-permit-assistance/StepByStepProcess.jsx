@@ -1,4 +1,4 @@
-import WorkPermitAssistancePage from "@/app/[locale]/service/work-permit-assistance/page";
+import WorkPermitAssistancePage from "@/app/service/work-permit-assistance/page";
 import WorkPermitCard from "./WorkPermitCard";
 import { WorkPermitAssistanceProcess } from "@/data/WorkPermitAssistanceProcess";
 import FadeInDownWithSlowBounce from "@/components/animations/FadeInDownWithSlowBounce";

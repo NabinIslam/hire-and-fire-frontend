@@ -1,11 +1,8 @@
 import FadeInLeftWithSlowBounce from "../../animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "../../animations/FadeInRightWithSlowBounce ";
 import FadeInUpWithSlowBounce from "../../animations/FadeInUpWithSlowBounce";
-import { useTranslations } from "next-intl";
 
 const CompanyPoints = () => {
-  const t = useTranslations("CompanyPoints");
-
   return (
     <section className="mt-[-90px]">
       <div className="container grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -29,10 +26,12 @@ const CompanyPoints = () => {
                 />
               </svg>
             </div>
-            <h5 className="text-xl font-medium">{t("point_1_title")}</h5>
+            <h5 className="text-xl font-medium">Find Skilled Workers</h5>
 
             <div className="px-2">
-              <p className="text-sm">{t("point_1_description")}</p>
+              <p className="text-sm">
+                Connect with workers who have the skills your business needs.
+              </p>
             </div>
           </div>
         </FadeInLeftWithSlowBounce>
@@ -56,9 +55,12 @@ const CompanyPoints = () => {
                 />
               </svg>
             </div>
-            <h5 className="text-xl font-medium">{t("point_2_title")}</h5>
+            <h5 className="text-xl font-medium">Hire Globally</h5>
             <div className="px-2">
-              <p className="text-sm">{t("point_2_description")}</p>
+              <p className="text-sm">
+                Find workers from around the world to bring fresh energy to your
+                team.
+              </p>
             </div>
           </div>
         </FadeInUpWithSlowBounce>
@@ -83,9 +85,12 @@ const CompanyPoints = () => {
                 />
               </svg>
             </div>
-            <h5 className="text-xl font-medium">{t("point_3_title")}</h5>
+            <h5 className="text-xl font-medium">Efficient Worker Placement</h5>
             <div className="px-2">
-              <p className="text-sm">{t("point_3_description")}</p>
+              <p className="text-sm">
+                Streamline placing workers from other countries with our
+                dedicated support.
+              </p>
             </div>
           </div>
         </FadeInUpWithSlowBounce>
@@ -109,9 +114,12 @@ const CompanyPoints = () => {
                 />
               </svg>
             </div>
-            <h5 className="text-xl font-medium">{t("point_4_title")}</h5>
+            <h5 className="text-xl font-medium">No Upfront Costs</h5>
             <div className="px-2">
-              <p className="text-sm">{t("point_4_description")}</p>
+              <p className="text-sm">
+                We handle all responsibilities without any initial expenses for
+                you.
+              </p>
             </div>
           </div>
         </FadeInRightWithSlowBounce>
