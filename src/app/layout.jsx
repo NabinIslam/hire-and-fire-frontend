@@ -22,7 +22,7 @@ const montserrat = Montserrat({
 
 export default async function RootLayout({ children }) {
   return (
-    <html>
+    <html lang="en">
       <body className={`${montserrat.className} flex min-h-screen flex-col`}>
         <div id="google_translate_element"></div>
         <TanstackQueryProvider>
