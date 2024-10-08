@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useTransition } from "react";
 import { parseCookies, setCookie } from "nookies";
+import { useRouter } from "next/navigation";
 
 // The following cookie name is important because it's Google-predefined for the translation engine purpose
 const COOKIE_NAME = "googtrans";
@@ -9,6 +10,7 @@ const COOKIE_NAME = "googtrans";
 const LanguageSwitcher = () => {
   const [currentLanguage, setCurrentLanguage] = useState("");
   const [languageConfig, setLanguageConfig] = useState(null);
+  const router = useRouter();
 
   // Initialize translation engine
   useEffect(() => {
@@ -51,6 +53,7 @@ const LanguageSwitcher = () => {
 
     setCookie(null, COOKIE_NAME, "/auto/" + e.target.value);
     window.location.reload();
+    router.refresh();
   };
 
   return (
