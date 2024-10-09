@@ -16,7 +16,7 @@ const ContactFormSection = () => {
                 style={{ border: 0 }}
                 allowfullscreen
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
             <div className="basis-full px-4 py-[50px] lg:basis-1/2 lg:p-[50px]">
