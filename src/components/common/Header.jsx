@@ -192,7 +192,7 @@ const Header = () => {
 
           {/* <SwitchLanguage /> */}
 
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
 
           {/* <select
             defaultValue={localActive}

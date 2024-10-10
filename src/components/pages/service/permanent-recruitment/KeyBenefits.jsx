@@ -1,22 +1,30 @@
+"use client";
+
 import FadeInLeftWithSlowBounce from "@/components/animations/FadeInLeftWithSlowBounce";
 import FadeInRightWithSlowBounce from "@/components/animations/FadeInRightWithSlowBounce ";
+import VideoModal from "@/components/common/VideoModal";
+import Button from "@/components/ui/Button";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const KeyBenefits = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="py-[50px]">
       {/* container row */}
       <div className="container flex flex-col items-center justify-start gap-20 lg:flex-row">
         {/* column */}
-        <FadeInRightWithSlowBounce className="relative min-h-[330px] w-full basis-full lg:min-h-[584px] lg:basis-1/2">
+        <FadeInLeftWithSlowBounce className="relative min-h-[330px] w-full basis-full lg:min-h-[584px]">
           <Image
             className="object-contain object-right"
             src="/images/permanent-key-benefit.png"
             fill
           />
-        </FadeInRightWithSlowBounce>
+        </FadeInLeftWithSlowBounce>
         {/* column */}
-        <FadeInRightWithSlowBounce className="space-y-6 lg:basis-1/2">
+        <FadeInRightWithSlowBounce className="space-y-6">
           <div className="flex items-center justify-center lg:basis-1/2 lg:justify-start">
             <span className="rounded-full border-2 border-primary px-5 py-3 text-2xl font-medium text-primary">
               Key Benefits
@@ -341,8 +349,80 @@ const KeyBenefits = () => {
               </div>
             </div>
           </div>
+          <div className="flex items-center justify-start gap-5">
+            <Link href="/hire-worker/request-worker">
+              <Button>Request Worker</Button>
+            </Link>
+            <button
+              onClick={() => setIsOpen(true)}
+              className="flex items-center rounded-lg border-2 border-primary py-1 pr-3 text-sm font-medium text-primary"
+            >
+              <svg
+                className="animate-floating"
+                width="36"
+                height="36"
+                viewBox="0 0 72 72"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_d_1197_3779)">
+                  <circle cx="36" cy="36" r="18" fill="#F90945" />
+                  <circle
+                    cx="36"
+                    cy="36"
+                    r="16.5"
+                    stroke="#FDFDFD"
+                    strokeWidth="3"
+                  />
+                </g>
+                <path
+                  d="M43.2012 35.9999L32.4012 42.2353L32.4012 29.7645L43.2012 35.9999Z"
+                  fill="#FDFDFD"
+                />
+                <defs>
+                  <filter
+                    id="filter0_d_1197_3779"
+                    x="0"
+                    y="0"
+                    width="72"
+                    height="72"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="9" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1197_3779"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1197_3779"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+              Watch Video
+            </button>
+          </div>
         </FadeInRightWithSlowBounce>
       </div>
+      <VideoModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </section>
   );
 };
