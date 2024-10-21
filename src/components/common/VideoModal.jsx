@@ -54,9 +54,7 @@ const VideoModal = ({ isOpen, setIsOpen, videoUrl, thumbnail }) => {
                       <Image
                         className="min-h-full w-full rounded-lg object-cover"
                         src={
-                          thumbnail
-                            ? thumbnail
-                            : "/images/additional-support-video-thumbnail.png"
+                          thumbnail ? thumbnail : "/assets/video_thumbnail.png"
                         }
                         alt="thumbnail"
                         fill
