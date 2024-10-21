@@ -46,11 +46,9 @@ const VideoModal = ({ isOpen, setIsOpen, videoUrl, thumbnail }) => {
                 </div>
                 <ReactPlayer
                   className="min-h-[60vh] w-full"
-                  url={
-                    videoUrl
-                      ? videoUrl
-                      : "https://youtu.be/GEieqZy0aqI?si=7Z2zW8hOXRKSJ3FU"
-                  }
+                  url="/assets/Hire & Fire.mp4"
+                  controls
+                  playing
                   light={
                     <div className="relative min-h-full w-full">
                       <Image
